@@ -165,6 +165,7 @@
 
             // update storage
             localStorage.setItem("theme", newTheme);
+            updateThemeOnHtmlEl({ theme: newTheme });
 
             //update dataTheme in memory
             dataTheme = newTheme
