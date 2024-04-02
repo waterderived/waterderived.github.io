@@ -153,6 +153,9 @@
         }
 
 
+        // ON LOAD
+        let dataTheme = localStorage.getItem("theme");
+        
         //theme switcher
         const switchTheme = () => {
             const rootElem = document.documentElement
@@ -169,9 +172,6 @@
             //update dataTheme in memory
             dataTheme = newTheme
         }
-
-        // ON LOAD
-        let dataTheme = localStorage.getItem("theme");
 
         // orig switcher
         document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
