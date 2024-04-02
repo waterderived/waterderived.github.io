@@ -720,9 +720,9 @@ td:first-of-type {
 }
 
 .header-title {
-    font-family: var(--font-family-title);
-    font-size: 14px;
-    font-weight: 500;
+    font-family: var(--font-family-body);
+    font-size: 10px;
+    font-weight: 400;
     padding-left: 8px;
     padding-top: 2px;
     color: var(--tx1);
