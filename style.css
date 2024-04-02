@@ -572,11 +572,11 @@ td:first-of-type {
     z-index: 3;
 }
 
-.gridded-img[data-theme="dark"] {
+html[data-theme="dark"] .gridded-img{
     opacity: var(--img-dark-level);
 }
 
-.gridded-img[data-theme="dark"]:hover {
+html[data-theme="dark"] .gridded-img:hover {
     opacity: var(--img-dark-level-hover);
 }
 
