@@ -25,36 +25,30 @@
                 <div class="sidebar-element">
                     <nav class="sidebar-element-container">
                         <div>
-                            <a href="https://waterderived.github.io/"
-                                class="sidebar-group">
+                            <a href="https://waterderived.github.io/" class="sidebar-group">
                                 <span>home</span></a>
                         </div>
                         <div>
-                            <a href="https://waterderived.github.io/about.html"
-                                class="sidebar-group-current">
+                            <a href="https://waterderived.github.io/about.html" class="sidebar-group-current">
                                 <span>work</span></a>
                         </div>
                         <div>
-                            <a href="https://waterderived.github.io/work-graphics.html"
-                                class="sidebar-group">
+                            <a href="https://waterderived.github.io/work-graphics.html" class="sidebar-group">
                                 <span>graphic</span>
                             </a>
                         </div>
                         <div>
-                            <a href="https://waterderived.github.io/work-audio.html"
-                                class="sidebar-group">
+                            <a href="https://waterderived.github.io/work-audio.html" class="sidebar-group">
                                 <span>audio</span>
                             </a>
                         </div>
                         <div>
-                            <a href="https://waterderived.github.io/jisoo-photo.html"
-                                class="sidebar-group">
+                            <a href="https://waterderived.github.io/jisoo-photo.html" class="sidebar-group">
                                 <span>photo</span>
                             </a>
                         </div>
                         <div>
-                            <a href="https://waterderived.github.io/work-writing.html"
-                                class="sidebar-group">
+                            <a href="https://waterderived.github.io/work-writing.html" class="sidebar-group">
                                 <span>writing</span>
                             </a>
                         </div>
@@ -70,9 +64,17 @@
         <div class="header-buttons">
             <button class="sidebar-open-button" onclick="openNav()">&#9776;</button>
             <button class=" sidebar-open-button-open" onclick="closeNav()"">&#9776;</button>
-            <button id="theme-switcher">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun" id="icon-sun"><circle cx="7" cy="7" r="2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-star" id="icon-moon"><circle cx="7" cy="7" r="2"/></svg>
+            <button id=" theme-switcher">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-sun" id="icon-sun">
+                    <circle cx="7" cy="7" r="2" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-moon-star" id="icon-moon">
+                    <circle cx="7" cy="7" r="2" />
+                </svg>
             </button>
             <div class="header-title">
                 nicole jisoo kim
@@ -80,24 +82,28 @@
         </div>
         <div class="body-container">
             <div class="above-footer">
-            <h2>about</h2>
-            <br>
-            <p class="body-descr p-very-narrow">
-                Nicole is a medical student rooted in new jersey and homed in providence,
-                rhode island. She (lovingly) holds a fascination with image-guided procedures and a passion for exploring the use
-                of multimedia in education and scientific communication.
+                <h2>about</h2>
                 <br>
-                <br>
-                When not in the hospital / fulfilling student duties, Nicole can be found tinkering with mirrorless cameras, strolling along fairways, or immersed in (tabletop) combat.
-                <br><br>
-                Updated CV made available upon request.
-            </p>
-            <p class="body-descr"></p>
-            <p class="body-descr"> <strong>find me</strong><br> 
-                <a href="mailto:nicole.jisoo@gmail.com" class="body-descr-link">email</a> - 
-                    <a href="https://twitter.com/nicole_jisoo" class="body-descr-link">twitter</a> - 
-                    <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\jisoo-now.html" class="body-descr-link">now</a>
-            </p></div>
+                <p class="body-descr p-very-narrow">
+                    Nicole is a medical student rooted in new jersey and homed in providence,
+                    rhode island. She (lovingly) holds a fascination with image-guided procedures and a passion for
+                    exploring the use
+                    of multimedia in education and scientific communication.
+                    <br>
+                    <br>
+                    When not in the hospital / fulfilling student duties, Nicole can be found tinkering with mirrorless
+                    cameras, strolling along fairways, or immersed in (tabletop) combat.
+                    <br><br>
+                    Updated CV made available upon request.
+                </p>
+                <p class="body-descr"></p>
+                <p class="body-descr"> <strong>find me</strong><br>
+                    <a href="mailto:nicole.jisoo@gmail.com" class="body-descr-link">email</a> -
+                    <a href="https://twitter.com/nicole_jisoo" class="body-descr-link">twitter</a> -
+                    <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\jisoo-now.html"
+                        class="body-descr-link">now</a>
+                </p>
+            </div>
             <div class="page-footer">
                 <hr>
                 <br>
@@ -109,23 +115,23 @@
     </div>
     <script>
         var dropdown = document.getElementsByClassName("sidebar-button-dropdown");
-var i;
-    
-for (i = 0; i < dropdown.length; i++) {
-dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-        } 
-        else {
-            dropdownContent.style.display = "block";
-        }
-    });
-}
+        var i;
 
-//sidebar collapse
-/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                }
+                else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+
+        //sidebar collapse
+        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
         function openNav() {
             document.getElementById("mySidebar").style.width = "110px";
             document.getElementById("main").style.marginLeft = "0";
@@ -141,26 +147,12 @@ dropdown[i].addEventListener("click", function() {
 
         /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
         function closeNav() {
-          document.getElementById("mySidebar").style.width = "0";
-          document.getElementById("main").style.marginLeft = "0";
-          div.classList.remove('hidden'); //reappear sidebar button
-        }
-        
-
-        //get theme on page load
-        localStorage.getItem("theme");
-
-        //theme switcher
-        const switchTheme = () => {
-            const rootElem = document.documentElement
-            let dataTheme = rootElem.getAttribute('data-theme'),
-                newTheme
-
-            newTheme = (dataTheme === 'light') ? 'dark' : 'light'
-
-            rootElem.setAttribute('data-theme', newTheme)
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            div.classList.remove('hidden'); //reappear sidebar button
         }
 
+        //utility function to calculate current theme setting
         function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
             if (localStorageTheme !== null) {
                 return localStorageTheme;
@@ -173,20 +165,44 @@ dropdown[i].addEventListener("click", function() {
             return "light";
         }
 
-        const localStorageTheme = localStorage.getItem("theme");
-        
-        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+        //theme switcher
+        const switchTheme = () => {
+            const rootElem = document.documentElement
+            let dataTheme = rootElem.getAttribute('data-theme'),
+                newTheme
 
+            newTheme = (dataTheme === 'light') ? 'dark' : 'light'
+
+            rootElem.setAttribute('data-theme', newTheme)
+        }
+
+        // Utility function to update the theme setting on the html tag
+        function updateThemeOnHtmlEl({ theme }) {
+            document.querySelector("html").setAttribute("data-theme", theme);
+        }
+
+
+        // ON LOAD
+        const localStorageTheme = localStorage.getItem("theme");
+        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+        // work out current site settings
         let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+        //update theme setting
+        updateThemeOnHtmlEl({ theme: dataTheme });
+
 
         // orig switcher
-        document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
+        document.querySelector('#theme-switcher').addEventListener('click', switchTheme);
+
+
+        //get theme on page load
+        localStorage.getItem("theme");
 
         // update storage
         localStorage.setItem("theme", newTheme);
 
         //update dataTheme in memory
-        dataTheme = newTheme
+        dataTheme = newTheme;
 
     </script>
 </body>
