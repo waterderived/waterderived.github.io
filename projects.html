@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>the collaterals</title>
+
+        <!--google fonts-->
+        
+        <!--main css-->
+        <link rel="stylesheet" href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\style.css">
+       </head>
+    <body>
+        <!--static sidebar-->
+        <div class="sidebar-frame" id="mySidebar">
+            <!--sidebar component - can switch out for another-->
+           <div class="sidebar">
+               <div class="sidebar-internal">
+                   <div class="sidebar-element">
+                       <nav class="sidebar-element-container">
+                       <div>
+                           <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\index.html" class="sidebar-group">
+                               <span class="padding-left:16px">home</span>
+                           </a>
+                       </div>
+                       <div>
+                           <a href="#" class="sidebar-group sidebar-group-current">
+                               <span class="padding-left:16px">projects</span>
+                           </a>
+                       </div>
+                       <div>
+                           <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\work-graphics.html" class="sidebar-group">
+                               <span class="padding-left:16px">graphic</span>
+                           </a>
+                       </div>
+                       <div>
+                           <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\work-audio.html" class="sidebar-group">
+                               <span class="padding-left:16px">audio</span>
+                           </a>
+                       </div>
+                       <div>
+                           <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\jisoo-photo.html" class="sidebar-group">
+                               <span class="padding-left:16px">photo</span>
+                           </a>
+                       </div>
+                       <div>
+                           <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\work-writing.html" class="sidebar-group">
+                               <span class="padding-left:16px">writing</span>
+                           </a>
+                       </div>
+                   </nav>
+               </div>
+               </div>    
+           </div>
+       </div>
+   </div>
+           <!--end of Navigation bar-->
+
+        <div id="main" class="body-full">
+            <div class="header-banner"></div>
+            <div class="header-buttons">
+                <button class="sidebar-open-button" onclick="openNav()">&#9776;</button>
+                <button class="sidebar-open-button-open" onclick="closeNav()">&#9776;</button>
+                <button id="theme-switcher">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun" id="icon-sun"><circle cx="7" cy="7" r="2"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-star" id="icon-moon"><circle cx="7" cy="7" r="2"/></svg>
+                </button>
+                <div class="header-title">
+                    nicole jisoo kim
+                </div>
+            </div>
+            <div class="body-container" onclick="closeNav()">
+                <div class="headless"><h1>select projects</h1></div>
+                <hr><br><br>
+                <h2>medical</h2>
+                <br>
+                <div class="grid-container-too">
+                    <span class="gridded">
+                        <img class="gridded-img" src="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\images\JVIR_VA - 2023_05 - Falsarella.NJK.sze.jpg" alt="Falsarella et al." xml:space="preserve" height="auto">
+                        <p class="linktitle body-descr">Falsarella et al.  |  <a href="https://twitter.com/JVIRmedia/status/1688202391408009216/photo/1">tweet</a> - <a href="https://doi.org/10.1016/j.jvir.2023.01.022">article</a></p>
+                    </span>
+                    <span class="gridded">
+                        <img class="gridded-img" src="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\images\F7DpbdNXEAAEB8G.jpg" alt="Shalvoy et al." xml:space="preserve" height="auto">
+                        <p class="linktitle body-descr">Shalvoy et al.  |  <a href="https://twitter.com/JVIRmedia/status/1707120920815394928">tweet</a> - <a href="https://doi.org/10.1016/j.jvir.2023.05.009">article</a></p>
+                    </span>
+                </div>
+                <br>
+                <br>
+                <h2>design</h2>
+                <br>
+                <div class="grid-container-too">
+                    <span class="gridded">
+                        <img class="gridded-img" src="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\images\Artboard 417-100.jpg" alt="" xml:space="preserve" height="auto">
+                        <p class="gridded-img body-descr"><a class="body-descr-link" href="#"><strong>Obliquities: The IR Board Game</strong></a> { 🚧 Under Construction }</p>
+                    </span>
+                </div>
+                <br>
+                <div class="page-footer">
+                    <hr>
+                    <br>
+                    <div class="footer-text"><p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script>
+            var dropdown = document.getElementsByClassName("sidebar-button-dropdown");
+var i;
+        
+for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } 
+            else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+
+//sidebar collapse
+/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "110px";
+                document.getElementById("main").style.marginLeft = "0";
+            }
+
+            //hide sidebar button
+            const div = document.querySelector('.sidebar-open-button')
+
+            div.addEventListener('click', () => {
+                div.classList.add('hidden');
+            })
+
+
+            /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+            function closeNav() {
+              document.getElementById("mySidebar").style.width = "0";
+              document.getElementById("main").style.marginLeft = "0";
+              div.classList.remove('hidden'); //reappear sidebar button
+            }
+            
+
+            //theme switcher
+            const switchTheme = () => {
+                const rootElem = document.documentElement
+                let dataTheme = rootElem.getAttribute('data-theme'),
+                    newTheme
+
+                newTheme = (dataTheme === 'light') ? 'dark' : 'light'
+
+                rootElem.setAttribute('data-theme', newTheme)
+            }
+
+            document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
+        </script>
+    </body>
+    <footer>
+        <div class="">
+            
+        </div>
+    </footer>
+</html>
