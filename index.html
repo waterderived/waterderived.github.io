@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the collaterals</title>
+
+    <!--google fonts-->
+
+    <!--main css-->
+    <link rel="stylesheet" href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\style.css">
+    <!--main js-->
+    <!--<script src="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\script.js"></script>-->
+    <!--nav bar js-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <!--static sidebar-->
+    <div class="sidebar-frame" id="mySidebar">
+        <!--sidebar component - can switch out for another-->
+        <div class="sidebar">
+            <div class="sidebar-internal">
+                <div class="sidebar-element">
+                    <nav class="sidebar-element-container">
+                        <div>
+                            <div
+                                class="sidebar-group sidebar-group-current">
+                                <span class="padding-left:16px">home</span>
+                        </div>
+                        <div>
+                            <a href="C:\Users\nicol\iCloudDrive\git_waterderived\waterderived.github.io\about.html"
+                                class="sidebar-group">
+                                <span class="padding-left:16px">work</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\work-graphics.html"
+                                class="sidebar-group">
+                                <span class="padding-left:16px">graphic</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\work-audio.html"
+                                class="sidebar-group">
+                                <span class="padding-left:16px">audio</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\jisoo-photo.html"
+                                class="sidebar-group">
+                                <span class="padding-left:16px">photo</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\work-writing.html"
+                                class="sidebar-group">
+                                <span class="padding-left:16px">writing</span>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--end of sidebar-->
+
+    <div id="main" class="body-full">
+        <div class="header-buttons">
+            <button class="sidebar-open-button" onclick="openNav()">&#9776;</button>
+            <button class="sidebar-open-button-open" onclick="closeNav()">&#9776;</button>
+            <button id="theme-switcher">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun" id="icon-sun"><circle cx="7" cy="7" r="2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-star" id="icon-moon"><circle cx="7" cy="7" r="2"/></svg>
+            </button>
+            <div class="header-title">
+                nicole jisoo kim
+            </div>
+        </div>
+        <div class="body-container" onclick="closeNav()">
+            <h2>hi there*</h2>
+            <p class="body-descr p-very-narrow">My name is <strong>Nicole</strong>. I am a medical student, researcher, artist, and digital media fiend.<br>I spend much of my time delving into image-guided procedures,
+                experimenting with multimedia to communicate scientific information, and questioning ontologies of
+                visibility as they relate to disability.</p>
+            <p class="body-descr"><a
+                    href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\about.html"
+                    class="body-descr-link">learn more</a> | <a href="mailto:nicole.jisoo@gmail.com"
+                    class="body-descr-link">get in touch</a></p>
+            <br>
+            <h5>recent</h5>
+            <p class="body-descr narrow-p">🚧 under construction 🚧</p>
+            <br>
+            <p class="body-descr"></p>
+            <div class="page-footer">
+                <hr>
+                <br>
+                <div class="footer-text">
+                    <p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p>
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+    <script>
+        var dropdown = document.getElementsByClassName("sidebar-button-dropdown");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                }
+                else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+
+        //sidebar collapse
+        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "110px";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+
+        //hide sidebar button
+        const div = document.querySelector('.sidebar-open-button')
+
+        div.addEventListener('click', () => {
+            div.classList.add('hidden');
+        })
+
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            div.classList.remove('hidden'); //reappear sidebar button
+        }
+
+
+        //theme switcher
+        const switchTheme = () => {
+            const rootElem = document.documentElement
+            let dataTheme = rootElem.getAttribute('data-theme'),
+                newTheme
+
+            newTheme = (dataTheme === 'light') ? 'dark' : 'light'
+
+            rootElem.setAttribute('data-theme', newTheme)
+        }
+
+        document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
+    </script>
+</body>
+<footer>
+
+</footer>
+
+</html>
