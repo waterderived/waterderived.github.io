@@ -31,32 +31,27 @@
                             </a>
                         </div>
                         <div>
-                            <a href="https://waterderived.github.io/about.html"
-                                class="sidebar-group">
+                            <a href="https://waterderived.github.io/about.html" class="sidebar-group">
                                 <span>work</span>
                             </a>
                         </div>
                         <div>
-                            <a href="https://waterderived.github.io/work-graphics.html"
-                                class="sidebar-group">
+                            <a href="https://waterderived.github.io/work-graphics.html" class="sidebar-group">
                                 <span>graphic</span>
                             </a>
                         </div>
                         <div>
-                            <a href="https://waterderived.github.io/work-audio.html"
-                                class="sidebar-group">
+                            <a href="https://waterderived.github.io/work-audio.html" class="sidebar-group">
                                 <span>audio</span>
                             </a>
                         </div>
                         <div>
-                            <a href="https://waterderived.github.io/jisoo-photo.html"
-                                class="sidebar-group">
+                            <a href="https://waterderived.github.io/jisoo-photo.html" class="sidebar-group">
                                 <span>photo</span>
                             </a>
                         </div>
                         <div>
-                            <a href="https://waterderived.github.io/work-writing.html"
-                                class="sidebar-group">
+                            <a href="https://waterderived.github.io/work-writing.html" class="sidebar-group">
                                 <span>writing</span>
                             </a>
                         </div>
@@ -72,8 +67,16 @@
             <button class="sidebar-open-button" onclick="openNav()">&#9776;</button>
             <button class="sidebar-open-button-open" onclick="closeNav()">&#9776;</button>
             <button id="theme-switcher">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun" id="icon-sun"><circle cx="7" cy="7" r="2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-star" id="icon-moon"><circle cx="7" cy="7" r="2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-sun" id="icon-sun">
+                    <circle cx="7" cy="7" r="2" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-moon-star" id="icon-moon">
+                    <circle cx="7" cy="7" r="2" />
+                </svg>
             </button>
             <div class="header-title">
                 nicole jisoo kim
@@ -81,13 +84,12 @@
         </div>
         <div class="body-container" onclick="closeNav()">
             <h2>hi there*</h2>
-            <p class="body-descr p-very-narrow">My name is <strong>Nicole</strong>. I am a medical student, researcher, artist, and digital media fiend.<br>I spend much of my time delving into image-guided procedures,
+            <p class="body-descr p-very-narrow">My name is <strong>Nicole</strong>. I am a medical student, researcher,
+                artist, and digital media fiend.<br>I spend much of my time delving into image-guided procedures,
                 experimenting with multimedia to communicate scientific information, and questioning ontologies of
                 visibility as they relate to disability.</p>
-            <p class="body-descr"><a
-                    href="https://waterderived.github.io/about.html"
-                    class="body-descr-link">learn more</a> | <a href="mailto:nicole.jisoo@gmail.com"
-                    class="body-descr-link">get in touch</a></p>
+            <p class="body-descr"><a href="https://waterderived.github.io/about.html" class="body-descr-link">learn
+                    more</a> | <a href="mailto:nicole.jisoo@gmail.com" class="body-descr-link">get in touch</a></p>
             <br>
             <h4>recent</h4>
             <p class="body-descr narrow-p">🚧 under construction 🚧</p>
@@ -104,7 +106,7 @@
         </div>
     </div>
 
-<script>
+    <script>
         var dropdown = document.getElementsByClassName("sidebar-button-dropdown");
         var i;
 
@@ -143,6 +145,28 @@
             div.classList.remove('hidden'); //reappear sidebar button
         }
 
+        //get theme on page load
+        localStorage.getItem("data-theme");
+
+        //detect system preference
+        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+        function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+            if (localStorageTheme !== null) {
+                return localStorageTheme;
+            }
+
+            if (systemSettingDark.matches) {
+                return "dark";
+            }
+
+            return "light";
+        }
+
+        const localStorageTheme = localStorage.getItem("theme");
+        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+        let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
 
         //theme switcher
         const switchTheme = () => {
@@ -155,7 +179,17 @@
             rootElem.setAttribute('data-theme', newTheme)
         }
 
+
+
         document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
+
+        // update storage
+        localStorage.setItem("theme", newTheme);
+
+        //update dataTheme in memory
+        dataTheme = newTheme
+
+
     </script>
 </body>
 <footer>
