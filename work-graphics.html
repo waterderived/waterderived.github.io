@@ -233,7 +233,6 @@
             document.querySelector("html").setAttribute("data-theme", theme);
         }
 
-
         const localStorageTheme = localStorage.getItem("theme");
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
         let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });

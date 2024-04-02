@@ -158,7 +158,6 @@ body {
     margin: 0;
     line-height: inherit;
     background-color: var(--bg1);
-    transition-duration: 0.8s;
 }
 
 hr {
