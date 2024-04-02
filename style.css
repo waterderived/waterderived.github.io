@@ -574,11 +574,11 @@ td:first-of-type {
     z-index: 3;
 }
 
-html[data-theme="dark"] .gridded-img{
+html[data-theme="dark"] .gridded-img img {
     opacity: var(--img-dark-level);
 }
 
-html[data-theme="dark"] .gridded-img:hover {
+html[data-theme="dark"] .gridded-img img:hover {
     opacity: var(--img-dark-level-hover);
 }
 
@@ -701,7 +701,7 @@ html[data-theme="dark"] .gridded-img:hover {
     position: fixed;
     top: 0 !important;
     z-index: 29;
-    transition: all 1s;
+    transition-duration: 1s;
 }
 
 .header-buttons {
