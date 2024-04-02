@@ -165,15 +165,9 @@
 
             // update storage
             localStorage.setItem("theme", newTheme);
-            updateThemeOnHtmlEl({ theme: newTheme });
 
             //update dataTheme in memory
             dataTheme = newTheme
-        }
-
-        //utility function to update theme settings on html tag
-        function updateThemeOnHtmlEl({ theme }) {
-            document.querySelector("html").setAttribute("data-theme", theme);
         }
 
         // ON LOAD
