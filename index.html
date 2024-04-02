@@ -149,6 +149,17 @@
         localStorage.getItem("theme");
 
 
+        //theme switcher
+        const switchTheme = () => {
+            const rootElem = document.documentElement
+            let dataTheme = rootElem.getAttribute('data-theme'),
+                newTheme
+
+            newTheme = (dataTheme === 'light') ? 'dark' : 'light'
+
+            rootElem.setAttribute('data-theme', newTheme)
+        }
+
         function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
             if (localStorageTheme !== null) {
                 return localStorageTheme;
@@ -167,19 +178,7 @@
 
         let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
 
-        //theme switcher
-        const switchTheme = () => {
-            const rootElem = document.documentElement
-            let dataTheme = rootElem.getAttribute('data-theme'),
-                newTheme
-
-            newTheme = (dataTheme === 'light') ? 'dark' : 'light'
-
-            rootElem.setAttribute('data-theme', newTheme)
-        }
-
-
-
+        // orig switcher
         document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
 
         // update storage
