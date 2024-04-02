@@ -578,6 +578,7 @@ html[data-theme="dark"] .gridded-img {
 
 html[data-theme="dark"] .gridded-img:hover {
     filter: none !important;
+    transition: .2s;
 }
 
 .gridded-img-sq {
@@ -592,7 +593,7 @@ html[data-theme="dark"] .gridded-img:hover {
 .gridded-img-darken {
     float: left;
     width: 600px;
-    height: 336px;
+    height: 338px;
     position: relative;
     margin: 8px;
     cursor: pointer;
@@ -606,7 +607,7 @@ html[data-theme="dark"] .gridded-img:hover {
 
 .gridded-img-darken:hover {
     filter: brightness(50%);
-    transition: .2s;
+    transition: .3s;
 }
 
 .gridded-img-caption {
