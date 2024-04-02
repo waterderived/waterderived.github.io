@@ -715,6 +715,7 @@ td:first-of-type {
     padding: 8px 0;
     align-items: center;
     z-index: 30 !important;
+    transition: all 0.3s, ease 0.2s;
 }
 
 .header-title {
@@ -934,6 +935,7 @@ td:first-of-type {
     z-index: 22;
     left: 0;
     transform: translateX(var(--switch-circle-pos));
+    transition-duration: 1s;
 }
 
 #theme-switcher svg {
