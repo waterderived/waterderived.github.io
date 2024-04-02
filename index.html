@@ -166,7 +166,7 @@
         const localStorageTheme = localStorage.getItem("theme");
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
 
-        let currentThemeSetting = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+        let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
 
         //theme switcher
         const switchTheme = () => {
