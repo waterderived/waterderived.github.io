@@ -208,21 +208,7 @@
             div.classList.remove('hidden'); //reappear sidebar button
         }
 
-
-        //get theme on page load
-        localStorage.getItem("theme");
-
-        //theme switcher
-        const switchTheme = () => {
-            const rootElem = document.documentElement
-            let dataTheme = rootElem.getAttribute('data-theme'),
-                newTheme
-
-            newTheme = (dataTheme === 'light') ? 'dark' : 'light'
-
-            rootElem.setAttribute('data-theme', newTheme)
-        }
-
+        // evaluate
         function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
             if (localStorageTheme !== null) {
                 return localStorageTheme;
@@ -234,21 +220,37 @@
 
             return "light";
         }
+        // update theme setting on html tag
+        function updateThemeOnHtmlEl({ theme }) {
+            document.querySelector("html").setAttribute("data-theme", theme);
+        }
 
         const localStorageTheme = localStorage.getItem("theme");
-        
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
-
         let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+
+        // update html tag
+        updateThemeOnHtmlEl({ theme: dataTheme });
+
+        //theme switcher
+        const switchTheme = () => {
+            const rootElem = document.documentElement
+            let dataTheme = rootElem.getAttribute('data-theme'),
+                newTheme
+
+            newTheme = (dataTheme === 'light') ? 'dark' : 'light'
+
+            rootElem.setAttribute('data-theme', newTheme);
+
+            // update storage
+            localStorage.setItem("theme", newTheme);
+
+            //update dataTheme in memory
+            dataTheme = newTheme
+        }
 
         // orig switcher
         document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
-
-        // update storage
-        localStorage.setItem("theme", newTheme);
-
-        //update dataTheme in memory
-        dataTheme = newTheme
 
     </script>
 </body>
