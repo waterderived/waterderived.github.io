@@ -577,7 +577,7 @@ html[data-theme="dark"] .gridded-img {
 
 html[data-theme="dark"] .gridded-img:hover {
     filter: none !important;
-    transition: .2s;
+    transition-duration: 0.3s;
 }
 
 .gridded-img-sq {
