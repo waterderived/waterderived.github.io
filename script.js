@@ -1,18 +1,4 @@
-var dropdown = document.getElementsByClassName("sidebar-button-dropdown");
-var i;
-    
-for (i = 0; i < dropdown.length; i++) {
-dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-        if (dropdownContent.style.display === "block") {
-            dropdownContent.style.display = "none";
-        } 
-        else {
-            dropdownContent.style.display = "block";
-        }
-    });
-}
+
 
 //sidebar collapse
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
