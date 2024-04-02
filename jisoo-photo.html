@@ -9,10 +9,10 @@
 
     <!--google fonts-->
 
-   <!--main css-->
-   <link rel="stylesheet" type="text/css" href="https://waterderived.github.io/style.css">
-   <!--main js-->
-   <!--<script src="https://waterderived.github.io/script.js"></script>-->
+    <!--main css-->
+    <link rel="stylesheet" type="text/css" href="https://waterderived.github.io/style.css">
+    <!--main js-->
+    <!--<script src="https://waterderived.github.io/script.js"></script>-->
 </head>
 
 <body>
@@ -210,50 +210,46 @@
         }
 
 
-       //get theme on page load
-       localStorage.getItem("theme");
+        //get theme on page load
+        localStorage.getItem("theme");
 
-//detect system preference
-const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
-const systemSettingLight = window.matchMedia("(prefers-color-scheme: light)");
+        //theme switcher
+        const switchTheme = () => {
+            const rootElem = document.documentElement
+            let dataTheme = rootElem.getAttribute('data-theme'),
+                newTheme
 
-function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
-    if (localStorageTheme !== null) {
-        return localStorageTheme;
-    }
+            newTheme = (dataTheme === 'light') ? 'dark' : 'light'
 
-    if (systemSettingDark.matches) {
-        return "dark";
-    }
+            rootElem.setAttribute('data-theme', newTheme)
+        }
 
-    return "light";
-}
+        function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+            if (localStorageTheme !== null) {
+                return localStorageTheme;
+            }
 
-const localStorageTheme = localStorage.getItem("theme");
-const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+            if (systemSettingDark.matches) {
+                return "dark";
+            }
 
-let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+            return "light";
+        }
 
-//theme switcher
-const switchTheme = () => {
-    const rootElem = document.documentElement
-    let dataTheme = rootElem.getAttribute('data-theme'),
-        newTheme
+        const localStorageTheme = localStorage.getItem("theme");
 
-    newTheme = (dataTheme === 'light') ? 'dark' : 'light'
+        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
 
-    rootElem.setAttribute('data-theme', newTheme)
-}
+        let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
 
+        // orig switcher
+        document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
 
+        // update storage
+        localStorage.setItem("theme", newTheme);
 
-document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
-
-// update storage
-localStorage.setItem("theme", newTheme);
-
-//update dataTheme in memory
-dataTheme = newTheme
+        //update dataTheme in memory
+        dataTheme = newTheme
 
     </script>
 </body>
