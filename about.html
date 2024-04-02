@@ -153,9 +153,25 @@
         }
 
 
-        // ON LOAD
-        let dataTheme = localStorage.getItem("theme");
-        
+        //get theme on page load
+        localStorage.getItem("theme");
+
+        function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+            if (localStorageTheme !== null) {
+                return localStorageTheme;
+            }
+
+            if (systemSettingDark.matches) {
+                return "dark";
+            }
+
+            return "light";
+        }
+
+        const localStorageTheme = localStorage.getItem("theme");
+        let dataTheme = calculateSettingAsThemeString({ localStorageTheme });
+
+
         //theme switcher
         const switchTheme = () => {
             const rootElem = document.documentElement
@@ -164,7 +180,7 @@
 
             newTheme = (dataTheme === 'light') ? 'dark' : 'light'
 
-            rootElem.setAttribute('data-theme', newTheme)
+            rootElem.setAttribute('data-theme', newTheme);
 
             // update storage
             localStorage.setItem("theme", newTheme);
@@ -173,6 +189,7 @@
             dataTheme = newTheme
         }
 
+        
         // orig switcher
         document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
 
