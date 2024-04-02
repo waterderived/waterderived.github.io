@@ -857,9 +857,15 @@ td:first-of-type {
 }
 
 .sidebar-group-current {
+    background-color: transparent;
     color: var(--tx2) !important;
+    display: flex;
+    align-items: center;
+    border-radius: .375rem;
+    padding: var(--m-rem-02) var(--m-rem-04) var(--m-rem-02) var(--m-rem-08);
     text-align: left;
     font-size: 1rem;
+    font-weight: 400;
     text-decoration: none;
 }
 
