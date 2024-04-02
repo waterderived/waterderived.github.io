@@ -75,6 +75,7 @@
     --cl-coolgreen-500: rgb(131, 147, 135);
     --cl-coolgreen-600: rgb(125, 143, 130);
     --cl-coolgreen-700: rgb(104, 123, 110);
+    --cl-coolgreen-800: rgb(100, 123, 107);
     --cl-nearmono-100: rgb(253, 253, 254);
     --cl-nearmono-200: rgb(245, 245, 246);
     --cl-nearmono-300: rgb(229, 229, 230);
@@ -112,7 +113,7 @@
     --tx1: var(--jz-charcoal-700);
     --tx2: var(--jz-charcoal-500);
     --tx-footer: var(--jz-charcoal-500);
-    --link-color: var(--cl-coolgreen-700);
+    --link-color: var(--cl-coolgreen-800);
     --link-color-light: var(--cl-coolgreen-300);
     --link-hover: #a8b3c0;
     --link-background: #f6e6bc;
