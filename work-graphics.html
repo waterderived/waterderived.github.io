@@ -25,13 +25,11 @@
                     <nav class="sidebar-element-container">
                         <div>
                             <a href="https://waterderived.github.io/" class="sidebar-group">
-                                <span>home</span>
-                            </a>
+                                <span>home</span></a>
                         </div>
                         <div>
                             <a href="https://waterderived.github.io/about.html" class="sidebar-group">
-                                <span>work</span>
-                            </a>
+                                <span>work</span></a>
                         </div>
                         <div>
                             <a href="#" class="sidebar-group-current">
@@ -59,7 +57,7 @@
         </div>
     </div>
     </div>
-    <!--end of Navigation bar-->
+    <!--end of side bar-->
 
     <div id="main" class="body-full">
         <div class="header-banner"></div>
@@ -232,7 +230,7 @@
             document.querySelector("html").setAttribute("data-theme", theme);
         }
 
-        
+
         const localStorageTheme = localStorage.getItem("theme");
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
         let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });

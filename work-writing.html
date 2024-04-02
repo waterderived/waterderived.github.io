@@ -15,49 +15,47 @@
        </head>
     <body>
         <!--static sidebar-->
-        <div class="sidebar-frame" id="mySidebar">
-            <!--sidebar component - can switch out for another-->
-           <div class="sidebar">
-               <div class="sidebar-internal">
-                   <div class="sidebar-element">
-                       <nav class="sidebar-element-container">
-                       <div>
-                           <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\index.html" class="sidebar-group">
-                               <span class="padding-left:16px">home</span>
-                           </a>
-                       </div>
-                       <div>
-                           <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\about.html" class="sidebar-group">
-                               <span class="padding-left:16px">work</span>
-                           </a>
-                       </div>
-                       <div>
-                           <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\work-graphics.html" class="sidebar-group">
-                               <span class="padding-left:16px">graphic</span>
-                           </a>
-                       </div>
-                       <div>
-                           <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\work-audio.html" class="sidebar-group">
-                               <span class="padding-left:16px">audio</span>
-                           </a>
-                       </div>
-                       <div>
-                           <a href="C:\Users\nicol\Dropbox (Brown)\MISC\creations\jisooProfessionalSite\jisoo-photo.html" class="sidebar-group">
-                               <span class="padding-left:16px">photo</span>
-                           </a>
-                       </div>
-                       <div>
-                           <a href="#" class="sidebar-group sidebar-group-current">
-                               <span class="padding-left:16px">writing</span>
-                           </a>
-                       </div>
-                   </nav>
-               </div>
-               </div>    
-           </div>
-       </div>
-   </div>
-           <!--end of Navigation bar-->
+    <div class="sidebar-frame" id="mySidebar">
+        <!--sidebar component - can switch out for another-->
+        <div class="sidebar">
+            <div class="sidebar-internal">
+                <div class="sidebar-element">
+                    <nav class="sidebar-element-container">
+                        <div>
+                            <a href="https://waterderived.github.io/" class="sidebar-group">
+                                <span>home</span></a>
+                        </div>
+                        <div>
+                            <a href="https://waterderived.github.io/about.html" class="sidebar-group">
+                                <span>work</span></a>
+                        </div>
+                        <div>
+                            <a href="https://waterderived.github.io/work-graphics.html" class="sidebar-group">
+                                <span>graphic</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://waterderived.github.io/work-audio.html" class="sidebar-group">
+                                <span>audio</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://waterderived.github.io/jisoo-photo.html" class="sidebar-group">
+                                <span>photo</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="sidebar-group-current">
+                                <span>writing</span>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--end of side bar-->
 
         <div id="main" class="body-full">
             <div class="header-banner"></div>
@@ -93,9 +91,6 @@
                 </div>
             </div>
         </div>
-
-
-
 
         <script>
             var dropdown = document.getElementsByClassName("sidebar-button-dropdown");
@@ -153,6 +148,7 @@
                 document.querySelector("html").setAttribute("data-theme", theme);
             }
     
+            
             const localStorageTheme = localStorage.getItem("theme");
             const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
             let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });

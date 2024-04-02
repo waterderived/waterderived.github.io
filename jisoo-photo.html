@@ -37,7 +37,7 @@
                             </a>
                         </div>
                         <div>
-                            <a href="https://waterderived.github.io/work-audio.html" class="sidebar-group-current">
+                            <a href="https://waterderived.github.io/work-audio.html" class="sidebar-group">
                                 <span>audio</span>
                             </a>
                         </div>
@@ -226,6 +226,7 @@
             document.querySelector("html").setAttribute("data-theme", theme);
         }
 
+        
         const localStorageTheme = localStorage.getItem("theme");
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
         let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
