@@ -109,8 +109,8 @@
 :root[data-theme="light"] {
     --bg1: var(--cl-nearmono-100);
     --hd1: var(--jz-charcoal-700);
-    --tx1: var(--jz-darknavy-700);
-    --tx2: var(--jz-darknavy-200);
+    --tx1: var(--jz-charcoal-700);
+    --tx2: var(--jz-charcoal-500);
     --tx-footer: var(--jz-charcoal-500);
     --link-color: var(--cl-coolgreen-700);
     --link-color-light: var(--cl-coolgreen-300);
@@ -120,7 +120,7 @@
     --sidebar-bg1: var(--cl-navy-700);
     --sidebar-text: var(--cl-nearmono-300);
     --sidebar-group-current-bg1: #F5F5F6;
-    --sidebar-group-current-tx1: var(--cl-navy-700);
+    --sidebar-group-current-tx1: var(--cl-charcoal-700);
     --sidebar-group-bg1: var(--cl-navy-700);
     --sidebar-group-tx1: var(--cl-nearmono-400);
     --sidebar-group-tx2: var(--cl-nearmono-200);
@@ -848,7 +848,7 @@ td:first-of-type {
 
 .sidebar-group {
     background-color: transparent;
-    color: var(--tx1);
+    color: var(--link-color);
     display: flex;
     align-items: center;
     border-radius: .375rem;
