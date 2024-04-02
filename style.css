@@ -141,6 +141,8 @@
     --icon-sun: #B1B0B5;
     --icon-moon: var(--jz-offwhitelight);
     --switch-circle-pos: 2.0rem;
+    --img-dark-level: 75%;
+    --img-dark-level-hover: 100%;
 }
 
 
@@ -570,6 +572,14 @@ td:first-of-type {
     z-index: 3;
 }
 
+.gridded-img[data-theme="dark"] {
+    opacity: var(--img-dark-level);
+}
+
+.gridded-img[data-theme="dark"]:hover {
+    opacity: var(--img-dark-level-hover);
+}
+
 .gridded-img-sq {
     float: left;
     width: auto;
@@ -689,7 +699,7 @@ td:first-of-type {
     position: fixed;
     top: 0 !important;
     z-index: 29;
-    transition: all 0.3s, ease 0.2s;
+    transition: all 1s, ease 0.6s;
 }
 
 .header-buttons {
