@@ -167,11 +167,14 @@
 
         // ON LOAD
 
-        const button = document.querySelector("[data-theme-toggle]");
+        const button = document.querySelector('#theme-switcher');
         const localStorageTheme = localStorage.getItem("theme");
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
         // work out current site settings
         let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+
+        //update theme setting
+        updateThemeOnHtmlEl({ theme: dataTheme });
 
         //theme switcher
         const switchTheme = () => {
@@ -189,7 +192,6 @@
             //update dataTheme in memory
             dataTheme = newTheme
         }
-
 
         // orig switcher
         document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
