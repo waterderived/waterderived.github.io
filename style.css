@@ -165,13 +165,13 @@
 html {
     line-height: 1.5;
     font-family: 'Inter UI', 'Inter', 'Segoe UI', "Antarctican";
+    transition: all 0.3s, ease 0.2s;
 }
 
 body {
     margin: 0;
     line-height: inherit;
     background-color: var(--bg1);
-    transition: all 0.3s, ease 0.2s;
 }
 
 hr {
@@ -715,7 +715,6 @@ td:first-of-type {
     padding: 8px 0;
     align-items: center;
     z-index: 30 !important;
-    transition: all 0.3s, ease 0.2s;
 }
 
 .header-title {
