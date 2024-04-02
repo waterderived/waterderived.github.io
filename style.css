@@ -417,6 +417,7 @@ td:first-of-type {
     margin-left: 0px;
     width: -webkit-calc(100% - 180px);
     z-index: 2;
+    transition: all 0.8s;
 }
 
 .body-container {
@@ -699,7 +700,6 @@ html[data-theme="dark"] .gridded-img:hover {
     position: fixed;
     top: 0 !important;
     z-index: 29;
-    transition: all 0.8s;
 }
 
 .header-buttons {
