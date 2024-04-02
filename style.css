@@ -574,12 +574,12 @@ td:first-of-type {
     z-index: 3;
 }
 
-html[data-theme="dark"] .gridded-img:not(:hover) {
+html[data-theme="dark"] .gridded-img {
     filter: brightness(70%);
 }
 
 html[data-theme="dark"] .gridded-img:hover {
-    filter: none;
+    filter: none !important;
 }
 
 .gridded-img-sq {
