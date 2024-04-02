@@ -165,6 +165,17 @@
             return "light";
         }
 
+        // ON LOAD
+
+        const button = document.querySelector("[data-theme-toggle]");
+        const localStorageTheme = localStorage.getItem("theme");
+        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+        // work out current site settings
+        let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+
+        //update theme setting
+        updateThemeOnHtmlEl({ theme: dataTheme });
+
         //theme switcher
         const switchTheme = () => {
             const rootElem = document.documentElement
@@ -174,35 +185,18 @@
             newTheme = (dataTheme === 'light') ? 'dark' : 'light'
 
             rootElem.setAttribute('data-theme', newTheme)
+
+            // update storage
+            localStorage.setItem("theme", newTheme);
+
+            //update dataTheme in memory
+            dataTheme = newTheme
         }
-
-        // Utility function to update the theme setting on the html tag
-        function updateThemeOnHtmlEl({ theme }) {
-            document.querySelector("html").setAttribute("data-theme", theme);
-        }
-
-
-        // ON LOAD
-        const localStorageTheme = localStorage.getItem("theme");
-        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
-        // work out current site settings
-        let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
-        //update theme setting
-        updateThemeOnHtmlEl({ theme: dataTheme });
 
 
         // orig switcher
-        document.querySelector('#theme-switcher').addEventListener('click', switchTheme);
+        document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
 
-
-        //get theme on page load
-        localStorage.getItem("theme");
-
-        // update storage
-        localStorage.setItem("theme", newTheme);
-
-        //update dataTheme in memory
-        dataTheme = newTheme;
 
     </script>
 </body>
