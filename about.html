@@ -174,15 +174,6 @@
             newTheme = (dataTheme === 'light') ? 'dark' : 'light'
 
             rootElem.setAttribute('data-theme', newTheme)
-
-            //get theme on page load
-            localStorage.getItem("theme");
-
-            // update storage
-            localStorage.setItem("theme", newTheme);
-
-            //update dataTheme in memory
-            dataTheme = newTheme;
         }
 
         // Utility function to update the theme setting on the html tag
@@ -203,6 +194,15 @@
         // orig switcher
         document.querySelector('#theme-switcher').addEventListener('click', switchTheme);
 
+
+        //get theme on page load
+        localStorage.getItem("theme");
+
+        // update storage
+        localStorage.setItem("theme", newTheme);
+
+        //update dataTheme in memory
+        dataTheme = newTheme;
 
     </script>
 </body>
