@@ -147,6 +147,30 @@ dropdown[i].addEventListener("click", function() {
         }
         
 
+        //get theme on page load
+        localStorage.getItem("theme");
+
+        //detect system preference
+        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+        const systemSettingLight = window.matchMedia("(prefers-color-scheme: light)");
+
+        function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+            if (localStorageTheme !== null) {
+                return localStorageTheme;
+            }
+
+            if (systemSettingDark.matches) {
+                return "dark";
+            }
+
+            return "light";
+        }
+
+        const localStorageTheme = localStorage.getItem("theme");
+        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+        let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+
         //theme switcher
         const switchTheme = () => {
             const rootElem = document.documentElement
@@ -158,7 +182,16 @@ dropdown[i].addEventListener("click", function() {
             rootElem.setAttribute('data-theme', newTheme)
         }
 
+
+
         document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
+
+        // update storage
+        localStorage.setItem("theme", newTheme);
+
+        //update dataTheme in memory
+        dataTheme = newTheme
+
     </script>
 </body>
 <footer>

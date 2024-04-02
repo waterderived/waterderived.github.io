@@ -146,10 +146,11 @@
         }
 
         //get theme on page load
-        localStorage.getItem("data-theme");
+        localStorage.getItem("theme");
 
         //detect system preference
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+        const systemSettingLight = window.matchMedia("(prefers-color-scheme: light)");
 
         function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
             if (localStorageTheme !== null) {
@@ -164,6 +165,7 @@
         }
 
         const localStorageTheme = localStorage.getItem("theme");
+        
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
 
         let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
@@ -188,7 +190,6 @@
 
         //update dataTheme in memory
         dataTheme = newTheme
-
 
     </script>
 </body>

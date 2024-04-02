@@ -214,18 +214,50 @@
             }
 
 
-            //theme switcher
-            const switchTheme = () => {
-                const rootElem = document.documentElement
-                let dataTheme = rootElem.getAttribute('data-theme'),
-                    newTheme
+            //get theme on page load
+        localStorage.getItem("theme");
 
-                newTheme = (dataTheme === 'light') ? 'dark' : 'light'
+//detect system preference
+const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+const systemSettingLight = window.matchMedia("(prefers-color-scheme: light)");
 
-                rootElem.setAttribute('data-theme', newTheme)
-            }
+function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+    if (localStorageTheme !== null) {
+        return localStorageTheme;
+    }
 
-            document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
+    if (systemSettingDark.matches) {
+        return "dark";
+    }
+
+    return "light";
+}
+
+const localStorageTheme = localStorage.getItem("theme");
+const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+
+//theme switcher
+const switchTheme = () => {
+    const rootElem = document.documentElement
+    let dataTheme = rootElem.getAttribute('data-theme'),
+        newTheme
+
+    newTheme = (dataTheme === 'light') ? 'dark' : 'light'
+
+    rootElem.setAttribute('data-theme', newTheme)
+}
+
+
+
+document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
+
+// update storage
+localStorage.setItem("theme", newTheme);
+
+//update dataTheme in memory
+dataTheme = newTheme
         </script>
 </body>
 <footer>
