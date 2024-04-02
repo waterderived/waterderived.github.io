@@ -152,6 +152,7 @@
 html {
     line-height: 1.5;
     font-family: 'Inter UI', 'Inter', 'Segoe UI', "Antarctican";
+    transition: all 0.8s;
 }
 
 body {
