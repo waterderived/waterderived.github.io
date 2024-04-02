@@ -156,6 +156,17 @@
         //get theme on page load
         localStorage.getItem("theme");
 
+        //theme switcher
+        const switchTheme = () => {
+            const rootElem = document.documentElement
+            let dataTheme = rootElem.getAttribute('data-theme'),
+                newTheme
+
+            newTheme = (dataTheme === 'light') ? 'dark' : 'light'
+
+            rootElem.setAttribute('data-theme', newTheme)
+        }
+
         function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
             if (localStorageTheme !== null) {
                 return localStorageTheme;
@@ -169,30 +180,19 @@
         }
 
         const localStorageTheme = localStorage.getItem("theme");
-        let dataTheme = calculateSettingAsThemeString({ localStorageTheme });
-
-
-        //theme switcher
-        const switchTheme = () => {
-            const rootElem = document.documentElement
-            let dataTheme = rootElem.getAttribute('data-theme'),
-                newTheme
-
-            newTheme = (dataTheme === 'light') ? 'dark' : 'light'
-
-            rootElem.setAttribute('data-theme', newTheme);
-
-            // update storage
-            localStorage.setItem("theme", newTheme);
-
-            //update dataTheme in memory
-            dataTheme = newTheme
-        }
-
         
+        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+        let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+
         // orig switcher
         document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
 
+        // update storage
+        localStorage.setItem("theme", newTheme);
+
+        //update dataTheme in memory
+        dataTheme = newTheme
 
     </script>
 </body>
