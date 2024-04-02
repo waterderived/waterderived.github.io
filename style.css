@@ -721,8 +721,8 @@ td:first-of-type {
 
 .header-title {
     font-family: var(--font-family-title);
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     padding-left: 8px;
     padding-top: 2px;
     color: var(--tx1);
