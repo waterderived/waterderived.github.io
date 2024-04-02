@@ -785,7 +785,7 @@ td:first-of-type {
     top: 0;
     bottom: 0;
     overflow-x: hidden;
-    z-index: 0;
+    z-index: 3;
     transition: 0.5s;
 }
 
@@ -869,77 +869,6 @@ td:first-of-type {
     padding-right: var(--m-rem-02);
     margin-right: 0.25rem;
     stroke: var(--sidebar-group-tx1);
-}
-
-.sidebar-group-icon-current {
-    width: 1.5rem;
-    padding-left: 0;
-    padding-right: var(--m-rem-02);
-    margin-right: 0.25rem;
-    stroke: var(--sidebar-group-current-tx1);
-}
-
-
-.sidebar-button-dropdown {
-    text-decoration: none;
-    color: var(--tx1);
-    border: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    border-radius: .375rem;
-    padding: var(--m-rem-02) var(--m-rem-04) var(--m-rem-02) var(--m-rem-08);
-    margin-top: 0.25rem;
-    font-size: 1rem;
-    font-family: var(--font-family-sidebar);
-    font-weight: 400;
-}
-
-.sidebar-button-dropdown-current {
-    text-decoration: none;
-    color: var(--sidebar-group-current-tx1);
-    border: none;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    outline: none;
-    background-color: var(--sidebar-group-current-bg1);
-    display: flex;
-    align-items: center;
-    border-radius: .375rem;
-    padding: var(--m-rem-02) var(--m-rem-04) var(--m-rem-02) var(--m-rem-04);
-    margin-top: 0.25rem;
-    font-size: 1rem;
-    font-family: var(--font-family-sidebar);
-    font-weight: 400;
-}
-
-.sidebar-button-dropdown:hover {
-    color: var(--sidebar-group-tx2);
-}
-
-.sidebar-button-dropdown-current:hover {
-    color: var(--cl-navy-400); /*-- fix variable later ---*/
-}
-
-.sidebar-button-dropdown-arrow {
-    color: var(--sidebar-arrow);
-    margin-left: var(--m-rem-02);
-    margin-right: var(--m-rem-05);
-    height: var(--m-rem-05);
-    width: var(--m-rem-05);
-    flex-shrink: 0;
-    position: absolute;
-    right: 0;
-}
-
-.dropdown-container {
-    display: none;
-    background-color: transparent;
 }
 
 .sidebar-button-dropdown-open {
