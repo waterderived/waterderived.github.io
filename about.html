@@ -183,13 +183,17 @@
             return "light";
         }
 
+        //utility function to update theme settings on html tag
+        function updateThemeOnHtmlEl({ theme }) {
+            document.querySelector("html").setAttribute("data-theme", theme);
+        }
+
         // ON LOAD
         const localStorageTheme = localStorage.getItem("theme");
         const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
         // work out current site settings
         let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
         //update theme setting
-        updateThemeOnHtmlEl({ theme: dataTheme });
 
 
         // orig switcher
