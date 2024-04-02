@@ -152,29 +152,6 @@
             div.classList.remove('hidden'); //reappear sidebar button
         }
 
-        //utility function to calculate current theme setting
-        function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
-            if (localStorageTheme !== null) {
-                return localStorageTheme;
-            }
-
-            if (systemSettingDark.matches) {
-                return "dark";
-            }
-
-            return "light";
-        }
-
-        // ON LOAD
-
-        const button = document.querySelector('#theme-switcher');
-        const localStorageTheme = localStorage.getItem("theme");
-        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
-        // work out current site settings
-        let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
-
-        //update theme setting
-        updateThemeOnHtmlEl({ theme: dataTheme });
 
         //theme switcher
         const switchTheme = () => {
@@ -192,6 +169,29 @@
             //update dataTheme in memory
             dataTheme = newTheme
         }
+
+        //utility function to calculate current theme setting
+        function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+            if (localStorageTheme !== null) {
+                return localStorageTheme;
+            }
+
+            if (systemSettingDark.matches) {
+                return "dark";
+            }
+
+            return "light";
+        }
+
+        // ON LOAD
+        const button = document.querySelector('#theme-switcher');
+        const localStorageTheme = localStorage.getItem("theme");
+        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+        // work out current site settings
+        let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+        //update theme setting
+        updateThemeOnHtmlEl({ theme: dataTheme });
+
 
         // orig switcher
         document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
