@@ -171,31 +171,13 @@
             dataTheme = newTheme
         }
 
-        //utility function to calculate current theme setting
-        function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
-            if (localStorageTheme !== null) {
-                return localStorageTheme;
-            }
-
-            if (systemSettingDark.matches) {
-                return "dark";
-            }
-
-            return "light";
-        }
-
         //utility function to update theme settings on html tag
         function updateThemeOnHtmlEl({ theme }) {
             document.querySelector("html").setAttribute("data-theme", theme);
         }
 
         // ON LOAD
-        const localStorageTheme = localStorage.getItem("theme");
-        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
-        // work out current site settings
-        let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
-        //update theme setting
-
+        let dataTheme = localStorage.getItem("theme");
 
         // orig switcher
         document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
