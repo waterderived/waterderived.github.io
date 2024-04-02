@@ -833,7 +833,7 @@ td:first-of-type {
 
 .sidebar-group {
     background-color: transparent;
-    color: var(--link-color);
+    color: var(--link-color) !important;
     display: flex;
     align-items: center;
     border-radius: .375rem;
@@ -855,14 +855,6 @@ td:first-of-type {
     font-size: 1rem;
     font-weight: 400;
     text-decoration: none;
-}
-
-.sidebar-group-icon {
-    width: 1.5rem;
-    padding-left: 0;
-    padding-right: var(--m-rem-02);
-    margin-right: 0.25rem;
-    stroke: var(--sidebar-group-tx1);
 }
 
 .sidebar-button-dropdown-open {
