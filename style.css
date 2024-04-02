@@ -727,6 +727,11 @@ td:first-of-type {
     z-index: 10;
 }
 
+.header-title a {
+    color: var(--link-color);
+    text-decoration: none !important;
+}
+
 .sidebar-open-button {
     font-size: 0.875em;
     cursor: pointer;
