@@ -157,6 +157,7 @@ body {
     margin: 0;
     line-height: inherit;
     background-color: var(--bg1);
+    transition: all 0.3s, ease 0.2s;
 }
 
 hr {
