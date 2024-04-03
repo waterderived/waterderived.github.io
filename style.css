@@ -383,7 +383,7 @@ td:first-of-type {
     align-content: center;
     justify-self: center;
     top: 10rem;
-    left: min(20rem, 10%);
+    left: 10%;
     right: 10%;
     padding-bottom: 12rem;
     margin: 0 auto 0 auto;
