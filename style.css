@@ -97,7 +97,7 @@
     --jz-darknavy-600:#0e1d3d;
     --jz-darknavy-700:#08142c;
     --jz-charcoal-500: #323232;
-    --jz-charcoal-600: #151515;
+    --jz-charcoal-600: #1d1d1d;
     --jz-charcoal-700: #121212;
     --jz-blue-lighter: #4677af;
     --jz-blue-light: #346398;
@@ -118,6 +118,7 @@
     --link-hover: #a8b3c0;
     --link-background: #f6e6bc;
     --link-background-hover: #f6e6bcbb;
+    --tx-sidebar-current: var(--tx2);
     --switch-bg: var(--cl-nearmono-300);
     --switch-circle-bg: #e7c570;
     --icon-sun: #835510;
@@ -136,6 +137,7 @@
     --link-hover: var(--jz-offwhite);
     --link-background: var(--bg2);
     --link-background-hover: transparent;
+    --tx-sidebar-current: var(--jz-warmgrey);
     --switch-bg: var(--cl-nearmono-400);
     --switch-circle-bg: var(--jz-charcoal-700);
     --icon-sun: #B1B0B5;
@@ -813,7 +815,7 @@ html[data-theme="dark"] .gridded-img:hover {
 
 .sidebar-group-current {
     background-color: transparent;
-    color: var(--tx2) !important;
+    color: var(--tx-sidebar-current) !important;
     display: flex;
     align-items: center;
     border-radius: .375rem;
