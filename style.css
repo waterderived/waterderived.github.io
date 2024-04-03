@@ -362,7 +362,7 @@ td:first-of-type {
 
 .body-container {
     color: var(--tx1);
-    display: flex;
+    display: grid;
     width: auto;
     max-width: 80%;
     position: absolute;
