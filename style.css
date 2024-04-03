@@ -415,7 +415,7 @@ td:first-of-type {
     position: relative;
     margin-top: 0;
     margin-left: 0px;
-    width: -webkit-calc(100% - 180px);
+    width: 100%;
     transition: all 0.8s;
 }
 
