@@ -426,11 +426,12 @@ td:first-of-type {
     position: absolute;
     align-content: center;
     justify-content: center;
+    justify-self: center;
     top: 40%;
     left: 12%;
     right: 12%;
     padding-bottom: 12rem;
-    margin: 10rem 0 0 2rem;
+    margin: 10rem 0 0 0;
     z-index: 2;
 }
 
