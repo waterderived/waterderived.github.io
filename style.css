@@ -426,6 +426,8 @@ td:first-of-type {
     display: flex;
     flex-direction: column;
     z-index: 20;
+    justify-content: center;
+    align-content: center;
 }
 
 .p-narrow {
