@@ -335,7 +335,7 @@ a:hover {
 }
 
 .table-container {
-    font-size: 1em;
+    font-size: 1.1em;
     font-family: var(--font-family-body);
     font-weight: 400;
     color: var(--tx1);
@@ -364,7 +364,7 @@ td {
 
 td:first-of-type {
     font-family: var(--font-family-mono);
-    font-size: 1.05em;
+    font-size: 1.1em;
     width: 120px !important;
 }
 
