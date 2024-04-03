@@ -433,10 +433,8 @@ td:first-of-type {
     align-content: center;
     justify-content: center;
     align-self: center;
-    top: 40%;
-    left: 12%;
     padding-bottom: 12rem;
-    margin: 4rem auto 0 auto;
+    margin: 0 auto 0 auto;
     z-index: 2;
 }
 
