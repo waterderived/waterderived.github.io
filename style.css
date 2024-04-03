@@ -309,7 +309,7 @@ td {
 
 td:first-of-type {
     font-family: var(--font-family-mono);
-    font-size: 1.1em;
+    font-size: 1.05em;
     width: 140px !important;
 }
 
