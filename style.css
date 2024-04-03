@@ -166,6 +166,16 @@ p {
     font-size: 1.05em;
 }
 
+.body-p {
+    font-size: 1.05em;
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    color: var(--tx1);
+    margin-left: 0.8rem;
+    margin-top: 0.2rem;
+    color: var(--tx1);
+}
+
 hr {
     border: 1px solid var(--tx1);
     border-radius: 1px;
