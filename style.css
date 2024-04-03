@@ -426,8 +426,7 @@ td:first-of-type {
     display: flex;
     flex-direction: column;
     z-index: 20;
-    justify-content: center;
-    align-content: center;
+    margins: 0 auto;
 }
 
 .p-narrow {
@@ -615,7 +614,7 @@ html[data-theme="dark"] .gridded-img:hover {
     bottom: 0;
     height: 144px;
     padding-top: 6rem;
-    margin-bottom: 4rem;
+    margins: 0 auto 4rem auto;
     z-index: 1;
 }
 
