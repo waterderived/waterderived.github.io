@@ -416,7 +416,6 @@ td:first-of-type {
     margin-top: 0;
     margin-left: 0px;
     width: 100%;
-    transition: all 0.8s;
 }
 
 .body-container {
