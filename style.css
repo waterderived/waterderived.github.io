@@ -176,6 +176,12 @@ h1, h2, h3, h4, h5, h6 {
     margin: 18px 8px 12px 8px;
 }
 
+#main {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
 .headless {
     width: 100%;
     justify-content: center;
@@ -430,7 +436,7 @@ td:first-of-type {
     top: 40%;
     left: 12%;
     padding-bottom: 12rem;
-    margin: 10rem auto 0 auto;
+    margin: 4rem auto 0 auto;
     z-index: 2;
 }
 
@@ -764,7 +770,7 @@ html[data-theme="dark"] .gridded-img:hover {
     color: var(--sidebar-group-tx1);
 }
 
-#main {
+#mainhello {
     transition: margin-left .5s;
     padding: 20px;
 }
