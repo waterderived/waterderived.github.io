@@ -368,8 +368,6 @@ td:first-of-type {
     position: absolute;
     align-content: center;
     justify-content: center;
-    justify-self: center;
-    align-self: center;
     top: 6rem;
     left: 20rem;
     padding-bottom: 12rem;
