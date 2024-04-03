@@ -367,7 +367,7 @@ td:first-of-type {
     max-width: 80%;
     position: absolute;
     align-content: center;
-    justify-content: center;
+    justify-self: center;
     top: 10rem;
     left: 20rem;
     padding-bottom: 12rem;
@@ -426,7 +426,7 @@ td:first-of-type {
     display: flex;
     flex-direction: column;
     z-index: 20;
-    margins: 0 auto;
+    margin: 0 auto;
 }
 
 .p-narrow {
@@ -614,7 +614,7 @@ html[data-theme="dark"] .gridded-img:hover {
     bottom: 0;
     height: 144px;
     padding-top: 6rem;
-    margins: 0 auto 4rem auto;
+    margin: 0 auto 4rem auto;
     z-index: 1;
 }
 
