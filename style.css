@@ -427,6 +427,7 @@ td:first-of-type {
     align-content: center;
     justify-content: center;
     justify-self: center;
+    align-self: center;
     top: 40%;
     left: 12%;
     right: 12%;
