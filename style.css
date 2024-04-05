@@ -212,6 +212,10 @@ h6:has(+ p) {
     margin-bottom: 18px !important;
 }
 
+p:has(h1, h2, h3, h4, h5, h6) {
+    margin-bottom: 22px;
+}
+
 #main {
     width: 100%;
     height: auto;
