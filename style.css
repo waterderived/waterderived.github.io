@@ -194,6 +194,15 @@ h1, h2, h3, h4, h5, h6 {
     margin: 18px 8px 12px 8px;
 }
 
+h1:has(+ p),
+h2:has(+ p),
+h3:has(+ p),
+h4:has(+ p),
+h5:has(+ p),
+h6:has(+ p) {
+    padding-bottom: 8px;
+}
+
 #main {
     width: 100%;
     height: auto;
