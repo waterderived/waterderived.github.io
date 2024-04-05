@@ -483,6 +483,7 @@ td:first-of-type {
     flex-direction: column;
     z-index: 20;
     margin: 0 auto;
+    padding-bottom: 12px;;
 }
 
 .p-narrow {
