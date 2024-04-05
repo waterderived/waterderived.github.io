@@ -109,6 +109,7 @@
 
 :root[data-theme="light"] {
     --bg1: var(--cl-nearmono-100);
+    --bg2: var(--cl-nearmono-200);
     --hd1: var(--jz-charcoal-700);
     --tx1: var(--jz-charcoal-700);
     --tx2: var(--jz-charcoal-500);
@@ -128,6 +129,7 @@
 
 :root[data-theme="dark"] {
     --bg1: var(--jz-charcoal-600);
+    --bg2: var(--jz-charcoal-500);
     --hd1: var(--jz-offwhitelighter);
     --tx1: var(--jz-coolwhitedarker);
     --tx2: var(--cl-coolgreen-700);
@@ -330,25 +332,44 @@ td:first-of-type {
 }
 
 
-.inline-footnote {
+/* -- inline footnotes -- */
+.inf {
+	background-color: transparent;
+	color: var(--tx1) !important;
+  }
+
+.inf,.inf:hover {
+	text-decoration: none
+} 
+  
+.inf,.inf:not(:hover) span.footnoteContent {
+	display: none;
+} 
+  
+.inf:hover span.footnoteContent {
+	display: inline-block;
+} 
+
+.inf {
     padding: 2px 6px;
     border-radius: 3px;
     line-height: 1;
     vertical-align: text-top;
     font-size: 12px;
     margin: -5px 0 0;
-    display: inline-block;
+    display: inline;
     font-weight: 500;
     border-bottom: 0;
     cursor: pointer
 }
 
-.inline-footnote span.footnoteContent {
+.inf span.footnoteContent {
     position: absolute;
     z-index: 10000;
     padding: 15px;
-    background-color: #212223;
-    border: 0px solid #000000;
+    background-color: var(--bg2);
+    color: var(--tx1);
+    border: 0px;
     box-shadow: 2px 2px 10px 0 rgba(0,0,0,.4);
     font-weight: 500;
     font-size: 6px;
