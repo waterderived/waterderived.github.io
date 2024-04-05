@@ -215,7 +215,7 @@ h3:has(+ p),
 h4:has(+ p),
 h5:has(+ p),
 h6:has(+ p) {
-    margin-bottom: 18px !important;
+    margin-bottom: 24px !important;
 }
 
 p:has(+ h1, + h2, + h3, + h4, + h5, + h6) {
