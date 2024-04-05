@@ -119,6 +119,7 @@
     --link-hover: #a8b3c0;
     --link-background: #f6e6bc;
     --link-background-hover: #f6e6bcbb;
+    --color-selection: var(--cl-coolgreen-300);
     --tx-sidebar-current: var(--tx2);
     --switch-bg: var(--cl-nearmono-300);
     --switch-circle-bg: #e7c570;
@@ -139,6 +140,7 @@
     --link-hover: var(--jz-offwhite);
     --link-background: var(--bg2);
     --link-background-hover: transparent;
+    --color-selection: #232523;
     --tx-sidebar-current: var(--jz-warmgrey);
     --switch-bg: var(--cl-nearmono-400);
     --switch-circle-bg: var(--jz-charcoal-700);
@@ -164,6 +166,10 @@ body {
     line-height: inherit;
     background-color: var(--bg1);
     overflow-x: hidden;
+}
+
+body::selection {
+    background-color: var(--color-selection);
 }
 
 p {
