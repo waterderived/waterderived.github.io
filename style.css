@@ -186,6 +186,15 @@ hr {
     width: 100%;
 }
 
+hr:has(+ h1),
+hr:has(+ h2),
+hr:has(+ h3),
+hr:has(+ h4),
+hr:has(+ h5),
+hr:has(+ h6) {
+    padding-bottom: 12px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--hd1);
     font-family: var(--font-family-title);
