@@ -664,6 +664,10 @@ td:first-of-type {
     z-index: 3;
   }
 
+.gridded p {
+    padding: 0 8px 0 8px;
+}
+
 .gridded-img {
     flex: content;
     flex-shrink: 1;
