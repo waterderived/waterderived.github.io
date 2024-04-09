@@ -558,6 +558,13 @@ td:first-of-type {
     text-decoration: none;
 }
 
+.project-card-image-sq img {
+    width: 64px;
+    height: 64px;
+    border-radius: var(--spacing-03);
+    object-fit: contain;
+}
+
 .project-card-text {
     display: flex;
     flex-direction: column;
