@@ -611,11 +611,20 @@ td:first-of-type {
     margin-bottom: 2px;
 }
 
+.grid-container-col {
+    justify-self: center;
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 8px;
+}
+
 .grid-container-too {
     justify-self: center;
     display: grid;
     max-width: 100%;
-    grid-template-columns: repeat(minmax(1, 2), 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-gap: 8px;
     z-index: 3;
