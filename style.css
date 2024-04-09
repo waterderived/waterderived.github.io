@@ -579,11 +579,12 @@ td:first-of-type {
 .project-card-text p {
     padding: 0;
     margin: 0 !important;
+    font-size: 1em;
 }
 
 .card-title-mono {
     font-family: var(--font-family-mono) !important;
-    font-size: 1.1em;
+    font-size: 1.1em !important;
     font-weight: 500;
     color: var(--hd1) !important;
     text-decoration: none;
