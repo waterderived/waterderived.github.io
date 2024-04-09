@@ -461,7 +461,7 @@ td:first-of-type {
 .body-container-fit {
     color: var(--tx1);
     display: grid;
-    width: 36%;
+    width: 45%;
     position: absolute;
     align-content: center;
     justify-self: center;
@@ -507,7 +507,6 @@ td:first-of-type {
 .above-footer {
     display: flex;
     flex-direction: column;
-    z-index: 20;
     margin: 0 8px;
     padding-bottom: 8px;
 }
