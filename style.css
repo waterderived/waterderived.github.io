@@ -454,6 +454,9 @@ td:first-of-type {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: auto;
+    align-content: center;
+    justify-self: center;
     margin: 8px;
 }
 
