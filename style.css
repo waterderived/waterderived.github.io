@@ -555,6 +555,7 @@ td:first-of-type {
     justify-content: flex-start;
     align-items: flex-start;
     color: var(--tx1) !important;
+    padding: 0;
 }
 
 .card-title-mono {
