@@ -558,8 +558,7 @@ td:first-of-type {
     text-decoration: none;
 }
 
-.project-card-text,
-.project-card-text p {
+.project-card-text {
     display: flex;
     flex-direction: column;
     -webkit-box-pack: start;
@@ -567,6 +566,9 @@ td:first-of-type {
     align-items: flex-start;
     width: 100%;
     color: var(--tx1) !important;
+}
+
+.project-card-text p {
     padding: 0;
 }
 
