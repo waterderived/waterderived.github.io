@@ -115,7 +115,7 @@
 :root[data-theme="light"] {
     --bg1: var(--nj-nearmono-100);
     --bg2: var(--nj-nearmono-200);
-    --bg3: var(--nj-coolgreen-100);
+    --bg3: var(--nj-nearmono-100);
     --hd1: var(--nj-charcoal-700);
     --tx1: var(--nj-charcoal-700);
     --tx2: var(--nj-charcoal-500);
