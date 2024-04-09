@@ -564,6 +564,7 @@ td:first-of-type {
     -webkit-box-pack: start;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
     color: var(--tx1) !important;
     padding: 0;
 }
