@@ -58,6 +58,15 @@
     --m-rem-05: 1.25rem;
     --m-rem-08: 2rem;
     --m-rem-10: 2.5rem;
+    --spacing-01: 4px;
+    --spacing-02: calc(2 * var(--spacing-01));
+    --spacing-03: calc(3 * var(--spacing-01));
+    --spacing-04: calc(4 * var(--spacing-01));
+    --spacing-05: calc(5 * var(--spacing-01));
+    --spacing-06: calc(6 * var(--spacing-01));
+    --spacing-08: calc(8 * var(--spacing-01));
+    --spacing-10: calc(10 * var(--spacing-01));
+    --spacing-16: calc(16 * var(--spacing-01));
     --nj-bluemed-300: rgb(76, 107, 164);
     --nj-bluemed-400: rgb(48, 78, 134);
     --nj-bluemed-500: rgb(24, 53, 107);
@@ -123,8 +132,8 @@
 }
 
 :root[data-theme="dark"] {
-    --bg1: var(--nj-charcoal-600);
-    --bg2: var(--nj-charcoal-500);
+    --bg1: var(--nj-charcoal-700);
+    --bg2: var(--nj-charcoal-600);
     --hd1: var(--nj-offwhitelighter);
     --tx1: var(--nj-coolwhitedarker);
     --tx2: var(--nj-coolgreen-700);
@@ -459,16 +468,6 @@ td:first-of-type {
     z-index: 2;
 }
 
-.body-content {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: auto;
-    align-content: center;
-    justify-self: center;
-    margin: 8px;
-}
-
 .body-descr {
     font-size: 1em;
     font-family: var(--font-family-body);
@@ -519,6 +518,13 @@ td:first-of-type {
 
 .p-before-list {
     margin-bottom: 4px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--m-rem-04);
+    margin: var(--spacing-05) 0;
 }
 
 .date-mono {
