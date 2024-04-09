@@ -552,6 +552,7 @@ td:first-of-type {
     font-family: var(--font-family-mono);
     font-size: 1.1em;
     color: var(--hd1);
+    padding-bottom: var(--m-rem-01)
 }
 
 .date-mono {
