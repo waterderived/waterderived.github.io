@@ -72,7 +72,7 @@
     --nj-bluemed-500: rgb(24, 53, 107);
     --nj-bluemed-600: rgb(11, 40, 94);
     --nj-bluemed-700: rgb(1, 26, 72);
-    --nj-coolgreen-100: rgba(212, 225, 216, 0.85);
+    --nj-coolgreen-100: rgba(227, 235, 228, 0.85);
     --nj-coolgreen-200: rgb(159, 173, 163);
     --nj-coolgreen-300: rgb(151, 165, 155);
     --nj-coolgreen-400: rgb(143, 157, 147);
@@ -203,8 +203,9 @@ hr:has(+ h2),
 hr:has(+ h3),
 hr:has(+ h4),
 hr:has(+ h5),
-hr:has(+ h6) {
-    padding-bottom: 12px;
+hr:has(+ h6),
+hr:has(+ .above-footer) {
+    padding-bottom: var(--spacing-03);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -526,7 +527,7 @@ td:first-of-type {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: var(--m-rem-04);
-    margin: var(--spacing-05) 0;
+    margin: var(--spacing-02) 0;
     width: 100%;
 }
 
