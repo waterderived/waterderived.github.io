@@ -463,6 +463,7 @@ td:first-of-type {
     color: var(--tx1);
     display: grid;
     width: 42%;
+    max-width: 600px;
     position: absolute;
     align-content: center;
     justify-self: center;
