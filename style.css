@@ -561,6 +561,7 @@ td:first-of-type {
 
 .project-card-image-sq img {
     max-height: 75%;
+    max-width: auto;
     border-radius: var(--spacing-03);
     object-fit: contain;
 }
