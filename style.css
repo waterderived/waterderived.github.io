@@ -496,8 +496,8 @@ td:first-of-type {
     display: flex;
     flex-direction: column;
     z-index: 20;
-    margin: 0 auto;
-    padding-bottom: 4px;;
+    margin: 0 8px;
+    padding-bottom: 8px;
 }
 
 .p-narrow {
