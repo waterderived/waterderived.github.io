@@ -526,8 +526,7 @@ td:first-of-type {
     margin: var(--spacing-05) 0;
 }
 
-.project-card,
-.project-card a {
+.project-card {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -537,8 +536,12 @@ td:first-of-type {
     border-radius: var(--spacing-05);
     gap: var(--spacing-05);
     padding: var(--spacing-04);
-    color: var(--tx1) !important;
     transition: all 0.3s ease 0s;
+}
+
+.project-card a {
+    color: var(--tx1) !important;
+    text-decoration: none;
 }
 
 .project-card-text,
