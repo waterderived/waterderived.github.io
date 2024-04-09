@@ -579,6 +579,7 @@ td:first-of-type {
     max-width: 64px;
     border-radius: var(--spacing-03);
     object-fit: contain;
+    margin-right: var(--spacing-06);
 }
 
 .project-card-text {
