@@ -193,7 +193,8 @@ p {
 }
 
 hr {
-    border: 1px solid var(--tx1);
+    border: 2px solid var(--tx1);
+    height: 1px;
     border-radius: 1px;
     width: 100%;
 }
