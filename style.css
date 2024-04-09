@@ -542,7 +542,7 @@ td:first-of-type {
     background-color: var(--bg2);
     border-radius: var(--spacing-05);
     gap: var(--spacing-05);
-    padding: var(--spacing-04) var(--spacing-08) var(--spacing-02) var(--spacing-08);
+    padding: var(--spacing-04) var(--spacing-06) var(--spacing-04) var(--spacing-06);
     margin: var(--spacing-06);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
 	0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
@@ -560,8 +560,7 @@ td:first-of-type {
 }
 
 .project-card-image-sq img {
-    max-width: 60px;
-    max-height: 60px;
+    max-height: 75%;
     border-radius: var(--spacing-03);
     object-fit: contain;
 }
@@ -578,6 +577,7 @@ td:first-of-type {
 
 .project-card-text p {
     padding: 0;
+    margin: 0 !important;
 }
 
 .card-title-mono {
