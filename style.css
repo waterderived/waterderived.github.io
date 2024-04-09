@@ -615,7 +615,7 @@ td:first-of-type {
     justify-self: center;
     display: grid;
     max-width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(minmax(1, 2), 1fr);
     grid-template-rows: auto;
     grid-gap: 8px;
     z-index: 3;
