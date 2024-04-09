@@ -526,10 +526,7 @@ td:first-of-type {
     grid-template-columns: repeat(1, 1fr);
     gap: var(--m-rem-04);
     margin: var(--spacing-05) 0;
-    width: 100%
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
-	0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-	0 12px 33.4px rgba(0, 0, 0, 0.03);
+    width: 100%;
 }
 
 .project-card {
@@ -543,6 +540,9 @@ td:first-of-type {
     border-radius: var(--spacing-05);
     gap: var(--spacing-05);
     padding: var(--spacing-04);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
+	0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
+	0 12px 33.4px rgba(0, 0, 0, 0.03);
     transition: all 0.3s ease 0s;
 }
 
