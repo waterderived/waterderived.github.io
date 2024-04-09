@@ -113,6 +113,7 @@
 :root[data-theme="light"] {
     --bg1: var(--nj-nearmono-100);
     --bg2: var(--nj-nearmono-200);
+    --bg3: var(--nj-coolgreen-200);
     --hd1: var(--nj-charcoal-700);
     --tx1: var(--nj-charcoal-700);
     --tx2: var(--nj-charcoal-500);
@@ -134,6 +135,7 @@
 :root[data-theme="dark"] {
     --bg1: var(--nj-charcoal-700);
     --bg2: var(--nj-charcoal-600);
+    --bg2: var(--nj-charcoal-500);
     --hd1: var(--nj-offwhitelighter);
     --tx1: var(--nj-coolwhitedarker);
     --tx2: var(--nj-coolgreen-700);
@@ -540,6 +542,10 @@ td:first-of-type {
     gap: var(--spacing-05);
     padding: var(--spacing-04);
     transition: all 0.3s ease 0s;
+}
+
+.project-card:hover {
+    background-color: var(--bg3);
 }
 
 .project-card a {
