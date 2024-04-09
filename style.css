@@ -101,6 +101,7 @@
     --nj-darknavy-600:#0e1d3d;
     --nj-darknavy-700:#08142c;
     --nj-charcoal-500: #323232;
+    --nj-charcoal-550: #181818;
     --nj-charcoal-600: #151515;
     --nj-charcoal-700: #121212;
     --nj-blue-lighter: #4677af;
@@ -136,7 +137,7 @@
 :root[data-theme="dark"] {
     --bg1: var(--nj-charcoal-700);
     --bg2: var(--nj-charcoal-600);
-    --bg3: var(--nj-charcoal-500);
+    --bg3: var(--nj-charcoal-550);
     --hd1: var(--nj-offwhitelighter);
     --tx1: var(--nj-coolwhitedarker);
     --tx2: var(--nj-coolgreen-700);
