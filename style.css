@@ -458,26 +458,10 @@ td:first-of-type {
     z-index: 2;
 }
 
-.body-container-mid {
-    color: var(--tx1);
-    display: grid;
-    width: auto;
-    max-width: 60%;
-    position: absolute;
-    align-content: center;
-    justify-self: center;
-    top: 10rem;
-    left: min(20rem, 10%);
-    right: 10%;
-    padding-bottom: 12rem;
-    margin: 0 auto 0 auto;
-    z-index: 2;
-}
-
 .body-container-fit {
     color: var(--tx1);
     display: grid;
-    width: 45%;
+    width: 50%;
     position: absolute;
     align-content: center;
     justify-self: center;
