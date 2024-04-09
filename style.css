@@ -527,32 +527,36 @@ td:first-of-type {
     margin: var(--spacing-05) 0;
 }
 
-.project-card {
+.project-card,
+.project-card a {
     display: flex;
     justify-content: center;
     align-items: center;
     -webkit-box-pack: center;
     -webkit-box-align: center;
-    background: var(--bg2);
+    background-color: var(--bg2);
     border-radius: var(--spacing-05);
     gap: var(--spacing-05);
     padding: var(--spacing-04);
+    color: var(--tx1) !important;
     transition: all 0.3s ease 0s;
 }
 
-.project-card-text {
+.project-card-text,
+.project-card-text p {
     display: flex;
     flex-direction: column;
     -webkit-box-pack: start;
     justify-content: flex-start;
     align-items: flex-start;
+    color: var(--tx1) !important;
 }
 
 .card-title-mono {
-    font-family: var(--font-family-mono);
+    font-family: var(--font-family-mono) !important;
     font-size: 1.1em;
-    color: var(--hd1);
-    padding-bottom: var(--m-rem-01)
+    color: var(--hd1) !important;
+    text-decoration: none;
 }
 
 .date-mono {
