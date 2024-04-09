@@ -673,7 +673,7 @@ td:first-of-type {
     flex-shrink: 1;
     max-width: 100%;
     height: auto;
-    border-radius: var(--spacing-03);
+    border-radius: var(--spacing-05);
     padding: 8px;
 }
 
