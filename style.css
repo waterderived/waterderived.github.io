@@ -476,7 +476,6 @@ td:first-of-type {
     font-family: var(--font-family-body);
     font-weight: 400;
     color: var(--tx1);
-    margin-left: 0.8rem;
     margin-top: 0.25rem;
     color: var(--tx1);
 }
