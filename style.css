@@ -135,7 +135,7 @@
 :root[data-theme="dark"] {
     --bg1: var(--nj-charcoal-700);
     --bg2: var(--nj-charcoal-600);
-    --bg2: var(--nj-charcoal-500);
+    --bg3: var(--nj-charcoal-500);
     --hd1: var(--nj-offwhitelighter);
     --tx1: var(--nj-coolwhitedarker);
     --tx2: var(--nj-coolgreen-700);
