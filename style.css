@@ -458,7 +458,7 @@ td:first-of-type {
 .body-container-fit {
     color: var(--tx1);
     display: grid;
-    width: 40%;
+    width: 36%;
     position: absolute;
     align-content: center;
     justify-self: center;
@@ -536,11 +536,12 @@ td:first-of-type {
     align-items: center;
     -webkit-box-pack: center;
     -webkit-box-align: center;
-    max-width: 100%;
+    max-width: 90%;
     background-color: var(--bg2);
     border-radius: var(--spacing-05);
     gap: var(--spacing-05);
-    padding: var(--spacing-04);
+    padding: var(--spacing-02);
+    margin: var(--spacing-04);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
 	0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
 	0 12px 33.4px rgba(0, 0, 0, 0.03);
