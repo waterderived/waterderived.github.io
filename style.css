@@ -206,7 +206,7 @@ hr:has(+ h4),
 hr:has(+ h5),
 hr:has(+ h6),
 hr:has(+ .above-footer) {
-    padding-bottom: var(--spacing-03);
+    margin-bottom: var(--spacing-05);
 }
 
 h1, h2, h3, h4, h5, h6 {
