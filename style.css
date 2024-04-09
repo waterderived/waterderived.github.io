@@ -542,7 +542,7 @@ td:first-of-type {
     max-width: 100%;
     background-color: var(--bg2);
     border-radius: var(--spacing-05);
-    gap: var(--spacing-04);
+    gap: var(--spacing-02);
     padding: var(--spacing-04) var(--spacing-06) var(--spacing-04) var(--spacing-06);
     margin: var(--spacing-04);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
