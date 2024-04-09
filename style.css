@@ -462,7 +462,7 @@ td:first-of-type {
 .body-container-fit {
     color: var(--tx1);
     display: grid;
-    width: 50%;
+    width: 45%;
     position: absolute;
     align-content: center;
     justify-self: center;
