@@ -94,14 +94,16 @@
                     cameras, aiming for fairways, or immersed in (fantastical, tabletop) gameplay.
                     <br>
                 </p>
-                <h5>vision</h5>
-                <p class="body-p">
-                    Of all the pathophysiologic phenomena that I have come across throughout my medical training, the human body's mechanisms of decompression most readily continue to astound me in ways
-                    <br><br>
-                    Perhaps, then, it is the unrelenting yet humble mission to bring this genre of thievery into view that draws me to radiology.
-                    <br><br>
-                    Updated CV may be made available upon request.
-                </p>
+                <button type="button" class="collapsible"><h5>vision</h5></button>
+                <div class="collcontent">
+                    <p class="body-p">
+                        Of all the pathophysiologic phenomena that I have come across throughout my medical training, the human body's mechanisms of decompression most readily continue to astound me in ways
+                        <br><br>
+                        Perhaps, then, it is the unrelenting yet humble mission to bring this genre of thievery into view that draws me to radiology.
+                        <br><br>
+                        Updated CV may be made available upon request.
+                    </p>
+                </div>
                 <h5>recently</h5>
                 <div class="project-container">
                     <a href="https://waterderived.github.io/pages/work-audio-dwd.html" class="project-card project-card-image-sq">
@@ -131,6 +133,22 @@
     </div>
     
     <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var collcontent = this.nextElementSibling;
+            if (collcontent.style.maxHeight){
+              collcontent.style.maxHeight = null;
+            } else {
+              collcontent.style.maxHeight = collcontent.scrollHeight + "px";
+            }
+          });
+        }
+
+
         var dropdown = document.getElementsByClassName("sidebar-button-dropdown");
         var i;
 

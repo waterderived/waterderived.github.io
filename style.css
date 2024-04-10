@@ -1003,7 +1003,23 @@ html[data-theme="dark"] .gridded-img:hover {
     transition: visibility 0s 0.5s, opacity 0.25s linear;
 }
 
+.collapsible {
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+}
 
+.collcontent {
+    padding: 0 18px 8px 18px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
 
 /*-- light dark toggle --*/
 
