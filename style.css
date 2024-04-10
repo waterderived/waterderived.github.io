@@ -1013,6 +1013,10 @@ html[data-theme="dark"] .gridded-img:hover {
     outline: none;
 }
 
+.collapsible:hover {
+    color: var(--tx2) !important;
+}
+
 .collcontent {
     padding: 4px 18px 8px 18px;
     background-color: transparent;
