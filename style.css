@@ -1014,7 +1014,7 @@ html[data-theme="dark"] .gridded-img:hover {
 }
 
 .collcontent {
-    padding: 0 18px 8px 18px;
+    padding: 4px 18px 8px 18px;
     background-color: transparent;
     max-height: 0;
     overflow: hidden;
