@@ -1013,7 +1013,7 @@ html[data-theme="dark"] .gridded-img:hover {
     outline: none;
 }
 
-.collapsible:hover {
+.collapsible:hover h5 {
     color: var(--tx2) !important;
 }
 
