@@ -1021,6 +1021,18 @@ html[data-theme="dark"] .gridded-img:hover {
     transition: max-height 0.2s ease-out;
 }
 
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 12px;
+    color: var(--tx1);
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
 /*-- light dark toggle --*/
 
 
