@@ -462,7 +462,6 @@ td:first-of-type {
 .body-container-fit {
     color: var(--tx1);
     display: grid;
-    min-width: 42%;
     max-width: 600px;
     position: absolute;
     align-content: center;
@@ -1014,7 +1013,7 @@ html[data-theme="dark"] .gridded-img:hover {
 }
 
 .collapsible:hover h5 {
-    color: var(--tx2) !important;
+    color: var(--tx1) !important;
 }
 
 .collcontent {
@@ -1029,12 +1028,14 @@ html[data-theme="dark"] .gridded-img:hover {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 12px;
     color: var(--tx1);
+    background-color: var(--hd1);
     float: right;
     margin-left: 5px;
   }
   
   .active h5:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
+    background-color: var(--tx1);
   }
 
 /*-- light dark toggle --*/
