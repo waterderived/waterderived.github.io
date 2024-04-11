@@ -445,17 +445,15 @@ td:first-of-type {
 
 .body-container {
     color: var(--tx1);
-    display: grid;
-    width: auto;
+    display: flex;
+    flex-direction: column;
     max-width: 80%;
     position: absolute;
     align-content: center;
     justify-self: center;
     top: 10rem;
-    left: min(20rem, 10%);
-    right: 10%;
     padding-bottom: 12rem;
-    margin: 0 auto 0 auto;
+    margin: 0 minmax(300px, auto);
     z-index: 2;
 }
 
