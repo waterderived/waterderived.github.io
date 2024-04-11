@@ -700,11 +700,13 @@ td:first-of-type {
     margin: 8px;
 }
 
-html[data-theme="dark"] .gridded-img {
+html[data-theme="dark"] .gridded-img,
+html[data-theme="dark"] .gridded-img-photo {
     filter: brightness(70%);
 }
 
-html[data-theme="dark"] .gridded-img:hover {
+html[data-theme="dark"] .gridded-img:hover,
+html[data-theme="dark"] .gridded-img-photo:hover {
     filter: none !important;
     transition-duration: 0.3s;
 }
