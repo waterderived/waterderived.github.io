@@ -774,11 +774,11 @@ html[data-theme="dark"] .gridded-img:hover {
 /* -- FOOTER -- */
 .page-footer {
     width: 60%;
-    justify-self: center;
+    align-self: center;
     position: absolute;
     bottom: 0;
     height: 144px;
-    padding-top: 6rem;
+    padding-top: 4rem;
     margin: 0 auto 4rem auto;
     z-index: 1;
 }
