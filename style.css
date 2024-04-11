@@ -215,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     line-height: 1;
     padding: 0 0 4px 0;
-    margin: var(--spacing-04) 0 var(--spacing-04) 0;
+    margin: var(--spacing-04) 0 var(--spacing-06) 0;
 }
 
 h1:has(+ p),
@@ -349,7 +349,7 @@ a:hover {
     font-weight: 400;
     color: var(--tx1);
     margin-left: 0.8rem;
-    margin-top: 0.125rem;
+    margin-top: var(--spacing-01);
     color: var(--tx1);
 }
 
