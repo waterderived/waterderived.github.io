@@ -1032,6 +1032,7 @@ html[data-theme="dark"] .gridded-img:hover {
     color: var(--hd1);
     float: right;
     margin-left: 5px;
+    vertical-align: middle;
   }
   
   .active h5:after {
