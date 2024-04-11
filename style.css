@@ -82,6 +82,7 @@
     --nj-coolgreen-800: rgb(100, 123, 107);
     --nj-nearmono-050: rgb(254, 254, 255);
     --nj-nearmono-100: rgb(253, 253, 254);
+    --nj-nearmono-150: rgb(249, 249, 250);
     --nj-nearmono-200: rgb(245, 245, 246);
     --nj-nearmono-300: rgb(229, 229, 230);
     --nj-nearmono-400: rgb(215, 215, 216);
@@ -116,7 +117,7 @@
 :root[data-theme="light"] {
     --bg1: var(--nj-nearmono-100);
     --bg2: var(--nj-nearmono-050);
-    --bg3: var(--nj-nearmono-200);
+    --bg3: var(--nj-nearmono-150);
     --hd1: var(--nj-charcoal-700);
     --tx1: var(--nj-charcoal-700);
     --tx2: var(--nj-charcoal-500);
