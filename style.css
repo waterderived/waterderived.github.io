@@ -529,7 +529,8 @@ td:first-of-type {
     width: 100%;
 }
 
-.project-card {
+.project-card,
+.project-card-nolink {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -551,27 +552,10 @@ td:first-of-type {
     background-color: var(--bg2);
 }
 
-.project-card a {
+.project-card a,
+.project-card-nolink a {
     color: var(--tx1) !important;
     text-decoration: none;
-}
-
-.project-card-nolink {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-box-align: center;
-    max-width: 100%;
-    background-color: var(--bg3);
-    border-radius: var(--spacing-05);
-    gap: var(--spacing-02);
-    padding: var(--spacing-04) var(--spacing-06) var(--spacing-04) var(--spacing-06);
-    margin: var(--spacing-02);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
-	0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-	0 12px 33.4px rgba(0, 0, 0, 0.03);
-    transition: all 0.2s ease 0s;
 }
 
 .project-card-image-sq img {
