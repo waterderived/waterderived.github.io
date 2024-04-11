@@ -692,6 +692,14 @@ td:first-of-type {
     padding: 8px;
 }
 
+.gridded-img-photo {
+    flex: content;
+    flex-shrink: 1;
+    max-width: 100%;
+    height: auto;
+    margin: 8px;
+}
+
 html[data-theme="dark"] .gridded-img {
     filter: brightness(70%);
 }
