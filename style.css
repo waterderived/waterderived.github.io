@@ -461,7 +461,9 @@ td:first-of-type {
 
 .body-container-fit {
     color: var(--tx1);
-    display: grid;
+    /*display: grid;*/
+    display: flex;
+    flex-direction: column;
     max-width: 600px;
     position: absolute;
     align-content: center;
