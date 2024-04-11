@@ -559,6 +559,24 @@ td:first-of-type {
     text-decoration: none;
 }
 
+.project-card-nolink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    max-width: 100%;
+    background-color: var(--bg3);
+    border-radius: var(--spacing-05);
+    gap: var(--spacing-02);
+    padding: var(--spacing-04) var(--spacing-06) var(--spacing-04) var(--spacing-06);
+    margin: var(--spacing-02);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
+	0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
+	0 12px 33.4px rgba(0, 0, 0, 0.03);
+    transition: all 0.2s ease 0s;
+}
+
 .project-card-image-sq img {
     max-height: 64px;
     max-width: 64px;
@@ -1027,7 +1045,7 @@ html[data-theme="dark"] .gridded-img:hover {
 }
 
 .collapsible h5:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\0002B'; /* Unicode character for "plus" sign (+) */
     font-size: 12px;
     color: var(--hd1);
     float: right;
@@ -1036,7 +1054,7 @@ html[data-theme="dark"] .gridded-img:hover {
   }
   
   .active h5:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: '\02010'; /* Unicode character for "minus" sign (-) */
     color: var(--tx1);
   }
 
