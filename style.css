@@ -507,7 +507,6 @@ td:first-of-type {
 .above-footer {
     display: flex;
     flex-direction: column;
-    width: min(200vw, 600px);
     margin: 0 8px;
     padding-bottom: 8px;
     justify-self: center;
