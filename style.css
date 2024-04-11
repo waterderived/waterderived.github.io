@@ -1029,15 +1029,14 @@ html[data-theme="dark"] .gridded-img:hover {
 .collapsible h5:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 12px;
-    color: var(--tx1);
-    background-color: var(--hd1);
+    color: var(--hd1);
     float: right;
     margin-left: 5px;
   }
   
   .active h5:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
-    background-color: var(--tx1);
+    color: var(--tx1);
   }
 
 /*-- light dark toggle --*/
