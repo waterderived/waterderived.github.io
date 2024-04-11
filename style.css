@@ -176,10 +176,6 @@ body {
     overflow-x: hidden;
 }
 
-body::selection {
-    background-color: var(--color-selection);
-}
-
 p {
     font-size: 1.05em;
 }
