@@ -1054,7 +1054,7 @@ html[data-theme="dark"] .gridded-img:hover {
   }
   
   .active h5:after {
-    content: '\02010'; /* Unicode character for "minus" sign (-) */
+    content: '\2014'; /* Unicode character for "minus" sign (-) */
     color: var(--tx1);
   }
 
