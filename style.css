@@ -1033,7 +1033,7 @@ html[data-theme="dark"] .gridded-img:hover {
     margin-left: 5px;
   }
   
-  .active:after {
+  .active h5:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
 
