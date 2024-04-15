@@ -686,7 +686,7 @@ td:first-of-type {
 
 html[data-theme="dark"] .gridded-img,
 html[data-theme="dark"] .gridded-img-photo {
-    filter: brightness(70%);
+    filter: brightness(80%);
 }
 
 html[data-theme="dark"] .gridded-img:hover,
