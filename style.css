@@ -127,7 +127,7 @@
     --link-hover: #a8b3c0;
     --link-background: #f6e6bc;
     --link-background-hover: #f6e6bcbb;
-    --color-selection: var(--nj-coolgreen-300);
+    --color-selection: #D6DDD4;
     --tx-sidebar-current: var(--tx2);
     --switch-bg: var(--nj-nearmono-300);
     --switch-circle-bg: #e7c570;
@@ -149,7 +149,7 @@
     --link-hover: var(--nj-offwhite);
     --link-background: var(--bg2);
     --link-background-hover: transparent;
-    --color-selection: #232523;
+    --color-selection: #1E221D;
     --tx-sidebar-current: var(--nj-warmgrey);
     --switch-bg: var(--nj-nearmono-400);
     --switch-circle-bg: var(--nj-charcoal-700);
@@ -160,7 +160,9 @@
     --img-dark-level-hover: 100%;
 }
 
-
+::selection {
+    background: var(--color-selection);
+}
 
 /*---BODY---*/
 
