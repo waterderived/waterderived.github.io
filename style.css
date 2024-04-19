@@ -161,6 +161,7 @@
 }
 
 ::selection {
+    color: #19191A;
     background: var(--color-selection);
 }
 
