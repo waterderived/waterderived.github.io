@@ -122,7 +122,7 @@
     --tx-footer: var(--nj-charcoal-500);
     --link-color: var(--nj-coolgreen-800);
     --link-color-light: var(--nj-coolgreen-300);
-    --link-hover: #a8b3c0;
+    --link-hover: var(--nj-coolgreen-500);
     --link-background: #f6e6bc;
     --link-background-hover: #f6e6bcbb;
     --color-selection-tx: var(--tx1);
