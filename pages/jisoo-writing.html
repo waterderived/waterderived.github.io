@@ -14,134 +14,75 @@
         <!--<script src="https://waterderived.github.io/script.js"></script>-->
        </head>
     <body>
-        <!--static sidebar-->
-    <div class="sidebar-frame" id="mySidebar">
-        <!--sidebar component - can switch out for another-->
-        <div class="sidebar">
-            <div class="sidebar-internal">
-                <div class="sidebar-element">
-                    <nav class="sidebar-element-container">
-                        <div>
-                            <a href="https://waterderived.github.io" class="sidebar-group">
-                                <span>home</span></a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work" class="sidebar-group">
-                                <span>about</span></a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work-graphics" class="sidebar-group">
-                                <span>graphic</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work-audio" class="sidebar-group">
-                                <span>audio</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/jisoo-photo" class="sidebar-group">
-                                <span>photo</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#" class="sidebar-group-current">
-                                <span>writing</span>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
+        <div class="navbar">
+        <div class="header-buttons">
+            <div class="header-title"><a href="https://waterderived.github.io">
+                nicole jisoo kim</a>
             </div>
+            <ul id="menu">
+                <li>
+                    <a href="https://waterderived.github.io/pages/work">
+                        <span>about</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://waterderived.github.io/pages/work-graphics">
+                        <span>graphic</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://waterderived.github.io/pages/work-audio">
+                        <span>audio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://waterderived.github.io/pages/jisoo-writing">
+                        <span>writing</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </div>
-    </div>
-    <!--end of side bar-->
+        <button id="theme-switcher">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-sun" id="icon-sun">
+                <circle cx="7" cy="7" r="2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-moon-star" id="icon-moon">
+                <circle cx="7" cy="7" r="2" />
+            </svg>
+        </button>
+        </div>
+        <h1>select writing</h1>
+        <h3>back pocket</h3>
+        <div class="table-container">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>2023.06.01</td>
+                        <td><a href="https://waterderived.github.io/pages/posts/sentient-articulations">sentient articulations (or, how to drown the noise)</a></td>
+                    </tr>
+                    <tr>
+                        <td>2023.04.22</td>
+                        <td>the iconography of radiology</td>
+                    </tr>
+                    <tr>
+                        <td>2023.03.12</td>
+                        <td>against legibility</td>
+                    </tr>
+                </tbody>
+                <br>
+            </table>
+        </div>
+        <footer> 
+            <hr>
+            <p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p>
+        </footer>
 
-        <div id="main" class="body-full">
-            <div class="header-banner"></div>
-            <div class="header-buttons">
-                <button class="sidebar-open-button" onclick="openNav()">&#9776;</button>
-                <button class="sidebar-open-button-open" onclick="closeNav()">&#9776;</button>
-                <button id="theme-switcher">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun" id="icon-sun"><circle cx="7" cy="7" r="2"/></svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-star" id="icon-moon"><circle cx="7" cy="7" r="2"/></svg>
-                </button>
-                <div class="header-title"><a href="https://waterderived.github.io">
-                    nicole jisoo kim</a>
-                </div>
-            </div>
-            <div class="body-container-fit" onclick="closeNav()">
-                <div class="headless"><h1>select writing</h1></div>
-                <hr>
-                <div class="above-footer">
-                <h3>back pocket</h3>
-                <div class="table-container">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>2023.06.01</td>
-                                <td><a href="https://waterderived.github.io/pages/posts/sentient-articulations">sentient articulations (or, how to drown the noise)</a></td>
-                            </tr>
-                            <tr>
-                                <td>2023.04.22</td>
-                                <td>the iconography of radiology</td>
-                            </tr>
-                            <tr>
-                                <td>2023.03.12</td>
-                                <td>against legibility</td>
-                            </tr>
-                        </tbody>
-                        <br>
-                    </table>
-                </div>
-                </div>
-                <div class="page-footer">
-                    <hr>
-                    <br>
-                    <div class="footer-text"><p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p></div>
-                </div>
-            </div>
-        </div>
 
         <script>
-            var dropdown = document.getElementsByClassName("sidebar-button-dropdown");
-            var i;
-    
-            for (i = 0; i < dropdown.length; i++) {
-                dropdown[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    var dropdownContent = this.nextElementSibling;
-                    if (dropdownContent.style.display === "block") {
-                        dropdownContent.style.display = "none";
-                    }
-                    else {
-                        dropdownContent.style.display = "block";
-                    }
-                });
-            }
-    
-            //sidebar collapse
-            /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-            function openNav() {
-                document.getElementById("mySidebar").style.width = "110px";
-                document.getElementById("main").style.marginLeft = "0";
-            }
-    
-            //hide sidebar button
-            const div = document.querySelector('.sidebar-open-button')
-    
-            div.addEventListener('click', () => {
-                div.classList.add('hidden');
-            })
-    
-    
-            /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-            function closeNav() {
-                document.getElementById("mySidebar").style.width = "0";
-                document.getElementById("main").style.marginLeft = "0";
-                div.classList.remove('hidden'); //reappear sidebar button
-            }
-    
             // evaluate
             function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
                 if (localStorageTheme !== null) {

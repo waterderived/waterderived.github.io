@@ -342,7 +342,7 @@ a:hover {
 }
 
 .table-container {
-    font-size: 1.05em;
+    font-size: 0.75em;
     font-family: var(--font-family-body);
     font-weight: 400;
     color: var(--tx1);
