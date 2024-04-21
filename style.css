@@ -14,10 +14,6 @@
     src: url('https://waterderived.github.io/font-family/AntarcticanMono-Medium.ttf');
 }
 
-@font-face {
-    font-family: "Newsreader";
-    src: url('https://waterderived.github.io/font-family/Newsreader-VariableFont_opsz,wght.ttf');
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
@@ -157,7 +153,7 @@
     --switch-circle-bg: var(--nj-charcoal-700);
     --icon-sun: #B1B0B5;
     --icon-moon: var(--nj-offwhitelight);
-    --switch-circle-pos: 1.72rem;
+    --switch-circle-pos: 1.5rem;
     --img-dark-level: 75%;
     --img-dark-level-hover: 100%;
 }
@@ -584,12 +580,12 @@ td:first-of-type {
 .project-card-text p {
     padding: 0;
     margin: 0 !important;
-    font-size: 1em;
+    font-size: 0.75em;
 }
 
 .card-title-mono {
     font-family: var(--font-family-mono) !important;
-    font-size: 1.1em !important;
+    font-size: 0.875em !important;
     font-weight: 500;
     color: var(--hd1) !important;
     text-decoration: none;
@@ -981,9 +977,9 @@ html[data-theme="dark"] .gridded-img-photo:hover {
     display: flex;
     align-items: center;
     border-radius: .375rem;
-    padding: var(--m-rem-02) var(--m-rem-04) var(--m-rem-02) var(--m-rem-08);
+    padding: var(--m-rem-01) var(--m-rem-02) var(--m-rem-01) var(--m-rem-04);
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.750rem;
     font-weight: 400;
     text-decoration: none;
 }
