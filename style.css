@@ -173,12 +173,16 @@ html {
     line-height: 1.8;
     font-family: 'Inter UI', 'Inter', 'Segoe UI', "Antarctican";
     transition: all 0.8s;
+    background-color: var(--bg1);
 }
 
 body {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+    justify-content: center;
+    max-width: 640px;
     line-height: inherit;
-    background-color: var(--bg1);
     overflow-x: hidden;
 }
 
@@ -442,15 +446,6 @@ td:first-of-type {
     position: relative;
     margin-top: 0;
     margin-left: 0px;
-}
-
-
-.body-narrow {
-    display: flex;
-    flex-direction: column;
-    margin: 0 24px;
-    justify-content: center;
-    max-width: 640px;
 }
 
 .body-container {
