@@ -865,9 +865,8 @@ ul#menu {
     z-index: 10;
 }
 
-ul#menu li {
-    padding-left: var(--spacing-02);
-    padding-right: var(--spacing-02);
+#menu li+li {
+    margin-inline-start: var(--spacing-02);
 }
 
 .sidebar-open-button {
