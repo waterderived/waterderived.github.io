@@ -1056,11 +1056,11 @@ ul#menu {
 }
 
 .collapsible:hover h3 {
-    color: var(--tx1) !important;
+    color: var(--tx2) !important;
 }
 
 .collcontent {
-    padding: 4px 18px 8px 18px;
+    padding: 8px 18px 8px 18px;
     background-color: transparent;
     max-height: 0;
     overflow: hidden;
