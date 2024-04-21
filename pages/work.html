@@ -111,9 +111,24 @@
             <p>© Nicole Jisoo Kim 2024. All Rights Reserved.</p>
         </footer>
         </div>
-
     
     <script>
+        // collapsible callout
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var collcontent = this.nextElementSibling;
+            if (collcontent.style.maxHeight){
+              collcontent.style.maxHeight = null;
+            } else {
+              collcontent.style.maxHeight = collcontent.scrollHeight + "px";
+            }
+          });
+        }
+
         // evaluate
         function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
             if (localStorageTheme !== null) {
@@ -144,7 +159,7 @@
             let dataTheme = rootElem.getAttribute('data-theme'),
                 newTheme
 
-            newTheme = (dataTheme === 'dark') ? 'light' : 'dark'
+            newTheme = (dataTheme === 'light') ? 'dark' : 'light'
 
             rootElem.setAttribute('data-theme', newTheme);
 
