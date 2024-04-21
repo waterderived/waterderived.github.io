@@ -17,137 +17,102 @@
 </head>
 
 <body>
-    <!--static sidebar-->
-    <div class="sidebar-frame" id="mySidebar">
-        <!--sidebar component - can switch out for another-->
-        <div class="sidebar">
-            <div class="sidebar-internal">
-                <div class="sidebar-element">
-                    <nav class="sidebar-element-container">
-                        <div>
-                            <a href="https://waterderived.github.io" class="sidebar-group">
-                                <span>home</span></a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work" class="sidebar-group-current">
-                                <span>about</span></a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work-graphics" class="sidebar-group">
-                                <span>graphic</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work-audio" class="sidebar-group">
-                                <span>audio</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/jisoo-photo" class="sidebar-group">
-                                <span>photo</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work-writing" class="sidebar-group">
-                                <span>writing</span>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!--end of side bar-->
-
-    <div id="main" class="body-full">
-        <div class="header-banner"></div>
+    <div class="navbar">
         <div class="header-buttons">
-            <button class="sidebar-open-button" onclick="openNav()">&#9776;</button>
-            <button class="sidebar-open-button-open" onclick="closeNav()"">&#9776;</button>
-            <button id="theme-switcher">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-sun" id="icon-sun">
-                    <circle cx="7" cy="7" r="2" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-moon-star" id="icon-moon">
-                    <circle cx="7" cy="7" r="2" />
-                </svg>
-            </button>
             <div class="header-title"><a href="https://waterderived.github.io">
                 nicole jisoo kim</a>
             </div>
+            <ul id="menu">
+                <li>
+                    <a href="https://waterderived.github.io/pages/work">
+                        <span>about</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://waterderived.github.io/pages/work-graphics">
+                        <span>graphic</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://waterderived.github.io/pages/work-audio">
+                        <span>audio</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="body-container-fit">
-            <div class="above-footer">
-                <h2>about</h2>
+        <button id="theme-switcher">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-sun" id="icon-sun">
+                <circle cx="7" cy="7" r="2" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-moon-star" id="icon-moon">
+                <circle cx="7" cy="7" r="2" />
+            </svg>
+        </button>
+        </div>
+        <h2>about</h2>
+            <p>
+                Nicole is a medical student rooted in New Jersey and homed in Providence,
+                Rhode Island. She (lovingly) holds a fascination with image-guided procedures and a passion for
+                exploring the use of multimedia in education and scientific communication.
+                <br><br>
+                When not in the hospital / fulfilling student duties, Nicole can be found tinkering with mirrorless
+                cameras, aiming for fairways, or immersed in (fantastical, tabletop) gameplay.
+                <br><br>
+                Updated CV may be made available upon request.
+                <br><br>
+                <a href="mailto:nicole.jisoo@gmail.com" class="body-descr-link">email</a> -
+                <a href="https://twitter.com/nicole_jisoo" class="body-descr-link">twitter / x</a>
+                <br>
+            </p>
+            <button type="button" class="collapsible"><h5>vision</h5></button>
+            <div class="collcontent">
                 <p class="body-p">
-                    Nicole is a medical student rooted in New Jersey and homed in Providence,
-                    Rhode Island. She (lovingly) holds a fascination with image-guided procedures and a passion for
-                    exploring the use of multimedia in education and scientific communication.
-                    <br>
-                    <br>
-                    When not in the hospital / fulfilling student duties, Nicole can be found tinkering with mirrorless
-                    cameras, aiming for fairways, or immersed in (fantastical, tabletop) gameplay.
-                    <br>
-                    <br>
-                    Updated CV may be made available upon request.
+                    Of all the pathophysiologic phenomena that I have come across throughout my medical training, the human body's mechanisms of decompression most readily continue to astound me in ways
                     <br><br>
-                    <a href="mailto:nicole.jisoo@gmail.com" class="body-descr-link">email</a> -
-                    <a href="https://twitter.com/nicole_jisoo" class="body-descr-link">twitter / x</a>
-                    <br>
+                    Perhaps, then, it is the unrelenting yet humble mission to bring this genre of thievery into view that draws me to radiology.
                 </p>
-                <button type="button" class="collapsible"><h5>vision</h5></button>
-                <div class="collcontent">
-                    <p class="body-p">
-                        Of all the pathophysiologic phenomena that I have come across throughout my medical training, the human body's mechanisms of decompression most readily continue to astound me in ways
-                        <br><br>
-                        Perhaps, then, it is the unrelenting yet humble mission to bring this genre of thievery into view that draws me to radiology.
-                    </p>
-                </div>
-                <h5>currently</h5>
-                <div class="project-container">
-                    <a href="https://waterderived.github.io/pages/work-audio-dwd" class="project-card project-card-image-sq">
-                        <img alt="DWD Logo" src="https://waterderived.github.io/images/DWDLogo-square.png">
-                        <div class="project-card-text">
-                            <div class="card-title-mono">Podcast Producer & Audio Engineer</div>
-                            <p>Docs With Disabilities Podcast</p>
-                        </div>
-                    </a>
-                    <a href="https://waterderived.github.io/pages/work-graphics-jvirGA" class="project-card project-card-image-sq">
-                        <img alt="DWD Logo" src="https://waterderived.github.io/images/jvir-logo-earth-square.jpg">
-                        <div class="project-card-text">
-                            <div class="card-title-mono">Visual Abstract Editor & Designer</div>
-                            <p>Journal of Vascular and Interventional Radiology</p>
-                        </div>
-                    </a>
-                    <div class="project-card-nolink project-card-image-sq">
-                        <img alt="DWD Logo" src="https://waterderived.github.io/images/brown-logo-red.png">
-                        <div class="project-card-text">
-                            <div class="card-title-mono">Medical Student</div>
-                            <p>The Warren Alpert Medical School of Brown University</p>
-                        </div>
+            </div>
+            <h5>currently</h5>
+            <div class="project-container">
+                <a href="https://waterderived.github.io/pages/work-audio-dwd" class="project-card project-card-image-sq">
+                    <img alt="DWD Logo" src="https://waterderived.github.io/images/DWDLogo-square.png">
+                    <div class="project-card-text">
+                        <div class="card-title-mono">Podcast Producer & Audio Engineer</div>
+                        <p>Docs With Disabilities Podcast</p>
+                    </div>
+                </a>
+                <a href="https://waterderived.github.io/pages/work-graphics-jvirGA" class="project-card project-card-image-sq">
+                    <img alt="DWD Logo" src="https://waterderived.github.io/images/jvir-logo-earth-square.jpg">
+                    <div class="project-card-text">
+                        <div class="card-title-mono">Visual Abstract Editor & Designer</div>
+                        <p>Journal of Vascular and Interventional Radiology</p>
+                    </div>
+                </a>
+                <div class="project-card-nolink project-card-image-sq">
+                    <img alt="DWD Logo" src="https://waterderived.github.io/images/brown-logo-red.png">
+                    <div class="project-card-text">
+                        <div class="card-title-mono">Medical Student</div>
+                        <p>The Warren Alpert Medical School of Brown University</p>
                     </div>
                 </div>
-                <h5>recently</h5>
-                <p class="body-p"></p>
-                <h5>colophon</h5>
-                <p class="body-descr">
-                    Built with HTML/CSS and Javascript, hosted on Github. <a href="https://www.websitecarbon.com/website/waterderived-github-io/">0.01 g of CO2</a> are produced each time this web page is visited.
-                </p>
             </div>
-            <div class="page-footer">
-                <hr>
-                <br>
-                <div class="footer-text">
-                    <p>© Nicole Jisoo Kim 2024. All Rights Reserved.</p>
-                </div>
-            </div>
+            <h5>recently</h5>
+            <p class="body-p"></p>
+            <h5>colophon</h5>
+            <p class="body-descr">
+                Built with HTML/CSS and Javascript, hosted on Github. <a href="https://www.websitecarbon.com/website/waterderived-github-io/">0.01 g of CO2</a> are produced each time this web page is visited.
+            </p>
         </div>
-    </div>
+        <footer>
+            <hr>
+            <p>© Nicole Jisoo Kim 2024. All Rights Reserved.</p>
+        </footer>
+        </div>
+
     
     <script>
         var coll = document.getElementsByClassName("collapsible");
