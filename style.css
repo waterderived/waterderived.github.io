@@ -846,6 +846,12 @@ html[data-theme="dark"] .gridded-img-photo:hover {
     text-decoration: none !important;
 }
 
+#menu {
+    display: flex;
+    margin: auto 8px;
+    flex-wrap: wrap;
+}
+
 ul#menu {
     list-style: none;
     word-break: keep-all;
@@ -853,8 +859,6 @@ ul#menu {
     white-space: nowrap;
     font-size: 0.75em;
     font-weight: 400;
-    margin-left: 8px;
-    padding-top: 2px;
     color: var(--tx1);
     z-index: 10;
 }
