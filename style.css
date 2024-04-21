@@ -704,7 +704,7 @@ td:first-of-type {
     background-color: var(--bg3);
     border-radius: var(--spacing-05);
     gap: var(--spacing-02);
-    padding: var(--spacing-02) var(--spacing-04) var(--spacing-02) var(--spacing-04);
+    padding: var(--spacing-04) var(--spacing-06) var(--spacing-04) var(--spacing-06);
     margin-bottom: var(--spacing-02);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
 	0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
@@ -723,7 +723,7 @@ td:first-of-type {
 .gridded-img {
     flex: content;
     flex-shrink: 1;
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
     border-radius: var(--spacing-05);
     padding: 8px;
