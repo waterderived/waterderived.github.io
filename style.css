@@ -668,14 +668,32 @@ td:first-of-type {
     border-color: #000000;
 }
 
-.gridded { 
+/* .gridded { 
     display: inline-block;
     padding-bottom: 24px;
     margin-bottom: 0.8rem;
     min-width: 400px;
     max-width: 600px;
     z-index: 3;
-  }
+} */
+
+.gridded {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    max-width: 100%;
+    background-color: var(--bg3);
+    border-radius: var(--spacing-05);
+    gap: var(--spacing-02);
+    padding: var(--spacing-04) var(--spacing-06) var(--spacing-04) var(--spacing-06);
+    margin-bottom: var(--spacing-04);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
+	0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
+	0 12px 33.4px rgba(0, 0, 0, 0.03);
+    transition: all 0.2s ease 0s;
+}
 
 .gridded p {
     padding: 0 8px 0 8px;
