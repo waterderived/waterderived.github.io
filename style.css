@@ -671,7 +671,7 @@ td:first-of-type {
 
 .gridded { 
     display: inline-block;
-    padding-bottom: 8px;
+    padding-bottom: 24px;
     margin-bottom: 0.8rem;
     min-width: 400px;
     max-width: 600px;
