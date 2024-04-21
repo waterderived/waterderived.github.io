@@ -792,7 +792,6 @@ html[data-theme="dark"] .gridded-img-photo:hover {
     height: 144px;
     padding-top: 4rem;
     margin: 0 auto 8rem auto;
-    z-index: 1;
 }
 
 .page-footer hr {
