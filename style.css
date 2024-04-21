@@ -813,6 +813,7 @@ footer hr {
 
 footer p {
     display: inline-block;
+    justify-content: center;
     align-content: center;
     color: var(--tx-footer);
     font-size: 0.75em;
