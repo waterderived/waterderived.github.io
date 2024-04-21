@@ -16,214 +16,94 @@
 </head>
 
 <body>
-    <!--static sidebar-->
-    <div class="sidebar-frame" id="mySidebar">
-        <!--sidebar component - can switch out for another-->
-        <div class="sidebar">
-            <div class="sidebar-internal">
-                <div class="sidebar-element">
-                    <nav class="sidebar-element-container">
-                        <div>
-                            <a href="https://waterderived.github.io/" class="sidebar-group">
-                                <span>home</span></a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work.html" class="sidebar-group">
-                                <span>about</span></a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work-graphics.html" class="sidebar-group">
-                                <span>graphic</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work-audio.html" class="sidebar-group">
-                                <span>audio</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/jisoo-photo.html" class="sidebar-group">
-                                <span>photo</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work-writing.html" class="sidebar-group">
-                                <span>writing</span>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+    <div class="navbar">
+    <div class="header-buttons">
+        <div class="header-title"><a href="https://waterderived.github.io">
+            nicole jisoo kim</a>
         </div>
+        <ul id="menu">
+            <li>
+                <a href="https://waterderived.github.io/pages/work">
+                    <span>about</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://waterderived.github.io/pages/work-graphics">
+                    <span>graphic</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://waterderived.github.io/pages/work-audio">
+                    <span>audio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://waterderived.github.io/pages/jisoo-writing">
+                    <span>writing</span>
+                </a>
+            </li>
+        </ul>
     </div>
+    <button id="theme-switcher">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-sun" id="icon-sun">
+            <circle cx="7" cy="7" r="2" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-moon-star" id="icon-moon">
+            <circle cx="7" cy="7" r="2" />
+        </svg>
+    </button>
     </div>
-    <!--end of side bar-->
-
-    <div id="main" class="body-full">
-        <div class="header-banner"></div>
-        <div class="header-buttons">
-            <button class="sidebar-open-button" onclick="openNav()">&#9776;</button>
-            <button class="sidebar-open-button-open" onclick="closeNav()">&#9776;</button>
-            <button id="theme-switcher">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun" id="icon-sun"><circle cx="7" cy="7" r="2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-star" id="icon-moon"><circle cx="7" cy="7" r="2"/></svg>
-            </button>
-            <div class="header-title"><a href="https://waterderived.github.io">
-                nicole jisoo kim</a>
-            </div>
-        </div>
-        <div class="body-container" onclick="closeNav()">
-            <div class="above-footer">
-            <div class="headless">
-                <h1>graphic work</h1>
-            </div>
-            <hr>
-            <h3>jvir graphic abstracts</h3>
-            <p class="body-p">Worked with the Editor-in-Chief of JVIR to design and create single-panel
-                graphic abstracts summarizing select publications from each issue of the journal<br>Developed and trained a team of medical residents and students</p>
-            <br>
-            <div class="grid-container-too">
-                <span class="gridded">
-                    <img class="gridded-img"
-                        src="https://waterderived.github.io/images/JVIR_GA - 2023_10 - deGregorio - njk_01-01.jpg"
-                        alt="de Gregorio et al." xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr">de Gregorio et al. | <a href="#">tweet</a> - <a
-                            href="https://doi.org/10.1016/j.jvir.2023.06.041">article</a></p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img"
-                        src="https://waterderived.github.io/images/JVIR_GA - 202310 - Gupta - njk-01.jpg"
-                        alt="Gupta et al." xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr">Gupta et al. | <a
-                            href="https://doi.org/10.1016/j.jvir.2023.06.041">article</a></p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img"
-                        src="https://waterderived.github.io/images/F7d1ZeaWkAA25so.jpg"
-                        alt="Beall et al." xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr">Beall et al. | <a
-                            href="https://twitter.com/JVIRmedia/status/1708963667654435255">tweet</a> - <a
-                            href="https://doi.org/10.1016/j.jvir.2023.05.024">article</a></p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img"
-                        src="https://waterderived.github.io/images/F7DpbdNXEAAEB8G.jpg"
-                        alt="Shalvoy et al." xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr">Shalvoy et al. | <a
-                            href="https://twitter.com/JVIRmedia/status/1707120920815394928">tweet</a> - <a
-                            href="https://doi.org/10.1016/j.jvir.2023.05.009">article</a></p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img"
-                        src="https://waterderived.github.io/images/JVIR_VA - 2023_07 - Najdawi.NJK.DYS.jpg"
-                        alt="Najdawi et al." xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr">Najdawi et al. | <a
-                            href="https://twitter.com/JVIRmedia/status/1691651262494716124">tweet</a> - <a
-                            href="https://doi.org/10.1016/j.jvir.2023.03.025">article</a></p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img"
-                        src="https://waterderived.github.io/images/JVIR_GA - 2023_06 - Jones.NJK.DS.jpg"
-                        alt="Jones et al." xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr">Jones et al. | <a
-                            href="https://twitter.com/JVIRmedia/status/1690482859671441408/photo/1">tweet</a> - <a
-                            href="https://doi.org/10.1016/j.jvir.2023.02.029">article</a></p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img"
-                        src="https://waterderived.github.io/images/JVIR_VA - 2023_05 - Falsarella.NJK.sze.jpg"
-                        alt="Falsarella et al." xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr">Falsarella et al. | <a
-                            href="https://twitter.com/JVIRmedia/status/1688202391408009216/photo/1">tweet</a> - <a
-                            href="https://doi.org/10.1016/j.jvir.2023.01.022">article</a></p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img"
-                        src="https://waterderived.github.io/images/JVIR_GA - 2023_03 - Chiu et al - Final.jpg"
-                        alt="Chiu et al." xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr">Chiu et al. | <a
-                            href="https://twitter.com/JVIRmedia/status/1686399737262411776/photo/1">tweet</a> - <a
-                            href="https://doi.org/10.1016/j.jvir.2022.12.021">article</a></p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img"
-                        src="https://waterderived.github.io/images/F1W76niWIAAlnRz.jpg"
-                        alt="Johnson et al." xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr">Johnson et al. | <a
-                            href="https://twitter.com/JVIRmedia/status/1681456654871830528/photo/1">tweet</a> - <a
-                            href="https://doi.org/10.1016/j.jvir.2022.12.009">article</a></p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img"
-                        src="https://waterderived.github.io/images/FqzaqFgX0AQ3a8R.jpg"
-                        alt="Park et al." xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr">Park et al. | <a
-                            href="https://twitter.com/JVIRmedia/status/1634183824765747202/photo/1">tweet</a> - <a
-                            href="https://doi.org/10.1016/j.jvir.2022.10.003">article</a></p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img"
-                        src="https://waterderived.github.io/images/FohwtK0WAAIK63O.jpg"
-                        alt="Sag et al." xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr">Sag et al. | <a
-                            href="https://twitter.com/JVIRmedia/status/1623672075419262978/photo/1">tweet</a> - <a
-                            href="https://doi.org/10.1016/j.jvir.2022.10.001">article</a></p>
-                </span>
-            </div>
-            </div>
-            <div class="page-footer">
-                <hr>
-                <br>
-                <div class="footer-text">
-                    <p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    <h3>jvir graphic abstracts</h3>
+    <p class="body-p">
+        Worked with the Editor-in-Chief of JVIR to design and create single-panel graphic abstracts summarizing select publications from each issue of the journal
+        <br>
+        Developed and trained a team of medical residents and students
+    </p>
+    <br>
+    <div class="grid-container-col">
+        <span class="gridded">
+            <img class="gridded-img"
+                src="https://waterderived.github.io/images/JVIR_GA - 2023_10 - deGregorio - njk_01-01.jpg"
+                alt="de Gregorio et al." xml:space="preserve" height="auto">
+            <p class="card-caption">de Gregorio et al. | <a href="#">tweet</a> - <a
+                    href="https://doi.org/10.1016/j.jvir.2023.06.041">article</a></p>
+        </span>
+        <span class="gridded">
+            <img class="gridded-img"
+                src="https://waterderived.github.io/images/JVIR_GA - 202310 - Gupta - njk-01.jpg"
+                alt="Gupta et al." xml:space="preserve" height="auto">
+            <p class="card-caption">Gupta et al. | <a
+                    href="https://doi.org/10.1016/j.jvir.2023.06.041">article</a></p>
+        </span>
+        <span class="gridded">
+            <img class="gridded-img"
+                src="https://waterderived.github.io/images/F7d1ZeaWkAA25so.jpg"
+                alt="Beall et al." xml:space="preserve" height="auto">
+            <p class="card-caption">Beall et al. | <a
+                    href="https://twitter.com/JVIRmedia/status/1708963667654435255">tweet</a> - <a
+                    href="https://doi.org/10.1016/j.jvir.2023.05.024">article</a></p>
+        </span>
+        <span class="gridded">
+            <img class="gridded-img"
+                src="https://waterderived.github.io/images/F7DpbdNXEAAEB8G.jpg"
+                alt="Shalvoy et al." xml:space="preserve" height="auto">
+            <p class="card-caption">Shalvoy et al. | <a
+                    href="https://twitter.com/JVIRmedia/status/1707120920815394928">tweet</a> - <a
+                    href="https://doi.org/10.1016/j.jvir.2023.05.009">article</a></p>
+        </span>
+    <footer>
+        <hr>
+        <p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p>
+    </footer>
 
 
 
     <script>
-        var dropdown = document.getElementsByClassName("sidebar-button-dropdown");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                }
-                else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        }
-
-        //sidebar collapse
-        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "110px";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-
-        //hide sidebar button
-        const div = document.querySelector('.sidebar-open-button')
-
-        div.addEventListener('click', () => {
-            div.classList.add('hidden');
-        })
-
-
-        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-            div.classList.remove('hidden'); //reappear sidebar button
-        }
-
-        // evaluate
+        // evaluate current theme settings
         function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
             if (localStorageTheme !== null) {
                 return localStorageTheme;
