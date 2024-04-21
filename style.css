@@ -704,7 +704,7 @@ td:first-of-type {
 .gridded-img {
     flex: content;
     flex-shrink: 1;
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     border-radius: var(--spacing-05);
     padding: 8px;
