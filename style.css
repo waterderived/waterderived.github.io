@@ -371,7 +371,7 @@ td {
 td:first-of-type {
     font-family: var(--font-family-mono);
     font-size: 1em;
-    width: 100px !important;
+    width: 140px !important;
 }
 
 
