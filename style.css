@@ -516,7 +516,7 @@ td:first-of-type {
     font-family: var(--font-family-body);
     font-weight: 400;
     color: var(--tx1);
-    margin-top: 0.375rem;
+    margin-top: 0.25rem;
     color: var(--tx1);
 }
 
@@ -687,12 +687,16 @@ td:first-of-type {
     background-color: var(--bg3);
     border-radius: var(--spacing-05);
     gap: var(--spacing-02);
-    padding: var(--spacing-04) var(--spacing-06) var(--spacing-04) var(--spacing-06);
-    margin-bottom: var(--spacing-04);
+    padding: var(--spacing-02) var(--spacing-04) var(--spacing-02) var(--spacing-04);
+    margin-bottom: var(--spacing-02);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
 	0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
 	0 12px 33.4px rgba(0, 0, 0, 0.03);
     transition: all 0.2s ease 0s;
+}
+
+.gridded:hover {
+    background-color: var(--bg2);
 }
 
 .gridded p {
