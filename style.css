@@ -1046,7 +1046,7 @@ ul#menu {
 }
 
 .collapsible:hover h3 {
-    color: var(--tx2) !important;
+    color: var(--nj-offwhitedark) !important;
 }
 
 .collcontent {
