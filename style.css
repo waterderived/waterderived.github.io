@@ -168,6 +168,8 @@
 /*---BODY---*/
 
 html {
+    display: flex;
+    justify-content: center;
     line-height: 1.8;
     font-family: 'Inter UI', 'Inter', 'Segoe UI', "Antarctican";
     transition: all 0.8s;
