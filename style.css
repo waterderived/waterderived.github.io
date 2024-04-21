@@ -149,7 +149,7 @@
     --link-background: var(--bg2);
     --link-background-hover: transparent;
     --color-selection-tx: var(--tx1);
-    --color-selection-bg: #1E221D;
+    --color-selection-bg: var(--nj-coolgreen-500);
     --tx-sidebar-current: var(--nj-warmgrey);
     --switch-bg: var(--nj-nearmono-400);
     --switch-circle-bg: var(--nj-charcoal-700);
