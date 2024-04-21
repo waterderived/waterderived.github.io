@@ -1,37 +1,82 @@
 
+var dropdown = document.getElementsByClassName("sidebar-button-dropdown");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        }
+        else {
+            dropdownContent.style.display = "block";
+        }
+    });
+}
 
 //sidebar collapse
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "110px";
-            document.getElementById("main").style.marginLeft = "0";
-        }
+function openNav() {
+    document.getElementById("mySidebar").style.width = "110px";
+    document.getElementById("main").style.marginLeft = "0";
+}
 
-        //hide sidebar button
-        const div = document.querySelector('.sidebar-open-button')
+//hide sidebar button
+const div = document.querySelector('.sidebar-open-button')
 
-        div.addEventListener('click', () => {
-            div.classList.add('hidden');
-        })
+div.addEventListener('click', () => {
+    div.classList.add('hidden');
+})
 
 
-        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-        function closeNav() {
-          document.getElementById("mySidebar").style.width = "0";
-          document.getElementById("main").style.marginLeft = "0";
-          div.classList.remove('hidden'); //reappear sidebar button
-        }
-        
+/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    div.classList.remove('hidden'); //reappear sidebar button
+}
 
-        //theme switcher
-        const switchTheme = () => {
-            const rootElem = document.documentElement
-            let dataTheme = rootElem.getAttribute('data-theme'),
-                newTheme
+// evaluate
+function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
+    if (localStorageTheme !== null) {
+        return localStorageTheme;
+    }
 
-            newTheme = (dataTheme === 'light') ? 'dark' : 'light'
+    if (systemSettingDark.matches) {
+        return "dark";
+    }
 
-            rootElem.setAttribute('data-theme', newTheme)
-        }
+    return "light";
+}
+// update theme setting on html tag
+function updateThemeOnHtmlEl({ theme }) {
+    document.querySelector("html").setAttribute("data-theme", theme);
+}
 
-        document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
+const localStorageTheme = localStorage.getItem("theme");
+const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
+
+// update html tag
+updateThemeOnHtmlEl({ theme: dataTheme });
+
+//theme switcher
+const switchTheme = () => {
+    const rootElem = document.documentElement
+    let dataTheme = rootElem.getAttribute('data-theme'),
+        newTheme
+
+    newTheme = (dataTheme === 'dark') ? 'light' : 'dark'
+
+    rootElem.setAttribute('data-theme', newTheme);
+
+    // update storage
+    localStorage.setItem("theme", newTheme);
+
+    //update dataTheme in memory
+    dataTheme = newTheme
+}
+
+// orig switcher
+document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
