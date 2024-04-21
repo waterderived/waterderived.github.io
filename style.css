@@ -678,9 +678,7 @@ td:first-of-type {
 } */
 
 .gridded {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
     -webkit-box-pack: center;
     -webkit-box-align: center;
     max-width: 100%;
