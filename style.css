@@ -89,6 +89,7 @@
     --nj-offwhitelighter: #fdfbf8;
     --nj-offwhitelight: #f5f2ec;
     --nj-offwhite: #fbf7ee;
+    --nj-offwhitedark: #f1efec;
     --nj-coolwhite: #f2f7fa;
     --nj-coolwhitedarker: #d8dad9;
     --nj-warmgrey: #e0dcd3;
@@ -140,7 +141,7 @@
     --bg2: var(--nj-charcoal-600);
     --bg3: var(--nj-charcoal-550);
     --hd1: var(--nj-offwhitelighter);
-    --tx1: var(--nj-coolwhite);
+    --tx1: var(--nj-offwhitedark);
     --tx2: var(--nj-coolgreen-700);
     --tx-footer: var(--nj-coolgrey);
     --link-color: var(--nj-coolgreen-300);
