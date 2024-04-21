@@ -475,7 +475,7 @@ td:first-of-type {
 }
 
 .body-descr {
-    font-size: 1em;
+    font-size: 0.875em;
     font-family: var(--font-family-body);
     font-weight: 400;
     color: var(--tx1);
@@ -498,7 +498,7 @@ td:first-of-type {
 }
 
 .body-descr-sub {
-    font-size: 0.875em;
+    font-size: 0.750em;
     font-family: var(--font-family-body);
     color: var(--tx1);
     margin-left: 0.8rem;
