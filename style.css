@@ -865,7 +865,7 @@ ul#menu {
     z-index: 10;
 }
 
-#menu li {
+ul#menu li {
     padding-left: var(--spacing-02);
     padding-right: var(--spacing-02);
 }
