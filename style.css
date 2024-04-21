@@ -482,16 +482,6 @@ td:first-of-type {
     display: inline;
 }
 
-.body-descr-link {
-    color: var(--link-color);
-    text-decoration: none;
-}
-
-.body-descr-link:hover {
-    color: var(--link-hover);
-    text-decoration: none;
-}
-
 .body-descr-sub {
     font-size: 0.750em;
     font-family: var(--font-family-body);
@@ -521,6 +511,30 @@ td:first-of-type {
 .p-before-list {
     margin-bottom: 4px;
 }
+
+.card-caption {
+    font-size: 0.875em;
+    font-family: var(--font-family-body);
+    font-weight: 400;
+    color: var(--tx1);
+    margin-top: 0.375rem;
+    color: var(--tx1);
+}
+
+.card-caption p {
+    display: inline;
+}
+
+.card-caption a { 
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.card-caption a:hover { 
+    text-decoration: none;
+    color: var(--link-hover);
+}
+
 
 .project-container {
     display: grid;
@@ -767,16 +781,6 @@ html[data-theme="dark"] .gridded-img-photo:hover {
 .linktitle { 
     margin-top: 0.2rem;
     margin-bottom: 0.5rem;
-}
-
-.linktitle a { 
-    text-decoration: none;
-    color: var(--link-color);
-}
-
-.linktitle a:hover { 
-    text-decoration: none;
-    color: var(--link-hover);
 }
 
 
