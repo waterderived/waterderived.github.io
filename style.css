@@ -809,7 +809,6 @@ footer {
     display: block;
 }
 
-.page-footer hr,
 footer hr {
     width: 80%;
 }
@@ -820,6 +819,7 @@ footer p {
     text-align: center;
     color: var(--tx-footer);
     font-size: 0.75em;
+    margin-top: 8px;
 }
 
 .navbar {
