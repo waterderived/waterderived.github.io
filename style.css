@@ -843,7 +843,6 @@ footer hr {
     top: 8px;
     padding: 8px 0 8px 20px;
     align-items: center;
-    z-index: 30 !important;
 }
 
 .header-title {
