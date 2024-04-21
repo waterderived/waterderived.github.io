@@ -125,7 +125,8 @@
     --link-hover: #a8b3c0;
     --link-background: #f6e6bc;
     --link-background-hover: #f6e6bcbb;
-    --color-selection: #D6DDD4;
+    --color-selection-tx: var(--tx1);
+    --color-selection-bg: #D6DDD4;
     --tx-sidebar-current: var(--tx2);
     --switch-bg: var(--nj-nearmono-300);
     --switch-circle-bg: #e7c570;
@@ -147,13 +148,14 @@
     --link-hover: var(--nj-offwhite);
     --link-background: var(--bg2);
     --link-background-hover: transparent;
-    --color-selection: #1E221D;
+    --color-selection-tx: var(--tx1);
+    --color-selection-bg: #1E221D;
     --tx-sidebar-current: var(--nj-warmgrey);
     --switch-bg: var(--nj-nearmono-400);
     --switch-circle-bg: var(--nj-charcoal-700);
     --icon-sun: #B1B0B5;
     --icon-moon: var(--nj-offwhitelight);
-    --switch-circle-pos: 1.5rem;
+    --switch-circle-pos: 1.65rem;
     --img-dark-level: 75%;
     --img-dark-level-hover: 100%;
 }
