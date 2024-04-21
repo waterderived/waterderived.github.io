@@ -369,7 +369,7 @@ td {
 
 td:first-of-type {
     font-family: var(--font-family-mono);
-    font-size: 0.75em;
+    font-size: 0.875em;
     width: 140px !important;
 }
 
