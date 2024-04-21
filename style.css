@@ -806,6 +806,7 @@ html[data-theme="dark"] .gridded-img-photo:hover {
 footer {
     margin-top: 36px;
     margin-bottom: 48px;
+    display: block;
 }
 
 .page-footer hr,
@@ -814,7 +815,6 @@ footer hr {
 }
 
 footer p {
-    display: inline-block;
     justify-content: center;
     align-content: center;
     color: var(--tx-footer);
