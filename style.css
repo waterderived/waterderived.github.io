@@ -120,6 +120,7 @@
     --hd1: var(--nj-charcoal-700);
     --tx1: var(--nj-charcoal-700);
     --tx2: var(--nj-charcoal-500);
+    --tx3: var(--nj-charcoal-400);
     --tx-footer: var(--nj-charcoal-500);
     --link-color: var(--nj-coolgreen-800);
     --link-color-light: var(--nj-coolgreen-300);
@@ -143,6 +144,7 @@
     --hd1: var(--nj-offwhitelighter);
     --tx1: var(--nj-offwhitedark);
     --tx2: var(--nj-coolgreen-700);
+    --tx3: var(--nj-offwhitelight);
     --tx-footer: var(--nj-coolgrey);
     --link-color: var(--nj-coolgreen-300);
     --link-color-light: var(--nj-nearmono-200);
@@ -877,7 +879,7 @@ footer p {
 }
 
 .header-title a:hover {
-    color: var(--tx2);
+    color: var(--tx3);
 }
 
 #menu {
@@ -1082,7 +1084,7 @@ ul#menu {
 }
 
 .collapsible:hover h3 {
-    color: var(--nj-offwhitedark) !important;
+    color: var(--tx3) !important;
 }
 
 .collcontent {
