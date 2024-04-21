@@ -965,10 +965,9 @@ html[data-theme="dark"] .gridded-img-photo:hover {
     color: var(--nj-coolgreen-200) !important;
     display: flex;
     align-items: center;
-    border-radius: .375rem;
-    padding: var(--m-rem-02) var(--m-rem-04) var(--m-rem-02) var(--m-rem-08);
+    padding: var(--m-rem-01) var(--m-rem-02) var(--m-rem-01) var(--m-rem-08);
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.75rem;
     font-weight: 400;
     text-decoration: none;
 }
@@ -978,8 +977,7 @@ html[data-theme="dark"] .gridded-img-photo:hover {
     color: var(--tx-sidebar-current) !important;
     display: flex;
     align-items: center;
-    border-radius: .375rem;
-    padding: var(--m-rem-01) var(--m-rem-02) var(--m-rem-01) var(--m-rem-04);
+    padding: var(--m-rem-01) var(--m-rem-02) var(--m-rem-01) var(--m-rem-08);
     text-align: left;
     font-size: 0.750rem;
     font-weight: 400;
