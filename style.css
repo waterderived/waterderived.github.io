@@ -804,7 +804,13 @@ html[data-theme="dark"] .gridded-img-photo:hover {
     z-index: 1;
 }
 
-.page-footer hr {
+footer {
+    margin-top: 36px;
+    margin-bottom: 48px;
+}
+
+.page-footer hr,
+footer hr {
     width: 80%;
 }
 
@@ -1093,7 +1099,7 @@ ul#menu {
     gap: 0.6rem;
     cursor: pointer;
     padding: 0.5rem;
-    margin: 0.5rem 0.5rem;
+    margin: 0.5rem 0.5rem 0.5rem 0;
     position: relative;
     z-index: 20;
     transition-duration: 1s;
