@@ -842,7 +842,7 @@ html[data-theme="dark"] .gridded-img-photo:hover {
 }
 
 .header-title a {
-    color: var(--link-color);
+    color: var(--tx1);
     text-decoration: none !important;
 }
 
