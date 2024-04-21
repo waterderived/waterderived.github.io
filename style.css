@@ -808,7 +808,7 @@ html[data-theme="dark"] .gridded-img-photo:hover {
     display: inline-block;
     align-content: center;
     color: var(--tx-footer);
-    font-size: 0.85em;
+    font-size: 0.75em;
 }
 
 .header-banner {
@@ -835,7 +835,7 @@ html[data-theme="dark"] .gridded-img-photo:hover {
     font-family: var(--font-family-body);
     font-size: 0.75em;
     font-weight: 400;
-    padding-left: 8px;
+    padding-left: 16px;
     padding-top: 2px;
     color: var(--tx1);
     z-index: 10;
