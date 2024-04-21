@@ -226,7 +226,10 @@ h1, h2, h3, h4, h5, h6 {
     margin: var(--spacing-04) 0 var(--spacing-04) 0;
 }
 
-h1:has(+ p),
+h1:has(+ p) {
+    margin-bottom: 32px;
+}
+
 h2:has(+ p),
 h3:has(+ p),
 h4:has(+ p),
@@ -252,20 +255,6 @@ p:has(+ h1, + h2, + h3, + h4, + h5, + h6) {
     width: 100%;
     height: auto;
     position: relative;
-}
-
-.headless {
-    width: 100%;
-    justify-content: center;
-}
-
-.headless h1 {
-    font-family: var(--font-family-body);
-    font-size: 14px;
-    font-weight: 500;
-    justify-self: right !important;
-    text-align: right;
-    margin-bottom: 4px !important;
 }
 
 h1 {
