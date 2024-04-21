@@ -16,183 +16,106 @@
 </head>
 
 <body>
-    <!--static sidebar-->
-    <div class="sidebar-frame" id="mySidebar">
-        <!--sidebar component - can switch out for another-->
-        <div class="sidebar">
-            <div class="sidebar-internal">
-                <div class="sidebar-element">
-                    <nav class="sidebar-element-container">
-                        <div>
-                            <a href="https://waterderived.github.io/" class="sidebar-group">
-                                <span>home</span></a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work" class="sidebar-group">
-                                <span>about</span></a>
-                        </div>
-                        <div>
-                            <a href="#" class="sidebar-group-current">
-                                <span>graphic</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work-audio" class="sidebar-group">
-                                <span>audio</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/jisoo-photo" class="sidebar-group">
-                                <span>photo</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work-writing" class="sidebar-group">
-                                <span>writing</span>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+    <div class="navbar">
+    <div class="header-buttons">
+        <div class="header-title"><a href="https://waterderived.github.io">
+            nicole jisoo kim</a>
         </div>
+        <ul id="menu">
+            <li>
+                <a href="https://waterderived.github.io/pages/work">
+                    <span>about</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://waterderived.github.io/pages/work-graphics">
+                    <span>graphic</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://waterderived.github.io/pages/work-audio">
+                    <span>audio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://waterderived.github.io/pages/jisoo-writing">
+                    <span>writing</span>
+                </a>
+            </li>
+        </ul>
     </div>
+    <button id="theme-switcher">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-sun" id="icon-sun">
+            <circle cx="7" cy="7" r="2" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-moon-star" id="icon-moon">
+            <circle cx="7" cy="7" r="2" />
+        </svg>
+    </button>
     </div>
-    <!--end of side bar-->
-
-    <div id="main" class="body-full">
-        <div class="header-banner"></div>
-        <div class="header-buttons">
-            <button class="sidebar-open-button" onclick="openNav()">&#9776;</button>
-            <button class="sidebar-open-button-open" onclick="closeNav()">&#9776;</button>
-            <button id="theme-switcher">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-sun" id="icon-sun">
-                    <circle cx="7" cy="7" r="2" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-moon-star" id="icon-moon">
-                    <circle cx="7" cy="7" r="2" />
-                </svg>
-            </button>
-            <div class="header-title"><a href="https://waterderived.github.io">
-                nicole jisoo kim</a>
-            </div>
-        </div>
-        <div class="body-container-fit" onclick="closeNav()">
-            <div class="headless">
-                <h1>graphic work</h1>
-            </div>
-            <hr>
-            <div class="above-footer">
-            <h3>scientific graphics</h3>
-            <h4>work experience</h4>
-            <div class="grid-container-col">
-                <span class="gridded">
-                    <a href="https://waterderived.github.io/pages/work-graphics-jvirGA.html">
-                        <img class="gridded-img"
+    <h1>graphic work</h1>
+    <h3>scientific graphics</h3>
+        <div class="grid-container-col">
+            <span class="gridded">
+                <a href="https://waterderived.github.io/pages/work-graphics-jvirGA.html">
+                    <img class="gridded-img"
                         src="https://waterderived.github.io/images/jvir-abstracts-thumbnail.png"
                         alt="Image of two sample graphical abstracts created by Nicole Kim for JVIR" xml:space="preserve" height="auto">
-                    </a>
-                    <p class="body-descr linktitle">
-                            <strong>Visual Abstract Editor & Designer, <em>Journal of Vascular and Interventional Radiology</strong></em>
-                            <br>
-                    </p>
-                </span>
-            </div>
-            <br>
-            <h4>educational & publication figures</h4>
-            <div class="grid-container-col">
-                <span class="gridded">
-                    <img class="gridded-img" src="https://waterderived.github.io/images/fimmu-14-1118845-g001.jpg"
-                        alt="" xml:space="preserve" height="auto">
-                    <p class="body-descr linktitle">Kim NJ, Yoon JH, Tuomi AC, Lee J and Kim D (2023).
-                        In-situ tumor vaccination by percutaneous ablative therapy and its synergy with
-                        immunotherapeutics: An update on combination therapy. Front. Immunol. 14:1118845. doi: <a
-                            href="10.3389/fimmu.2023.1118845">10.3389/fimmu.2023.1118845</a></p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img" src="https://waterderived.github.io/images/HDC-graphic.jpg" alt=""
-                        xml:space="preserve" height="auto">
-                    <p class="body-descr linktitle"><strong>Hemodialysis Catheter Placement</strong> | The
-                        Interventional Initiative</p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img" src="https://waterderived.github.io/images/kisoyue.jpg" alt=""
-                        xml:space="preserve" height="auto">
-                    <p class="body-descr linktitle"><strong>Classification of Gastric Varices</strong></p>
-                </span>
-            </div>
-            <br>
-            <br>
-            <h3>independent design work</h3>
-            <div class="grid-container-col">
-                <span class="gridded">
-                    <img class="gridded-img" src="https://waterderived.github.io/images/design-project-tadang-logos-dark.png" alt=""
-                        xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr"><strong>TADANG Task Management Application</strong> { 🚧 under construction }</p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img" src="https://waterderived.github.io/images/Artboard 417-100.jpg" alt=""
-                        xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr"><strong>Obliquities: The IR
-                                Board Game</strong> { 🚧 under construction }</p>
-                </span>
-            </div>
-            </div>
-            <div class="page-footer">
-                <hr>
-                <br>
-                <div class="footer-text">
-                    <p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p>
-                </div>
-            </div>
+                </a>
+                <p class="body-descr linktitle">
+                    <strong>Visual Abstract Editor & Designer, <em>Journal of Vascular and Interventional Radiology</strong></em>
+                </p>
+            </span>
         </div>
-    </div>
-
-
+        <br>
+        <h4>educational & publication figures</h4>
+        <div class="grid-container-col">
+            <span class="gridded">
+                <img class="gridded-img" src="https://waterderived.github.io/images/fimmu-14-1118845-g001.jpg"
+                    alt="" xml:space="preserve" height="auto">
+                <p class="body-descr linktitle">Kim NJ, Yoon JH, Tuomi AC, Lee J and Kim D (2023).
+                    In-situ tumor vaccination by percutaneous ablative therapy and its synergy with
+                    immunotherapeutics: An update on combination therapy. Front. Immunol. 14:1118845. doi: <a
+                    href="10.3389/fimmu.2023.1118845">10.3389/fimmu.2023.1118845</a>
+                </p>
+            </span>
+            <span class="gridded">
+                <img class="gridded-img" src="https://waterderived.github.io/images/HDC-graphic.jpg" alt=""
+                    xml:space="preserve" height="auto">
+                <p class="body-descr linktitle"><strong>Hemodialysis Catheter Placement</strong> | The
+                    Interventional Initiative</p>
+            </span>
+            <span class="gridded">
+                <img class="gridded-img" src="https://waterderived.github.io/images/kisoyue.jpg" alt=""
+                    xml:space="preserve" height="auto">
+                <p class="body-descr linktitle"><strong>Classification of Gastric Varices</strong></p>
+            </span>
+        </div>
+        <br>
+        <h3>independent design work</h3>
+        <div class="grid-container-col">
+            <span class="gridded">
+                <img class="gridded-img" src="https://waterderived.github.io/images/design-project-tadang-logos-dark.png" alt=""
+                    xml:space="preserve" height="auto">
+                <p class="linktitle body-descr"><strong>TADANG Task Management Application</strong> { 🚧 under construction }</p>
+            </span>
+            <span class="gridded">
+                <img class="gridded-img" src="https://waterderived.github.io/images/Artboard 417-100.jpg" alt=""
+                    xml:space="preserve" height="auto">
+                <p class="linktitle body-descr"><strong>Obliquities: The IR Board Game</strong> { 🚧 under construction }</p>
+            </span>
+        </div>
+    <footer>
+        <hr>
+            <p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p>
+    </footer>
 
 
     <script>
-        var dropdown = document.getElementsByClassName("sidebar-button-dropdown");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                }
-                else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        }
-
-        //sidebar collapse
-        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "110px";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-
-        //hide sidebar button
-        const div = document.querySelector('.sidebar-open-button')
-
-        div.addEventListener('click', () => {
-            div.classList.add('hidden');
-        })
-
-
-        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-            div.classList.remove('hidden'); //reappear sidebar button
-        }
-
         // evaluate
         function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
             if (localStorageTheme !== null) {
@@ -239,10 +162,5 @@
 
     </script>
 </body>
-<footer>
-    <div class="">
-
-    </div>
-</footer>
 
 </html>
