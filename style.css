@@ -188,6 +188,9 @@ body {
 
 p {
     font-size: 0.875em;
+    color: var(--tx1);
+    margin-top: 0.1rem;
+    margin-bottom: 0.1rem;
 }
 
 .body-p {
@@ -196,7 +199,6 @@ p {
     font-weight: 400;
     color: var(--tx1);
     margin-top: 0.2rem;
-    color: var(--tx1);
 }
 
 hr {
