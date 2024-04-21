@@ -826,7 +826,7 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 32px 0 8rem 0;
+    margin: 32px 0 6rem 0;
     align-items: center;
     width: 100%;
 }
