@@ -161,8 +161,8 @@
 }
 
 ::selection {
-    color: #19191A;
-    background: var(--color-selection);
+    color: var(--color-selection-tx);
+    background: var(--color-selection-bg);
 }
 
 /*---BODY---*/
