@@ -840,8 +840,6 @@ footer p {
     font-family: var(--font-family-body);
     font-size: 0.75em;
     font-weight: 400;
-    padding-left: 16px;
-    padding-top: 2px;
     color: var(--tx1);
     z-index: 10;
 }
@@ -849,6 +847,10 @@ footer p {
 .header-title a {
     color: var(--tx1);
     text-decoration: none !important;
+}
+
+.header-title a:hover {
+    color: var(--tx2);
 }
 
 #menu {
