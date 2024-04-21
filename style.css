@@ -857,6 +857,8 @@ ul#menu {
     word-break: keep-all;
     overflow-x: auto;
     white-space: nowrap;
+    padding-left: var(--spacing-02);
+    padding-right: var(--spacing-02);
     font-size: 0.75em;
     font-weight: 400;
     color: var(--tx1);
