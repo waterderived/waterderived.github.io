@@ -442,6 +442,15 @@ td:first-of-type {
     margin-left: 0px;
 }
 
+
+.body-narrow {
+    display: flex;
+    flex-direction: column;
+    margin: 0 24px;
+    justify-content: center;
+    max-width: 640px;
+}
+
 .body-container {
     color: var(--tx1);
     display: flex;
