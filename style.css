@@ -363,14 +363,14 @@ tbody {
 
 td {
     padding: 3px 6px 3px 2px;
-    vertical-align: inherit;
+    vertical-align: middle;
     align-content: start;
 }
 
 td:first-of-type {
     font-family: var(--font-family-mono);
-    font-size: 0.875em;
-    width: 140px !important;
+    font-size: 1em;
+    width: 100px !important;
 }
 
 
