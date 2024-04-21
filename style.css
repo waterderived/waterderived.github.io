@@ -860,6 +860,11 @@ ul#menu {
     z-index: 10;
 }
 
+#menu li {
+    padding-left: var(--spacing-02);
+    padding-right: var(--spacing-02);
+}
+
 .sidebar-open-button {
     font-size: 0.875em;
     cursor: pointer;
