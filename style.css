@@ -846,11 +846,6 @@ html[data-theme="dark"] .gridded-img-photo:hover {
     text-decoration: none !important;
 }
 
-#menu {
-    display: flex;
-    margin: auto 8px;
-    flex-wrap: wrap;
-}
 
 ul#menu {
     list-style: none;
