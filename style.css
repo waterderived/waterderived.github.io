@@ -170,10 +170,10 @@
 html {
     display: flex;
     justify-content: center;
+    background-color: var(--bg1);
     line-height: 1.8;
     font-family: 'Inter UI', 'Inter', 'Segoe UI', "Antarctican";
-    transition: all 0.8s;
-    background-color: var(--bg1);
+    transition: all 0.3s;
 }
 
 body {
