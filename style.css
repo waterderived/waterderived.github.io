@@ -519,6 +519,7 @@ td:first-of-type {
     padding-bottom: 8px;
     justify-self: center;
     align-self: center;
+    z-index: 1;
 }
 
 .p-narrow {
@@ -800,6 +801,7 @@ html[data-theme="dark"] .gridded-img-photo:hover {
     bottom: 0;
     height: 144px;
     margin: 4rem auto 8rem auto;
+    z-index: 1;
 }
 
 .page-footer hr {
