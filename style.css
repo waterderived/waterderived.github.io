@@ -1055,7 +1055,7 @@ ul#menu {
     outline: none;
 }
 
-.collapsible:hover h5 {
+.collapsible:hover h3 {
     color: var(--tx1) !important;
 }
 
@@ -1067,7 +1067,7 @@ ul#menu {
     transition: max-height 0.2s ease-out;
 }
 
-.collapsible h5:after {
+.collapsible h3:after {
     content: '\0002B'; /* Unicode character for "plus" sign (+) */
     font-size: 12px;
     color: var(--hd1);
@@ -1076,7 +1076,7 @@ ul#menu {
     vertical-align: middle;
   }
   
-  .active h5:after {
+  .active h3:after {
     content: '\2014'; /* Unicode character for "minus" sign (-) */
     color: var(--tx1);
   }
