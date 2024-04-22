@@ -16,209 +16,138 @@
 </head>
 
 <body>
-    <!--static sidebar-->
-    <div class="sidebar-frame" id="mySidebar">
-        <!--sidebar component - can switch out for another-->
-        <div class="sidebar">
-            <div class="sidebar-internal">
-                <div class="sidebar-element">
-                    <nav class="sidebar-element-container">
-                        <div>
-                            <a href="https://waterderived.github.io/" class="sidebar-group">
-                                <span>home</span></a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work.html" class="sidebar-group">
-                                <span>about</span></a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work-graphics.html" class="sidebar-group">
-                                <span>graphic</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work-audio.html" class="sidebar-group">
-                                <span>audio</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/jisoo-photo.html" class="sidebar-group">
-                                <span>photo</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/pages/work-writing.html" class="sidebar-group">
-                                <span>writing</span>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+    <div class="navbar">
+    <div class="header-buttons">
+        <div class="header-title"><a href="https://waterderived.github.io">
+            nicole jisoo kim</a>
         </div>
+        <ul id="menu">
+            <li>
+                <a href="https://waterderived.github.io/pages/work">
+                    <span>about</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://waterderived.github.io/pages/work-graphics">
+                    <span>graphic</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://waterderived.github.io/pages/work-audio">
+                    <span>audio</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://waterderived.github.io/pages/jisoo-writing">
+                    <span>writing</span>
+                </a>
+            </li>
+        </ul>
     </div>
+    <button id="theme-switcher">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-sun" id="icon-sun">
+            <circle cx="7" cy="7" r="2" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-moon-star" id="icon-moon">
+            <circle cx="7" cy="7" r="2" />
+        </svg>
+    </button>
     </div>
-    <!--end of side bar-->
-
-    <div id="main" class="body-full">
-        <div class="header-banner"></div>
-        <div class="header-buttons">
-            <button class="sidebar-open-button" onclick="openNav()">&#9776;</button>
-            <button class="sidebar-open-button-open" onclick="closeNav()">&#9776;</button>
-            <button id="theme-switcher">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun" id="icon-sun"><circle cx="7" cy="7" r="2"/></svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon-star" id="icon-moon"><circle cx="7" cy="7" r="2"/></svg>
-            </button>
-            <div class="header-title"><a href="https://waterderived.github.io">
-                nicole jisoo kim</a>
-            </div>
-        </div>
-        <div class="body-container" onclick="closeNav()">
-            <div class="above-footer">
-            <div class="headless">
-                <h1>audio/video work</h1>
-            </div>
-            <hr><br><br>
-            <h3>docs with disabilities podcast</h3>
-            <br>
-            <div class="body-p">
-                The Docs With Disabilities Podcasts aim to <br>
-                As a senior producer and audio engineer on the team, I
-            </div>
-            <br>
-            <br>
-            <div class="grid-container-too">
-                <span class="gridded">
-                    <img class="gridded-img"
-                        src="https://waterderived.github.io/images/GK2Pd62WAAAS2oO.jpg"
-                        alt="Docs With Disabilities Podcast Episode 90: DRP Access In Medicine"
-                        xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr"><strong>Episode 90</strong> | <a
-                            href="https://www.docswithdisabilities.org/docswithpodcast/episode/a876c865/episode-90-drp-special-series-access-in-medicine-aim">DRP Special Series: Access In Medicine (AIM)</a></p>
-                </span>
-                <span class="gridded">
-                    <img class="gridded-img"
-                        src="https://waterderived.github.io/images/GJrHWtxXwAACw_x.jpg"
-                        alt="Docs With Disabilities Podcast Episode 89: As Goes California, So Goes the Nation"
-                        xml:space="preserve" height="auto">
-                    <p class="linktitle body-descr"><strong>Episode 89</strong> | <a
-                            href="https://www.docswithdisabilities.org/docswithpodcast/episode/26c302d5/episode-89-as-california-goes-so-goes-the-nation-deans-edition">As California Goes, So Goes the Nation: Deans Edition</a></p>
-                </span>
-            <span class="gridded">
-                <img class="gridded-img"
-                    src="https://waterderived.github.io/images/F4YSYGeX0AAe1cq.jpg"
-                    alt="Docs With Disabilities Podcast Episode 74: Kruti Shah, PharmD" xml:space="preserve"
-                    height="auto">
-                <p class="linktitle body-descr"><strong>Episode 74</strong> | <a
-                        href="https://www.docswithdisabilities.org/docswithpodcast/episode/2ab643b5/episode-74-dr-kruti-shah-pharmd">Kruti
-                        Shah, PharmD</a></p>
-            </span>
-            <span class="gridded">
-                <img class="gridded-img"
-                    src="https://waterderived.github.io/images/Fznsc7pWYAM3_za.jpg"
-                    alt="Docs With Disabilities Podcast Episode 69: Heather Feldner, PT, MPT, Ph.D. & Heather Evans, Ph.D."
-                    xml:space="preserve" height="auto">
-                <p class="linktitle body-descr"><strong>Episode 69</strong> | <a
-                        href="https://www.docswithdisabilities.org/docswithpodcast/episode/e84c152f/episode-69-drs-heather-feldner-and-heather-evans">Heather
-                        Feldner, PT, MPT, PhD & Heather Evans, PhD</a></p>
-            </span>
-            <span class="gridded">
-                <img class="gridded-img"
-                    src="https://waterderived.github.io/images/Fr52qVsaMAM4oyO.jpg"
-                    alt="Docs With Disabilities Podcast Episode 65: Chase Anderson, MD" xml:space="preserve"
-                    height="auto">
-                <p class="linktitle body-descr"><strong>Episode 65</strong> | <a
-                        href="https://www.docswithdisabilities.org/docswithpodcast/episode/30d69ba6/episode-65-dr-chase-anderson-interviewed-by-dr-justin-bullock">Chase
-                        Anderson, MD</a></p>
-            </span>
-            <span class="gridded">
-                <img class="gridded-img"
-                    src="https://waterderived.github.io/images/FrCl3vKXoAEIMum.jpg"
-                    alt="Docs With Disabilities Podcast Episode 64: Andrea Dalzell" xml:space="preserve" height="auto">
-                <p class="linktitle body-descr"><strong>Episode 64</strong> | <a
-                        href="https://www.docswithdisabilities.org/docswithpodcast/episode/2af6a900/episode-64-andrea-dalzell-the-seated-nurse">Andrea
-                        Dalzell, "The Seated Nurse"</a></p>
-            </span>
-            <span class="gridded">
-                <img class="gridded-img"
-                    src="https://waterderived.github.io/images/FpBgMVbacAAfNlZ.jpg"
-                    alt="Docs With Disabilities Podcast Episode 62: Donald Egan" xml:space="preserve" height="auto">
-                <p class="linktitle body-descr"><strong>Episode 62</strong> | <a
-                        href="https://www.docswithdisabilities.org/docswithpodcast/episode/1e8f7a6b/episode-62-dr-donald-egan">Donald
-                        Egan, MD, MPH</a></p>
-            </span>
-            <span class="gridded">
-                <img class="gridded-img"
-                    src="https://waterderived.github.io/images/FlEtn7RWAAA300I.jpg"
-                    alt="Docs With Disabilities Podcast Episode 60: Conrad Addison" xml:space="preserve" height="auto">
-                <p class="linktitle body-descr"><strong>Episode 60</strong> | <a
-                        href="https://www.docswithdisabilities.org/docswithpodcast/episode/1e8f7a6b/episode-62-dr-donald-egan">Conrad
-                        Addison, MD</a></p>
-            </span>
-            <span class="gridded">
-                <img class="gridded-img"
-                    src="https://waterderived.github.io/images/FjfmKQTXwAEJ60u.jpg"
-                    alt="Docs With Disabilities Podcast Episode 58: Megan Winkelman Creasman" xml:space="preserve"
-                    height="auto">
-                <p class="linktitle body-descr"><strong>Episode 58</strong> | <a
-                        href="https://www.docswithdisabilities.org/docswithpodcast/episode/1e8f7a6b/episode-62-dr-donald-egan">Megan
-                        Winkelman Creasman, MD</a></p>
-            </span>
-            </div>
-            </div>
-            <br>
-            <div class="page-footer">
-                <hr>
-                <br>
-                <div class="footer-text">
-                    <p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
+    <h1>docs with disabilities podcast</h1>
+    <p>The Docs With Disabilities Podcasts aim to
+        <br>
+        As a senior producer and audio engineer on the team, I
+    </p>
+    <div class="grid-container-too">
+        <span class="gridded">
+            <img class="gridded-img"
+                src="https://waterderived.github.io/images/GK2Pd62WAAAS2oO.jpg"
+                alt="Docs With Disabilities Podcast Episode 90: DRP Access In Medicine"
+                xml:space="preserve" height="auto">
+            <p class="card-caption"><strong>Episode 90</strong> | <a
+                    href="https://www.docswithdisabilities.org/docswithpodcast/episode/a876c865/episode-90-drp-special-series-access-in-medicine-aim">DRP Special Series: Access In Medicine (AIM)</a></p>
+        </span>
+        <span class="gridded">
+            <img class="gridded-img"
+                src="https://waterderived.github.io/images/GJrHWtxXwAACw_x.jpg"
+                alt="Docs With Disabilities Podcast Episode 89: As Goes California, So Goes the Nation"
+                xml:space="preserve" height="auto">
+            <p class="card-caption"><strong>Episode 89</strong> | <a
+                    href="https://www.docswithdisabilities.org/docswithpodcast/episode/26c302d5/episode-89-as-california-goes-so-goes-the-nation-deans-edition">As California Goes, So Goes the Nation: Deans Edition</a></p>
+        </span>
+        <span class="gridded">
+            <img class="gridded-img"
+                src="https://waterderived.github.io/images/F4YSYGeX0AAe1cq.jpg"
+                alt="Docs With Disabilities Podcast Episode 74: Kruti Shah, PharmD" xml:space="preserve"
+                height="auto">
+            <p class="card-caption"><strong>Episode 74</strong> | <a
+                    href="https://www.docswithdisabilities.org/docswithpodcast/episode/2ab643b5/episode-74-dr-kruti-shah-pharmd">Kruti
+                    Shah, PharmD</a></p>
+        </span>
+        <span class="gridded">
+            <img class="gridded-img"
+                src="https://waterderived.github.io/images/Fznsc7pWYAM3_za.jpg"
+                alt="Docs With Disabilities Podcast Episode 69: Heather Feldner, PT, MPT, Ph.D. & Heather Evans, Ph.D."
+                xml:space="preserve" height="auto">
+            <p class="card-caption"><strong>Episode 69</strong> | <a
+                    href="https://www.docswithdisabilities.org/docswithpodcast/episode/e84c152f/episode-69-drs-heather-feldner-and-heather-evans">Heather
+                    Feldner, PT, MPT, PhD & Heather Evans, PhD</a></p>
+        </span>
+        <span class="gridded">
+            <img class="gridded-img"
+                src="https://waterderived.github.io/images/Fr52qVsaMAM4oyO.jpg"
+                alt="Docs With Disabilities Podcast Episode 65: Chase Anderson, MD" xml:space="preserve"
+                height="auto">
+            <p class="card-caption"><strong>Episode 65</strong> | <a
+                    href="https://www.docswithdisabilities.org/docswithpodcast/episode/30d69ba6/episode-65-dr-chase-anderson-interviewed-by-dr-justin-bullock">Chase
+                    Anderson, MD</a></p>
+        </span>
+        <span class="gridded">
+            <img class="gridded-img"
+                src="https://waterderived.github.io/images/FrCl3vKXoAEIMum.jpg"
+                alt="Docs With Disabilities Podcast Episode 64: Andrea Dalzell" xml:space="preserve" height="auto">
+            <p class="card-caption"><strong>Episode 64</strong> | <a
+                    href="https://www.docswithdisabilities.org/docswithpodcast/episode/2af6a900/episode-64-andrea-dalzell-the-seated-nurse">Andrea
+                    Dalzell, "The Seated Nurse"</a></p>
+        </span>
+        <span class="gridded">
+            <img class="gridded-img"
+                src="https://waterderived.github.io/images/FpBgMVbacAAfNlZ.jpg"
+                alt="Docs With Disabilities Podcast Episode 62: Donald Egan" xml:space="preserve" height="auto">
+            <p class="card-caption"><strong>Episode 62</strong> | <a
+                    href="https://www.docswithdisabilities.org/docswithpodcast/episode/1e8f7a6b/episode-62-dr-donald-egan">Donald
+                    Egan, MD, MPH</a></p>
+        </span>
+        <span class="gridded">
+            <img class="gridded-img"
+                src="https://waterderived.github.io/images/FlEtn7RWAAA300I.jpg"
+                alt="Docs With Disabilities Podcast Episode 60: Conrad Addison" xml:space="preserve" height="auto">
+            <p class="card-caption"><strong>Episode 60</strong> | <a
+                href="https://www.docswithdisabilities.org/docswithpodcast/episode/1e8f7a6b/episode-62-dr-donald-egan">Conrad
+                Addison, MD</a></p>
+        </span>
+        <span class="gridded">
+            <img class="gridded-img"
+                src="https://waterderived.github.io/images/FjfmKQTXwAEJ60u.jpg"
+                alt="Docs With Disabilities Podcast Episode 58: Megan Winkelman Creasman" xml:space="preserve"
+                height="auto">
+            <p class="linktitle body-descr"><strong>Episode 58</strong> | <a
+                href="https://www.docswithdisabilities.org/docswithpodcast/episode/1e8f7a6b/episode-62-dr-donald-egan">Megan
+                Winkelman Creasman, MD</a></p>
+        </span>
     </div>
-
-
+    <footer>
+        <hr>
+        <p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p>
+    </footer>
 
 
     <script>
-        var dropdown = document.getElementsByClassName("sidebar-button-dropdown");
-        var i;
-
-        for (i = 0; i < dropdown.length; i++) {
-            dropdown[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var dropdownContent = this.nextElementSibling;
-                if (dropdownContent.style.display === "block") {
-                    dropdownContent.style.display = "none";
-                }
-                else {
-                    dropdownContent.style.display = "block";
-                }
-            });
-        }
-
-        //sidebar collapse
-        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "110px";
-            document.getElementById("main").style.marginLeft = "0";
-        }
-
-        //hide sidebar button
-        const div = document.querySelector('.sidebar-open-button')
-
-        div.addEventListener('click', () => {
-            div.classList.add('hidden');
-        })
-
-
-        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-            div.classList.remove('hidden'); //reappear sidebar button
-        }
-
-        // evaluate
+        // evaluate current local or system theme
         function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
             if (localStorageTheme !== null) {
                 return localStorageTheme;
