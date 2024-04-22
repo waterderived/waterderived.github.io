@@ -636,8 +636,8 @@ td:first-of-type {
     max-width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    grid-gap: 8px;
-    z-index: 3;
+    gap: var(--m-rem-02);
+    margin-top: var(--spacing-02);
 }
 
 .grid-container-tree {
