@@ -649,7 +649,7 @@ td:first-of-type {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     gap: var(--m-rem-02);
-    margin-top: var(--spacing-02);
+    margin-top: var(--spacing-08);
 }
 
 .grid-container-tree {
