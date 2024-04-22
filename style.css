@@ -138,9 +138,9 @@
     --tx2: var(--nj-charcoal-500);
     --tx3: var(--nj-charcoal-400);
     --tx-footer: var(--nj-charcoal-500);
-    --link-color: var(--nj-green-800);
-    --link-color-light: var(--nj-green-600);
-    --link-hover: var(--nj-green-700);
+    --link-color: var(--nj-green-600);
+    --link-color-light: var(--nj-green-500);
+    --link-hover: var(--nj-green-800);
     --color-selection-tx: var(--tx1);
     --color-selection-bg: var(--nj-green-250);
     --tx-sidebar-current: var(--tx2);
