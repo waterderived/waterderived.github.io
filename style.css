@@ -386,6 +386,9 @@ td:first-of-type {
     width: 140px !important;
 }
 
+td:last-of-type {
+    width: 1fr;
+}
 
 /* -- inline footnotes -- */
 .inf {
