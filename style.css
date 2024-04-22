@@ -881,7 +881,7 @@ footer p {
     font-size: 0.75em;
     font-weight: 400;
     color: var(--tx1);
-    padding-top: 2px;
+    vertical-align: middle;
     z-index: 10;
 }
 
