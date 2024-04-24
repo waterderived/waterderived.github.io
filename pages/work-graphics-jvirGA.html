@@ -57,44 +57,48 @@
         </svg>
     </button>
     </div>
-    <h3>jvir graphic abstracts</h3>
+    <h3>jvir graphical abstracts</h3>
     <p>
-        Worked with the Editor-in-Chief of JVIR to design and create single-panel graphic abstracts summarizing select publications from each issue of the journal
+        Worked with the Editor-in-Chief of JVIR to design and create single-panel graphic-driven abstracts summarizing select publications from each issue of the journal
         <br>
         Developed and trained a team of medical residents and students
     </p>
     <br>
-    <div class="grid-container-col">
-        <span class="gridded">
-            <img class="gridded-img"
-                src="https://waterderived.github.io/images/JVIR_GA - 2023_10 - deGregorio - njk_01-01.jpg"
-                alt="de Gregorio et al." xml:space="preserve" height="auto">
-            <p class="card-caption">de Gregorio et al. | <a href="#">tweet</a> - <a
-                    href="https://doi.org/10.1016/j.jvir.2023.06.041">article</a></p>
-        </span>
-        <span class="gridded">
-            <img class="gridded-img"
-                src="https://waterderived.github.io/images/JVIR_GA - 202310 - Gupta - njk-01.jpg"
-                alt="Gupta et al." xml:space="preserve" height="auto">
-            <p class="card-caption">Gupta et al. | <a
-                    href="https://doi.org/10.1016/j.jvir.2023.06.041">article</a></p>
-        </span>
-        <span class="gridded">
-            <img class="gridded-img"
-                src="https://waterderived.github.io/images/F7d1ZeaWkAA25so.jpg"
-                alt="Beall et al." xml:space="preserve" height="auto">
-            <p class="card-caption">Beall et al. | <a
-                    href="https://twitter.com/JVIRmedia/status/1708963667654435255">tweet</a> - <a
-                    href="https://doi.org/10.1016/j.jvir.2023.05.024">article</a></p>
-        </span>
-        <span class="gridded">
-            <img class="gridded-img"
-                src="https://waterderived.github.io/images/F7DpbdNXEAAEB8G.jpg"
-                alt="Shalvoy et al." xml:space="preserve" height="auto">
-            <p class="card-caption">Shalvoy et al. | <a
-                    href="https://twitter.com/JVIRmedia/status/1707120920815394928">tweet</a> - <a
-                    href="https://doi.org/10.1016/j.jvir.2023.05.009">article</a></p>
-        </span>
+    <button type="button" class="collapsible"><h3>all graphical abstracts</h3></button>
+    <div class="collcontent">
+        <div class="grid-container-col">
+            <span class="gridded">
+                <img class="gridded-img"
+                    src="https://waterderived.github.io/images/JVIR_GA - 2023_10 - deGregorio - njk_01-01.jpg"
+                    alt="de Gregorio et al." xml:space="preserve" height="auto">
+                <p class="card-caption">de Gregorio et al. | <a href="#">tweet</a> - <a
+                        href="https://doi.org/10.1016/j.jvir.2023.06.041">article</a></p>
+            </span>
+            <span class="gridded">
+                <img class="gridded-img"
+                    src="https://waterderived.github.io/images/JVIR_GA - 202310 - Gupta - njk-01.jpg"
+                    alt="Gupta et al." xml:space="preserve" height="auto">
+                <p class="card-caption">Gupta et al. | <a
+                        href="https://doi.org/10.1016/j.jvir.2023.06.041">article</a></p>
+            </span>
+            <span class="gridded">
+                <img class="gridded-img"
+                    src="https://waterderived.github.io/images/F7d1ZeaWkAA25so.jpg"
+                    alt="Beall et al." xml:space="preserve" height="auto">
+                <p class="card-caption">Beall et al. | <a
+                        href="https://twitter.com/JVIRmedia/status/1708963667654435255">tweet</a> - <a
+                        href="https://doi.org/10.1016/j.jvir.2023.05.024">article</a></p>
+            </span>
+            <span class="gridded">
+                <img class="gridded-img"
+                    src="https://waterderived.github.io/images/F7DpbdNXEAAEB8G.jpg"
+                    alt="Shalvoy et al." xml:space="preserve" height="auto">
+                <p class="card-caption">Shalvoy et al. | <a
+                        href="https://twitter.com/JVIRmedia/status/1707120920815394928">tweet</a> - <a
+                        href="https://doi.org/10.1016/j.jvir.2023.05.009">article</a></p>
+            </span>
+        </div>
+    </div>
     <footer>
         <hr>
         <p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p>
@@ -103,6 +107,22 @@
 
 
     <script>
+        // collapsible callout
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var collcontent = this.nextElementSibling;
+            if (collcontent.style.maxHeight){
+              collcontent.style.maxHeight = null;
+            } else {
+              collcontent.style.maxHeight = collcontent.scrollHeight + "px";
+            }
+          });
+        }
+
         // evaluate current theme settings
         function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
             if (localStorageTheme !== null) {
