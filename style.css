@@ -949,6 +949,29 @@ footer p {
     width: 100%;
 }
 
+.navbar2 {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / -1;
+    height: max-content;
+    position: relative;
+    z-index: 3;
+}
+
+@media (min-width: 768px) {
+    .navbar2 {
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 24px 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .navbar2 {
+        grid-column: 2 / span 12;
+    }
+}
+
 .header-buttons {
     display: flex;
     vertical-align: middle;
