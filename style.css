@@ -1006,6 +1006,7 @@ footer .footer-links .mark-left {
 
 .navbar-container {
     justify-content: flex-end;
+    vertical-align: middle;
 }
 
 .navbar2 {
@@ -1237,7 +1238,7 @@ ul#menu {
     gap: 0.6rem;
     cursor: pointer;
     padding: 0.5rem;
-    margin: 0.5rem 0.5rem 0.5rem 0;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
     position: relative;
     z-index: 20;
     transition-duration: 1s;

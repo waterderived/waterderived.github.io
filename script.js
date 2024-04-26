@@ -82,7 +82,7 @@ document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
 
 //simple typing effect
 var i = 0;
-var txt = 'Hi there, my name is Nicole.';
+var txt = 'Hi there, I\'m Nicole.';
 var speed = 50;
 
 function typeWriter() {
