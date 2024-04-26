@@ -1194,7 +1194,7 @@ ul#menu {
     color: var(--nj-grey-light);
     padding: 4px;
     border-radius: 4px;
-    display: inline;
+    display: inline-block;
     cursor: pointer;
 }
 
