@@ -1036,9 +1036,8 @@ footer .footer-links .mark-left {
 .navbar2 .header-title {
     width: max-content;
     vertical-align: middle;
-    justify-self: left;
-    align-content: left;
     position: relative;
+    display: inline-flex;
 }
 
 .navbar-item {
