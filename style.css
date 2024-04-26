@@ -957,9 +957,7 @@ footer {
 }
 
 footer p {
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+    text-align: left;
     font-family: var(--font-family-body);
     color: var(--footer-p-color);
     font-size: 0.75em;
@@ -1014,8 +1012,7 @@ footer .footer-links .mark-left {
     z-index: 3;
 }
 
-.navbar2,
-.navbar-container {
+.navbar2 {
     align-items: center;
     display: flex;
     width: 100%;
@@ -1037,6 +1034,7 @@ footer .footer-links .mark-left {
 
 .navbar2 .header-title {
     display: flex;
+    width: max-content;
 }
 
 .navbar-item {
@@ -1127,6 +1125,10 @@ ul#menu {
 #menu li+li {
     margin-inline-start: var(--spacing-04);
 }
+
+/*#menu li:last-of-type {
+    padding-right: 0;
+}*/
 
 .hidden {
     visibility: hidden;
