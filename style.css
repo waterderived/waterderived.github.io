@@ -242,6 +242,7 @@ p {
     color: var(--tx1);
     margin-top: 0rem;
     margin-bottom: 0.375rem;
+    display: inline;
 }
 
 hr {
@@ -1195,7 +1196,7 @@ ul#menu {
     width: min-content;
     padding: 4px;
     border-radius: 4px;
-    display: inline-block;
+    display: inline;
     cursor: pointer;
 }
 
