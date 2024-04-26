@@ -1030,11 +1030,6 @@ footer .footer-links .mark-left {
     }
 }
 
-.navbar2 .navbar-container, 
-.navbar2 .navbar-container > .navbar-item {
-    vertical-align: middle !important;
-}
-
 .navbar2 .header-title {
     margin-right: auto;
     align-self: center;
@@ -1049,11 +1044,15 @@ footer .footer-links .mark-left {
 .navbar-item {
     align-items: center;
     display: inline-flex;
-    flex-direction: column;
     justify-content: space-between;
     margin-right: 20px;
     position: relative;
     vertical-align: middle;
+}
+
+.navbar2 .navbar-container, 
+.navbar2 .navbar-container > .navbar-item {
+    vertical-align: middle !important;
 }
 
 .navbar-item .btn {
