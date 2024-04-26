@@ -1068,8 +1068,9 @@ footer .footer-links .mark-left {
     color: var(--link-color);
     font-family: var(--font-family-nav);
     font-size: 0.75em;
-    text-decoration: none;
     font-weight: 400;
+    text-decoration: none;
+    vertical-align: middle;
 }
 
 .navbar-item a:hover {
