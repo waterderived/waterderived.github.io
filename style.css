@@ -1071,9 +1071,9 @@ footer p {
 }
 
 .header-title {
-    font-family: var(--font-family-body);
+    font-family: var(--font-family-nav);
     font-size: 0.75em;
-    font-weight: 400;
+    font-weight: 500;
     color: var(--tx1);
 }
 
