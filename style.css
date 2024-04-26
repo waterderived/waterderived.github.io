@@ -174,7 +174,7 @@
     --hero-h1-font: var(--font-family-title);
     --hero-h1-size: 48px;
     --hero-h1-height: 56px;
-    --hero-h1-weight: 500;
+    --hero-h1-weight: 600;
     --hero-h1-style: normal;
     --hero-h2-color: var(--hd1);
     --hero-h2-font: var(--font-family-title);
@@ -184,7 +184,7 @@
     --hero-h2-style: normal;
     --hero-p-color: var(--tx1);
     --hero-p-font: var(--font-family-body);
-    --hero-p-size: 0.875em;
+    --hero-p-size: 1em;
     --hero-p-height: 1em;
     --hero-p-weight: 400;
     --hero-p-style: normal;
