@@ -1192,6 +1192,7 @@ ul#menu {
 .dropdown-btn {
     background-color: var(--nj-green-500);
     color: var(--nj-grey-light);
+    width: min-content;
     padding: 4px;
     border-radius: 4px;
     display: inline-block;
