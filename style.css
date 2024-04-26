@@ -1048,7 +1048,6 @@ footer .footer-links .mark-left {
 
 .navbar-item {
     align-items: center;
-    height: min-content;
     display: inline-block;
     position: relative;
     vertical-align: middle;
