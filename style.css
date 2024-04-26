@@ -1017,14 +1017,14 @@ footer p {
     margin-right: auto;
 }
 
-
-.navbar2 .navbar-link-container .navbar-item {
+.navbar-item {
     align-items: center;
-    justify-content: center;
-    margin-right: 4px;
-    padding: 8px 20px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+    position: relative;
 }
-
 
 .navbar-item .btn {
     background-color: transparent;
@@ -1043,6 +1043,13 @@ footer p {
     font-size: 0.75em;
     text-decoration: none;
     font-weight: 400;
+}
+
+.navbar2 .navbar-link-container .navbar-item {
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+    padding: 8px 20px;
 }
 
 .navbar2 .navbar-link-container .navbar-item .btn.active {
