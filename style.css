@@ -1125,6 +1125,10 @@ ul#menu {
     outline: none;
 }
 
+.collapsible h3 {
+    margin: var(--spacing-08) 0 !important;
+}
+
 .collapsible:hover h3 {
     color: var(--tx3) !important;
 }
