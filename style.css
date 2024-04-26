@@ -1191,7 +1191,7 @@ ul#menu {
 --homepage dropdowns-- 
 ---------------------*/
 
-.dropdown-btn {
+select {
     background-color: var(--nj-green-500);
     color: var(--nj-grey-light);
     width: min-content;
@@ -1204,8 +1204,8 @@ ul#menu {
 }
 
 /* dropdown button hover and focus */
-.dropdown-btn:hover,
-.dropdown-btn:focus {
+select:hover,
+select:focus {
     background-color: var(--nj-green-300);
 }
 
@@ -1226,7 +1226,7 @@ ul#menu {
 }
 
 /* choices in dropdown */
-.dropdown-content a {
+option {
     color: var(--tx1);
     padding: 4px 8px;
     font-size: 1em;
@@ -1234,7 +1234,7 @@ ul#menu {
     display: block;
 }
 
-.dropdown-content a:hover {
+option:hover {
     background-color: var(--bg1);
 }
 
