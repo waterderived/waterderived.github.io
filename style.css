@@ -86,14 +86,6 @@
     --nj-green-700: rgb(86, 100, 90);
     --nj-green-800: rgb(64, 75, 68);
     --nj-green-900: rgb(50, 58, 53);
-    --nj-coolgreen-100: rgb(227, 235, 228);
-    --nj-coolgreen-200: rgb(159, 173, 163);
-    --nj-coolgreen-300: rgb(151, 165, 155);
-    --nj-coolgreen-400: rgb(143, 157, 147);
-    --nj-coolgreen-500: rgb(131, 147, 135);
-    --nj-coolgreen-600: rgb(125, 143, 130);
-    --nj-coolgreen-700: rgb(104, 123, 110);
-    --nj-coolgreen-800: rgb(100, 123, 107);
     --nj-nearmono-050: rgb(254, 254, 255);
     --nj-nearmono-100: rgb(253, 253, 254);
     --nj-nearmono-150: rgb(249, 249, 250);
@@ -137,7 +129,7 @@
     --tx1: var(--nj-charcoal-700);
     --tx2: var(--nj-charcoal-500);
     --tx3: var(--nj-charcoal-400);
-    --tx-footer: var(--nj-charcoal-500);
+    --footer-p-color: var(--nj-charcoal-500);
     --link-color: var(--nj-green-600);
     --link-color-light: var(--nj-green-500);
     --link-hover: var(--nj-green-800);
@@ -157,9 +149,9 @@
     --bg3: var(--nj-charcoal-550);
     --hd1: var(--nj-offwhitelighter);
     --tx1: var(--nj-offwhitedark);
-    --tx2: var(--nj-coolgreen-700);
+    --tx2: var(--nj-green-400);
     --tx3: var(--nj-offwhitelight);
-    --tx-footer: var(--nj-coolgrey);
+    --footer-p-color: var(--nj-coolgrey);
     --link-color: var(--nj-green-300);
     --link-color-light: var(--nj-green-200);
     --link-hover: var(--nj-green-400);
@@ -175,6 +167,25 @@
     --img-dark-level-hover: 100%;
 }
 
+:root {
+    --hero-h1-color: var(--hd1);
+    --hero-h1-font: var(--font-family-title);
+    --hero-h1-size: 48px;
+    --hero-h1-height: 56px;
+    --hero-h1-weight: 500;
+    --hero-h1-style: normal;
+    --hero-h2-color: var(--hd1);
+    --hero-h2-font: var(--font-family-title);
+    --hero-h2-size: 36px;
+    --hero-h2-height: 48px;
+    --hero-h2-weight: 500;
+    --hero-h2-style: normal;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 ::selection {
     color: var(--selection-color-tx);
     background: var(--selection-color-bg);
@@ -185,7 +196,6 @@
 html {
     display: flex;
     justify-content: center;
-    background-color: var(--bg1);
     line-height: 1.8;
     font-family: 'Inter UI', 'Inter', 'Segoe UI', "Antarctican";
 }
@@ -197,6 +207,10 @@ html {
 }
 
 body {
+    background-color: var(--bg1);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     margin: 0 24px;
@@ -383,7 +397,7 @@ td:last-of-type {
 }
 
 
-.body-full-grid {
+.grid {
     --gridGap: 24px;
     gap: var(--gridGap);
     display: grid;
@@ -393,19 +407,19 @@ td:last-of-type {
 }
 
 @media (min-width: 640px) {
-    .body-full-grid {
+    .grid {
         grid-template-columns: repeat(14, minmax(0, 1fr));
     }
 }
 
 @media (min-width: 1024px) {
-    .body-full-grid {
+    .grid {
         --gridGap: 48px;
     }
 }
 
 @media (min-width: 1440px) {
-    .body-full-grid {
+    .grid {
         margin: 0 auto;
         max-width: 1440px;
         padding-left: 48px;
@@ -413,35 +427,29 @@ td:last-of-type {
     }
 }
 
-.body-container {
-    color: var(--tx1);
-    display: flex;
-    flex-direction: column;
-    max-width: 80%;
-    position: absolute;
-    align-content: center;
-    justify-self: center;
-    top: 10rem;
-    padding-bottom: 12rem;
-    margin: 0 minmax(300px, auto);
-    z-index: 2;
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0 24px;
+    width: 1134px;
 }
 
-.body-container-fit {
-    color: var(--tx1);
-    /*display: grid;*/
-    display: flex;
-    flex-direction: column;
-    width: min(200vw, 600px);
-    max-width: 600px;
-    position: absolute;
-    align-content: center;
-    justify-self: center;
-    top: 10rem;
-    padding-bottom: 12rem;
-    margin: 0 auto 0 auto;
-    z-index: 2;
+.page-hero {
+    position: relative;
 }
+
+.page-hero .grid {
+    row-gap: 0;
+}
+
+.page-hero-content h1 {
+    color: var(--hero-h1-color);
+    font-family: var(--hero-h1-font);
+    font-style: var(--hero-h1-style);
+    font-weight: var(--hero-h1-weight);
+}
+
+
 
 .body-descr {
     font-size: 0.875em;
@@ -818,7 +826,7 @@ footer p {
     justify-content: center;
     align-content: center;
     text-align: center;
-    color: var(--tx-footer);
+    color: var(--footer-p-color);
     font-size: 0.75em;
     margin: 24px 0 32px 0;
 }
