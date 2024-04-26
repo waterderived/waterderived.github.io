@@ -1068,8 +1068,7 @@ footer .footer-links .mark-left {
     white-space: normal;
 }
 
-.navbar-item .btn,
-.navbar-item a {
+.navbar-item .btn a {
     color: var(--link-color);
     font-family: var(--font-family-nav);
     font-size: 0.75em;
