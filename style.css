@@ -1122,6 +1122,10 @@ ul#menu {
     outline: none;
 }
 
+.collapsible h3 {
+    padding-bottom: var(--spacing-02) !important;
+}
+
 .collapsible:hover h3 {
     color: var(--tx3) !important;
 }
@@ -1143,10 +1147,10 @@ ul#menu {
     vertical-align: middle;
   }
   
-  .active h3:after {
+.active h3:after {
     content: '\2014'; /* Unicode character for "minus" sign (-) */
     color: var(--tx1);
-  }
+}
 
 
 /* -- inline footnotes -- */
