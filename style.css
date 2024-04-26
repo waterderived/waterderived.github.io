@@ -1033,10 +1033,13 @@ footer .footer-links .mark-left {
 }
 
 .navbar2 .header-title {
+    margin-right: auto;
+    align-self: center;
     width: max-content;
+}
+
+.navbar2 .header-title a {
     vertical-align: middle;
-    position: relative;
-    display: inline-flex;
 }
 
 .navbar-item {
