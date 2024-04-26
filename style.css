@@ -180,6 +180,12 @@
     --hero-h2-height: 48px;
     --hero-h2-weight: 500;
     --hero-h2-style: normal;
+    --hero-p-color: var(--tx1);
+    --hero-p-font: var(--font-family-body);
+    --hero-p-size: 0.875em;
+    --hero-p-height: 1em;
+    --hero-p-weight: 400;
+    --hero-p-style: normal;
 }
 
 * {
@@ -527,8 +533,31 @@ td:last-of-type {
     color: var(--hero-p-color);
     font-family: var(--hero-p-font);
     font-size: var(--hero-p-size);
-    font-style: var(--hero-h2-style);
-    font-weight: var(--hero-h2-weight);
+    font-style: var(--hero-p-style);
+    font-weight: var(--hero-p-weight);
+}
+
+.page-hero-content p:empty:after {
+    content: "\00A0";
+}
+
+.page-hero-content a {
+    color: var(--link-color)
+}
+
+.page-hero-content ol, 
+.page-hero-content ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-hero-content .page-hero-text.align-text-left * {
+    text-align: left !important;
+}
+
+.page-hero-content .page-hero-text.align-text-left ol,
+.page-hero-content .page-hero-text.align-text-left ul {
+    align-items: flex-start;
 }
 
 .body-descr {
