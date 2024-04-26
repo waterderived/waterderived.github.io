@@ -1031,7 +1031,7 @@ footer .footer-links .mark-left {
 
 @media (min-width: 1024px) {
     .navbar2 {
-        grid-column: 1 / span 14;
+        grid-column: 1 / -1;
     }
 }
 
