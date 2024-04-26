@@ -1043,15 +1043,14 @@ footer .footer-links .mark-left {
 
 .navbar-item {
     align-items: center;
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
     margin-right: 20px;
     position: relative;
     vertical-align: middle;
 }
 
-.navbar2 .navbar-container, 
-.navbar2 .navbar-container > .navbar-item {
+.navbar2 .navbar-container {
     vertical-align: middle !important;
 }
 
