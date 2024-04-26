@@ -461,7 +461,7 @@ td:last-of-type {
 .page-hero-content {
     column-gap: 0;
     display: grid;
-    grid-column: 1/-1;
+    grid-column: 1/12;
     grid-template-columns: repeat(14, minmax(0, 1fr));
     position: relative;
 }
@@ -1004,14 +1004,10 @@ footer .footer-links .mark-left {
     width: 100%;
 }
 
-.navbar-container {
-    vertical-align: middle;
-}
-
 .navbar2 {
     display: flex;
     flex-direction: row;
-    grid-column: 1 / -1;
+    grid-column: 1 / span 16;
     position: relative;
     z-index: 3;
     display: flex;
@@ -1030,8 +1026,13 @@ footer .footer-links .mark-left {
 
 @media (min-width: 1024px) {
     .navbar2 {
-        grid-column: 1 / -1;
+        grid-column: 1 / span 16;
     }
+}
+
+.navbar2 .navbar-container, 
+.navbar2 .navbar-container > .navbar-item {
+    vertical-align: middle !important;
 }
 
 .navbar2 .header-title {
