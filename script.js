@@ -79,3 +79,16 @@ const switchTheme = () => {
 
 // orig switcher
 document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
+
+//simple typing effect
+var i = 0;
+var txt = 'Hi there, my name is Nicole.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typeSimple").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}

@@ -545,6 +545,7 @@ td:last-of-type {
     font-size: var(--hero-h1-size);
     font-style: var(--hero-h1-style);
     font-weight: var(--hero-h1-weight);
+    text-wrap: wrap;
 }
 
 .page-hero-content h2,
