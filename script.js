@@ -95,7 +95,7 @@ function typeWriter() {
 
 //drowpdowns on home page
 function dropdownMenuToggle() {
-    document.getElementById("identity1").classList.toggle("show");
+    document.getElementById("identity1").classList.toggle('show');
 }
 
 window.onclick = function(event) {
