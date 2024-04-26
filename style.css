@@ -963,7 +963,7 @@ footer a {
     text-align: left;
     font-family: var(--font-family-body);
     color: var(--footer-p-color);
-    font-size: 0.875em;
+    font-size: 12px;
     margin: 24px 0 24px 0;
 }
 
@@ -1033,8 +1033,8 @@ footer .footer-links .mark-left {
 }
 
 .navbar2 .header-title {
-    display: flex;
     width: max-content;
+    vertical-align: middle;
     justify-self: left;
     align-content: left;
 }
