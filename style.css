@@ -1016,7 +1016,6 @@ footer .footer-links .mark-left {
     grid-column: 1 / span 16;
     position: relative;
     z-index: 3;
-    display: flex;
     justify-content: space-between;
     width: 100%;
     vertical-align: middle;
@@ -1225,7 +1224,7 @@ ul#menu {
     background-color: var(--bg2);
     min-width: 100px;
     box-shadow: 2px 10px 0 rgba(0,0,0,.4);
-    z-index: 10;
+    z-index: 1;
 }
 
 /* choices in dropdown */
