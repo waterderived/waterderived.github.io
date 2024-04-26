@@ -1222,7 +1222,7 @@ ul#menu {
 }
 
 /* choices in dropdown */
-.dropdown-choice {
+.dropdown-content a {
     color: var(--tx1);
     padding: 4px 8px;
     font-size: 1em;
@@ -1230,7 +1230,7 @@ ul#menu {
     display: block;
 }
 
-.dropdown-choice:hover {
+.dropdown-content a:hover {
     background-color: var(--bg1);
 }
 
