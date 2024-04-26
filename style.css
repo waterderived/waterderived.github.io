@@ -223,13 +223,14 @@ html {
 
 body {
     background-color: var(--bg1);
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     margin: 0 24px;
     justify-content: center;
     max-width: 640px;
     line-height: inherit;
-    overflow-x: hidden;
+    overflow-x: hidden;*/
+    text-align: left;
 }
 
 body .body-full {
@@ -1013,7 +1014,6 @@ footer p {
 
 .navbar2 .header-title {
     align-self: center;
-    height: max-content;
     width: max-content;
     margin-right: auto;
 }
