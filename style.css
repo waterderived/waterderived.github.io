@@ -1014,6 +1014,7 @@ footer p {
 .navbar2 .header-title {
     align-self: center;
     height: max-content;
+    width: max-content;
     margin-right: auto;
 }
 
