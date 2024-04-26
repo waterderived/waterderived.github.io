@@ -536,6 +536,10 @@ td:last-of-type {
     }
 }
 
+.page-hero-bio p {
+    color: var(--tx1) !important;
+}
+
 .page-hero-content .page-hero-bio {
     grid-column: 1 / span 12;
     grid-row: 1;
