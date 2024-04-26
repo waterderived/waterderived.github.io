@@ -1013,7 +1013,6 @@ footer .footer-links .mark-left {
     grid-column: 1 / span 16;
     position: relative;
     z-index: 3;
-    align-items: center;
     display: flex;
     justify-content: space-between;
     width: 100%;
