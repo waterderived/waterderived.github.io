@@ -124,7 +124,7 @@
 }
 
 :root[data-theme="light"] {
-    --bg1: var(--nj-nearmono-100);
+    --bg1: var(--nj-offwhitelighter);
     --bg2: var(--nj-nearmono-050);
     --bg3: var(--nj-nearmono-150);
     --hd1: var(--nj-charcoal-700);
@@ -1081,7 +1081,7 @@ footer .footer-links .mark-left {
     align-items: center;
     justify-content: center;
     margin-right: 4px;
-    padding: auto 8px;
+    padding: 12px 8px;
 }
 
 .navbar2 .navbar-container .navbar-item .btn.active {
