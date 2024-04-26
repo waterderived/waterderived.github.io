@@ -35,8 +35,7 @@
 :root {
     --font-family-title: "Space Grotesk", "Antarctican Mono", /*"Eskapade Fraktur",*/ 'Inter', 'Segoe UI';
     --font-family-body: /*"Antarctican Mono"*/, 'DM Sans', 'Inter UI', 'Inter', 'Segoe UI';
-    --font-family-sidebar: 'DM Sans', 'Inter', 'Segoe UI';
-    --font-family-nav: 'Poppins', 'Inter UI', 'Inter', 'Segoe UI', sans-serif;
+    --font-family-nav: 'DM Sans', 'Inter UI', 'Inter', 'Segoe UI', sans-serif;
     --font-family-mono: "Space Grotesk", 'Consolas';
     --border-spacing-x: 0;
     --border-spacing-y: 0;
@@ -1007,8 +1006,8 @@ footer .footer-links .mark-left {
 
 .navbar2 {
     display: flex;
+    flex-direction: row;
     grid-column: 2 / span 14;
-    height: max-content;
     position: relative;
     z-index: 3;
 }
@@ -1017,7 +1016,6 @@ footer .footer-links .mark-left {
 .navbar-container {
     align-items: center;
     display: flex;
-    flex-direction: row;
     width: 100%;
 }
 
@@ -1037,7 +1035,6 @@ footer .footer-links .mark-left {
 
 .navbar2 .header-title {
     display: flex;
-    align-self: center;
 }
 
 .navbar-item {
@@ -1150,7 +1147,7 @@ ul#menu {
 }
 
 .collcontent {
-    padding: var(--spacing-04) var(--spacing-04) var(--spacing-01) var(--spacing-04);
+    padding: 0 var(--spacing-04);
     background-color: transparent;
     max-height: 0;
     overflow: hidden;
