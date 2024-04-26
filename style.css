@@ -1005,7 +1005,6 @@ footer .footer-links .mark-left {
 }
 
 .navbar-container {
-    justify-content: flex-end;
     vertical-align: middle;
 }
 
@@ -1053,6 +1052,7 @@ footer .footer-links .mark-left {
     justify-content: space-between;
     margin-right: 20px;
     position: relative;
+    vertical-align: middle;
 }
 
 .navbar-item .btn {
@@ -1074,18 +1074,18 @@ footer .footer-links .mark-left {
     font-weight: 400;
 }
 
-.navbar2 .navbar-link-container .navbar-item {
+.navbar2 .navbar-container .navbar-item {
     align-items: center;
     justify-content: center;
     margin-right: 4px;
     padding: 8px 20px;
 }
 
-.navbar2 .navbar-link-container .navbar-item .btn.active {
+.navbar2 .navbar-container .navbar-item .btn.active {
     font-weight: 500;
 }
 
-.navbar2 .navbar-link-container .navbar-item.selected {
+.navbar2 .navbar-container .navbar-item.selected {
     border-radius: 20px;
     font-weight: 500;
     outline: 1px solid var(--hero-navButton-color);
