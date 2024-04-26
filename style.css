@@ -1185,6 +1185,54 @@ ul#menu {
     color: var(--tx1);
 }
 
+/*-------------------- 
+--homepage dropdowns-- 
+---------------------*/
+
+.dropdown-btn {
+    background-color: var(--nj-green-500);
+    color: var(--nj-grey-light);
+    padding: 4px;
+    border-radius: 4px;
+    display: inline;
+    cursor: pointer;
+}
+
+/* dropdown button hover and focus */
+.dropdown-btn:hover,
+.dropdown-btn:focus {
+    background-color: var(--nj-green-300);
+}
+
+/* dropdown options container */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+/*dropdown content*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--bg2);
+    min-width: 100px;
+    box-shadow: 2px 10px 0 rgba(0,0,0,.4);
+    z-index: 10;
+}
+
+/* choices in dropdown */
+.dropdown-choice {
+    color: var(--tx1);
+    padding: 4px 8px;
+    font-size: 1em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-choice:hover {
+    background-color: var(--bg1);
+}
+
 
 /* -- inline footnotes -- */
 .inf {
