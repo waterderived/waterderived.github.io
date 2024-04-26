@@ -186,12 +186,13 @@
     --hero-p-height: 1em;
     --hero-p-weight: 400;
     --hero-p-style: normal;
+    --hero-navButton-color: var(--tx2);
 }
 
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--tx1);
-    scrollbar-base-color: var(--bg1);
+    scrollbar-track-color: var(--bg1);
 }
 
 *, ::after, ::before {
@@ -485,6 +486,31 @@ td:last-of-type {
     .page-hero-content {
         height: unset !important;
     }
+}
+
+.page-hero-content .page-links {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: unset;
+    margin-left: unset;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .page-hero-content {
+        gap: 15px;
+    }
+}
+
+.page-hero-content .page-links a {
+    width: 24px;
+    height: 24px;
+}
+
+.page-hero-content .page-links i {
+    --buttonSize: 28px;
+    color: var(--hero-h2-color);
+    font-size: 0.875em;
 }
 
 .page-hero-bio {
@@ -949,13 +975,24 @@ footer p {
     width: 100%;
 }
 
+.navbar-container {
+    justify-content: flex-end;
+}
+
 .navbar2 {
     display: flex;
-    justify-content: space-between;
     grid-column: 1 / -1;
     height: max-content;
     position: relative;
     z-index: 3;
+}
+
+.navbar2,
+.navbar-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -970,6 +1007,23 @@ footer p {
     .navbar2 {
         grid-column: 2 / span 12;
     }
+}
+
+.navbar2 .navbar-link-container .navbar-item {
+    align-items: center;
+    justify-content: center;
+    margin-right: 4px;
+    padding: 8px 20px;
+}
+
+.navbar2 .navbar-link-container .navbar-item .btn.active {
+    font-weight: 500;
+}
+
+.navbar2 .navbar-link-container .navbar-item.selected {
+    border-radius: 20px;
+    font-weight: 500;
+    outline: 1px solid var(--hero-navButton-color);
 }
 
 .header-buttons {
