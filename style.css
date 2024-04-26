@@ -957,10 +957,6 @@ footer {
     display: block;
 }
 
-footer hr {
-    width: 80%;
-}
-
 footer p {
     justify-content: center;
     align-content: center;
@@ -968,6 +964,16 @@ footer p {
     color: var(--footer-p-color);
     font-size: 0.75em;
     margin: 24px 0 32px 0;
+}
+
+.footer .grid .grid-box {
+    grid-column: 1/-1;
+}
+
+@media (min-width: 1024px) {
+    .footer .grid .grid-box {
+        grid-column: 2/span 12;
+    }
 }
 
 .navbar {
@@ -985,10 +991,11 @@ footer p {
 
 .navbar2 {
     display: flex;
-    grid-column: 1 / -1;
+    grid-column: 2 / span 12;
     height: max-content;
     position: relative;
     z-index: 3;
+    width: 100%;
 }
 
 .navbar2,
@@ -1015,7 +1022,6 @@ footer p {
 
 .navbar2 .header-title {
     align-self: center;
-    height: max-content;
     width: max-content;
     margin-right: auto;
 }
