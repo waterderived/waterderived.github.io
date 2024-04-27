@@ -1238,6 +1238,10 @@ ul#menu {
     min-width: 4px;
     position: relative;
     display: inline;
+    border-radius: var(--spacing-01);
+    background-color: var(--nj-green-400);
+    color: var(--nj-grey-light);
+    font-size: 1em;
 }
 
 select {
