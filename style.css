@@ -1337,6 +1337,7 @@ ul#menu {
     display: flex;
     flex-direction: row;
     align-items: center !important;
+    vertical-align: middle;
     gap: 0.6rem;
     cursor: pointer;
     padding: 0.5rem;
