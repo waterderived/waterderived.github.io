@@ -1258,7 +1258,8 @@ select {
     appearance: none;
     width: max-content;
     font-size: 1em;
-    padding: var(--spacing-02) var(--spacing-04);
+    padding: 2px 2px;
+    margin: 0 8px;
     background-color: var(--bg2);
     border: none;
     border-radius: var(--spacing-01);
