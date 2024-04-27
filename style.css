@@ -1034,12 +1034,18 @@ footer .footer-links .mark-left {
     }
 }
 
-.navbar2 .navbar-container {
-    align-items: center;
+.navbar-container {
+    position: relative;
+    z-index: 1;
     display: flex;
+    align-items: center;
+    width: 100%;
+    height: inherit;
+}
+
+.navbar2 .navbar-container {
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 100%;
     vertical-align: middle !important;
 }
 
@@ -1327,8 +1333,9 @@ ul#menu {
 /*-- light dark toggle --*/
 #theme-switcher {
     background-color: var(--nj-offwhitelight);
-    border-radius: 22px;
+    border-radius: 24px;
     display: flex;
+    flex-direction: row;
     align-items: center !important;
     gap: 0.6rem;
     cursor: pointer;
@@ -1345,7 +1352,7 @@ ul#menu {
     width: 1.5rem;
     height: 1.5rem;
     background-color: var(--switch-circle-bg);
-    border-radius: 22px;
+    border-radius: 24px;
     z-index: 22;
     left: 0;
     transform: translateX(var(--switch-circle-pos));
