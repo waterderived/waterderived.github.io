@@ -164,7 +164,7 @@
     --switch-circle-bg: var(--nj-charcoal-700);
     --icon-sun: #B1B0B5;
     --icon-moon: var(--nj-offwhitelight);
-    --switch-circle-pos: 1.65rem;
+    --switch-circle-pos: 1.67rem;
     --img-dark-level: 75%;
     --img-dark-level-hover: 100%;
 }
@@ -1050,7 +1050,7 @@ footer .footer-links .mark-left {
 }
 
 .navbar2 .header-title {
-    margin-right: auto;
+    margin-right: 60px;
     align-self: center;
     width: max-content;
     vertical-align: middle;
@@ -1058,6 +1058,13 @@ footer .footer-links .mark-left {
 
 .navbar2 .header-title > a {
     vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        position: relative;
+        z-index: 20;
+    }
 }
 
 .navbar-item {
@@ -1077,6 +1084,21 @@ footer .footer-links .mark-left {
     padding: 0;
     text-transform: none;
     white-space: normal;
+}
+
+.navbar-item .btn:not(.editable):active,
+.navbar-item .btn:not(.editable):focus,
+.navbar-item .btn:not(.editable):hover {
+    border-color: var(--link-hover);
+    color: var(--link-hover);
+    font-weight: 600;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-item {
+        margin: 12px 0;
+    }
 }
 
 .navbar-item .btn,
