@@ -1237,7 +1237,7 @@ ul#menu {
 .dropdown-home {
     min-width: 4px;
     position: relative;
-    display: inline;
+    display: inline-block;
     border-radius: var(--spacing-01);
     background-color: var(--nj-green-400);
     color: var(--nj-grey-light);
