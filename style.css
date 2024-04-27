@@ -1035,6 +1035,20 @@ footer .footer-links .mark-left {
     }
 }
 
+.navbar2 .navbar-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    vertical-align: middle !important;
+}
+
+@media (min-width: 768px) {
+    .navbar2 .navbar-container {
+        justify-content: flex-end;
+    }
+}
+
 .navbar2 .header-title {
     margin-right: auto;
     align-self: center;
@@ -1054,10 +1068,6 @@ footer .footer-links .mark-left {
     vertical-align: middle;
 }
 
-.navbar2 .navbar-container {
-    vertical-align: middle !important;
-}
-
 .navbar-item .btn {
     background-color: transparent;
     border: none;
@@ -1075,7 +1085,6 @@ footer .footer-links .mark-left {
     font-size: 0.75em;
     font-weight: 400;
     text-decoration: none;
-    vertical-align: middle;
 }
 
 .navbar-item a:hover {
@@ -1083,8 +1092,6 @@ footer .footer-links .mark-left {
 }
 
 .navbar2 .navbar-container .navbar-item {
-    align-items: center;
-    justify-content: center;
     margin-right: 4px;
     padding: 12px 8px;
 }
