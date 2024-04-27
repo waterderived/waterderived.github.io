@@ -1234,52 +1234,22 @@ ul#menu {
 /*-------------------- 
 --homepage dropdowns-- 
 ---------------------*/
-
-.dropdown-btn {
-    background-color: var(--nj-green-500);
-    color: var(--nj-grey-light);
-    width: min-content;
-    padding: 4px 4px 0 4px;
-    margin-left: 4px;
-    margin-right: 4px;
-    border-radius: 4px;
-    display: inline;
-    cursor: pointer;
-}
-
-/* dropdown button hover and focus */
-.dropdown-btn:hover,
-.dropdown-btn:focus {
-    background-color: var(--nj-green-300);
-}
-
-/* dropdown options container */
-.dropdown-container {
+.dropdown-home {
+    min-width: 4px;
     position: relative;
-    display: inline-block;
+    display: inline;
 }
 
-/*dropdown content*/
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--bg2);
-    min-width: 100px;
-    box-shadow: 2px 10px 0 rgba(0,0,0,.4);
-    z-index: 10;
-}
-
-/* choices in dropdown */
-.dropdown-content a {
-    color: var(--tx1);
-    padding: 4px 8px;
+select {
+    appearance: none;
+    width: 100%;
     font-size: 1em;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: var(--bg1);
+    padding: var(--spacing-02) var(--spacing-04);
+    background-color: var(--bg2);
+    border: none;
+    border-radius: var(--spacing-01);
+    color: var(--tx1);
+    cursor: pointer;
 }
 
 
