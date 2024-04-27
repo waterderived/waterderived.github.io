@@ -1062,8 +1062,9 @@ footer .footer-links .mark-left {
 
 .navbar-item {
     align-items: center;
-    height: max-content;
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     vertical-align: middle;
 }
@@ -1085,6 +1086,7 @@ footer .footer-links .mark-left {
     font-size: 0.75em;
     font-weight: 400;
     text-decoration: none;
+    vertical-align: middle;
 }
 
 .navbar-item a:hover {
@@ -1092,6 +1094,8 @@ footer .footer-links .mark-left {
 }
 
 .navbar2 .navbar-container .navbar-item {
+    align-items: center;
+    justify-content: center;
     margin-right: 4px;
     padding: 12px 8px;
 }
