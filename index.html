@@ -10,117 +10,131 @@
     <!--google fonts-->
 
     <!--main css-->
-    <link rel="stylesheet" type="text/css" href="https://waterderived.github.io/style.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\nicol\iCloudDrive\git_waterderived\waterderived.github.io\style.css">
     <!--main js-->
-    <!--<script src="https://waterderived.github.io/script.js"></script>-->
+    <script defer src="C:\Users\nicol\iCloudDrive\git_waterderived\waterderived.github.io\script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--nav bar js-->
     <!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
 </head>
 
-<body>
-    <div class="navbar">
-    <div class="header-buttons">
-        <div class="header-title"><a href="https://waterderived.github.io">
-            nicole jisoo kim</a>
+<body onload="typeWriter()">
+    <div class="grid page-header">
+        <div class="navbar2">
+            <div class="header-title"><a href="https://waterderived.github.io">
+                    nicole jisoo kim</a>
+            </div>
+            <div class="navbar-container">
+                <div class="navbar-item">
+                    <a class="btn" href="https://waterderived.github.io/pages/about">
+                        <span>about</span>
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="btn" href="https://waterderived.github.io/pages/work-graphics">
+                        works
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="btn" href="https://waterderived.github.io/pages/jisoo-writing">
+                        notes
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <button id="theme-switcher">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-sun" id="icon-sun">
+                            <circle cx="7" cy="7" r="2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-moon-star" id="icon-moon">
+                            <circle cx="7" cy="7" r="2" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
-        <ul id="menu">
-            <li>
-                <a href="https://waterderived.github.io/pages/about">
-                    <span>about</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://waterderived.github.io/pages/work-graphics">
-                    <span>graphic</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://waterderived.github.io/pages/work-audio">
-                    <span>audio</span>
-                </a>
-            </li>
-            <li>
-                <a href="https://waterderived.github.io/pages/jisoo-writing">
-                    <span>writing</span>
-                </a>
-            </li>
-        </ul>
     </div>
-    <button id="theme-switcher">
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
-            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-sun" id="icon-sun">
-            <circle cx="7" cy="7" r="2" />
-        </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
-            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-moon-star" id="icon-moon">
-            <circle cx="7" cy="7" r="2" />
-        </svg>
-    </button>
+    <div class="grid page-hero">
+        <div class="page-hero-content">
+            <div class="page-hero-bio">
+                <div class="page-hero-text align-text-left">
+                    <div>
+                        <h1 id="typeSimple">H</h1>
+                        <p>I am a
+                            <div class="dropdown-home">
+                                <select class="dropdown-btn" id="identity1">
+                                    <option name="empty" value="***">***</option>
+                                    <option value="medstudent">medical student</option>
+                                    <option value="researcher">researcher</option>
+                                    <option value="disabrights">disability rights advocate</option>
+                                </select>
+                            </div>
+                            <div class="dropdown-surround">and</div>
+                            <div class="dropdown-home">
+                                <select id="identity2" class="dropdown-btn">
+                                    <option name="empty" value="***">***</option>
+                                    <option value="designer">digital designer</option>
+                                    <option value="IR">IR enthusiast</option>
+                                </select>
+                            </div>
+                            <div class="dropdown-surround">currently based in Providence, RI.</div></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <h1>hi there*</h1>
-    <p>
-        My name is <strong>Nicole</strong>. I am a medical trainee and creative digital designer based in Providence, RI.
-        <br><br>
-        I spend much of my time delving into image-guided procedures, experimenting with multimedia to communicate scientific information, and questioning ontologies of visibility as they relate to disability.
-        <br><br>
-        <a href="https://waterderived.github.io/pages/about" class="body-descr-link">learn
-                more</a> - <a href="mailto:nicole.jisoo@gmail.com" class="body-descr-link">get in touch</a>
-    </p>
+    </div>
+    <!--<p>
+        I spend much of my time delving into image-guided procedures, experimenting with multimedia to communicate
+        scientific information, and questioning ontologies of visibility as they relate to disability.
+    </p>-->
     <footer>
-        <hr>
-        <p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p>
+        <div class="separator">
+            <div class="line"></div>
+        </div>
+        <div class="footer-links">
+            <div class="mark-left">
+                <p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p>
+            </div>
+            <ul id="menu">
+                <li><a href="nicole.jisoo@gmail.com">email</a></li>
+                <li><a href="https://twitter.com/nicole_jisoo">twitter/x</a></li>
+                <li><a href="https://waterderived.github.io/pages/colophon">colophon</a></li>
+            </ul>
+        </div>
     </footer>
-
-
-    <script>
- 
-        // evaluate
-        function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
-            if (localStorageTheme !== null) {
-                return localStorageTheme;
-            }
-
-            if (systemSettingDark.matches) {
-                return "dark";
-            }
-
-            return "light";
-        }
-        // update theme setting on html tag
-        function updateThemeOnHtmlEl({ theme }) {
-            document.querySelector("html").setAttribute("data-theme", theme);
-        }
-
-        const localStorageTheme = localStorage.getItem("theme");
-        const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
-        let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
-
-        // update html tag
-        updateThemeOnHtmlEl({ theme: dataTheme });
-
-        //theme switcher
-        const switchTheme = () => {
-            const rootElem = document.documentElement
-            let dataTheme = rootElem.getAttribute('data-theme'),
-                newTheme
-
-            newTheme = (dataTheme === 'dark') ? 'light' : 'dark'
-
-            rootElem.setAttribute('data-theme', newTheme);
-
-            // update storage
-            localStorage.setItem("theme", newTheme);
-
-            //update dataTheme in memory
-            dataTheme = newTheme
-        }
-
-        // orig switcher
-        document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
-
-    </script>
 </body>
+
+<script>
+    $('select').change(function(){
+    var $opt = $(this).find("option:selected");
+    var $span = $('<span>').addClass('tester').text($opt.text());
+
+    $span.css({
+        'font-family' : $opt.css('font-family'),
+        'font-style' : $opt.css('font-style'),
+        'font-weight' : $opt.css('font-weight'),
+        'font-size' : $opt.css('font-size')
+    });
+
+    $('body').append($span);
+    // The 30px is for select open icon - it may vary a little per-browser
+    $(this).width($span.width());
+    $span.remove();
+});
+
+$('select').change();
+
+//reset to first option on reload
+window.onbeforeunload = function(){
+    $("#identity1").val($("#target option:first").val());
+    $("#identity2").val($("#target option:first").val());
+}
+
+</script>
 
 </html>

@@ -137,7 +137,8 @@
     --link-hover: var(--nj-green-800);
     --selection-color-tx: var(--tx1);
     --selection-color-bg: var(--nj-green-250);
-    --tx-sidebar-current: var(--tx2);
+    --dropdown-color-tx: var(--nj-offwhitelighter);
+    --dropdown-color-bg: var(--nj-green-300);
     --switch-bg: var(--nj-nearmono-300);
     --switch-circle-bg: #e7c570;
     --icon-sun: #835510;
@@ -159,7 +160,8 @@
     --link-hover: var(--nj-green-600);
     --selection-color-tx: var(--tx1);
     --selection-color-bg: var(--nj-green-600);
-    --tx-sidebar-current: var(--nj-warmgrey);
+    --dropdown-color-tx: var(--nj-offwhitelighter);
+    --dropdown-color-bg: var(--nj-green-500);
     --switch-bg: var(--nj-nearmono-400);
     --switch-circle-bg: var(--nj-charcoal-700);
     --icon-sun: #B1B0B5;
@@ -453,10 +455,16 @@ td:last-of-type {
 
 .page-hero {
     position: relative;
-    height: 90%;
+    height: 80%;
 }
 
-.page-hero .grid {
+.page-header {
+    position: relative;
+    height: 48px;
+}
+
+.page-hero .grid,
+.page-header .grid {
     row-gap: 0;
 }
 
@@ -491,31 +499,6 @@ td:last-of-type {
     .page-hero-content {
         height: unset !important;
     }
-}
-
-.page-hero-content .page-links {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: unset;
-    margin-left: unset;
-    margin-top: 30px;
-}
-
-@media (max-width: 768px) {
-    .page-hero-content {
-        gap: 15px;
-    }
-}
-
-.page-hero-content .page-links a {
-    width: 24px;
-    height: 24px;
-}
-
-.page-hero-content .page-links i {
-    --buttonSize: 28px;
-    color: var(--hero-h2-color);
-    font-size: 0.875em;
 }
 
 .page-hero-bio {
@@ -958,8 +941,7 @@ html[data-theme="dark"] .gridded-img-photo:hover {
 }
 
 footer {
-    margin-top: 36px;
-    margin-bottom: 48px;
+    margin-top: 36px 24px 48px 24px;
     padding-left: 24px;
     padding-right: 24px;
     display: block;
@@ -1254,10 +1236,10 @@ ul#menu {
     appearance: none;
     border: none;
     padding: 4px 8px 4px 8px;
-    background-color: var(--nj-green-300);
-    color: var(--nj-grey-light);
+    background-color: var(--dropdown-color-bg);
+    color: var(--dropdown-color-tx);
     font-size: 1em;
-    max-width: 35px;
+    width: auto;
 }
 
 .dropdown-btn::before,
@@ -1267,7 +1249,7 @@ ul#menu {
 
 select {
     appearance: none;
-    width: 35px;
+    width: max-content;
     margin: 0 4px;
     border: none;
     border-radius: var(--spacing-01);

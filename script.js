@@ -104,21 +104,3 @@ var btn1 = document.getElementById("medstudent");
 
 document.getElementById("medstudent").addEventListener('click', changeWidthMed);*/
 
-$('select').change(function(){
-    var $opt = $(this).find("option:selected");
-    var $span = $('<span>').addClass('tester').text($opt.text());
-
-    $span.css({
-        'font-family' : $opt.css('font-family'),
-        'font-style' : $opt.css('font-style'),
-        'font-weight' : $opt.css('font-weight'),
-        'font-size' : $opt.css('font-size')
-    });
-
-    $('body').append($span);
-    // The 30px is for select open icon - it may vary a little per-browser
-    $(this).width($span.width()+30);
-    $span.remove();
-});
-
-$('select').change();
