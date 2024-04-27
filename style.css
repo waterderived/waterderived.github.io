@@ -1256,7 +1256,7 @@ ul#menu {
 
 select {
     appearance: none;
-    width: 100%;
+    width: max-content;
     font-size: 1em;
     padding: var(--spacing-02) var(--spacing-04);
     background-color: var(--bg2);
