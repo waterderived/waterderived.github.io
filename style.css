@@ -1236,6 +1236,7 @@ ul#menu {
 ---------------------*/
 .dropdown-home {
     min-width: 2px;
+    width: max-content;
     position: relative;
     display: inline-block;
     border-radius: var(--spacing-01);
@@ -1263,7 +1264,6 @@ select {
     border-radius: var(--spacing-01);
     color: var(--tx1);
     cursor: pointer;
-    box-shadow: 2px 2px 10px 0 rgba(0,0,0,.4);
 }
 
 
