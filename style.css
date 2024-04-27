@@ -1236,14 +1236,10 @@ ul#menu {
 ---------------------*/
 .dropdown-home {
     min-width: 2px;
-    width: max-content;
+    width: auto;
     position: relative;
     display: inline-block;
-    border-radius: var(--spacing-01);
-    background-color: var(--nj-green-400);
-    border: none;
-    color: var(--nj-grey-light);
-    font-size: 1em;
+    justify-content: center;
 }
 
 .dropdown-home::before,
@@ -1254,19 +1250,36 @@ ul#menu {
     border-top: 0px solid transparent;
 }
 
+.dropdown-btn {
+    appearance: none;
+    border: none;
+    padding: 4px 8px 4px 8px;
+    background-color: var(--nj-green-300);
+    color: var(--nj-grey-light);
+    font-size: 1em;
+    max-width: 35px;
+}
+
+.dropdown-btn::before,
+.dropdown-btn::after {
+    border: none;
+}
+
 select {
     appearance: none;
-    width: max-content;
-    font-size: 1em;
-    padding: 2px 2px;
-    margin: 0 8px;
-    background-color: var(--bg2);
+    width: 35px;
+    margin: 0 4px;
     border: none;
     border-radius: var(--spacing-01);
     color: var(--tx1);
     cursor: pointer;
 }
 
+.dropdown-surround {
+    display: inline-block;
+    color: var(--tx1);
+    font-size: 1em;
+}
 
 /* -- inline footnotes -- */
 .inf {

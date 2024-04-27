@@ -93,20 +93,32 @@ function typeWriter() {
   }
 }
 
-//drowpdowns on home page
-function dropdownMenuToggle() {
-    document.getElementById("identity1").classList.toggle('show');
+//change width of dropdown button on homepage
+
+/*function changeWidthMed() {
+    content1.style.width = (parseInt(btn1.style.width, 10) + 16) + 'px';
 }
 
-window.onclick = function(event) {
-    if (!event.target.matches('.dropdown-btn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
+var content1 = document.getElementById("identity1");
+var btn1 = document.getElementById("medstudent");
+
+document.getElementById("medstudent").addEventListener('click', changeWidthMed);*/
+
+$('select').change(function(){
+    var $opt = $(this).find("option:selected");
+    var $span = $('<span>').addClass('tester').text($opt.text());
+
+    $span.css({
+        'font-family' : $opt.css('font-family'),
+        'font-style' : $opt.css('font-style'),
+        'font-weight' : $opt.css('font-weight'),
+        'font-size' : $opt.css('font-size')
+    });
+
+    $('body').append($span);
+    // The 30px is for select open icon - it may vary a little per-browser
+    $(this).width($span.width()+30);
+    $span.remove();
+});
+
+$('select').change();
