@@ -854,15 +854,17 @@ td:last-of-type {
 
 .card-title-mono {
     font-family: var(--font-family-mono) !important;
-    font-size: 0.875em !important;
-    font-weight: 500;
+    font-size: 1em !important;
+    font-weight: 600;
     color: var(--card-color-title-hover) !important;
     text-decoration: none;
 }
 
 .date-mono {
     font-family: var(--font-family-mono);
-    font-size: 1.05em;
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--tx-muted);
     display: inline;
 }
 
