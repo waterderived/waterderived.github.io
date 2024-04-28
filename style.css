@@ -195,7 +195,7 @@
     --hero-p-weight: 400;
     --hero-p-style: normal;
     --hero-navButton-color: var(--tx2);
-    --card-color-title-hover: var(--hd1);
+    --card-color-title: var(--hd1);
 }
 
 * {
@@ -852,15 +852,20 @@ td:last-of-type {
 
 .card-title-mono {
     font-family: var(--font-family-mono) !important;
+    font-size: 0.875em !important;
+    font-weight: 500;
+    color: var(--card-color-title) !important;
+    text-decoration: none;
+}
+
+.project-container.posts .card-title-mono {
     font-size: 1em !important;
     font-weight: 600;
-    color: var(--card-color-title-hover) !important;
-    text-decoration: none;
 }
 
 .date-mono {
     font-family: var(--font-family-mono);
-    font-size: 0.875em;
+    font-size: 0.75em;
     font-weight: 400;
     color: var(--tx-muted);
     display: inline;
@@ -868,7 +873,7 @@ td:last-of-type {
 }
 
 .project-card:hover {
-    --card-color-title-hover: var(var(--nj-green-400));
+    --card-color-title: var(--nj-green-400);
     background-color: var(--bg3);
     transition: ease 0.3s;
 }
