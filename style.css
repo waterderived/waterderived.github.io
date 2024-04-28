@@ -930,7 +930,7 @@ td:last-of-type {
     display: inline;
 }
 
-.post-data .tag-pill:first-of-type {
+.post-data > .tag-pill:first-of-type {
     margin-left: 12px !important;
 }
 
