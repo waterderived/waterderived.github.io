@@ -1367,7 +1367,12 @@ select {
     cursor: pointer;
 }
 
-p .dropdown-surround {
+p:has(.dropdown-surround) {
+    text-wrap: balance;
+    word-wrap: normal;
+}
+
+.dropdown-surround {
     display: inline-block;
     color: var(--tx1);
     font-size: 1em;
