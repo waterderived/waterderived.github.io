@@ -895,7 +895,7 @@ td:last-of-type {
 .post-data .date-mono {
     font-family: var(--font-family-mono);
     display: inline;
-    margin: 0 8px;
+    margin: 0 8px 0 0;
 }
 
 .tag-pill {
