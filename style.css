@@ -1371,6 +1371,8 @@ select {
     display: inline-block;
     color: var(--tx1);
     font-size: 1em;
+    text-wrap: wrap;
+    word-wrap: wrap;
 }
 
 /* -- inline footnotes -- */
