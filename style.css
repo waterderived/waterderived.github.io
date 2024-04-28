@@ -1189,7 +1189,6 @@ footer .footer-links .mark-left {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
-    font-size: 0.75em;
     text-decoration: none;
     vertical-align: middle;
 }
