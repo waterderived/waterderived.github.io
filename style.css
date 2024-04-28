@@ -779,7 +779,13 @@ td:last-of-type {
 }
 
 .project-container.card-column-two {
-    grid-template-columns: repeat(2, minmax(350px, 50%)) !important;
+    grid-template-columns: repeat(2, minmax(350px, 50%));
+}
+
+@media (min-width: 768px) {
+    .project-container.card-column-two {
+        grid-template-columns: repeat(1, minmax(350px, 50%)) !important;
+    }
 }
 
 .project-card,
