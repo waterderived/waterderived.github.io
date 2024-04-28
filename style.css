@@ -462,7 +462,7 @@ td:last-of-type {
 
 @media (min-width: 1024px) {
     .grid {
-        --gridGap: 48px;
+        --gridGap: 16px;
     }
 }
 
