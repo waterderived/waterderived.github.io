@@ -683,7 +683,7 @@ td:last-of-type {
     grid-column: 1 / span 12;
     grid-row: auto;
     justify-content: center;
-    padding: 48px 0;
+    padding: 8px 0;
     position: relative;
     z-index: 1;
 }
