@@ -499,6 +499,7 @@ td:last-of-type {
 .page-hero-bio {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     grid-column: 1 / -1;
     grid-row: 1;
     justify-content: center;
@@ -564,6 +565,10 @@ td:last-of-type {
 .page-hero-content ul {
     display: flex;
     flex-direction: column;
+}
+
+.page-hero-text {
+    flex-wrap: inherit;
 }
 
 .page-hero-content .page-hero-text.align-text-left * {
@@ -1376,7 +1381,6 @@ p:has(.dropdown-surround) {
     display: inline-block;
     color: var(--tx1);
     font-size: 1em;
-    text-wrap: balance;
     word-wrap: normal;
 }
 
