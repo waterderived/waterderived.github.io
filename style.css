@@ -609,7 +609,7 @@ td:last-of-type {
 
 .page-hero-content .page-hero-text p {
     overflow-wrap: break-word;
-    text-wrap: balance;
+    text-wrap: nowrap;
 }
 
 /* trying to figure out the text wraps... */
