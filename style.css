@@ -903,7 +903,7 @@ td:last-of-type {
 .tag-pill {
     font-size: 0.75em;
     font-weight: 300;
-    color: var(--nj-offwhitelightest);
+    color: var(--tagpill-color-tx);
     background-color: var(--tagpill-color-bg);
     border: none;
     border-radius: 8px;
