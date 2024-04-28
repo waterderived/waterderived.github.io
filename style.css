@@ -1358,7 +1358,8 @@ footer .footer-links .mark-left {
 
 .navbar2 .navbar-container .navbar-item.selected:hover {
     text-decoration: none;
-    color: var(--tx3);
+    color: var(--navButton-color-selected-tx);
+    cursor: default;
 }
 
 #menu {
