@@ -690,7 +690,7 @@ td:last-of-type {
 
 .page-section-content .page-section-text {
     grid-column: 1 / span 12;
-    grid-row: 1;
+    grid-row: auto;
 }
 
 .page-section-content .page-section-text.align-text-left * {
