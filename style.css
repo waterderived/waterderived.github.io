@@ -910,12 +910,13 @@ td:last-of-type {
     display: inline;
 }
 
-.tag-pill:first-of-type {
-    margin-left: 8px !important;
+.post-data .tag-pill:first-of-type {
+    margin-left: 12px !important;
 }
 
 .tag-pill:hover {
     background-color: var(--tagpill-color-bg-hover);
+    cursor: pointer;
 }
 
 /* photos */
