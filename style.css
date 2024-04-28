@@ -691,6 +691,11 @@ td:last-of-type {
 .page-section-content .page-section-text {
     grid-column: 1 / span 12;
     grid-row: auto;
+    padding: 8px 0;
+}
+
+.page-section-content .page-section-text:first-of-type {
+    padding-top: 48px;
 }
 
 .page-section-content .page-section-text.align-text-left * {
