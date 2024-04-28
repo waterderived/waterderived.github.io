@@ -864,7 +864,7 @@ td:last-of-type {
     font-weight: 400;
     color: var(--tx-muted);
     display: inline;
-    margin: 0 8px;
+    margin-left: 8px;
 }
 
 .project-card:hover {
