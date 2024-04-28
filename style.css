@@ -622,7 +622,7 @@ td:last-of-type {
 }
 
 .page-section .grid {
-    row-gap: 0;
+    gap: 0;
 }
 
 .page-section h1 {
