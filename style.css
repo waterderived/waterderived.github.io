@@ -468,7 +468,7 @@ td:last-of-type {
     grid-column: 2/ span 12;
     grid-template-columns: repeat(14, minmax(0, 1fr));
     position: relative;
-    margin: 48px 0;
+    margin: 30% 0;
 }
 
 @media (min-width: 1024px) {
@@ -502,7 +502,7 @@ td:last-of-type {
     grid-column: 1 / -1;
     grid-row: 1;
     justify-content: center;
-    padding: 30% 0;
+    padding: 48px 0;
     position: relative;
     z-index: 1
 }
