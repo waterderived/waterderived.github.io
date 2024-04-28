@@ -1265,7 +1265,7 @@ footer .footer-links .mark-left {
 
 .header-title {
     font-family: var(--font-family-nav);
-    font-size: 0.75em;
+    font-size: 0.875em;
     font-weight: 500;
     color: var(--tx1);
     flex-grow: 0;
@@ -1338,7 +1338,7 @@ footer .footer-links .mark-left {
 .navbar-item a {
     color: var(--link-color);
     font-family: var(--font-family-nav);
-    font-size: 0.75em;
+    font-size: 0.875em;
     font-weight: 400;
     text-decoration: none;
     vertical-align: middle;
@@ -1358,7 +1358,7 @@ footer .footer-links .mark-left {
 
 .navbar2 .navbar-container .navbar-item.selected {
     border-radius: 20px;
-    font-size: 0.75em;
+    font-size: 0.875em;
     font-weight: 500;
     color: var(--navButton-color-selected-tx);
     outline: 1px solid var(--navButton-color-selected-outline);
