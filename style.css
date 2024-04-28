@@ -1367,12 +1367,12 @@ select {
     cursor: pointer;
 }
 
-.dropdown-surround {
+p .dropdown-surround {
     display: inline-block;
     color: var(--tx1);
     font-size: 1em;
-    text-wrap: wrap;
-    word-wrap: wrap;
+    text-wrap: balance;
+    word-wrap: normal;
 }
 
 /* -- inline footnotes -- */
