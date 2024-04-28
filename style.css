@@ -140,6 +140,7 @@
     --selection-color-bg: var(--nj-green-250);
     --dropdown-color-tx: var(--nj-charcoal-800);
     --dropdown-color-bg: var(--nj-green-200);
+    --tagpill-color-tx: var(--tx1);
     --tagpill-color-bg: var(--nj-green-200);
     --tagpill-color-bg-hover: var(--nj-offwhitelight);
     --card-color-bg: var(--bg1);
@@ -167,8 +168,9 @@
     --selection-color-bg: var(--nj-green-800);
     --dropdown-color-tx: var(--nj-offwhitelighter);
     --dropdown-color-bg: var(--nj-green-700);
-    --tagpill-color-bg: var(--nj-green-500);
-    --tagpill-color-bg-hover: var(--nj-green-700);
+    --tagpill-color-tx: var(--nj-offwhitelighter);
+    --tagpill-color-bg: var(--nj-green-700);
+    --tagpill-color-bg-hover: var(--nj-green-900);
     --card-color-bg: var(--bg2);
     --switch-bg: var(--nj-nearmono-400);
     --switch-circle-bg: var(--nj-charcoal-700);
