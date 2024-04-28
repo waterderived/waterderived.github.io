@@ -1188,6 +1188,8 @@ footer .footer-links .mark-left {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    font-size: 0.75em;
+    text-decoration: none;
     vertical-align: middle;
 }
 
@@ -1201,14 +1203,13 @@ footer .footer-links .mark-left {
     white-space: normal;
 }
 
-.navbar-item .btn:not(.editable):active,
+/*.navbar-item .btn:not(.editable):active,
 .navbar-item .btn:not(.editable):focus,
 .navbar-item .btn:not(.editable):hover {
     border-color: var(--link-hover);
     color: var(--link-hover);
-    font-weight: 600;
     outline: none;
-}
+}*/
 
 @media (max-width: 768px) {
     .navbar-item {
@@ -1216,7 +1217,7 @@ footer .footer-links .mark-left {
     }
 }
 
-.navbar-item .btn,
+.navbar-item .btn a,
 .navbar-item a {
     color: var(--link-color);
     font-family: var(--font-family-nav);
@@ -1226,7 +1227,8 @@ footer .footer-links .mark-left {
     vertical-align: middle;
 }
 
-.navbar-item a:hover {
+.navbar-item a:hover,
+.navbar-item .btn:hover {
     color: var(--link-hover);
 }
 
@@ -1237,12 +1239,9 @@ footer .footer-links .mark-left {
     padding: 12px 8px;
 }
 
-.navbar2 .navbar-container .navbar-item .btn.active {
-    font-weight: 500;
-}
-
 .navbar2 .navbar-container .navbar-item.selected {
     border-radius: 20px;
+    font-size: 0.75em;
     font-weight: 500;
     outline: 1px solid var(--hero-navButton-color);
 }
