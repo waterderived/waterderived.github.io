@@ -1357,7 +1357,7 @@ footer .footer-links .mark-left {
 }
 
 .navbar2 .navbar-container .navbar-item.selected {
-    border-radius: 20px;
+    border-radius: 12px;
     font-size: 0.875em;
     font-weight: 500;
     color: var(--navButton-color-selected-tx);
