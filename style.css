@@ -138,6 +138,8 @@
     --link-hover: var(--nj-green-800);
     --selection-color-tx: var(--tx1);
     --selection-color-bg: var(--nj-green-250);
+    --navButton-color-selected-outline: var(--tx2);
+    --navButton-color-selected-tx: var(--nj-green-700);
     --dropdown-color-tx: var(--nj-charcoal-800);
     --dropdown-color-bg: var(--nj-green-200);
     --tagpill-color-tx: var(--nj-charcoal-700);
@@ -166,6 +168,8 @@
     --link-hover: var(--nj-green-600);
     --selection-color-tx: var(--tx1);
     --selection-color-bg: var(--nj-green-800);
+    --navButton-color-selected-outline: var(--tx2);
+    --navButton-color-selected-tx: var(--nj-green-500);
     --dropdown-color-tx: var(--nj-offwhitelighter);
     --dropdown-color-bg: var(--nj-green-700);
     --tagpill-color-tx: var(--nj-offwhitelighter);
@@ -200,7 +204,6 @@
     --hero-p-height: 1em;
     --hero-p-weight: 400;
     --hero-p-style: normal;
-    --hero-navButton-color: var(--tx2);
     --card-color-title: var(--hd1);
 }
 
@@ -1349,8 +1352,8 @@ footer .footer-links .mark-left {
     border-radius: 20px;
     font-size: 0.75em;
     font-weight: 500;
-    color: var(--tx3);
-    outline: 1px solid var(--hero-navButton-color);
+    color: var(--navButton-color-selected-tx);
+    outline: 1px solid var(--navButton-color-selected-outline);
 }
 
 .navbar2 .navbar-container .navbar-item.selected:hover {
