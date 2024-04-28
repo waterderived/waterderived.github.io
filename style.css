@@ -646,7 +646,7 @@ td:last-of-type {
 .page-section-text {
     display: flex;
     flex-direction: column;
-    grid-column: 1 / -1;
+    grid-column: 3 / span 14;
     grid-row: 1;
     justify-content: center;
     padding: 48px 0;
@@ -1033,6 +1033,7 @@ footer {
     margin-top: 36px 24px 48px 24px;
     padding-left: 24px;
     padding-right: 24px;
+    margin: 0 24px;
     display: block;
 }
 
