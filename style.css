@@ -106,9 +106,9 @@
     --nj-grey-darkhover: #676767;
     --nj-grey-darkactive: #4d4d4d;
     --nj-grey-darker: #3c3c3c;
-    --nj-offwhitelightest: #fbf9f6;
-    --nj-offwhitelighter: #f9f7f5;
-    --nj-offwhitelight: #fbf8ee;
+    --nj-offwhitelightest: rgb(251, 249, 248);
+    --nj-offwhitelighter: rgb(249, 247, 245);
+    --nj-offwhitelight: rgb(247, 245, 241);
     --nj-offwhite: #f8f4ec;
     --nj-offwhitedark: #f1f0ec;
     --nj-coolwhite: #f2f7fa;
