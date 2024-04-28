@@ -106,7 +106,7 @@
     --nj-grey-darkhover: #676767;
     --nj-grey-darkactive: #4d4d4d;
     --nj-grey-darker: #3c3c3c;
-    --nj-offwhitelightest: #f8f7f6;
+    --nj-offwhitelightest: #fbf9f6;
     --nj-offwhitelighter: #f9f7f5;
     --nj-offwhitelight: #fbf8ee;
     --nj-offwhite: #f8f4ec;
@@ -131,7 +131,7 @@
     --tx1: var(--nj-charcoal-700);
     --tx2: var(--nj-grey-normal);
     --tx3: var(--nj-charcoal-400);
-    --tx-muted: var(--nj-charcoal-500);
+    --tx-muted: var(--nj-charcoal-400);
     --footer-p-color: var(--nj-charcoal-500);
     --link-color: var(--nj-green-600);
     --link-color-light: var(--nj-green-500);
@@ -861,6 +861,7 @@ td:last-of-type {
 .project-container.posts .card-title-mono {
     font-size: 1em !important;
     font-weight: 600;
+    line-height: 1.875em;
 }
 
 .date-mono {
