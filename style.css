@@ -504,7 +504,7 @@ td:last-of-type {
     grid-column: 2/ span 12;
     grid-template-columns: repeat(14, minmax(0, 1fr));
     position: relative;
-    margin: 25vh 0;
+    margin: 20vh 0 25vh 0;
 }
 
 @media (min-width: 1024px) {
