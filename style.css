@@ -696,6 +696,10 @@ td:last-of-type {
     padding: 8px 0;
 }
 
+.page-section-content .page-section-text:first-of-type {
+    padding: 48px 0 0 0;
+}
+
 .page-section-content .page-section-text.align-text-left * {
     text-align: left !important;
 }
