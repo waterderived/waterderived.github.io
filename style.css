@@ -196,7 +196,28 @@
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--tx1);
-    scrollbar-track-color: var(--bg1);
+}
+
+::-webkit-scrollbar {
+    z-index: 100;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg3);
+    border: none;
+}
+
+::-webkit-scrollbar-button {
+    background-color: var(--tx3);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-button:hover {
+    background-color: var(--tx3);
 }
 
 *, ::after, ::before {
