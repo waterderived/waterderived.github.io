@@ -866,16 +866,19 @@ td:last-of-type {
 .date-mono {
     font-family: var(--font-family-mono);
     font-size: 0.75em;
-    font-weight: 400;
+    font-weight: 300;
     color: var(--tx-muted);
     display: inline;
     margin-left: 16px;
 }
 
 .project-card:hover {
-    --card-color-title: var(--nj-green-400) !important;
     background-color: var(--bg3);
     transition: ease 0.3s;
+}
+
+.project-container.posts .project-card:hover {
+    --card-color-title: var(--nj-green-400) !important;
 }
 
 #imgwrapper {
