@@ -86,21 +86,27 @@ var txt = 'i there, I\'m Nicole.';
 var speed = 50;
 
 function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("typeSimple").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
+    if (i < txt.length) {
+        document.getElementById("typeSimple").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
 }
 
-//change width of dropdown button on homepage
 
-/*function changeWidthMed() {
-    content1.style.width = (parseInt(btn1.style.width, 10) + 16) + 'px';
+// collapsible callout
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var collcontent = this.nextElementSibling;
+        if (collcontent.style.maxHeight) {
+            collcontent.style.maxHeight = null;
+        } else {
+            collcontent.style.maxHeight = collcontent.scrollHeight + "px";
+        }
+    });
 }
-
-var content1 = document.getElementById("identity1");
-var btn1 = document.getElementById("medstudent");
-
-document.getElementById("medstudent").addEventListener('click', changeWidthMed);*/
 
