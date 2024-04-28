@@ -681,7 +681,7 @@ td:last-of-type {
     display: flex;
     flex-direction: column;
     grid-column: 1 / span 12;
-    grid-row: 1;
+    grid-row: auto;
     justify-content: center;
     padding: 48px 0;
     position: relative;
