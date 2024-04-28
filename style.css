@@ -161,7 +161,7 @@
     --selection-color-tx: var(--tx1);
     --selection-color-bg: var(--nj-green-600);
     --dropdown-color-tx: var(--nj-offwhitelighter);
-    --dropdown-color-bg: var(--nj-green-500);
+    --dropdown-color-bg: var(--nj-green-600);
     --switch-bg: var(--nj-nearmono-400);
     --switch-circle-bg: var(--nj-charcoal-700);
     --icon-sun: #B1B0B5;
@@ -455,7 +455,7 @@ td:last-of-type {
 
 .page-hero {
     position: relative;
-    height: 80%;
+    height: 90%;
 }
 
 .page-header {
@@ -471,9 +471,10 @@ td:last-of-type {
 .page-hero-content {
     column-gap: 0;
     display: grid;
-    grid-column: 1/12;
+    grid-column: 1/14;
     grid-template-columns: repeat(14, minmax(0, 1fr));
     position: relative;
+    margin: 48px 0;
 }
 
 @media (min-width: 1024px) {
