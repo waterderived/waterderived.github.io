@@ -193,6 +193,7 @@
     --hero-p-weight: 400;
     --hero-p-style: normal;
     --hero-navButton-color: var(--tx2);
+    --card-color-title-hover: var(--hd1);
 }
 
 * {
@@ -819,10 +820,6 @@ td:last-of-type {
     background-color: var(--bg3);
 }
 
-.project-card:hover .card-title-mono {
-    color: var(--nj-green-400);
-}
-
 .project-card a,
 .project-card-nolink a {
     color: var(--tx1) !important;
@@ -859,7 +856,7 @@ td:last-of-type {
     font-family: var(--font-family-mono) !important;
     font-size: 0.875em !important;
     font-weight: 500;
-    color: var(--hd1) !important;
+    color: var(--card-color-title-hover) !important;
     text-decoration: none;
 }
 
@@ -867,6 +864,11 @@ td:last-of-type {
     font-family: var(--font-family-mono);
     font-size: 1.05em;
     display: inline;
+}
+
+.project-card:hover {
+    --card-color-title-hover: var(var(--nj-green-400));
+    transition: ease 0.3s;
 }
 
 #imgwrapper {
