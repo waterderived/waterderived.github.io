@@ -782,13 +782,13 @@ td:last-of-type {
     grid-template-columns: repeat(2, minmax(350px, 50%));
 }
 
-@media (min-width: 768px) {
+@media (min-width: 850px) {
     .project-container.card-column-two {
         grid-template-columns: repeat(2, minmax(350px, 50%)) !important;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .project-container.card-column-two {
         grid-template-columns: repeat(1, minmax(350px, 50%)) !important;
     }
@@ -815,6 +815,10 @@ td:last-of-type {
 
 .project-card:hover {
     background-color: var(--bg2);
+}
+
+.project-card:hover .card-title-mono {
+    color: var(--nj-green-400);
 }
 
 .project-card a,
@@ -1086,7 +1090,7 @@ footer {
     margin-top: 36px 24px 48px 24px;
     padding-left: 24px;
     padding-right: 24px;
-    margin: 0 24px;
+    margin: 0;
     display: block;
 }
 
