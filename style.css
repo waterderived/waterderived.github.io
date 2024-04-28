@@ -1102,10 +1102,9 @@ html[data-theme="dark"] .gridded-img-photo:hover {
 }
 
 footer {
-    margin: 36px 12px 12px 12px;
+    margin: 24px 12px 12px 12px;
     padding-left: 24px;
     padding-right: 24px;
-    margin: 0;
     display: block;
 }
 
