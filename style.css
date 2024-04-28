@@ -622,7 +622,7 @@ td:last-of-type {
 }
 
 .page-section .grid {
-    gap: 0;
+    row-gap: 0;
 }
 
 .page-section h1 {
@@ -686,6 +686,7 @@ td:last-of-type {
     justify-content: center;
     padding: 8px 0;
     position: relative;
+    row-gap: 0;
     z-index: 1;
 }
 
