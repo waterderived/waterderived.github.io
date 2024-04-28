@@ -712,6 +712,10 @@ td:last-of-type {
     margin: 0 0 4px 0;
 }
 
+.page-section-content .page-section-text p:has(+ ul),
+.page-section-content .page-section-text p:has(+ ol) {
+    margin-bottom: 8px;
+}
 
 
 
