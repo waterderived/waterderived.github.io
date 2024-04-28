@@ -465,7 +465,7 @@ td:last-of-type {
 .page-hero-content {
     column-gap: 0;
     display: grid;
-    grid-column: 1/14;
+    grid-column: 2/ span 12;
     grid-template-columns: repeat(14, minmax(0, 1fr));
     position: relative;
     margin: 48px 0;
@@ -473,14 +473,14 @@ td:last-of-type {
 
 @media (min-width: 1024px) {
     .page-hero-content {
-        grid-column: 2/span 14;
+        grid-column: 2/span 12;
     }
 }
 
 @media (min-width: 640px) {
     .page-hero-content {
         column-gap: var(--gridGap);
-        grid-template-columns: repeat(14, minmax(10px, 1fr));
+        grid-template-columns: repeat(12, minmax(10px, 1fr));
     }
 }
 
