@@ -618,6 +618,7 @@ td:last-of-type {
 /* page sections */
 .page-section {
     position: relative;
+    z-index: 1;
 }
 
 .page-section .grid {
@@ -692,10 +693,6 @@ td:last-of-type {
     grid-column: 1 / span 12;
     grid-row: auto;
     padding: 8px 0;
-}
-
-.page-section-content .page-section-text:first-of-type {
-    padding-top: 48px;
 }
 
 .page-section-content .page-section-text.align-text-left * {
@@ -1163,6 +1160,7 @@ footer {
     padding-left: 24px;
     padding-right: 24px;
     display: block;
+    z-index: 1;
 }
 
 footer p,
