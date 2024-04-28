@@ -159,7 +159,7 @@
     --link-color-light: var(--nj-green-200);
     --link-hover: var(--nj-green-600);
     --selection-color-tx: var(--tx1);
-    --selection-color-bg: var(--nj-green-600);
+    --selection-color-bg: var(--nj-green-800);
     --dropdown-color-tx: var(--nj-offwhitelighter);
     --dropdown-color-bg: var(--nj-green-700);
     --switch-bg: var(--nj-nearmono-400);
@@ -1084,7 +1084,7 @@ footer .footer-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-content: center;
+    align-content: flex-end;
     width: 100%;
 }
 
