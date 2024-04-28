@@ -749,6 +749,7 @@ td:last-of-type {
     gap: var(--m-rem-04);
     margin: var(--spacing-02) 0 var(--spacing-04) 0;
     width: 100%;
+    max-width: 100%;
 }
 
 .project-container.card-column-two {
@@ -1236,14 +1237,20 @@ footer .footer-links .mark-left {
     align-items: center;
     justify-content: center;
     margin-right: 4px;
-    padding: 12px 8px;
+    padding: 8px 8px;
 }
 
 .navbar2 .navbar-container .navbar-item.selected {
     border-radius: 20px;
     font-size: 0.75em;
     font-weight: 500;
+    color: var(--tx3);
     outline: 1px solid var(--hero-navButton-color);
+}
+
+.navbar2 .navbar-container .navbar-item.selected:hover {
+    text-decoration: none;
+    color: var(--tx3);
 }
 
 #menu {
