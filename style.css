@@ -232,6 +232,7 @@ body {
     max-width: 640px;
     line-height: inherit;
     overflow-x: hidden;*/
+    width: 70%;
     text-align: left;
 }
 
@@ -580,7 +581,7 @@ td:last-of-type {
     align-items: flex-start;
 }
 
-// page sections
+/* page sections */
 .page-section {
     position: relative;
 }
@@ -600,7 +601,7 @@ td:last-of-type {
 .page-section-content {
     column-gap: 0;
     display: grid;
-    grid-column: 1/16;
+    grid-column: 2/span 15;
     grid-template-columns: repeat(16, minmax(0, 1fr));
     position: relative;
     margin: 24px 0;
@@ -642,11 +643,30 @@ td:last-of-type {
     flex-direction: column;
 }
 
-.page-section-content .page-hero-text {
-    grid-column: 1 / span 14;
+.page-section-text {
+    display: flex;
+    flex-direction: column;
+    grid-column: 3 / span 14;
+    grid-row: 1;
+    justify-content: center;
+    padding: 48px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.page-section-content .page-section-text {
+    grid-column: 2 / span 15;
     grid-row: 1;
 }
 
+.page-section-content .page-section-text.align-text-left * {
+    text-align: left !important;
+}
+
+
+
+
+/* things in the body */
 
 .body-descr {
     font-size: 0.875em;
