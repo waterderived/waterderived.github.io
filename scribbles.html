@@ -1,68 +1,96 @@
 <!DOCTYPE html>
 
 <html lang="en" data-theme="dark">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>the collaterals</title>
 
-        <!--google fonts-->
-        
-        <!--main css-->
-        <link rel="stylesheet" type="text/css" href="https://waterderived.github.io/style.css">
-        <!--main js-->
-        <!--<script src="https://waterderived.github.io/script.js"></script>-->
-       </head>
-    <body>
-        <div class="navbar">
-        <div class="header-buttons">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the collaterals</title>
+
+    <!--google fonts-->
+
+   <!--main css-->
+   <link rel="stylesheet" type="text/css" href="https://waterderived.github.io/style.css">
+   <!--main js-->
+   <script defer src="https://waterderived.github.io/script.js"></script>
+</head>
+
+<body>
+    <div class="grid page-header">
+        <div class="navbar2">
             <div class="header-title"><a href="https://waterderived.github.io">
-                nicole jisoo kim</a>
+                    nicole jisoo kim</a>
             </div>
-            <ul id="menu">
-                <li>
-                    <a href="https://waterderived.github.io/pages/about">
+            <div class="navbar-container">
+                <div class="navbar-item">
+                    <a class="btn" href="https://waterderived.github.io/about">
                         <span>about</span>
                     </a>
-                </li>
-                <li>
-                    <a href="https://waterderived.github.io/pages/work-graphics">
-                        <span>graphic</span>
+                </div>
+                <div class="navbar-item">
+                    <a class="btn" href="https://waterderived.github.io/work">
+                        works
                     </a>
-                </li>
-                <li>
-                    <a href="https://waterderived.github.io/pages/work-audio">
-                        <span>audio</span>
+                </div>
+                <div class="navbar-item">
+                    <a class="btn" href="https://waterderived.github.io/scribbles">
+                        notes
                     </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>writing</span>
-                    </a>
-                </li>
-            </ul>
+                </div>
+                <div class="navbar-item">
+                    <button id="theme-switcher">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-sun" id="icon-sun">
+                            <circle cx="7" cy="7" r="2" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
+                            stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-moon-star" id="icon-moon">
+                            <circle cx="7" cy="7" r="2" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
-        <button id="theme-switcher">
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-sun" id="icon-sun">
-                <circle cx="7" cy="7" r="2" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"
-                stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                class="lucide lucide-moon-star" id="icon-moon">
-                <circle cx="7" cy="7" r="2" />
-            </svg>
-        </button>
-        </div>
+    </div>
+    <div class="grid page-section">
+        <div class="page-section-content">
+            <div class="page-section-text align-text-left">
         <h1>select writing</h1>
+        <div class="project-container card-column-two">
+            <a href="https://waterderived.github.io/pages/posts/sentient-articulations"
+                class="project-card">
+                <div class="project-card-text">
+                    <div class="card-title-mono">sentient articulations (or, how to drown the noise)</div>
+                    <p>Docs With Disabilities Podcast</p>
+                </div>
+            </a>
+            <a href="https://waterderived.github.io/pages/work-graphics-jvirGA"
+                class="project-card project-card-image-sq">
+                <img alt="DWD Logo" src="https://waterderived.github.io/images/jvir-logo-earth-square.jpg">
+                <div class="project-card-text">
+                    <div class="card-title-mono">Visual Abstract Editor & Designer</div>
+                    <p>Journal of Vascular and Interventional Radiology</p>
+                </div>
+            </a>
+            <div class="project-card-nolink project-card-image-sq">
+                <img alt="DWD Logo" src="https://waterderived.github.io/images/brown-logo-red.png">
+                <div class="project-card-text">
+                    <div class="card-title-mono">Medical Student</div>
+                    <p>The Warren Alpert Medical School of Brown University</p>
+                </div>
+            </div>
+        </div>
+
         <h3>back pocket</h3>
         <div class="table-container">
             <table>
                 <tbody>
                     <tr>
                         <td>2023.06.01</td>
-                        <td><a href="https://waterderived.github.io/pages/posts/sentient-articulations">sentient articulations (or, how to drown the noise)</a></td>
+                        <td><a href="https://waterderived.github.io/pages/posts/sentient-articulations">sentient
+                                articulations (or, how to drown the noise)</a></td>
                     </tr>
                     <tr>
                         <td>2023.04.22</td>
@@ -75,63 +103,13 @@
                 </tbody>
             </table>
         </div>
-        <footer> 
-            <hr>
-            <p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p>
-        </footer>
-
-
-        <script>
-            // evaluate
-            function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark }) {
-                if (localStorageTheme !== null) {
-                    return localStorageTheme;
-                }
-    
-                if (systemSettingDark.matches) {
-                    return "dark";
-                }
-    
-                return "light";
-            }
-            // update theme setting on html tag
-            function updateThemeOnHtmlEl({ theme }) {
-                document.querySelector("html").setAttribute("data-theme", theme);
-            }
-    
-            
-            const localStorageTheme = localStorage.getItem("theme");
-            const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
-            let dataTheme = calculateSettingAsThemeString({ localStorageTheme, systemSettingDark });
-    
-            // update html tag
-            updateThemeOnHtmlEl({ theme: dataTheme });
-    
-            //theme switcher
-            const switchTheme = () => {
-                const rootElem = document.documentElement
-                let dataTheme = rootElem.getAttribute('data-theme'),
-                    newTheme
-    
-                newTheme = (dataTheme === 'light') ? 'dark' : 'light'
-    
-                rootElem.setAttribute('data-theme', newTheme);
-    
-                // update storage
-                localStorage.setItem("theme", newTheme);
-    
-                //update dataTheme in memory
-                dataTheme = newTheme
-            }
-    
-            // orig switcher
-            document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
-    
-        </script>
-    </body>
+    </div>
+    </div>
+    </div>
     <footer>
-        <div class="">
-            
-        </div>
+        <hr>
+        <p>© 2024 Nicole Jisoo Kim. All Rights Reserved.</p>
     </footer>
+</body>
+
 </html>
