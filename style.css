@@ -67,16 +67,16 @@
     --spacing-08: calc(8 * var(--spacing-01));
     --spacing-10: calc(10 * var(--spacing-01));
     --spacing-16: calc(16 * var(--spacing-01));
-    --nj-forestgreen-000: #f5f6f5;
-    --nj-forestgreen-100: #eff2f0;
-    --nj-forestgreen-200: #dfe3e0;
-    --nj-forestgreen-300: #97a59a;
-    --nj-forestgreen-400: #88958b;
-    --nj-forestgreen-500: #79847b;
-    --nj-forestgreen-600: #717c74;
-    --nj-forestgreen-700: #5b635c;
-    --nj-forestgreen-800: #444a45;
-    --nj-forestgreen-900: #353a36;
+    --nj-blue-000: #F1F2F5;
+    --nj-blue-100: #DEDEE4;
+    --nj-blue-200: #C5CAD3;
+    --nj-blue-300: #AFB7C3;
+    --nj-blue-400: #99A3B2;
+    --nj-blue-500: #838FA2;
+    --nj-blue-600: #6D7C91;
+    --nj-blue-700: #576881;
+    --nj-blue-800: #415470;
+    --nj-blue-900: #2B4160;
     --nj-green-000: rgb(244, 246, 245);
     --nj-green-100: rgb(238, 242, 239);
     --nj-green-200: rgb(220, 227, 222);
@@ -137,6 +137,7 @@
     --link-color: var(--nj-green-600);
     --link-color-light: var(--nj-green-500);
     --link-hover: var(--nj-green-800);
+    --link-color-underline: #7188A9;
     --selection-color-tx: var(--tx1);
     --selection-color-bg: var(--nj-green-250);
     --navButton-color-selected-outline: var(--tx2);
@@ -167,6 +168,7 @@
     --link-color: var(--nj-green-250);
     --link-color-light: var(--nj-green-200);
     --link-hover: var(--nj-green-600);
+    --link-color-underline: var(--nj-blue-700);
     --selection-color-tx: var(--tx1);
     --selection-color-bg: var(--nj-green-800);
     --navButton-color-selected-outline: var(--nj-green-100);
@@ -367,47 +369,11 @@ a:hover {
     text-decoration: none;
 }
 
-
-.ease-in-out {
-    transition-timing-function: cubic-bezier(.4,0,.2,1)
+.dotted-underline {
+    text-decoration: underline var(--link-color-underline) dotted;
 }
 
-.ease-out {
-    transition-timing-function: cubic-bezier(0,0,.2,1)
-}
-
-.ease-in {
-    transition-timing-function: cubic-bezier(.4,0,1,1)
-}
-
-.ease-linear {
-    transition-timing-function: linear
-}
-
-.group:hover .group-hover\:-rotate-6 {
-    --tw-rotate: -6deg;
-    transform: translate(var(--translate-x),var(--translate-y)) rotate(var(--tw-rotate)) skew(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
-}
-
-.group:hover .group-hover\:scale-100 {
-    --tw-scale-x: 1;
-    --tw-scale-y: 1;
-    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
-}
-
-
-.group:hover .group-hover\:animate-pulse {
-    -webkit-animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite;
-    animation: pulse 2s cubic-bezier(.4,0,.6,1) infinite
-}
-
-.group:hover .group-hover\:opacity-20 {
-    opacity: .2
-}
-
-.group:hover .group-hover\:filter-none {
-    filter: none
-}
+/* --- tables --- */
 
 .table-container {
     font-size: 0.75em;
