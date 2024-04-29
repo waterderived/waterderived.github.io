@@ -891,8 +891,8 @@ td:last-of-type {
 }
 
 .project-container.posts .card-title-mono {
-    font-size: 1em !important;
-    font-weight: 600;
+    font-size: 0.875em !important;
+    font-weight: 500;
     line-height: 1.875em;
 }
 
