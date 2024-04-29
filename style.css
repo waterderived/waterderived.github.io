@@ -1460,7 +1460,7 @@ select {
 }
 
 p:has(.dropdown-surround) {
-    text-wrap: balance;
+    text-wrap: wrap;
     word-wrap: break-word;
 }
 
