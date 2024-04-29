@@ -867,7 +867,7 @@ td:last-of-type {
     font-family: var(--font-family-mono);
     font-size: 0.875em;
     font-weight: 300;
-    color: var(--tx-muted);
+    color: var(--tx-muted) !important;
     display: inline;
     margin-left: 16px;
 }
@@ -878,7 +878,7 @@ td:last-of-type {
 }
 
 .project-container.posts .project-card:hover {
-    --card-color-title: var(--nj-green-400) !important;
+    --card-color-title: var(--nj-green-400);
 }
 
 .post-data {
