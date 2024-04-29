@@ -1468,7 +1468,8 @@ p:has(.dropdown-surround) {
     display: inline-block;
     color: var(--tx1);
     font-size: 1em;
-    text-wrap:balance;
+    text-wrap: wrap;
+    word-wrap: normal;
     overflow-wrap: break-word;
 }
 
