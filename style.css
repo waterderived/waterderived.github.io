@@ -834,7 +834,7 @@ td:last-of-type {
 .page-section-text {
     display: flex;
     flex-direction: column;
-    grid-column: 1 / span 12;
+    grid-column: 1 / -1;
     grid-row: auto;
     justify-content: center;
     padding: 8px 0;
@@ -844,7 +844,7 @@ td:last-of-type {
 }
 
 .page-section-content .page-section-text {
-    grid-column: 1 / span 12;
+    grid-column: 1 / -1;
     grid-row: auto;
     padding: 8px 0;
 }
