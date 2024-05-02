@@ -1422,13 +1422,13 @@ footer .footer-links .mark-left {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .navbar2 .navbar-container .navbar-item:not(:has(button)) {
         display: none;
     }
 }
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
     .navbar2 .navbar-container .navbar-item:has(.sidebar-open-button),
     .navbar2 .navbar-container .navbar-item:has(.sidebar-open-button-open) {
         display: none;
