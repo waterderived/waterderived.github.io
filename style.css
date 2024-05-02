@@ -563,11 +563,13 @@ td:last-of-type {
 }
 
 .sidebar-open-button {
+    position: absolute;
+    top: 10px;
+    right: 24px;
     font-size: 0.875em;
     cursor: pointer;
     background-color: transparent;
     color: var(--link-color);
-    padding: 8px 10px;
     border: none;
     border-radius: 8px;
     z-index: 22;
