@@ -31,7 +31,7 @@
 }
 
 :root {
-    --font-family-title: 'Space Grotesk', "Antarctican Mono", /*"Eskapade Fraktur",*/ 'Inter', 'Segoe UI';
+    --font-family-title:/* 'Space Grotesk',*/ "Antarctican Mono", /*"Eskapade Fraktur",*/ 'Inter', 'Segoe UI';
     --font-family-body: /*"Antarctican Mono"*/, 'DM Sans', 'Inter UI', 'Inter', 'Segoe UI';
     --font-family-nav: 'DM Sans', 'Inter UI', 'Inter', 'Segoe UI', sans-serif;
     --font-family-mono: /*'Space Grotesk', */"Antarctican Mono", 'Consolas';
