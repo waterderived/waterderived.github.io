@@ -1322,10 +1322,17 @@ footer .grid .grid-box {
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+    .footer {
+        margin: 24px 12px 12px 12px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+@media (min-width: 320px) {
     .footer {
         margin: 24px 0 12px 0 !important;
-        padding: 0;
+        padding: 0 4px;
     }
 
     .footer a,
