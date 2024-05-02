@@ -1310,6 +1310,12 @@ footer .footer-links .mark-left {
     }
 }
 
+@media (max-width: 640px) {
+    .navbar2 .navbar-container .navbar-item {
+        display: none;
+    }
+}
+
 .header-buttons {
     display: flex;
     vertical-align: middle;
