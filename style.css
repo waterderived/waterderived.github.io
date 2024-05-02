@@ -1395,7 +1395,7 @@ footer .footer-links .mark-left {
 }
 
 @media (max-width: 640px) {
-    .navbar2 .navbar-container .navbar-item:has(button) {
+    .navbar2 .navbar-container .navbar-item:not(:has(button)) {
         display: none;
     }
 }
@@ -1403,10 +1403,6 @@ footer .footer-links .mark-left {
 @media (min-width: 640px) {
     .navbar2 .navbar-container .navbar-item:has(.sidebar-open-button),
     .navbar2 .navbar-container .navbar-item:has(.sidebar-open-button-open) {
-        display: none;
-    }
-
-    .sidebar-frame {
         display: none;
     }
 }
