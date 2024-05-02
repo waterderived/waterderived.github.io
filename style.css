@@ -753,7 +753,7 @@ td:last-of-type {
 @media (max-width: 640px) {
     .page-hero-content h1 {
         --hero-h1-size: 32px;
-        --hero-h1-height: 42px;
+        --hero-h1-height: 40px;
     }
 }
 
@@ -1697,7 +1697,7 @@ p:has(.dropdown-surround) {
 @media (max-width: 640px) {
     .dropdown-surround {
         font-size: 14px;
-        line-height: 18px;
+        line-height: 24px;
     }
 
     .dropdown-btn {
