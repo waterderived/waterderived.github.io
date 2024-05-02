@@ -473,9 +473,13 @@ td:last-of-type {
 @media (min-width: 320px) {
     .grid {
         --gridGap: 4px;
-        grid-template-columns: repeat(8, minmax(0, 1fr));
+        grid-template-columns: repeat(12, minmax(0, 1fr));
         padding-left: 8px;
         padding-right: 8px;
+    }
+
+    .page-header {
+        width: 95%;
     }
 }
 
