@@ -19,12 +19,44 @@
 </head>
 
 <body onload="typeWriter()">
+    <!--static sidebar-->
+    <div class="sidebar-frame" id="mySidebar">
+        <!--sidebar component - can switch out for another-->
+        <div class="sidebar">
+            <div class="sidebar-internal">
+                <div class="sidebar-element">
+                    <nav class="sidebar-element-container">
+                        <div>
+                            <a href="https://waterderived.github.io/about" class="sidebar-group">
+                                <span>about</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://waterderived.github.io/work" class="sidebar-group">
+                                <span>work</span>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://waterderived.github.io/jisoo-writing" class="sidebar-group">
+                                <span>notes</span>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of sidebar-->
     <div class="grid page-header">
         <div class="navbar2">
             <div class="header-title"><a href="https://waterderived.github.io">
                     nicole jisoo kim</a>
             </div>
             <div class="navbar-container">
+                <div class="navbar-item">
+                    <button class="sidebar-open-button" onclick="openNav()">&#9776</button>
+                    <button class="sidebar-open-button-open" onclick="closeNav()">&#9776</button>
+                </div>
                 <div class="navbar-item">
                     <a class="btn" href="https://waterderived.github.io/about">
                         <span>about</span>
@@ -111,30 +143,30 @@
 </body>
 
 <script>
-    $('select').change(function(){
-    var $opt = $(this).find("option:selected");
-    var $span = $('<span>').addClass('tester').text($opt.text());
+    $('select').change(function () {
+        var $opt = $(this).find("option:selected");
+        var $span = $('<span>').addClass('tester').text($opt.text());
 
-    $span.css({
-        'font-family' : $opt.css('font-family'),
-        'font-style' : $opt.css('font-style'),
-        'font-weight' : $opt.css('font-weight'),
-        'font-size' : $opt.css('font-size')
+        $span.css({
+            'font-family': $opt.css('font-family'),
+            'font-style': $opt.css('font-style'),
+            'font-weight': $opt.css('font-weight'),
+            'font-size': $opt.css('font-size')
+        });
+
+        $('body').append($span);
+        // The 30px is for select open icon - it may vary a little per-browser
+        $(this).width($span.width());
+        $span.remove();
     });
 
-    $('body').append($span);
-    // The 30px is for select open icon - it may vary a little per-browser
-    $(this).width($span.width());
-    $span.remove();
-});
+    $('select').change();
 
-$('select').change();
-
-//reset to first option on reload
-window.onbeforeunload = function(){
-    $("#identity1").val($("#target option:first").val());
-    $("#identity2").val($("#target option:first").val());
-}
+    //reset to first option on reload
+    window.onbeforeunload = function () {
+        $("#identity1").val($("#target option:first").val());
+        $("#identity2").val($("#target option:first").val());
+    }
 
 </script>
 
