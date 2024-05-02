@@ -564,7 +564,7 @@ td:last-of-type {
 
 .sidebar-open-button {
     position: relative;
-    font-size: 24px;
+    font-size: 16px;
     cursor: pointer;
     background-color: transparent;
     color: var(--link-color);
