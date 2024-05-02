@@ -1497,7 +1497,11 @@ footer .footer-links .mark-left {
     align-items: center;
     justify-content: center;
     margin-left: 4px;
-    padding: 8px 0 8px 16px;
+    padding: 8px 8px;
+}
+
+.navbar2 .navbar-container .navbar-item:has(>.theme-switcher) {
+    padding: 8px 0 !important;
 }
 
 .navbar2 .navbar-container .navbar-item.selected {
