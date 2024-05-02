@@ -1552,6 +1552,7 @@ footer .footer-links .mark-left {
     display: flex;
     margin: auto 8px;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 
 ul#menu {
