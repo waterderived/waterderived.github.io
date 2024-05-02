@@ -1707,7 +1707,7 @@ p:has(.dropdown-surround) {
     gap: 0.6rem;
     cursor: pointer;
     padding: 0.5rem;
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin: 0.5rem 0 0.5rem 0.5rem;
     position: relative;
     z-index: 20;
     transition-duration: 1s;
