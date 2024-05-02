@@ -22,28 +22,18 @@
     <!--static sidebar-->
     <div class="sidebar-frame" id="mySidebar">
         <!--sidebar component - can switch out for another-->
-        <div class="sidebar">
-            <div class="sidebar-internal">
-                <div class="sidebar-element">
-                    <nav class="sidebar-element-container">
-                        <div>
-                            <a href="https://waterderived.github.io/about" class="sidebar-group">
-                                <span>about</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/work" class="sidebar-group">
-                                <span>work</span>
-                            </a>
-                        </div>
-                        <div>
-                            <a href="https://waterderived.github.io/jisoo-writing" class="sidebar-group">
-                                <span>notes</span>
-                            </a>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+        <!--<div class="sidebar">-->
+        <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
+        <div class="sidebar-element">
+            <a href="https://waterderived.github.io/about" class="sidebar-group">
+                <span>about</span>
+            </a>
+            <a href="https://waterderived.github.io/work" class="sidebar-group">
+                <span>work</span>
+            </a>
+            <a href="https://waterderived.github.io/jisoo-writing" class="sidebar-group">
+                <span>notes</span>
+            </a>
         </div>
     </div>
     <!--end of sidebar-->
@@ -84,7 +74,7 @@
                 </div>
                 <div class="navbar-item">
                     <button class="sidebar-open-button" onclick="openNav()">&#9776</button>
-                    <button class="sidebar-open-button-open" onclick="closeNav()">&#9776</button>
+                    <!--<button class="sidebar-open-button-open" onclick="closeNav()">&#9776</button>-->
                 </div>
             </div>
         </div>
