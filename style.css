@@ -1438,6 +1438,10 @@ footer .footer-links .mark-left {
 }
 
 @media (max-width: 768px) {
+    .navbar2 .navbar-container {
+        grid-column: 1 / span 13;
+    }
+
     .navbar2 .navbar-container .navbar-item:not(:has(button)) {
         display: none;
     }
