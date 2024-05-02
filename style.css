@@ -748,7 +748,7 @@ td:last-of-type {
 
 @media (max-width: 640px) {
     .page-hero-content h1 {
-        --hero-h1-size: 36px;
+        --hero-h1-size: 32px;
     }
 }
 
@@ -1334,6 +1334,8 @@ footer .grid .grid-box {
     .footer {
         margin: 24px 0 12px 0;
         padding: 0;
+        display: flex;
+        flex-direction: column;
     }
 
     .footer a,
