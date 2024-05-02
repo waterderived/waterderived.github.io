@@ -100,12 +100,12 @@ function openNav() {
     document.getElementById("mySidebar").style.display = "block";
 }
 //hide sidebar button
-const div = document.querySelector('.sidebar-open-button')
+/*const div = document.querySelector('.sidebar-open-button')
 div.addEventListener('click', () => {
     div.classList.add('hidden');
-})
+})*/
 /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("mySidebar").style.display = "none";
-    div.classList.remove('hidden'); //reappear sidebar button
+    // div.classList.remove('hidden'); //reappear sidebar button
 }
