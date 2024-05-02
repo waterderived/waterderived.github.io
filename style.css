@@ -1678,7 +1678,8 @@ p:has(.dropdown-surround) {
 
 @media (max-width: 640px) {
     .dropdown-surround {
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
 
