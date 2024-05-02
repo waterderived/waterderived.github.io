@@ -1322,7 +1322,7 @@ footer .grid .grid-box {
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 768px) {
     .footer {
         margin: 24px 0 12px 0 !important;
         padding: 0;
@@ -1335,8 +1335,8 @@ footer .grid .grid-box {
 
     .footer .footer-links {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: column !important;
+        justify-content: center !important;
     }
 }
 
