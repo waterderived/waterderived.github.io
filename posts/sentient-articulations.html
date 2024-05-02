@@ -16,6 +16,23 @@
 </head>
 
 <body>
+    <!--static sidebar-->
+    <div class="sidebar-frame" id="mySidebar">
+        <!--sidebar component - can switch out for another-->
+        <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
+        <div class="sidebar-element">
+            <a href="https://waterderived.github.io/about">
+                about
+            </a>
+            <a href="https://waterderived.github.io/work">
+                work
+            </a>
+            <a href="https://waterderived.github.io/scribbles">
+                notes
+            </a>
+        </div>
+    </div>
+    <!--end of sidebar-->
     <div class="grid page-header">
         <div class="navbar2">
             <div class="header-title"><a href="https://waterderived.github.io">
@@ -50,6 +67,10 @@
                             <circle cx="7" cy="7" r="2" />
                         </svg>
                     </button>
+                </div>
+                <div class="navbar-item">
+                    <button class="sidebar-open-button" onclick="openNav()">&#9776</button>
+                    <!--<button class="sidebar-open-button-open" onclick="closeNav()">&#9776</button>-->
                 </div>
             </div>
         </div>
