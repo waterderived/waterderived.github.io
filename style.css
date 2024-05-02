@@ -563,10 +563,8 @@ td:last-of-type {
 }
 
 .sidebar-open-button {
-    position: absolute;
-    top: 10px;
-    right: 24px;
-    font-size: 32px;
+    position: relative;
+    font-size: 24px;
     cursor: pointer;
     background-color: transparent;
     color: var(--link-color);
@@ -1553,6 +1551,10 @@ footer .footer-links .mark-left {
 
 .navbar2 .navbar-container .navbar-item:has(#theme-switcher) {
     padding: 8px 0 !important;
+}
+
+.navbar2 .navbar-container .navbar-item:has(.sidebar-open-button) {
+    padding-right: 0 !important;
 }
 
 .navbar2 .navbar-container .navbar-item.selected {
