@@ -570,6 +570,7 @@ td:last-of-type {
     color: var(--link-color);
     border: none;
     border-radius: 8px;
+    padding-right: 0 !important;
     z-index: 22;
 }
 
