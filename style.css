@@ -536,6 +536,12 @@ td:last-of-type {
     }
 }
 
+@media (min-width: 320px) {
+    .page-hero-content {
+        margin: 8vh 0 12vh 0;
+    }
+}
+
 @media (min-width: 768px) {
     .page-hero-content {
         grid-template-rows: 100%;
