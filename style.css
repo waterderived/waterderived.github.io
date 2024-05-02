@@ -605,6 +605,7 @@ td:last-of-type {
 .page-hero {
     position: relative;
     height: 90%;
+    z-index: 20;
 }
 
 .page-header {
@@ -1310,7 +1311,7 @@ html[data-theme="dark"] .gridded-img-photo:hover {
 
 footer {
     display: block;
-    z-index: 2;
+    z-index: 20;
 }
 
 footer p,
@@ -1390,7 +1391,7 @@ footer .footer-links .mark-left {
     justify-content: space-between;
     width: 100%;
     vertical-align: middle;
-    z-index: 3;
+    z-index: 20;
     padding: 24px 0;
 }
 
