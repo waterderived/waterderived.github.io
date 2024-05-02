@@ -483,7 +483,7 @@ td:last-of-type {
 
 @media (max-width: 640px) {
     .page-header {
-        width: 95%;
+        width: 100%;
     }
 }
 
@@ -1396,7 +1396,7 @@ footer .footer-links .mark-left {
 
 @media (min-width: 320px) {
     .navbar2 {
-        grid-column: 1 / -1;
+        grid-column: 1 / span 13;
         padding: 24px 0;
         justify-content: space-between;
     }
