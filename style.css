@@ -521,8 +521,8 @@ td:last-of-type {
 }
 
 .sidebar-frame {
-    height: 100%;
-    width: 0;
+    height: 0;
+    width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
