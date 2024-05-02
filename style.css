@@ -971,13 +971,19 @@ td:last-of-type {
 
 @media (min-width: 850px) {
     .project-container.card-column-two {
-        grid-template-columns: repeat(2, minmax(350px, 50%)) !important;
+        grid-template-columns: repeat(2, minmax(350px, 50%));
     }
 }
 
 @media (max-width: 850px) {
     .project-container.card-column-two {
-        grid-template-columns: repeat(1, minmax(200px, 100%)) !important;
+        grid-template-columns: repeat(1, minmax(600px, 100%)) !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .project-container.card-column-two {
+        grid-template-columns: repeat(1, 100%) !important;
     }
 }
 
