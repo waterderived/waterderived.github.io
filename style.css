@@ -317,21 +317,15 @@ body {
     text-align: left;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 640px) {
     body {
         width: 88%;
     }
 }
 
-@media (max-width: 640px) {
-    body {
-        width: 80%;
-    }
-}
-
 @media (max-width: 1200px) {
     body {
-        width: 70%;
+        width: 75%;
     }
 }
 
@@ -1332,7 +1326,7 @@ footer .grid .grid-box {
 
 @media (max-width: 640px) {
     .footer {
-        margin: 24px 0 12px 0;
+        margin: 24px 0 12px 0 !important;
         padding: 0;
         display: flex;
         flex-direction: column;
