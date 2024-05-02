@@ -648,7 +648,7 @@ td:last-of-type {
 @media (min-width: 320px) {
     .page-hero-content {
         grid-column: 1/-1;
-        margin: 8vh 0 12vh 0;
+        margin: 4vh 0 8vh 0;
     }
 }
 
