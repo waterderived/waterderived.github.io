@@ -1278,16 +1278,6 @@ html[data-theme="dark"] .gridded-img-photo:hover {
 
 
 /* -- FOOTER -- */
-.page-footer {
-    width: 80%;
-    align-self: center;
-    justify-self: center;
-    position: absolute;
-    bottom: 0;
-    height: 144px;
-    margin: 4rem auto 8rem auto;
-    z-index: 1;
-}
 
 footer {
     margin: 24px 12px 12px 12px;
@@ -1311,8 +1301,14 @@ footer .grid .grid-box {
 }
 
 @media (min-width: 1024px) {
-    .footer .grid .grid-box {
+    .footer .grid {
         grid-column: 2/span 12;
+    }
+}
+
+@media (min-width: 320px) {
+    .footer .grid {
+        grid-column: 1/-1;
     }
 }
 
