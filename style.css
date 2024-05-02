@@ -679,11 +679,18 @@ td:last-of-type {
 }
 
 @media (min-width: 768px) {
+    .page-hero-content .page-hero-bio {
+        grid-column: 2 / span 12;
+        grid-row: 1;
+    }
+    
     .page-hero-bio {
         grid-column: 8 / span 7;
         grid-row: 1;
     }
+}
 
+@media (min-width: 320px) {
     .page-hero-content .page-hero-bio {
         grid-column: 1 / -1;
         grid-row: 1;
