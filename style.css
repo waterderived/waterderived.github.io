@@ -65,6 +65,10 @@
     --spacing-08: calc(8 * var(--spacing-01));
     --spacing-10: calc(10 * var(--spacing-01));
     --spacing-16: calc(16 * var(--spacing-01));
+    --h1-size: 32px;
+    --h2-size: 28px;
+    --h3-size: 24px;
+    --h4-size: 20px;
     --nj-blue-000: #F1F2F5;
     --nj-blue-100: #DEDEE4;
     --nj-blue-200: #C5CAD3;
@@ -210,52 +214,6 @@
     --card-color-title: var(--hd1);
 }
 
-/* ---------------------
------ FLUID SCALES -----
-----------------------*/
-
-:root {
-    --fluid-min-width: 320;
-    --fluid-max-width: 1500;
-    --fluid-min-size: 12;
-    --fluid-max-size: 16;
-    --fluid-min-ratio: 1.2;
-    --fluid-max-ratio: 1.33;
-}
-
-:root {
-    --fluid-screen: 100vw;
-    --fluid-bp: calc((var(--fluid-screen) - ((var(--fluid-min-width) / 16) * 1rem)) / ((var(--fluid-max-width) / 16) - (var(--fluid-min-width) / 16)));
-}
-
-@media screen and (min-width: 1500px) {
-    :root {
-      --fluid-screen: calc(var(--fluid-max-width) * 1px);
-    }
-}
-
-:root {
-    --fluid-min-scale-0: var(--fluid-min-ratio);
-    --fluid-min-scale-1: var(--fluid-min-scale-0) * var(--fluid-min-ratio);
-    --fluid-min-scale-2: var(--fluid-min-scale-1) * var(--fluid-min-ratio);
-  
-    --fluid-max-scale-0: var(--fluid-max-ratio);
-    --fluid-max-scale-1: var(--fluid-max-scale-0) * var(--fluid-max-ratio);
-    --fluid-max-scale-2: var(--fluid-max-scale-1) * var(--fluid-max-ratio);
-  
-    --fluid-min-size-0: (var(--fluid-min-size)) / 16;
-    --fluid-min-size-1: (var(--fluid-min-size) * var(--fluid-min-scale-0)) / 16;
-    --fluid-min-size-2: (var(--fluid-min-size) * var(--fluid-min-scale-1)) / 16;
-  
-    --fluid-max-size-0: (var(--fluid-max-size)) / 16;
-    --fluid-max-size-1: (var(--fluid-max-size) * var(--fluid-max-scale-0)) / 16;
-    --fluid-max-size-2: (var(--fluid-max-size) * var(--fluid-max-scale-1)) / 16;
-  
-    --fluid-0: calc(((var(--fluid-min-size-0) * 1rem) + (var(--fluid-max-size-0) - var(--fluid-min-size-0)) * var(--fluid-bp)));
-    --fluid-1: calc(((var(--fluid-min-size-1) * 1rem) + (var(--fluid-max-size-1) - var(--fluid-min-size-1)) * var(--fluid-bp)));
-    --fluid-2: calc(((var(--fluid-min-size-2) * 1rem) + (var(--fluid-max-size-2) - var(--fluid-min-size-2)) * var(--fluid-bp)));
-  }
-
 /* --- SCROLLBAR --- */
 
 * {
@@ -384,24 +342,75 @@ p:has(+ h1, + h2, + h3, + h4, + h5, + h6) {
 }
 
 h1 {
-    font-size: 32px;
+    font-size: var(--h1-size);
 }
 
 h2 {
-    font-size: 28px;
+    font-size: var(--h2-size);
 }
 
 h3 {
-    font-size: 24px;
+    font-size: var(--h3-size);
 }
 
 h4 {
-    font-size: 20px;
+    font-size: var(--h4-size);
 }
 
-h5 {
-    font-size: 16px;
+@media (min-width: 1500px) {
+    h1 {
+       --h1-size: 36px;
+    }
+    
+    h2 {
+        --h2-size: 32px;
+    }
+    
+    h3 {
+        --h3-size: 28px;
+    }
+    
+    h4 {
+        --h4-size: 24px;
+    }
 }
+
+@media (min-width: 768px) {
+    h1 {
+       --h1-size: 32px;
+    }
+    
+    h2 {
+        --h2-size: 28px;
+    }
+    
+    h3 {
+        --h3-size: 24px;
+    }
+    
+    h4 {
+        --h4-size: 20px;
+    }
+}
+
+@media (min-width: 320px) {
+    h1 {
+       --h1-size: 24px;
+    }
+    
+    h2 {
+        --h2-size: 22px;
+    }
+    
+    h3 {
+        --h3-size: 20px;
+    }
+    
+    h4 {
+        --h4-size: 18px;
+    }
+}
+
 
 ul {
     line-height: 1.5;
