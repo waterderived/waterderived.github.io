@@ -329,14 +329,14 @@ body {
 
 @media (min-width: 640px) {
     body {
-        width: 80%%;
+        width: 80%;
         max-width: 1000px;
     }
 }
 
 @media (min-width: 1200px) {
     body {
-        width: 65%%;
+        width: 65%;
         max-width: 1000px;
     }
 }
