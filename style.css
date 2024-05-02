@@ -467,9 +467,9 @@ td:last-of-type {
     --gridGap: 24px;
     gap: var(--gridGap);
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    padding-left: 24px;
-    padding-right: 24px;
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 @media (min-width: 320px) {
