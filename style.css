@@ -1376,6 +1376,7 @@ footer .footer-links .mark-left {
     .navbar2 {
         grid-column: 1 / -1;
         padding: 24px 0;
+        justify-content: space-between;
     }
 }
 
@@ -1451,7 +1452,7 @@ footer .footer-links .mark-left {
 }
 
 .navbar2 .header-title {
-    margin-right: 60px;
+    margin-right: auto;
     align-self: center;
     width: max-content;
     vertical-align: middle;
