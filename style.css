@@ -723,8 +723,7 @@ td:last-of-type {
 
 @media (max-width: 640px) {
     .page-hero-content h1 {
-        --hero-h1-size: calc(var(--hero-h1-size) * 0.875);
-        --hero-h1-height: calc(var(--hero-h1-height) * 0.875);
+        --hero-h1-size: 36px;
     }
 }
 
