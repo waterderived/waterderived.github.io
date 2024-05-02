@@ -1500,7 +1500,7 @@ footer .footer-links .mark-left {
     padding: 8px 8px;
 }
 
-.navbar2 .navbar-container .navbar-item:has(>.theme-switcher) {
+.navbar2 .navbar-container .navbar-item:has(#theme-switcher) {
     padding: 8px 0 !important;
 }
 
