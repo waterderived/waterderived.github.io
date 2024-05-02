@@ -126,7 +126,7 @@
 
 :root[data-theme="light"] {
     --bg1: var(--nj-offwhitelighter);
-    --bg1-09: rgb(249, 247, 245, 0.9);
+    --bg1-09: #f9f7f5e6;
     --bg2: var(--nj-nearmono-100);
     --bg3: var(--nj-offwhitelightest);
     --hd1: var(--nj-charcoal-700);
@@ -524,7 +524,7 @@ td:last-of-type {
     height: 0;
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 1000;
     top: 0;
     left: 0;
     overflow-x: hidden;
