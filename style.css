@@ -126,6 +126,7 @@
 
 :root[data-theme="light"] {
     --bg1: var(--nj-offwhitelighter);
+    --bg1-09: rgb(249, 247, 245, 0.9);
     --bg2: var(--nj-nearmono-100);
     --bg3: var(--nj-offwhitelightest);
     --hd1: var(--nj-charcoal-700);
@@ -157,6 +158,7 @@
 
 :root[data-theme="dark"] {
     --bg1: var(--nj-charcoal-700);
+    --bg1-09: rgb(18, 18, 18, 0.9);
     --bg2: var(--nj-charcoal-600);
     --bg3: var(--nj-charcoal-550);
     --hd1: var(--nj-offwhitelighter);
@@ -525,10 +527,9 @@ td:last-of-type {
     z-index: 1;
     top: 0;
     left: 0;
-    display: flex;
-    flex-direction: column;
     overflow-x: hidden;
     transition: 0.5s;
+    background-color: var(--bg1-09);
 }
 
 .sidebar-element {
