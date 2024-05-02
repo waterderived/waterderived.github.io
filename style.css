@@ -126,7 +126,7 @@
 
 :root[data-theme="light"] {
     --bg1: var(--nj-offwhitelighter);
-    --bg1-09: #f9f7f5e6;
+    --bg1-09: rgba(249, 247, 245, 0.95);
     --bg2: var(--nj-nearmono-100);
     --bg3: var(--nj-offwhitelightest);
     --hd1: var(--nj-charcoal-700);
@@ -158,7 +158,7 @@
 
 :root[data-theme="dark"] {
     --bg1: var(--nj-charcoal-700);
-    --bg1-09: rgb(18, 18, 18, 0.9);
+    --bg1-09: rgb(18, 18, 18, 0.95);
     --bg2: var(--nj-charcoal-600);
     --bg3: var(--nj-charcoal-550);
     --hd1: var(--nj-offwhitelighter);
