@@ -560,7 +560,7 @@ td:last-of-type {
     right: 24px;
     font-size: 32px;
     text-decoration: none;
-    color: var(--sidebar-group-tx1);
+    color: var(--tx-muted);
 }
 
 .sidebar-open-button {
@@ -666,7 +666,7 @@ td:last-of-type {
     justify-content: center;
     padding: 48px 0;
     position: relative;
-    z-index: 1
+    z-index: 2
 }
 
 .page-hero-bio p {
@@ -770,7 +770,7 @@ td:last-of-type {
 /* page sections */
 .page-section {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .page-section .grid {
@@ -1312,7 +1312,7 @@ footer {
     padding-left: 24px;
     padding-right: 24px;
     display: block;
-    z-index: 1;
+    z-index: 2;
 }
 
 footer p,
@@ -1420,7 +1420,7 @@ footer .footer-links .mark-left {
 
 .navbar-container {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     align-items: center;
     width: 100%;
@@ -1737,7 +1737,6 @@ p:has(.dropdown-surround) {
 
 .inf span.footnoteContent {
     position: absolute;
-    z-index: 10000;
     padding: 15px;
     background-color: var(--bg2);
     color: var(--tx1);
@@ -1748,6 +1747,7 @@ p:has(.dropdown-surround) {
     line-height: 1pc;
     letter-spacing: .01em;
     max-width: 300px;
+    z-index: 1;
 }
 
 
