@@ -1337,12 +1337,12 @@ footer .footer-links .mark-left {
     vertical-align: middle;
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
     .header-title {
         position: relative;
         z-index: 20;
     }
-}
+}*/
 
 .navbar-item {
     align-items: center;
