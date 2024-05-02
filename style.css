@@ -773,6 +773,11 @@ td:last-of-type {
     margin-bottom: 8px;
 }
 
+@media (max-width: 768px) {
+    .page-section-text {
+        grid-column: 1 / -1;
+    }
+}
 
 
 /* things in the body */
