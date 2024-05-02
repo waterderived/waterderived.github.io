@@ -217,8 +217,8 @@
 :root {
     --fluid-min-width: 320;
     --fluid-max-width: 1500;
-    --fluid-min-size: 16;
-    --fluid-max-size: 20;
+    --fluid-min-size: 12;
+    --fluid-max-size: 16;
     --fluid-min-ratio: 1.2;
     --fluid-max-ratio: 1.33;
 }
@@ -329,7 +329,7 @@ body .body-full {
 
 p {
     /*font-size: 0.875em;*/
-    font-size: 18px;
+    font-size: 16px;
     color: var(--tx1);
     margin-top: 0rem;
     margin-bottom: 0.375rem;
@@ -1308,7 +1308,6 @@ footer .footer-links .mark-left {
 
 .navbar2 .header-title {
     margin-right: 60px;
-    margin-left: 20px;
     align-self: center;
     width: max-content;
     vertical-align: middle;
