@@ -537,6 +537,12 @@ td:last-of-type {
     }
 }
 
+@media (min-width: 768px) {
+    .page-hero-content {
+        grid-template-rows: 100%;
+    }
+}
+
 @media (min-width: 640px) {
     .page-hero-content {
         column-gap: var(--gridGap);
@@ -546,13 +552,8 @@ td:last-of-type {
 
 @media (min-width: 320px) {
     .page-hero-content {
+        grid-column: 1/-1;
         margin: 8vh 0 12vh 0;
-    }
-}
-
-@media (min-width: 768px) {
-    .page-hero-content {
-        grid-template-rows: 100%;
     }
 }
 
