@@ -975,6 +975,12 @@ td:last-of-type {
     margin-right: var(--spacing-06);
 }
 
+@media (max-width: 640px) {
+    .project-card-image-sq img {
+        display: none;
+    }
+}
+
 .project-card-text {
     display: flex;
     flex-direction: column;
