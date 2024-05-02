@@ -570,6 +570,7 @@ td:last-of-type {
     padding: 8px 10px;
     border: none;
     border-radius: 8px;
+    z-index: 14;
 }
 
 .sidebar-open-button:hover {
@@ -585,7 +586,7 @@ td:last-of-type {
     padding: 8px 10px;
     border: none;
     border-radius: 8px;
-    z-index: 18;
+    z-index: 12;
 }
 
 .sidebar-frame .close-button {
