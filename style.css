@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 @font-face {
     font-family: "Eskapade Fraktur";
@@ -15,9 +16,6 @@
     font-family: "Antarctican Mono";
     src: url('https://waterderived.github.io/font-family/AntarcticanMono-Medium.ttf');
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 /*--- the magic starts here ! ---*/
  
@@ -36,7 +34,7 @@
     --font-family-title: "Space Grotesk", "Antarctican Mono", /*"Eskapade Fraktur",*/ 'Inter', 'Segoe UI';
     --font-family-body: /*"Antarctican Mono"*/, 'DM Sans', 'Inter UI', 'Inter', 'Segoe UI';
     --font-family-nav: 'DM Sans', 'Inter UI', 'Inter', 'Segoe UI', sans-serif;
-    --font-family-mono: "Space Grotesk", 'Consolas';
+    --font-family-mono: "Space Grotesk", "Antarctican Mono", 'Consolas';
     --border-spacing-x: 0;
     --border-spacing-y: 0;
     --translate-x: 0;
