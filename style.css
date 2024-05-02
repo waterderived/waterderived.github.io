@@ -1413,7 +1413,7 @@ footer .footer-links .mark-left {
     flex-direction: row;
     flex-wrap: nowrap;
     vertical-align: middle !important;
-    justify-self: flex-end;
+    justify-content: flex-end;
 }
 
 @media (min-width: 768px) {
