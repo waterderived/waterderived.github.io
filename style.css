@@ -564,6 +564,18 @@ td:last-of-type {
     color: var(--link-hover);
 }
 
+.sidebar-open-button-open {
+    position: absolute;
+    font-size: 0.875em;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--tx2);
+    padding: 8px 10px;
+    border: none;
+    border-radius: 8px;
+    z-index: 18;
+}
+
 .sidebar-frame .close-button {
     position: absolute;
     top: 14px;
