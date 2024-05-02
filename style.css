@@ -978,7 +978,7 @@ td:last-of-type {
 
 @media (max-width: 850px) {
     .project-container.card-column-two {
-        grid-template-columns: repeat(1, minmax(350px, 50%)) !important;
+        grid-template-columns: repeat(1, minmax(200px, 100%)) !important;
     }
 }
 
