@@ -470,6 +470,15 @@ td:last-of-type {
     padding-right: 24px;
 }
 
+@media (min-width: 320px) {
+    .grid {
+        --gridGap: 4px;
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
 @media (min-width: 640px) {
     .grid {
         grid-template-columns: repeat(14, minmax(0, 1fr));
@@ -1250,6 +1259,12 @@ footer .footer-links .mark-left {
     width: 100%;
     vertical-align: middle;
     z-index: 3;
+}
+
+@media (min-width: 320px) {
+    .navbar2 {
+        grid-column: 1 / -1;
+    }
 }
 
 @media (min-width: 768px) {
