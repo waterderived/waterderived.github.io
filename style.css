@@ -323,6 +323,26 @@ body {
     text-align: left;
 }
 
+@media (min-width: 320px) {
+    body {
+        width: 90%;
+    }
+}
+
+@media (min-width: 640px) {
+    body {
+        width: 80%%;
+        max-width: 1000px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        width: 65%%;
+        max-width: 1000px;
+    }
+}
+
 body .body-full {
     max-width: 100% !important;
 }
