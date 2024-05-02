@@ -642,6 +642,13 @@ td:last-of-type {
     text-wrap: nowrap;
 }
 
+@media (max-width: 768px) {
+    .page-hero-content h1 {
+        --hero-h1-size: calc(var(--hero-h1-size) / 1.33 * 1.2);
+        --hero-h1-height: calc(var(--hero-h1-height) / 1.33 * 1.2);
+    }
+}
+
 /* trying to figure out the text wraps... */
 
 .page-hero-content .page-hero-text.align-text-left * {
