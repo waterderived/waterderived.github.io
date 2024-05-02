@@ -1405,6 +1405,10 @@ footer .footer-links .mark-left {
     .navbar2 .navbar-container .navbar-item:has(.sidebar-open-button-open) {
         display: none;
     }
+
+    .sidebar-frame {
+        display: none;
+    }
 }
 
 .header-buttons {
