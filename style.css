@@ -210,6 +210,17 @@
     --card-color-title: var(--hd1);
 }
 
+:root {
+    --fluid-min-width: 320;
+    --fluid-max-width: 1500;
+    --fluid-min-size: 10;
+    --fluid-max-size: 16;
+    --fluid-min-ratio: 1.2;
+    --fluid-max-ratio: 1.33;
+}
+
+
+
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--tx1);
@@ -280,7 +291,8 @@ body .body-full {
 }
 
 p {
-    font-size: 0.875em;
+    /*font-size: 0.875em;*/
+    font-size: 12px;
     color: var(--tx1);
     margin-top: 0rem;
     margin-bottom: 0.375rem;
