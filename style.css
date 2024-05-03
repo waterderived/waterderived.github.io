@@ -1099,13 +1099,14 @@ td:last-of-type {
 }
 
 h3:has(+ .post-data) {
-    margin-bottom: 12px;
+    margin-bottom: 0;
 }
 
 .post-data {
     font-weight: 300;
     color: var(--tx-muted);
     display: block;
+    margin-bottom: var(--spacing-04);
 }
 
 .post-data .date-mono {
