@@ -181,7 +181,7 @@
     --navButton-color-selected-tx: var(--nj-green-100);
     --dropdown-color-tx: var(--nj-offwhitelighter);
     --dropdown-color-bg: var(--nj-green-700);
-    --tagpill-color-tx: var(--nj-offwhitelighter);
+    --tagpill-color-tx: var(--nj-grey-light);
     --tagpill-color-bg: var(--nj-green-700);
     --tagpill-color-bg-hover: var(--nj-green-900);
     --card-color-bg: var(--bg2);
