@@ -1354,10 +1354,6 @@ footer a {
     margin: 24px 0 24px 0;
 }
 
-footer hr {
-    margin: 0 12px;
-}
-
 @media (min-width: 768px) {
     footer {
         margin: 24px 12px 12px 12px;
@@ -1385,6 +1381,7 @@ footer hr {
 
 footer .separator .line {
     border-top: 1px solid var(--tx2);
+    margin: 0 12px;
 }
 
 footer .footer-links {
