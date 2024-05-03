@@ -1375,7 +1375,7 @@ footer a {
 
 @media (min-width: 768px) {
     footer {
-        margin: 24px 12px 12px 12px !important;
+        margin: 24px 24px 12px 24px !important;
         padding: 0 16px;
     }
 
