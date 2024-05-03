@@ -1106,7 +1106,7 @@ h3:has(+ .post-data) {
     font-weight: 300;
     color: var(--tx-muted);
     display: block;
-    margin-bottom: var(--spacing-04);
+    margin-bottom: var(--spacing-08);
     padding-left: 4px;
 }
 
