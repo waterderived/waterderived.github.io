@@ -1106,6 +1106,7 @@ td:last-of-type {
 
 .post-data .date-mono {
     font-family: var(--font-family-mono);
+    font-size: 0.75em;
     display: inline;
     margin: 0 8px 0 0;
 }
