@@ -1375,8 +1375,13 @@ footer a {
 
 @media (min-width: 768px) {
     footer {
-        margin: 24px 12px 12px 12px;
+        margin: 24px 12px 12px 12px !important;
         padding: 0 16px;
+    }
+
+    footer .footer-links {
+        padding-left: 4px;
+        padding-right: 4px;
     }
 }
 
