@@ -423,7 +423,6 @@ h4 {
     }
 }
 
-
 ul {
     line-height: 1.5;
     padding-top: 0;
@@ -1360,20 +1359,20 @@ footer .grid {
 }
 
 @media (min-width: 1024px) {
-    .footer .grid {
+    footer .grid {
         grid-column: 2/span 12;
     }
 }
 
 @media (min-width: 768px) {
-    .footer {
+    footer {
         margin: 24px 12px 12px 12px;
         padding: 0 12px;
     }
 }
 
 @media (min-width: 320px) {
-    .footer {
+    footer {
         margin: 24px 0 12px 0 !important;
         padding: 0 4px;
     }
