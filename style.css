@@ -1354,10 +1354,14 @@ footer a {
     margin: 24px 0 24px 0;
 }
 
+footer hr {
+    margin: 0 12px;
+}
+
 @media (min-width: 768px) {
     footer {
-        margin: 24px 24px 12px 24px;
-        padding: 0 4px;
+        margin: 24px 12px 12px 12px;
+        padding: 0 16px;
     }
 }
 
