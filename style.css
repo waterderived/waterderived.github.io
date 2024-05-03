@@ -1098,6 +1098,10 @@ td:last-of-type {
     --card-color-title: var(--nj-green-400);
 }
 
+h3:has(+ .post-data) {
+    margin-bottom: 12px;
+}
+
 .post-data {
     font-weight: 300;
     color: var(--tx-muted);
