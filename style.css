@@ -117,11 +117,13 @@
     --nj-coolwhitedarker: #d8dad9;
     --nj-warmgrey: #e0dcd3;
     --nj-coolgrey: #b8b8b8;
-    --nj-charcoal-500: #323232;
-    --nj-charcoal-550: #181818;
-    --nj-charcoal-600: #151515;
-    --nj-charcoal-700: #121212;
-    --nj-charcoal-800: #0e0e0e;
+    --nj-charcoal-300: rgb(50, 50, 50);
+    --nj-charcoal-400: rgb(40, 40, 40);
+    --nj-charcoal-500: rgb(30, 30, 30);
+    --nj-charcoal-550: rgb(24, 24, 24);
+    --nj-charcoal-600: rgb(21, 21, 21);
+    --nj-charcoal-700: rgb(18, 18, 18);
+    --nj-charcoal-800: rgb(14, 14, 14);
     --color-red: #dc4747;
     --rounded-sidebar: .375rem;
 }
