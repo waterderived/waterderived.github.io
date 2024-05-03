@@ -1354,19 +1354,11 @@ footer a {
     margin: 24px 0 24px 0;
 }
 
-@media (min-width: 768px) {
-    footer {
-        margin: 24px 12px 12px 12px;
-        padding: 0 16px;
-    }
-}
-
 @media (min-width: 320px) {
     footer {
         margin: 24px 0 12px 0 !important;
         padding: 0 4px;
     }
-
     .footer a,
     .footer p {
         font-size: 10px;
@@ -1376,6 +1368,13 @@ footer a {
         display: flex;
         flex-direction: column !important;
         justify-content: center !important;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        margin: 24px 12px 12px 12px;
+        padding: 0 16px;
     }
 }
 
