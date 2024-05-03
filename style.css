@@ -1107,6 +1107,7 @@ h3:has(+ .post-data) {
     color: var(--tx-muted);
     display: block;
     margin-bottom: var(--spacing-04);
+    padding-left: 4px;
 }
 
 .post-data .date-mono {
