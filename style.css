@@ -1079,6 +1079,8 @@ td:last-of-type {
     font-weight: 500;
     color: var(--card-color-title) !important;
     text-decoration: none;
+    text-wrap: wrap;
+    overflow-wrap: normal;
 }
 
 .project-container.posts .card-title-mono {
