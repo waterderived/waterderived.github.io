@@ -138,6 +138,7 @@
     --tx2: var(--nj-grey-normal);
     --tx3: var(--nj-charcoal-400);
     --tx-muted: var(--nj-charcoal-300);
+    --tx-italic: var(--nj-green-250);
     --footer-p-color: var(--nj-charcoal-500);
     --link-color: var(--nj-green-600);
     --link-color-light: var(--nj-green-500);
@@ -170,6 +171,7 @@
     --tx2: var(--nj-green-400);
     --tx3: var(--nj-offwhitelight);
     --tx-muted: var(--nj-grey-normal);
+    --tx-italic: var(--nj-green-200);
     --footer-p-color: var(--nj-coolgrey);
     --link-color: var(--nj-green-250);
     --link-color-light: var(--nj-green-200);
@@ -295,6 +297,11 @@ p {
     margin-top: 0rem;
     margin-bottom: 0.375rem;
     display: inline;
+}
+
+em {
+    color: var(--tx-italic);
+    font-weight: 500;
 }
 
 hr {
