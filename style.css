@@ -228,7 +228,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--link-color);
+    background: var(--text-muted);
     border: 2px solid var(--bg1);
     border-radius: 4px;
 }
@@ -278,7 +278,7 @@ body {
 }
 
 p {
-    font-size: 0.875em;
+    font-size: 1em;
     color: var(--tx1);
     margin-top: 0rem;
     margin-bottom: 0.375rem;
