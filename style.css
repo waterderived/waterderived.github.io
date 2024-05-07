@@ -147,7 +147,7 @@
     --selection-color-tx: var(--tx1);
     --selection-color-bg: var(--nj-green-250);
     --navButton-color-selected-outline: var(--tx2);
-    --navButton-color-selected-tx: var(--nj-green-700);
+    --navButton-color-selected-tx: var(--nj-green-800);
     --dropdown-color-tx: var(--nj-charcoal-800);
     --dropdown-color-bg: var(--nj-green-200);
     --tagpill-color-tx: var(--nj-charcoal-700);
@@ -1062,7 +1062,7 @@ td:last-of-type {
 .card-title-mono {
     font-family: var(--font-family-mono) !important;
     font-size: 0.875em !important;
-    font-weight: 500;
+    font-weight: 550;
     color: var(--card-color-title) !important;
     text-decoration: none;
     text-wrap: wrap;
@@ -1598,7 +1598,7 @@ footer .footer-links .mark-left {
 }
 
 .navbar2 .navbar-container .navbar-item.selected {
-    border-radius: 28px;
+    /*border-radius: 28px;*/
     font-size: 0.75em;
     font-weight: 500;
     color: var(--navButton-color-selected-tx);
