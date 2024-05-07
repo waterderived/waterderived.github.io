@@ -176,7 +176,7 @@
     --link-color: var(--nj-green-250);
     --link-color-light: var(--nj-green-200);
     --link-hover: var(--nj-green-600);
-    --link-color-underline: #FF2C00;
+    --link-color-underline: var(--nj-green-100);
     --selection-color-tx: var(--tx1);
     --selection-color-bg: var(--nj-green-800);
     --navButton-color-selected-outline: var(--nj-green-100);
@@ -1086,7 +1086,7 @@ td:last-of-type {
 
 .project-card:hover {
     background-color: var(--bg3);
-    transition: ease 0.3s;
+    transition: ease-in 0.3s;
 }
 
 .project-container.posts .project-card:hover {
