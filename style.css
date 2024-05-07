@@ -1599,10 +1599,10 @@ footer .footer-links .mark-left {
 
 .navbar2 .navbar-container .navbar-item.selected {
     border-radius: 28px;
-    font-size: 0.875em;
+    font-size: 0.75em;
     font-weight: 500;
     color: var(--navButton-color-selected-tx);
-    outline: 1px solid var(--navButton-color-selected-outline);
+    /*outline: 1px solid var(--navButton-color-selected-outline);*/
 }
 
 .navbar2 .navbar-container .navbar-item.selected:hover {
