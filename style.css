@@ -228,7 +228,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--text-muted);
+    background: var(--tx-muted);
     border: 2px solid var(--bg1);
     border-radius: 4px;
 }
