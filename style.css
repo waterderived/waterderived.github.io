@@ -143,7 +143,7 @@
     --link-color: var(--nj-green-600);
     --link-color-light: var(--nj-green-500);
     --link-hover: var(--nj-green-800);
-    --link-color-underline: #7188A9;
+    --link-color-underline: #FF2C00;
     --selection-color-tx: var(--tx1);
     --selection-color-bg: var(--nj-green-250);
     --navButton-color-selected-outline: var(--tx2);
@@ -176,7 +176,7 @@
     --link-color: var(--nj-green-250);
     --link-color-light: var(--nj-green-200);
     --link-hover: var(--nj-green-600);
-    --link-color-underline: var(--nj-blue-600);
+    --link-color-underline: #FF2C00;
     --selection-color-tx: var(--tx1);
     --selection-color-bg: var(--nj-green-800);
     --navButton-color-selected-outline: var(--nj-green-100);
@@ -1071,7 +1071,7 @@ td:last-of-type {
 
 .project-container.posts .card-title-mono {
     font-size: 0.875em !important;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.875em;
 }
 
@@ -1570,7 +1570,7 @@ footer .footer-links .mark-left {
 .navbar-item a {
     color: var(--link-color);
     font-family: var(--font-family-nav);
-    font-size: 0.875em;
+    font-size: 0.75em;
     font-weight: 400;
     text-decoration: none;
     vertical-align: middle;
@@ -1579,6 +1579,7 @@ footer .footer-links .mark-left {
 .navbar-item a:hover,
 .navbar-item .btn:hover {
     color: var(--link-hover);
+    transition: ease-in-out .3s;
 }
 
 .navbar2 .navbar-container .navbar-item {
