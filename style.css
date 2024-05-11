@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/5e605ff6994ce0e533aaf6cd51c6a33f?family=Pecita');
 
 @font-face {
     font-family: "Eskapade Fraktur";
@@ -15,6 +16,16 @@
 @font-face {
     font-family: "Antarctican Mono";
     src: url('https://waterderived.github.io/font-family/AntarcticanMono-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Pecita";
+    src: url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.eot");
+    src: url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.svg#Pecita")format("svg");
 }
 
 /*--- the magic starts here ! ---*/
@@ -143,7 +154,7 @@
     --link-color: var(--nj-green-600);
     --link-color-light: var(--nj-green-500);
     --link-hover: var(--nj-green-800);
-    --link-color-underline: #FF2C00;
+    --link-color-underline: var(--nj-blue-700);
     --selection-color-tx: var(--tx1);
     --selection-color-bg: var(--nj-green-250);
     --navButton-color-selected-outline: var(--tx2);
@@ -442,6 +453,9 @@ a:hover {
 /* --- tables --- */
 
 .table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 0.75em;
     font-family: var(--font-family-body);
     font-weight: 400;
@@ -477,6 +491,131 @@ td:last-of-type {
     width: 1fr;
 }
 
+#sortTable table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid var(--nj-green-250);
+    font-size: 11px;
+    color: var(--tx1)
+}
+
+#sortTable th,
+#sortTable td {
+    text-align: left;
+    padding: 4px 8px;
+}
+
+#sortTable tr {
+    border-bottom: 1px solid var(--nj-grey-normalhover);
+}
+
+#sortTable tr.header {
+    background-color: var(--nj-green-250);
+}
+
+.grid-rec {
+    margin-top: 24px;
+    height: max-content;
+}
+
+article {
+    position: relative;
+    width: 275px;
+    margin: 8px;
+    box-sizing: border-box;
+    padding: 8px 16px 12px 16px;
+    border: 1px solid var(--nj-grey-normal);
+    border-radius: 8px;
+    line-height: normal;
+    display: inline-block;
+    transition-duration: 0.35s;
+    -moz-transition-duration: 0.35s;
+    -webkit-transition-duration: 0.35s;
+    -o-transition-duration: 0.35s;
+}
+
+.grid-rec .title {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.grid-rec h1 {
+    font-size: 14px !important;
+    font-family: var(--font-family-mono);
+    color: var(--hd1);
+    font-weight: 400;
+    display: inline;
+    padding-bottom: 16px;
+}
+
+.grid-rec a {
+    font-size: 10px;
+}
+
+.grid-rec .rec-descr {
+    font-size: 12px;
+    font-family: var(--font-family-body);
+    color: var(--tx1);
+    margin-bottom: 4px;
+}
+
+.grid-rec .rec-nts {
+    font-size: 12px;
+    font-family: "Pecita", var(--font-family-body);
+    color: var(--nj-grey-normalactive);
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.grid-rec .rec-tags {
+    display: block;
+    overflow-wrap: normal;
+    flex-wrap: normal;
+}
+
+.grid-rec .rec-tags .tag-pill {
+    font-size: 10px;
+}
+
+.grid-rec .rec-tags:first-child {
+    margin-left: 0 !important;
+}
+
+/* filter buttons */
+
+.table-filters {
+    display: block;
+    margin: 4px 8px 0 8px;
+}
+
+.button-group {
+    height: 20px;
+}
+
+.btn2 {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    outline: 0;
+    padding: 0;
+    display: inline-block;
+    cursor: help;
+    text-shadow: none;
+    box-shadow: none;
+    line-height: 1;
+    color: var(--tx-muted);
+    font-size: 11px;
+    font-family: inherit;
+    letter-spacing: normal;
+    margin-right: 8px;
+}
+
+.btn2.btn-selected {
+    font-weight: 600;
+    color: var(--nj-green-400);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
 
 .grid {
     --gridGap: 24px;
@@ -912,16 +1051,6 @@ td:last-of-type {
     margin-top: 0.25rem;
 }
 
-.above-footer {
-    display: flex;
-    flex-direction: column;
-    margin: 0 8px;
-    padding-bottom: 8px;
-    justify-self: center;
-    align-self: center;
-    z-index: 1;
-}
-
 .p-narrow {
     max-width: 1000px;
 }
@@ -1118,6 +1247,10 @@ h3:has(+ .post-data) {
 .tag-pill:hover {
     background-color: var(--tagpill-color-bg-hover);
     cursor: pointer;
+}
+
+.tag-pill.blue {
+    background-color: var(--nj-blue-500);
 }
 
 /* photos */
