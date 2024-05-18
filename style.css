@@ -1210,8 +1210,8 @@ article {
     vertical-align: middle !important;
 }
 
-.project-card-text.posts .date-mono {
-    font-size: 12px;
+.project-card-text .card-title-mono .date-mono {
+    font-size: 14px !important;
     color: var(--tx-muted);
 }
 
