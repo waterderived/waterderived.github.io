@@ -1087,6 +1087,25 @@ article {
 }
 
 
+.card-title-mono {
+    font-family: var(--font-family-mono) !important;
+    font-size: 1em !important;
+    font-weight: 550;
+    color: var(--card-color-title) !important;
+    text-decoration: none;
+    text-wrap: wrap;
+    overflow-wrap: normal;
+}
+
+.date-mono {
+    font-family: var(--font-family-mono);
+    font-size: 0.875em;
+    font-weight: 300;
+    color: var(--tx-muted) !important;
+    display: inline;
+    margin-left: 16px;
+}
+
 .project-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -1131,9 +1150,10 @@ article {
     gap: var(--spacing-02);
     padding: var(--spacing-04) var(--spacing-06) var(--spacing-04) var(--spacing-06);
     margin: var(--spacing-02);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
 	0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
-	0 12px 33.4px rgba(0, 0, 0, 0.03);
+	0 12px 33.4px rgba(0, 0, 0, 0.03);*/
+    box-shadow: 0 12px 33.4px rgba(0, 0, 0, 0.03);;
     transition: all 0.2s ease 0s;
 }
 
@@ -1175,34 +1195,15 @@ article {
     line-height: 1.5em !important;
 }
 
-.card-title-mono {
-    font-family: var(--font-family-mono) !important;
-    font-size: 1em !important;
-    font-weight: 550;
-    color: var(--card-color-title) !important;
-    text-decoration: none;
-    text-wrap: wrap;
-    overflow-wrap: normal;
-}
-
-.project-container.posts .card-title-mono {
-    font-size: 0.875em !important;
-    font-weight: 500;
-    line-height: 1.875em;
-}
-
-.date-mono {
-    font-family: var(--font-family-mono);
-    font-size: 0.875em;
-    font-weight: 300;
-    color: var(--tx-muted) !important;
-    display: inline;
-    margin-left: 16px;
-}
-
 .project-card:hover {
     background-color: var(--bg3);
     transition: ease-in 0.3s;
+}
+
+.project-container .card-title-mono {
+    font-size: 0.875em !important;
+    font-weight: 500;
+    line-height: 1.875em;
 }
 
 .project-container.posts .project-card:hover {
