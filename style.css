@@ -1212,13 +1212,14 @@ article {
     padding: 2px 0 0 0 !important;
     margin: 0 !important;
     font-size: 0.75em;
-    line-height: 1.5em !important;
+    line-height: 125%;
 }
 
 .project-container .card-title-mono {
-    font-size: 0.875em !important;
+    font-size: 16px !important;
     font-weight: 500;
     line-height: 125%;
+    padding-bottom: 8px;
 }
 
 .project-container.posts .project-card:hover {
