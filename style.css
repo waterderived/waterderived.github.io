@@ -755,6 +755,10 @@ article {
     width: 1134px;
 }
 
+.home-delayFade {
+    transition: 0.8s 1.2s ease;
+}
+
 .page-hero {
     position: relative;
     height: 90%;
