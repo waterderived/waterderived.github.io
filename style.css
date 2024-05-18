@@ -258,7 +258,7 @@
 html {
     display: flex;
     justify-content: center;
-    line-height: 1.8;
+    line-height: 125%;
     font-family: 'DM Sans', 'Inter UI', 'Inter', 'Segoe UI', "Antarctican";
 }
 
@@ -323,6 +323,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--hero-h1-font);
     font-style: var(--hero-h1-style);
     font-weight: var(--hero-h1-weight);
+    line-height: 125%;
     text-wrap: wrap;
     margin: var(--spacing-08) 0 var(--spacing-04) 0;
 }
