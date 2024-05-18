@@ -766,7 +766,7 @@ article {
 }
 
 .home-delayFade {
-    animation: fade-in-home 1.2s 2.4s backwards;
+    animation: fade-in-home 1.2s 2.4s backwards !important;
 }
 
 .page-hero {
