@@ -756,7 +756,8 @@ article {
 }
 
 .home-delayFade {
-    transition: 0.8s 1.2s ease;
+    transition: 0.8s ease;
+    transition-delay: 2s;
 }
 
 .page-hero {
