@@ -1209,6 +1209,11 @@ article {
     vertical-align: middle !important;
 }
 
+.project-card-text.posts .date-mono {
+    font-size: 12px;
+    color: var(--tx-muted);
+}
+
 .project-card-text p {
     padding: 2px 0 0 0 !important;
     margin: 0 !important;
