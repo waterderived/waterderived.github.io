@@ -128,6 +128,7 @@
     --nj-coolwhitedarker: #d8dad9;
     --nj-warmgrey: #e0dcd3;
     --nj-coolgrey: #b8b8b8;
+    --nj-charcoal-200: rgb(100, 100, 100);
     --nj-charcoal-300: rgb(80, 80, 80);
     --nj-charcoal-400: rgb(60, 60, 60);
     --nj-charcoal-500: rgb(40, 40, 40);
@@ -148,7 +149,7 @@
     --tx1: var(--nj-charcoal-700);
     --tx2: var(--nj-grey-normal);
     --tx3: var(--nj-charcoal-400);
-    --tx-muted: var(--nj-charcoal-300);
+    --tx-muted: var(--nj-charcoal-200);
     --tx-italic: var(--nj-green-400);
     --footer-p-color: var(--nj-charcoal-500);
     --link-color: var(--nj-green-600);
