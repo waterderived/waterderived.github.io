@@ -755,9 +755,18 @@ article {
     width: 1134px;
 }
 
+@keyframes fade-in-home {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .home-delayFade {
-    transition: 0.8s ease;
-    transition-delay: 2s;
+    animation: fade-in-home 1.2s 1.6s backwards;
 }
 
 .page-hero {
