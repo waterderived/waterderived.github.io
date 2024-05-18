@@ -1157,6 +1157,12 @@ article {
     transition: all 0.2s ease 0s;
 }
 
+.project-card:hover {
+    background-color: var(--bg3);
+    box-shadow: 0 12px 8px rgba(0, 0, 0, 0.03);
+    transition: ease-in 0.3s;
+}
+
 .project-card a,
 .project-card-nolink a {
     color: var(--tx1) !important;
@@ -1193,11 +1199,6 @@ article {
     margin: 0 !important;
     font-size: 0.75em;
     line-height: 1.5em !important;
-}
-
-.project-card:hover {
-    background-color: var(--bg3);
-    transition: ease-in 0.3s;
 }
 
 .project-container .card-title-mono {
