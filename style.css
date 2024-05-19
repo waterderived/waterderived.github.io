@@ -1733,6 +1733,8 @@ footer .footer-links .mark-left {
     justify-content: center;
     margin-left: 4px;
     padding: 8px 8px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .navbar2 .navbar-container .navbar-item:has(#theme-switcher) {
