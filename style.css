@@ -1204,12 +1204,12 @@ article {
     display: flex;
     flex-direction: column;
     -webkit-box-pack: start;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     width: 100%;
     color: var(--tx-muted) !important;
     line-height: 125%;
-    vertical-align: middle !important;
+    gap: 4px;
 }
 
 .project-card-text .card-title-mono .date-mono {
@@ -1218,10 +1218,9 @@ article {
 }
 
 .project-card-text p {
-    padding: 2px 0 0 0 !important;
     margin: 0 !important;
     font-size: 12px;
-    line-height: 125%;
+    line-height: 112.5%;
 }
 
 .project-container .card-title-mono {
