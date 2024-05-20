@@ -200,6 +200,7 @@
     --tagpill-color-bg: var(--nj-green-700);
     --tagpill-color-bg-hover: var(--nj-green-900);
     --card-color-bg: var(--nj-charcoal-550);
+    --card-color-bg-hover: var(--bg3);
     --switch-bg: var(--nj-nearmono-400);
     --switch-circle-bg: var(--nj-charcoal-700);
     --icon-sun: #B1B0B5;
@@ -1176,7 +1177,7 @@ article {
 }
 
 .project-card:hover {
-    background-color: var(--bg3);
+    background-color: var(--card-color-bg-hover);
     box-shadow: 0 12px 8px rgba(0, 0, 0, 0.03);
     transition: ease-in 0.3s;
 }
