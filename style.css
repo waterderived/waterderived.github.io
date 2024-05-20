@@ -165,7 +165,8 @@
     --tagpill-color-tx: var(--nj-charcoal-700);
     --tagpill-color-bg: var(--nj-green-200);
     --tagpill-color-bg-hover: var(--nj-grey-lighthover);
-    --card-color-bg: var(--bg1);
+    --card-color-bg: hsl(30, 25%, 96%);
+    --card-color-bg-hover: hsl(30, 25%, 98%);
     --switch-bg: var(--nj-nearmono-300);
     --switch-circle-bg: #e7c570;
     --icon-sun: #835510;
