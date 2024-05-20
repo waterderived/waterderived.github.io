@@ -1170,7 +1170,7 @@ article {
     /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
 	0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
 	0 12px 33.4px rgba(0, 0, 0, 0.03);*/
-    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.04);
     transition: all 0.2s ease 0s;
 }
 
