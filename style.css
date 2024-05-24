@@ -1233,10 +1233,6 @@ article {
     padding-bottom: 4px;
 }
 
-.project-container.posts .project-card:hover {
-    --card-color-title: var(--nj-green-400);
-}
-
 h3:has(+ .post-data) {
     margin-bottom: 0;
 }
