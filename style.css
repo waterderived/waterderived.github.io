@@ -1020,6 +1020,12 @@ article {
     z-index: 1;
 }
 
+@media (max-width: 768px) {
+    .page-section-text {
+        grid-column: 1 / -1;
+    }
+}
+
 .page-section-content .page-section-text {
     grid-column: 1 / -1;
     grid-row: auto;
@@ -1057,10 +1063,16 @@ article {
     margin-bottom: 8px;
 }
 
-@media (max-width: 768px) {
-    .page-section-text {
-        grid-column: 1 / -1;
-    }
+.page-section-text .post-image-box {
+    justify-self: center;
+    justify-content: center;
+    width: 85%;
+}
+
+.page-section-text .post-image-box .image-caption {
+    font-family: var(--font-family-body);
+    font-size: 10px;
+    color: var(--tx-muted)
 }
 
 
