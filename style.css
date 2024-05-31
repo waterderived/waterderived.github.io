@@ -1064,6 +1064,8 @@ article {
 }
 
 .page-section-text .post-image-box {
+    display: flex;
+    flex-direction: column;
     align-self: center;
     align-content: center;
     justify-content: center;
@@ -1075,6 +1077,7 @@ article {
 .page-section-text .post-image-box img {
     width: 75%;
     align-self: center;
+    justify-self: center;
 }
 
 .page-section-text .post-image-box .image-caption {
@@ -1082,6 +1085,8 @@ article {
     font-family: var(--font-family-body);
     font-size: 10px;
     color: var(--tx-muted);
+    justify-self: center;
+    align-self: center;
     text-align: center;
 }
 
