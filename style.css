@@ -1064,8 +1064,8 @@ article {
 }
 
 .page-section-text .post-image-box {
-    justify-self: center;
-    justify-content: center;
+    align-self: center;
+    align-content: center;
     width: 75%;
     padding: 16px 0;
 }
