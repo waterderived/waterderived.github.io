@@ -1018,6 +1018,7 @@ article {
     position: relative;
     row-gap: 0;
     z-index: 1;
+    counter-reset: footnotes;
 }
 
 @media (max-width: 768px) {
@@ -1089,6 +1090,36 @@ article {
     margin-block-start: 8px;
 }
 
+/* footnotes */
+
+
+/* footnotes references */
+[aria-describedby="footnote-label"] {
+    counter-increment: footnotes; /* 1 */
+    text-decoration: none; /* 2 */
+    color: inherit; /* 2 */
+    cursor: default; /* 2 */
+    outline: none; /* 2 */
+}
+
+[aria-describedby="footnote-label"]::after {
+    content: counter(footnotes); /* 1 */
+    vertical-align: super; /* 2 */
+    font-size: 0.5em; /* 3 */
+    margin-left: 2px; /* 4 */
+    color: var(--link-color); /* 5 */
+    text-decoration: none; /* 5 */
+    cursor: pointer; /* 5 */
+}
+
+[aria-describedby="footnote-label"]:focus::after {
+    outline: thin dotted;
+    outline-offset: 2px;
+}
+  
+[aria-label="back-to-content"] {
+    font-size: 0.8em;
+}
 
 /* things in the body */
 
