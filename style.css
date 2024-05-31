@@ -455,6 +455,10 @@ a:hover {
     text-underline-offset: 2px;
 }
 
+.lowercase {
+    text-transform: lowercase !important;
+}
+
 /* --- tables --- */
 
 .table-container {
