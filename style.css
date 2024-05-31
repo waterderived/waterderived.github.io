@@ -294,9 +294,9 @@ body {
 p {
     font-size: 16px;
     color: var(--tx1);
-    margin-top: 0rem;
-    margin-bottom: 0.375rem;
+    margin: 0 0 0.375rem 0;
     display: inline;
+    padding: 0;
 }
 
 em {
@@ -1066,19 +1066,23 @@ article {
 .page-section-text .post-image-box {
     align-self: center;
     align-content: center;
+    justify-content: center;
+    justify-self: center;
     width: 100%;
     padding: 16px 0;
 }
 
 .page-section-text .post-image-box img {
     width: 75%;
+    align-self: center;
 }
 
 .page-section-text .post-image-box .image-caption {
     width: 75%;
     font-family: var(--font-family-body);
     font-size: 10px;
-    color: var(--tx-muted)
+    color: var(--tx-muted);
+    text-align: center;
 }
 
 
