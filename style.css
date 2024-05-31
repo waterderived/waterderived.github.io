@@ -1067,6 +1067,7 @@ article {
     justify-self: center;
     justify-content: center;
     width: 85%;
+    padding: 16px 0;
 }
 
 .page-section-text .post-image-box .image-caption {
