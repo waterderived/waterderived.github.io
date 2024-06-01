@@ -775,7 +775,7 @@ article {
 }
 
 .home-delayFade {
-    animation: fade-in-home 1.2s 2.4s backwards !important;
+    animation: fade-in-home 1.2s 2.2s backwards !important;
 }
 
 .page-hero {
@@ -1126,7 +1126,7 @@ article {
 .footnote-references ol li {
     font-size: 0.75em;
     text-indent: 0;
-    padding-left: 4px !important;
+    padding-left: 12px !important;
 }
 
 /* things in the body */
