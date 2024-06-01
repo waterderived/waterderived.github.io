@@ -1091,9 +1091,6 @@ article {
 }
 
 /* footnotes */
-
-
-/* footnotes references */
 [aria-describedby="footnote-label"] {
     counter-increment: footnotes; /* 1 */
     text-decoration: none; /* 2 */
@@ -1121,10 +1118,19 @@ article {
     font-size: 0.8em;
 }
 
+.footnote-references {
+    padding-bottom: 32px;
+}
+
+.footnote-references li {
+    font-size: 0.75em;
+    margin-left: 0;
+}
+
 /* things in the body */
 
 .body-descr-sub {
-    font-size: 0.750em;
+    font-size: 0.75em;
     font-family: var(--font-family-body);
     color: var(--tx1);
     margin-left: 0.8rem;
