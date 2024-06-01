@@ -184,7 +184,7 @@
     --tx2: var(--nj-green-400);
     --tx3: var(--nj-offwhitelight);
     --tx-muted: var(--nj-grey-normal);
-    --tx-italic: var(--nj-green-400);
+    --tx-italic: var(--nj-green-300);
     --footer-p-color: var(--nj-coolgrey);
     --link-color: var(--nj-green-250);
     --link-color-light: var(--nj-green-200);
