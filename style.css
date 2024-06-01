@@ -1122,15 +1122,11 @@ article {
     padding-bottom: 64px;
 }
 
-.footnote-references ol {
+.footnote-references ol,
+.footnote-references ol li {
     font-size: 0.75em;
     text-indent: 0;
-    padding-left: 0;
-}
-
-.footnote-references ol li {
-    text-indent: 0;
-    padding-left: 4px !important;
+    padding-left: 4px;
 }
 
 /* things in the body */
