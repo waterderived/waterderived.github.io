@@ -1103,7 +1103,7 @@ article {
     content: counter(footnotes); /* 1 */
     /*vertical-align: super; 2 */
     position: relative;
-    top: 0.3em;
+    top: -0.1em;
     font-size: 0.625em; /* 3 */
     margin-left: 2px; /* 4 */
     color: var(--link-color); /* 5 */
