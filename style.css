@@ -1119,10 +1119,11 @@ article {
 }
 
 .footnote-references {
-    padding-bottom: 32px;
+    padding-bottom: 64px;
 }
 
-.footnote-references ol {
+.footnote-references ol, 
+.footnote-references ol li {
     font-size: 0.75em;
     text-indent: 0;
     padding-left: 0 !important;
