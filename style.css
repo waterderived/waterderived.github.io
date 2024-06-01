@@ -1303,7 +1303,7 @@ article {
 }
 
 h3:has(+ .post-data) {
-    margin-bottom: 0;
+    margin-bottom: 4px;
 }
 
 .post-data {
