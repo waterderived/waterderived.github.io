@@ -164,7 +164,7 @@
     --dropdown-color-bg: var(--nj-green-200);
     --tagpill-color-tx: var(--nj-charcoal-700);
     --tagpill-color-bg: var(--nj-green-200);
-    --tagpill-color-bg-hover: var(--nj-grey-lighthover);
+    --tagpill-color-bg-hover: var(--nj-green-100);
     --card-color-bg: hsl(30, 25%, 97%);
     --card-color-bg-hover: hsl(30, 40%, 98%);
     --switch-bg: var(--nj-nearmono-300);
