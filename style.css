@@ -1124,8 +1124,7 @@ article {
 
 .footnote-references li {
     font-size: 0.75em;
-    margin-left: 0;
-    margin-inline-start: 0;
+    padding-left: 0 !important;
 }
 
 /* things in the body */
