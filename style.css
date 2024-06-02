@@ -1398,10 +1398,11 @@ h3:has(+ .post-data) {
 /* section break dinkus */
 .post-dinkus {
     width: 100%;
-    align-content: center;
+    justify-content: center;
+    justify-self: center;
     text-align: center;
-    font-family: 'Inter';
-    font-size: 16;
+    font-family: var(--font-family-body);
+    font-size: 16px;
 }
 
 /* hyperlinks list */
