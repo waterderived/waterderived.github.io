@@ -1135,10 +1135,8 @@ article {
 [aria-describedby="footnote-label"]::after {
     content: counter(footnotes);
     /* 1 */
-    /*vertical-align: super; 2 */
-    position: relative;
-    bottom: 0.3em;
-    font-size: 0.625em;
+    vertical-align: super; /* 2 */
+    font-size: 0.5em;
     /* 3 */
     margin-left: 2px;
     /* 4 */
@@ -1403,6 +1401,7 @@ h3:has(+ .post-data) {
     text-align: center;
     font-family: var(--font-family-body);
     font-size: 16px;
+    padding: 4px 0 8px 0;
 }
 
 /* hyperlinks list */
