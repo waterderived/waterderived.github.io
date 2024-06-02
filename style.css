@@ -961,7 +961,7 @@ article {
 /* trying to figure out the text wraps... */
 
 .page-hero-content .page-hero-text.align-text-left * {
-    text-align: left;
+    text-align: left !important;
 }
 
 .page-hero-content .page-hero-text.align-text-left ol,
@@ -1066,7 +1066,7 @@ article {
 }
 
 .page-section-content .page-section-text.align-text-left * {
-    text-align: left !important;
+    text-align: left;
 }
 
 .page-section-content .page-section-text p {
