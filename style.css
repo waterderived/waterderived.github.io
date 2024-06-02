@@ -251,7 +251,7 @@
 
 ::-webkit-scrollbar {
     width: 10px;
-    background-color: var(--bg2);
+    background-color: var(--bg1);
     border: 0 solid var(--bg1);
     z-index: 100;
 }
@@ -1398,7 +1398,7 @@ h3:has(+ .post-data) {
     width: 100%;
     justify-content: center;
     justify-self: center;
-    text-align: center;
+    text-align: center !important;
     font-family: var(--font-family-body);
     font-size: 16px;
     padding: 4px 0 8px 0;
