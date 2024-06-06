@@ -45,8 +45,8 @@
 }
 
 :root {
-    --font-family-title: /* 'Space Grotesk',*/ "Antarctican Mono", /*"Eskapade Fraktur",*/ 'Inter', 'Segoe UI';
-    --font-family-body: /*"Antarctican Mono",*/ 'Public Sans', 'DM Sans', 'Inter UI', 'Inter', 'Segoe UI';
+    --font-family-title:/* 'Space Grotesk',*/ "Antarctican Mono", /*"Eskapade Fraktur",*/ 'Inter', 'Segoe UI';
+    --font-family-body:/*"Antarctican Mono",*/ 'Public Sans', /*'DM Sans', */'Inter UI', 'Inter', 'Segoe UI';
     --font-family-nav: 'Public Sans', 'DM Sans', 'Inter UI', 'Inter', 'Segoe UI', sans-serif;
     --font-family-mono:/* 'Space Grotesk', */ "Antarctican Mono", 'Consolas';
     --border-spacing-x: 0;
@@ -2055,7 +2055,7 @@ ul#menu {
 select {
     appearance: none;
     width: max-content;
-    padding: 0 4px;
+    padding: 0 8px 0 0;
     margin: 0 4px;
     border: none;
     border-radius: var(--spacing-01);
