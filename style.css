@@ -68,7 +68,9 @@
     --spacing-06: calc(6 * var(--spacing-01));
     --spacing-08: calc(8 * var(--spacing-01));
     --spacing-10: calc(10 * var(--spacing-01));
+    --spacing-12: calc(12 * var(--spacing-01));
     --spacing-16: calc(16 * var(--spacing-01));
+    --spacing-20: calc(20 * var(--spacing-01));
     --h1-size: 32px;
     --h2-size: 28px;
     --h3-size: 24px;
@@ -1374,6 +1376,10 @@ h3:has(+ .post-data) {
 
 .tag-pill.yellow {
     background-color: var(--tagpill-yellow-bg);
+}
+
+.post-data.blog {
+    margin-bottom: var(--spacing-12);
 }
 
 /* section break dinkus */
