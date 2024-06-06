@@ -75,18 +75,18 @@
     --h2-size: 28px;
     --h3-size: 24px;
     --h4-size: 20px;
-    --nj-blue-000: #F1F2F5;
-    --nj-blue-100: #DEDEE4;
-    --nj-blue-200: #C5CAD3;
-    --nj-blue-300: #AFB7C3;
+    --nj-blue-000: #f1f4f5;
+    --nj-blue-100: #e4e6e7;
+    --nj-blue-200: #cccfd4;
+    --nj-blue-300: #b5bac2;
     --nj-blue-400: #99A3B2;
     --nj-blue-500: #838FA2;
     --nj-blue-600: #6D7C91;
     --nj-blue-700: #576881;
     --nj-blue-800: #415470;
     --nj-blue-900: #2B4160;
-    --nj-green-000: #F4F6F5;
-    --nj-green-100: #C8D0CB;
+    --nj-green-000: #f4f6f5;
+    --nj-green-100: #d4dbd7;
     --nj-green-200: #B2BDB6;
     --nj-green-300: #9CAAA1;
     --nj-green-400: #86978C;
@@ -1051,7 +1051,7 @@ article {
 
 .page-section-content .page-section-text p {
     color: var(--tx1);
-    line-height: 1.625;
+    line-height: 1.75;
     padding-left: 4px;
     padding-right: 4px;
     margin-bottom: 12px;
@@ -1100,7 +1100,7 @@ article {
 .image-caption p {
     font-size: 12px;
     line-height: 1.5;
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
     align-self: center;
     text-align: center !important;
