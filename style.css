@@ -1119,7 +1119,7 @@ article {
     vertical-align: super; /* 2 */
     font-size: 0.5em; /* 3 */
     margin-left: 2px; /* 4 */
-    color: var(--link-color); /* 5 */
+    color: var(--nj-green-400); /* 5 */
     text-decoration: none; /* 5 */
     cursor: pointer; /* 5 */
 }
