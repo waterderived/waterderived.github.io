@@ -263,7 +263,7 @@ html {
     display: flex;
     justify-content: center;
     line-height: 125%;
-    font-family: /*'Oxygen', 'Inter UI', */'Inter', 'Segoe UI', "Antarctican";
+    font-family: /*'Oxygen', 'Inter UI', */'Inter', 'Segoe UI', "Antarctican", sans-serif;
 }
 
 body {
@@ -284,6 +284,7 @@ p {
     font-size: 18px;
     letter-spacing: 1%;
     font-weight: 400;
+    line-height: 1.6;
     color: var(--tx1);
     margin: 0 0 0.375rem 0;
     display: inline;
