@@ -1912,7 +1912,7 @@ footer .footer-links .mark-left {
 .navbar-item a {
     color: var(--link-color);
     font-family: var(--font-family-nav);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     text-decoration: none;
     vertical-align: middle;
@@ -1928,10 +1928,10 @@ footer .footer-links .mark-left {
     align-items: center;
     justify-content: center;
     width: max-content;
-    min-width: 60px;
+    min-width: 64px;
     margin-left: 4px;
-    padding: 8px 6px;
-    font-size: 12px;
+    padding: 8px 4px;
+    font-size: 14px;
     font-weight: 400;
 }
 
