@@ -283,7 +283,7 @@ body {
 }
 
 p {
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1%;
     font-weight: 400;
     line-height: 115%;
@@ -1051,10 +1051,9 @@ article {
 
 .page-section-content .page-section-text p {
     color: var(--tx1);
-    line-height: 1.75em;
+    line-height: 1.6;
     margin-bottom: 12px;
     display: block;
-    padding-left: 4px;
 }
 
 .page-section-content .page-section-text ol,
