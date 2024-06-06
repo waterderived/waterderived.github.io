@@ -1097,6 +1097,11 @@ article {
     margin-block-start: 8px;
 }
 
+.image-caption p {
+    font-size: 12px;
+    margin: 0 0 0.5em 0;
+}
+
 /* footnotes */
 [aria-describedby="footnote-label"] {
     counter-increment: footnotes; /* 1 */
