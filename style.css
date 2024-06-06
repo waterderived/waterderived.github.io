@@ -94,16 +94,15 @@
     --nj-blue-800: #415470;
     --nj-blue-900: #2B4160;
     --nj-green-000: rgb(244, 246, 245);
-    --nj-green-100: rgb(238, 242, 239);
-    --nj-green-200: rgb(220, 227, 222);
-    --nj-green-250: rgb(185, 201, 190);
-    --nj-green-300: rgb(143, 166, 150);
-    --nj-green-400: rgb(129, 149, 135);
-    --nj-green-500: rgb(114, 133, 120);
-    --nj-green-600: rgb(107, 125, 113);
-    --nj-green-700: rgb(81, 96, 86);
-    --nj-green-800: rgb(62, 75, 67);
-    --nj-green-900: rgb(44, 56, 49);
+    --nj-green-100: #C8D0CB;
+    --nj-green-200: #B2BDB6;
+    --nj-green-300: #9CAAA1;
+    --nj-green-400: #86978C;
+    --nj-green-500: #728578;
+    --nj-green-600: #5E6E63;
+    --nj-green-700: #4B584F;
+    --nj-green-800: #38423B;
+    --nj-green-900: #262C28;
     --nj-nearmono-050: rgb(254, 254, 255);
     --nj-nearmono-100: rgb(253, 253, 254);
     --nj-nearmono-150: rgb(249, 249, 250);
@@ -160,7 +159,7 @@
     --link-hover: var(--nj-green-800);
     --link-color-underline: var(--nj-blue-700);
     --selection-color-tx: var(--tx1);
-    --selection-color-bg: var(--nj-green-250);
+    --selection-color-bg: var(--nj-green-200);
     --navButton-color-selected-outline: var(--tx2);
     --navButton-color-selected-tx: var(--nj-green-800);
     --dropdown-color-tx: var(--nj-charcoal-800);
@@ -506,7 +505,7 @@ td:last-of-type {
 #sortTable table {
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid var(--nj-green-250);
+    border: 1px solid var(--nj-green-200);
     font-size: 11px;
     color: var(--tx1)
 }
