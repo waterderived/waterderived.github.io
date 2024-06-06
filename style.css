@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/general-sans');
 @import url('https://db.onlinewebfonts.com/c/5e605ff6994ce0e533aaf6cd51c6a33f?family=Pecita');
 
 @font-face {
@@ -47,7 +48,7 @@
 :root {
     --font-family-title:/* 'Space Grotesk',*/ "Antarctican Mono", /*"Eskapade Fraktur",*/ 'Inter', 'Segoe UI';
     --font-family-body:/*"Antarctican Mono",*/ 'Public Sans', /*'DM Sans', */'Inter UI', 'Inter', 'Segoe UI';
-    --font-family-nav: 'Public Sans', 'DM Sans', 'Inter UI', 'Inter', 'Segoe UI', sans-serif;
+    --font-family-nav: 'General Sans', 'DM Sans', 'Inter UI', 'Inter', 'Segoe UI', sans-serif;
     --font-family-mono:/* 'Space Grotesk', */ "Antarctican Mono", 'Consolas';
     --border-spacing-x: 0;
     --border-spacing-y: 0;
@@ -273,7 +274,7 @@ html {
     display: flex;
     justify-content: center;
     line-height: 125%;
-    font-family: 'Public Sans', 'Inter UI', 'Inter', 'Segoe UI', "Antarctican";
+    font-family: 'General Sans', 'Inter UI', 'Inter', 'Segoe UI', "Antarctican";
 }
 
 body {
