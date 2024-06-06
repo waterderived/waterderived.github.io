@@ -2071,7 +2071,7 @@ p:has(.dropdown-surround) {
 .dropdown-surround {
     display: inline-block;
     color: var(--tx1);
-    font-size: 1em;
+    font-size: 20px;
     text-wrap: wrap;
     word-wrap: normal;
     overflow-wrap: break-word;
