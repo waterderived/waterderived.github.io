@@ -170,7 +170,9 @@
     --tagpill-yellow-bg: #f4e3bc;
     /*--card-color-bg: hsl(30, 25%, 97%);*/
     --card-color-bg: hsl(30, 20%, 95%);
-    --card-color-bg-hover: hsl(30, 20%, 97%);
+    --card-color-bg-hover: hsl(30, 20%, 96%);
+    --post-color-bg: hsl(30, 20%, 97%);
+    --post-color-bg-hover: hsl(30, 20%, 95%);
     --switch-bg: var(--nj-nearmono-300);
     --switch-circle-bg: #e7c570;
     --icon-sun: #835510;
@@ -206,6 +208,8 @@
     --tagpill-yellow-bg: #3e3e3e;
     --card-color-bg: var(--nj-charcoal-550);
     --card-color-bg-hover: var(--nj-charcoal-500);
+    --post-color-bg: var(--nj-charcoal-550);
+    --post-color-bg-hover: var(--nj-charcoal-500);
     --switch-bg: var(--nj-nearmono-400);
     --switch-circle-bg: var(--nj-charcoal-700);
     --icon-sun: #B1B0B5;
@@ -1276,6 +1280,14 @@ article {
 .posts .project-card:hover {
     box-shadow: none;
     margin: 0;
+}
+
+.posts .project-card {
+    background-color: var(--post-color-bg);
+}
+
+.posts .project-card:hover {
+    background-color: var(--post-color-bg-hover);
 }
 
 .project-card a,
