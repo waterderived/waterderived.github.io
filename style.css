@@ -1393,7 +1393,7 @@ h3:has(+ .post-data) {
 /* callouts */
 .callout {
     width: 100%;
-    margin: var(--spacing-02) 4px var(--spacing-08) 4px;
+    margin: var(--spacing-02) 4px var(--spacing-12) 4px;
 }
 
 .callout .callout-title {
