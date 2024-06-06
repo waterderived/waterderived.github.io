@@ -158,7 +158,7 @@
     --link-hover: var(--nj-green-800);
     --link-color-underline: var(--nj-blue-700);
     --selection-color-tx: var(--tx1);
-    --selection-color-bg: var(--nj-green-200);
+    --selection-color-bg: var(--nj-green-100);
     --navButton-color-selected-outline: var(--tx2);
     --navButton-color-selected-tx: var(--nj-green-900);
     --dropdown-color-tx: var(--nj-charcoal-800);
