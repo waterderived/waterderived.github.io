@@ -1089,6 +1089,7 @@ article {
     width: 75%;
     font-family: var(--font-family-body);
     font-size: 12px;
+    line-height: 112.5%;
     color: var(--tx-muted);
     align-self: center;
     text-align: center !important;
