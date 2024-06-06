@@ -1149,6 +1149,7 @@ article {
     font-size: 0.875em;
     text-indent: 0;
     padding-left: 16px !important;
+    line-height: 1.5;
 }
 
 /* things in the body */
