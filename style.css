@@ -1284,6 +1284,7 @@ article {
 .posts .project-card:hover {
     box-shadow: none;
     margin: 0;
+    padding: var(--spacing-02) var(--spacing-03);
 }
 
 .project-card a,
