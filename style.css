@@ -154,7 +154,7 @@
     --dropdown-color-tx: var(--nj-charcoal-800);
     --dropdown-color-bg: var(--nj-green-100);
     --tagpill-color-tx: var(--nj-charcoal-700);
-    --tagpill-color-bg: rgba(200, 208, 203, 0.75);
+    --tagpill-color-bg: rgba(199, 209, 203, 0.5);
     --tagpill-color-bg-hover: var(--nj-green-100);
     --tagpill-blue-bg: #eaecee;
     --tagpill-yellow-bg: #f4e3bc;
