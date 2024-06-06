@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/general-sans');
 @import url('https://db.onlinewebfonts.com/c/5e605ff6994ce0e533aaf6cd51c6a33f?family=Pecita');
 
@@ -17,16 +17,6 @@
 @font-face {
     font-family: "Antarctican Mono";
     src: url('https://waterderived.github.io/font-family/AntarcticanMono-Medium.ttf');
-}
-
-@font-face {
-    font-family: "Pecita";
-    src: url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.eot");
-    src: url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.eot?#iefix")format("embedded-opentype"),
-        url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.woff2")format("woff2"),
-        url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.woff")format("woff"),
-        url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.ttf")format("truetype"),
-        url("https://db.onlinewebfonts.com/t/5e605ff6994ce0e533aaf6cd51c6a33f.svg#Pecita")format("svg");
 }
 
 /*--- the magic starts here ! ---*/
@@ -47,8 +37,8 @@
 
 :root {
     --font-family-title:/* 'Space Grotesk',*/ "Antarctican Mono", /*"Eskapade Fraktur",*/ 'Inter', 'Segoe UI';
-    --font-family-body:/*"Antarctican Mono",*/ 'Public Sans', /*'DM Sans', */'Inter UI', 'Inter', 'Segoe UI';
-    --font-family-nav: 'Public Sans', 'DM Sans', 'Inter UI', 'Inter', 'Segoe UI', sans-serif;
+    --font-family-body:/*"Antarctican Mono", 'Oxygen', 'DM Sans', */'Inter UI', 'Inter', 'Segoe UI';
+    --font-family-nav: /*'Oxygen', 'DM Sans', 'Inter UI', */'Inter', 'Segoe UI', sans-serif;
     --font-family-mono:/* 'Space Grotesk', */ "Antarctican Mono", 'Consolas';
     --border-spacing-x: 0;
     --border-spacing-y: 0;
@@ -274,7 +264,7 @@ html {
     display: flex;
     justify-content: center;
     line-height: 125%;
-    font-family: 'Public Sans', 'Inter UI', 'Inter', 'Segoe UI', "Antarctican";
+    font-family: /*'Oxygen', 'Inter UI', */'Inter', 'Segoe UI', "Antarctican";
 }
 
 body {
@@ -1849,7 +1839,6 @@ footer .footer-links .mark-left {
     font-family: var(--font-family-nav);
     font-size: 16px;
     font-weight: 500;
-    color: var(--nj-nearmono-100);
     flex-grow: 0;
     flex-shrink: 0;
     backface-visibility: hidden;
@@ -1919,7 +1908,7 @@ footer .footer-links .mark-left {
 .navbar-item a {
     color: var(--link-color);
     font-family: var(--font-family-nav);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     text-decoration: none;
     vertical-align: middle;
@@ -1938,7 +1927,7 @@ footer .footer-links .mark-left {
     min-width: 64px;
     margin-left: 4px;
     padding: 8px 4px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
 }
 
