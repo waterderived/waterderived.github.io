@@ -333,7 +333,7 @@ h6 {
 }
 
 h1:has(+ p) {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 h2:has(+ p),
@@ -349,7 +349,7 @@ h1:first-of-type {
 }
 
 p:has(+ h1, + h2, + h3, + h4, + h5, + h6) {
-    margin-bottom: 32px;
+    margin-bottom: 24px !important;
 }
 
 h1 {
@@ -1737,7 +1737,7 @@ footer a {
 }
 
 footer .separator .line {
-    border-top: 1px solid var(--tx2);
+    border-top: 1px solid var(--tx-muted);
     margin: 0 12px;
 }
 
