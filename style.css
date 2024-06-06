@@ -168,8 +168,9 @@
     --tagpill-color-bg-hover: var(--nj-green-100);
     --tagpill-blue-bg: #eaecee;
     --tagpill-yellow-bg: #f4e3bc;
-    --card-color-bg: hsl(30, 25%, 97%);
-    --card-color-bg-hover: hsl(30, 20%, 95%);
+    /*--card-color-bg: hsl(30, 25%, 97%);*/
+    --card-color-bg: hsl(30, 20%, 95%);
+    --card-color-bg-hover: hsl(30, 20%, 97%);
     --switch-bg: var(--nj-nearmono-300);
     --switch-circle-bg: #e7c570;
     --icon-sun: #835510;
@@ -193,7 +194,7 @@
     --link-hover: var(--nj-green-600);
     --link-color-underline: var(--nj-green-100);
     --selection-color-tx: var(--tx1);
-    --selection-color-bg: var(--nj-green-800);
+    --selection-color-bg: var(--nj-green-900);
     --navButton-color-selected-outline: var(--nj-green-100);
     --navButton-color-selected-tx: var(--nj-green-100);
     --dropdown-color-tx: var(--nj-offwhitelighter);
@@ -1266,9 +1267,6 @@ article {
     /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.01), 0 4px 8px rgba(0, 0, 0, 0.01),
 	0 4px 8px rgba(0, 0, 0, 0.02), 0 2.3px 17.9px rgba(0, 0, 0, 0.03),
 	0 12px 33.4px rgba(0, 0, 0, 0.03);*/
-    box-shadow: 0 8px 6px rgba(0, 0, 0, 0.04)
-        /*, 0 -1px 6px rgba(0, 0, 0, 0.03)*/
-    ;
     transition: all 0.2s ease 0s;
 }
 
@@ -1361,7 +1359,7 @@ h3:has(+ .post-data) {
     background-color: var(--tagpill-color-bg);
     border: none;
     border-radius: 8px;
-    padding: 1px 6px;
+    padding: 2px 6px;
     margin: 0 2px;
     display: inline;
 }
@@ -2082,7 +2080,7 @@ p:has(.dropdown-surround) {
     text-wrap: wrap;
     word-wrap: normal;
     overflow-wrap: break-word;
-    padding-left: 2px;
+    padding-left: 4px;
 }
 
 @media (max-width: 640px) {
