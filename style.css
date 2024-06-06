@@ -1347,13 +1347,13 @@ h3:has(+ .post-data) {
 
 .post-data .date-mono {
     font-family: var(--font-family-mono);
-    font-size: 0.75em;
+    font-size: 12px;
     display: inline;
     margin: 0 8px 0 0;
 }
 
 .tag-pill {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 400;
     color: var(--tagpill-color-tx);
     background-color: var(--tagpill-color-bg);
@@ -1365,7 +1365,7 @@ h3:has(+ .post-data) {
 }
 
 .post-data .tag-pill:is(:first-of-type) {
-    margin-left: 12px !important;
+    margin-left: 16px !important;
 }
 
 /*.tag-pill:hover {
