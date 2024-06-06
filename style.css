@@ -1136,7 +1136,7 @@ article {
 
 .footnote-references {
     padding-bottom: 64px;
-    padding-left: 12px;
+    padding-left: 8px;
     padding-right: 8px;
 }
 
@@ -1144,7 +1144,7 @@ article {
 .footnote-references ol li {
     font-size: 0.75em;
     text-indent: 0;
-    padding-left: 12px !important;
+    padding-left: 16px !important;
 }
 
 /* things in the body */
