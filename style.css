@@ -155,15 +155,14 @@
     --tx-italic: var(--nj-green-400);
     --footer-p-color: var(--nj-charcoal-500);
     --link-color: var(--nj-green-600);
-    --link-color-light: var(--nj-green-500);
     --link-hover: var(--nj-green-800);
     --link-color-underline: var(--nj-blue-700);
     --selection-color-tx: var(--tx1);
     --selection-color-bg: var(--nj-green-200);
     --navButton-color-selected-outline: var(--tx2);
-    --navButton-color-selected-tx: var(--nj-green-800);
+    --navButton-color-selected-tx: var(--nj-green-900);
     --dropdown-color-tx: var(--nj-charcoal-800);
-    --dropdown-color-bg: var(--nj-green-200);
+    --dropdown-color-bg: var(--nj-green-100);
     --tagpill-color-tx: var(--nj-charcoal-700);
     --tagpill-color-bg: var(--nj-green-200);
     --tagpill-color-bg-hover: var(--nj-green-100);
@@ -190,8 +189,7 @@
     --tx-muted: var(--nj-grey-normal);
     --tx-italic: var(--nj-green-300);
     --footer-p-color: var(--nj-coolgrey);
-    --link-color: var(--nj-green-200);
-    --link-color-light: var(--nj-green-200);
+    --link-color: var(--nj-green-300);
     --link-hover: var(--nj-green-600);
     --link-color-underline: var(--nj-green-100);
     --selection-color-tx: var(--tx1);
