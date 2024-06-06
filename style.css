@@ -1087,7 +1087,7 @@ article {
 .page-section-text .post-image-box .image-caption {
     width: 75%;
     font-family: var(--font-family-body);
-    font-size: 10px;
+    font-size: 12px;
     color: var(--tx-muted);
     align-self: center;
     text-align: center !important;
