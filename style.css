@@ -977,11 +977,11 @@ article {
     grid-column: 1/-1;
     grid-template-columns: repeat(14, minmax(0, 1fr));
     position: relative;
-    margin: 24px 0;
+    margin: 64px 0;
 }
 
 .page-section-content:is(.page-section-content:first) {
-    margin: 48px 0;
+    margin: 64px 0;
 }
 
 
