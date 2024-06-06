@@ -1334,7 +1334,8 @@ article {
 }
 
 h3:has(+ .post-data) {
-    margin-bottom: 4px;
+    margin-bottom: 8px;
+    margin-left: -2px;
 }
 
 .post-data {
