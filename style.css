@@ -1277,6 +1277,11 @@ article {
     transition: ease-in 0.3s;
 }
 
+.posts .project-card,
+.posts .project-card:hover {
+    box-shadow: none;
+}
+
 .project-card a,
 .project-card-nolink a {
     color: var(--tx1) !important;
