@@ -93,7 +93,7 @@
     --nj-blue-700: #576881;
     --nj-blue-800: #415470;
     --nj-blue-900: #2B4160;
-    --nj-green-000: rgb(244, 246, 245);
+    --nj-green-000: #F4F6F5;
     --nj-green-100: #C8D0CB;
     --nj-green-200: #B2BDB6;
     --nj-green-300: #9CAAA1;
@@ -164,7 +164,7 @@
     --dropdown-color-tx: var(--nj-charcoal-800);
     --dropdown-color-bg: var(--nj-green-100);
     --tagpill-color-tx: var(--nj-charcoal-700);
-    --tagpill-color-bg: var(--nj-green-200);
+    --tagpill-color-bg: var(--nj-green-100);
     --tagpill-color-bg-hover: var(--nj-green-100);
     --tagpill-blue-bg: #eaecee;
     --tagpill-yellow-bg: #f4e3bc;
