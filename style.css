@@ -171,7 +171,7 @@
     --tagpill-blue-bg: #eaecee;
     --tagpill-yellow-bg: #f4e3bc;
     --card-color-bg: hsl(30, 25%, 97%);
-    --card-color-bg-hover: hsl(30, 40%, 98%);
+    --card-color-bg-hover: hsl(30, 20%, 95%);
     --switch-bg: var(--nj-nearmono-300);
     --switch-circle-bg: #e7c570;
     --icon-sun: #835510;
