@@ -75,9 +75,9 @@
     --h2-size: 28px;
     --h3-size: 24px;
     --h4-size: 20px;
-    --nj-blue-000: #f1f4f5;
-    --nj-blue-100: #e4e6e7;
-    --nj-blue-200: #cccfd4;
+    --nj-blue-000: rgb(240, 243, 244);
+    --nj-blue-100: rgb(228, 230, 231);
+    --nj-blue-200: rgb(205, 208, 213);
     --nj-blue-300: #b5bac2;
     --nj-blue-400: #99A3B2;
     --nj-blue-500: #838FA2;
@@ -161,6 +161,8 @@
     --tagpill-blue-bg: #eaecee;
     --tagpill-yellow-bg: #f4e3bc;
     /*--card-color-bg: hsl(30, 25%, 97%);*/
+    --callout-blue-bg: var(--nj-blue-100);
+    --callout-blue-tx: var(--nj-blue-600);
     --card-color-bg: hsl(30, 20%, 95%);
     --card-color-bg-hover: hsl(30, 20%, 96%);
     --post-color-bg: hsl(36, 20%, 95%);
@@ -198,6 +200,8 @@
     --tagpill-color-bg-hover: var(--nj-green-900);
     --tagpill-blue-bg: #2F4858;
     --tagpill-yellow-bg: #3e3e3e;
+    --callout-blue-bg: rgba(136, 155, 171, 0.3);
+    --callout-blue-tx: rgba(136, 155, 171, 0.9);
     --card-color-bg: var(--nj-charcoal-550);
     --card-color-bg-hover: var(--nj-charcoal-500);
     --post-color-bg: var(--nj-charcoal-550);
@@ -1384,6 +1388,43 @@ h3:has(+ .post-data) {
 
 .post-data.blog {
     margin-bottom: var(--spacing-12);
+}
+
+/* callouts */
+.callout {
+    width: 100%;
+    margin: var(--spacing-02) 4px var(--spacing-08) 4px;
+}
+
+.callout .callout-title {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 8px 16px 6px 16px;
+	border-top-right-radius: 12px;
+	border-top-left-radius: 12px;
+    background-color: var(--callout-blue-bg);
+    color: var(--callout-blue-tx);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.callout .callout-title svg {
+    height: 16px;
+    width: 16px;
+    padding-top: 2px;
+    margin-right: 8px;
+}
+
+.callout .callout-content {
+    padding: 12px 16px 12px 24px;
+    font-size: 11px;
+    font-weight: 400;
+    background-color: var(--bg1);
+    color: var(--tx-muted);
+    border: 1px solid var(--callout-blue-bg);
+    border-bottom-right-radius: 12px;
+	border-bottom-left-radius: 12px;
 }
 
 /* section break dinkus */
