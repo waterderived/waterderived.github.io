@@ -1363,7 +1363,7 @@ h3:has(+ .post-data) {
     display: inline;
 }
 
-.post-data .tag-pill:first-of-type {
+.post-data .tag-pill:is(:first-of-type) {
     margin-left: 12px !important;
 }
 
