@@ -283,21 +283,9 @@ body {
     max-width: 640px;
     line-height: inherit;
     overflow-x: hidden;*/
-    width: 65%;
+    width: 100%;
     max-width: 1000px;
     text-align: left;
-}
-
-@media (max-width: 640px) {
-    body {
-        width: 88% !important;
-    }
-}
-
-@media (max-width: 1200px) {
-    body {
-        width: 75% !important;
-    }
 }
 
 p {
