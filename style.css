@@ -1227,6 +1227,10 @@ article {
     max-width: 100%;
 }
 
+.project-container.posts {
+    gap: var(--m-rem-02);
+}
+
 .project-container.card-column-two {
     grid-template-columns: repeat(2, minmax(350px, 50%));
 }
