@@ -1283,7 +1283,7 @@ article {
 .posts .project-card,
 .posts .project-card:hover {
     box-shadow: none;
-    margin: var(--spacing-02) 0;
+    margin: 0;
 }
 
 .project-card a,
