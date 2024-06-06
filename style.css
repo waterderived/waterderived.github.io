@@ -1220,7 +1220,7 @@ article {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: var(--m-rem-04);
-    margin: var(--spacing-03) 0 var(--spacing-02) 0;
+    margin: var(--spacing-03) 0 var(--spacing-04) 0;
     width: 100%;
     max-width: 100%;
 }
