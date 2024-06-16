@@ -1120,8 +1120,10 @@ article {
 }
 
 #literal-widget,
-#literal-widget>* {
-    max-height: 200px;
+#literal-widget>*,
+.literal-book-item__inner,
+.literal-book-item__inner img {
+    max-height: 200px !important;
 }
 
 /* footnotes */
