@@ -1128,7 +1128,7 @@ article {
 }
 
 #literal-widget .literal-book-item {
-    max-width: 160px !important;
+    max-width: 400px !important;
 }
 
 #literal-widget,
@@ -1138,6 +1138,8 @@ article {
     height: 200px !important;
     max-height: 200px !important;
 }
+
+
 
 
 /* footnotes */
