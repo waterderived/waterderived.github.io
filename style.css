@@ -1111,8 +1111,7 @@ article {
 }
 
 .section-recent {
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
     width: 100%;
     max-height: 250px;
     justify-content: left;
