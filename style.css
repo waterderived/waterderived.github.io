@@ -1117,6 +1117,7 @@ article {
     max-height: 200px;
     justify-content: left;
     align-items: center;
+    margin: 12px 0;
 }
 
 #literal-widget {
