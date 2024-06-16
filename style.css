@@ -1119,13 +1119,22 @@ article {
     align-items: center;
 }
 
+#literal-widget {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 8px;
+    margin: 0 4px;
+}
+
 #literal-widget,
 #literal-widget>*,
-.literal-book-item__inner,
-.literal-book-item__inner img {
+.literal-book-item,
+.literal-book-item img {
     height: 200px !important;
     max-height: 200px !important;
 }
+
 
 /* footnotes */
 [aria-describedby="footnote-label"] {
