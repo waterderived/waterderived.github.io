@@ -1119,7 +1119,8 @@ article {
     align-items: center;
 }
 
-#literal-widget {
+#literal-widget,
+#literal-widget>* {
     max-height: 200px;
 }
 
