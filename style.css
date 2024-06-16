@@ -1123,6 +1123,7 @@ article {
 #literal-widget>*,
 .literal-book-item__inner,
 .literal-book-item__inner img {
+    height: 200px !important;
     max-height: 200px !important;
 }
 
