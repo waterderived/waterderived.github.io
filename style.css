@@ -1119,6 +1119,10 @@ article {
     align-items: center;
 }
 
+#literal-widget {
+    max-height: 200px;
+}
+
 /* footnotes */
 [aria-describedby="footnote-label"] {
     counter-increment: footnotes; /* 1 */
