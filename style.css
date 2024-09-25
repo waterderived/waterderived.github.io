@@ -113,8 +113,9 @@
     --h3-size: 24px;
     --h4-size: 20px;
     --nj-space-blue: #2A40FF;
+    --nj-space-blueLight: rgb(58, 78, 255);
     --nj-space-white: #F7F4E7;
-    --nj-space-grayLight: #AEB0B1;
+    --nj-space-whiteLight: #fbfaf5;
     --nj-blue-000: rgb(240, 243, 244);
     --nj-blue-100: rgb(228, 230, 231);
     --nj-blue-200: rgb(205, 208, 213);
@@ -189,11 +190,12 @@
     --footer-p-color: var(--tx-muted);
     --link-color: var(--nj-charcoal-700);
     --link-hover: var(--nj-space-blue);
-    --link-color-underline: var(--nj-blue-700);
+    --link-color-selected: var(--nj-space-blue);
+    --link-color-underline: var(--nj-space-blue);
     --selection-color-tx: var(--nj-space-white);
     --selection-color-bg: var(--nj-charcoal-600);
     --navButton-color-selected-outline: var(--tx2);
-    --navButton-color-selected-tx: var(--nj-green-900);
+    --navButton-color-selected-tx: var(--nj-space-blue);
     --dropdown-color-tx: var(--nj-space-white);
     --dropdown-color-bg: var(--nj-space-blue);
     --tagpill-color-tx: var(--nj-charcoal-700);
@@ -230,11 +232,12 @@
     --footer-p-color: var(--nj-coolgrey);
     --link-color: var(--nj-space-white);
     --link-hover: var(--nj-space-blue);
+    --link-color-selected: var(--nj-space-blueLight);
     --link-color-underline: var(--nj-space-blue);
     --selection-color-tx: var(--nj-space-white);
     --selection-color-bg: var(--nj-charcoal-500);
     --navButton-color-selected-outline: var(--nj-green-100);
-    --navButton-color-selected-tx: var(--nj-green-100);
+    --navButton-color-selected-tx: var(--nj-space-whiteLight);
     --dropdown-color-tx: var(--nj-space-white);
     --dropdown-color-bg: var(--nj-space-blue);
     --tagpill-color-tx: var(--nj-grey-light);
@@ -481,7 +484,7 @@ h4 {
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -680,7 +683,7 @@ article {
 }
 
 .grid {
-    --gridGap: 24px;
+    --gridGap: 32px;
     gap: var(--gridGap);
     display: grid;
     grid-template-columns: repeat(15, minmax(0, 1fr));
@@ -1030,7 +1033,7 @@ article {
 .page-section-content {
     column-gap: 0;
     display: grid;
-    grid-column: 1/-1;
+    grid-column: 2 / span 13;
     grid-template-columns: repeat(14, minmax(0, 1fr));
     position: relative;
     margin: 64px 0;
@@ -1054,35 +1057,35 @@ article {
     }
 }
 
-@media (min-width: 768px) {
-    .page-section-content {
-        grid-template-rows: 100%;
-    }
-}
-
-@media (max-width: 768px) {
-    .page-section-content {
-        height: unset !important;
-    }
-}
-
 .page-section-content ol,
 .page-section-content ul {
     display: flex;
     flex-direction: column;
 }
 
+.page-section-block {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    grid-column: 1/-1;
+    grid-row: auto;
+    height: fit-content;
+    position: relative;
+    row-gap: 0;
+    z-index: 1;
+}
+
 .page-section-text {
     display: flex;
     flex-direction: column;
-    grid-column: 1 / -1;
-    grid-row: auto;
-    justify-content: center;
-    padding: 8px 0;
     position: relative;
     row-gap: 0;
     z-index: 1;
     counter-reset: footnotes;
+}
+
+.page-section-text.wi-60 {
+    width: 60%;
 }
 
 @media (max-width: 768px) {
@@ -1093,7 +1096,6 @@ article {
 
 .page-section-content .page-section-text {
     grid-column: 1 / -1;
-    grid-row: auto;
     padding: 8px 0;
 }
 
@@ -1107,7 +1109,7 @@ article {
 
 .page-section-content .page-section-text p {
     color: var(--tx1);
-    line-height: 1.75;
+    line-height: 1.6;
     padding-left: 4px;
     padding-right: 4px;
     margin-bottom: 12px;
@@ -1907,7 +1909,7 @@ footer .footer-links .mark-left {
 
 @media (min-width: 320px) {
     .navbar2 {
-        grid-column: 1 / span 14;
+        grid-column: 1 / -1;
         padding: 24px 0;
         justify-content: space-between;
     }
@@ -1922,7 +1924,7 @@ footer .footer-links .mark-left {
 
 @media (min-width: 1024px) {
     .navbar2 {
-        grid-column: 1 / span 16;
+        grid-column: 1 / -1;
     }
 }
 
@@ -1937,8 +1939,9 @@ footer .footer-links .mark-left {
 .navbar2 .navbar-container {
     flex-direction: row;
     flex-wrap: nowrap;
-    vertical-align: middle !important;
+    align-content: center;
     justify-content: flex-end;
+    gap: 2px;
 }
 
 @media (min-width: 768px) {
@@ -1949,7 +1952,7 @@ footer .footer-links .mark-left {
 
 @media (max-width: 768px) {
     .navbar2 .navbar-container {
-        grid-column: 1 / span 13;
+        grid-column: 1 / -1;
     }
 
     .navbar2 .navbar-container .navbar-item:not(:has(button)) {
@@ -2019,6 +2022,7 @@ footer .footer-links .mark-left {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    font-size: 13px;
     text-decoration: none;
     vertical-align: middle;
 }
@@ -2033,18 +2037,10 @@ footer .footer-links .mark-left {
     white-space: normal;
 }
 
-/*.navbar-item .btn:not(.editable):active,
-.navbar-item .btn:not(.editable):focus,
-.navbar-item .btn:not(.editable):hover {
-    border-color: var(--link-hover);
-    color: var(--link-hover);
-    outline: none;
-}*/
-
-@media (max-width: 768px) {
-    .navbar-item {
-        margin: 12px 0;
-    }
+.navbar2 .navbar-container .navbar-item {
+    align-items: center;
+    width: max-content;
+    margin-left: 20px;
 }
 
 .navbar-item .btn a,
@@ -2058,21 +2054,21 @@ footer .footer-links .mark-left {
     vertical-align: middle;
 }
 
+.navbar-item .not-btn {
+    color: var(--link-color-selected);
+    font-family: var(--font-family-nav);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: default;
+}
+
 .navbar-item a:hover,
 .navbar-item .btn:hover {
     color: var(--link-hover);
     transition: ease-in-out .3s;
-}
-
-.navbar2 .navbar-container .navbar-item {
-    align-items: center;
-    justify-content: center;
-    width: max-content;
-    min-width: 64px;
-    margin-left: 4px;
-    padding: 8px 4px;
-    font-size: 12px;
-    font-weight: 400;
 }
 
 .navbar2 .navbar-container .navbar-item:has(#theme-switcher) {
@@ -2083,16 +2079,8 @@ footer .footer-links .mark-left {
     padding-right: 0 !important;
 }
 
-.navbar2 .navbar-container .navbar-item.selected {
-    /*border-radius: 28px;*/
-    font-weight: 500;
-    color: var(--navButton-color-selected-tx);
-    /*outline: 1px solid var(--navButton-color-selected-outline);*/
-}
-
 .navbar2 .navbar-container .navbar-item.selected:hover {
     text-decoration: none;
-    color: var(--navButton-color-selected-tx);
     cursor: default;
 }
 
