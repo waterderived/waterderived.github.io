@@ -329,6 +329,10 @@ body {
     font-weight: 700;
 }
 
+.img-fill {
+    max-width: max-content;
+}
+
 p {
     font-size: 14px;
     letter-spacing: 1%;
