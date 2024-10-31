@@ -48,7 +48,7 @@ document.querySelector('#theme-switcher').addEventListener('click', switchTheme)
 
 //simple typing effect
 var i = 0;
-var txt = 'i there, I\'m Nicole.';
+var txt = 'rafting meaningful experiences, unraveling effective solutions';
 var speed = 50;
 
 function typeWriter() {

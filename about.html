@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -11,10 +11,11 @@
 
     <!--google fonts-->
 
-   <!--main css-->
-   <link rel="stylesheet" type="text/css" href="https://waterderived.github.io/style.css">
-   <!--main js-->
-   <script defer src="https://waterderived.github.io/script.js"></script>
+    <!--main css-->
+    <link rel="stylesheet" type="text/css" href="https://waterderived.github.io/style.css">
+    <!--main js-->
+    <script defer src="https://waterderived.github.io/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!--nav bar js-->
     <!--<script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
 </head>
@@ -29,7 +30,7 @@
                 about
             </a>
             <a href="https://waterderived.github.io/work">
-                work
+                projects
             </a>
             <!--<a href="https://waterderived.github.io/scribbles">
                 notes
@@ -44,12 +45,14 @@
                 <a href="https://waterderived.github.io">nicole jisoo kim</a>
             </div>
             <div class="navbar-container">
-                <div class="navbar-item selected">
-                    about
+                <div class="navbar-item">
+                    <span class="not-btn">
+                        about</span>
+                    </a>
                 </div>
                 <div class="navbar-item">
                     <a class="btn" href="https://waterderived.github.io/work">
-                        works
+                        projects
                     </a>
                 </div>
                 <div class="navbar-item">
@@ -80,53 +83,45 @@
     </div>
     <div class="grid page-section">
         <div class="page-section-content">
-            <div class="page-section-text align-text-left">
-                <h1>about</h1>
-                <p>Nicole is a medical student rooted in New Jersey and homed in Providence,
-                    Rhode Island. She holds a strong fascination with image-guided procedures and a passion for
-                    exploring the use of multimedia to morph and push on the boundaries of education and scientific
-                    communication.
-                </p>
-                <p>
-                    When not in the hospital / fulfilling student duties, Nicole can be found tinkering with mirrorless
-                    cameras, aiming for fairways, or immersed in tabletop gameplay.
-                </p>
-                <button type="button" class="collapsible">
-                    <h3>vision</h3>
-                </button>
-                <div class="collcontent">
+            <div class="page-section-block">
+                <div class="page-section-text wi-60 align-text-left">
+                    <h1>about</h1>
+                    <p>Nicole is a medical trainee hailing from New Jersey and homed in Providence,
+                        Rhode Island. She holds an ever-growing fascination with image-guided procedures and a passion
+                        for
+                        exploring the use of multimedia to morph and push on the boundaries of education and scientific
+                        communication.
+                    </p>
                     <p>
-                        Of all the pathophysiologic phenomena that I have come across throughout my medical training,
-                        the human body's mechanisms of decompression most readily continue to astound me in ways
+                        When not engaged in her medical and other academic pursuits, Nicole can be found tinkering with
+                        mirrorless
+                        cameras, aiming for fairways, or immersed in tabletop gameplay.
                     </p>
                 </div>
+            </div>
+            <div class="page-section-text align-text-left">
                 <h3>currently</h3>
                 <div class="project-container card-column-two">
-                    <a href="#"
-                        class="project-card project-card-image-sq">
+                    <a href="#" class="project-card project-card-image-sq">
                         <img alt="DWD Logo" src="https://waterderived.github.io/images/DWDLogo-square.png">
                         <div class="project-card-text">
                             <div class="card-title-mono">Podcast Producer & Audio Engineer</div>
                             <p>Docs With Disabilities Podcast</p>
                         </div>
                     </a>
-                    <a href="#"
-                        class="project-card project-card-image-sq">
+                    <a href="#" class="project-card project-card-image-sq">
                         <img alt="DWD Logo" src="https://waterderived.github.io/images/jvir-logo-earth-square.jpg">
                         <div class="project-card-text">
                             <div class="card-title-mono">Visual Abstract Editor & Designer</div>
                             <p>Journal of Vascular and Interventional Radiology</p>
                         </div>
                     </a>
-                    <div class="project-card-nolink project-card-image-sq">
-                        <img alt="DWD Logo" src="https://waterderived.github.io/images/brown-logo-red.png">
-                        <div class="project-card-text">
-                            <div class="card-title-mono">Medical Student</div>
-                            <p>The Warren Alpert Medical School of Brown University</p>
-                        </div>
-                    </div>
                 </div>
+                <!--
                 <h3>recently</h3>
+                <div class="section-recent">
+                    <div id="literal-widget" handle="hojichadown" status="IS_READING" layout="row"></div>
+                </div>-->
             </div>
         </div>
     </div>
@@ -145,6 +140,17 @@
             </ul>
         </div>
     </footer>
+
+    <!--<button type="button" class="collapsible">
+                    <h3>vision</h3>
+                </button>
+                <div class="collcontent">
+                    <p>
+                        
+                    </p>
+                </div>-->
 </body>
+
+<script src="https://literal.club/js/widget.js"></script>
 
 </html>
