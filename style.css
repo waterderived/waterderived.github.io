@@ -5,19 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/general-sans');
-
-@font-face {
-    font-family: "Eskapade Fraktur";
-    src: url('https://waterderived.github.io/font-family/EskapadeFraktur-Regular.ttf');
-}
-
-@font-face {
-    font-family: "Antarctican Mono";
-    src: url('https://waterderived.github.io/font-family/AntarcticanMono-Medium.ttf');
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
     font-family: "Maison Neue";
@@ -72,10 +60,10 @@
 }
 
 :root {
-    --font-family-title: 'Maison Neue', 'Space Grotesk',/* "Antarctican Mono", "Eskapade Fraktur",*/ 'Inter', 'Segoe UI';
-    --font-family-body:/*"Antarctican Mono", 'Public Sans', 'Inter UI', */'Inter', 'Segoe UI';
-    --font-family-nav: /*'Inter UI', */'Maison Neue', 'Inter', 'Segoe UI', sans-serif;
-    --font-family-mono:/* 'Space Mono', */ "Antarctican Mono", 'Consolas';
+    --font-family-title: 'Maison Neue', 'Space Grotesk', 'Inter', 'Segoe UI';
+    --font-family-body: 'Maison Neue', 'Inter', 'Segoe UI';
+    --font-family-nav: 'Maison Neue', 'Inter', 'Segoe UI', sans-serif;
+    --font-family-mono: "Chivo Mono", "Space Mono", 'Consolas';
     --border-spacing-x: 0;
     --border-spacing-y: 0;
     --translate-x: 0;
@@ -116,6 +104,9 @@
     --nj-space-blueLight: rgb(58, 78, 255);
     --nj-space-white: #F7F4E7;
     --nj-space-whiteLight: #fbfaf5;
+    --nj-space-grayLight: #e5e5e6;
+    --nj-space-charcoal: #202020;
+    --nj-space-charcoalDark: #181818;
     --nj-blue-000: rgb(240, 243, 244);
     --nj-blue-100: rgb(228, 230, 231);
     --nj-blue-200: rgb(205, 208, 213);
@@ -166,7 +157,7 @@
     --nj-charcoal-200: rgb(100, 100, 100);
     --nj-charcoal-300: rgb(80, 80, 80);
     --nj-charcoal-400: rgb(60, 60, 60);
-    --nj-charcoal-500: rgb(40, 40, 40);
+    --nj-charcoal-500: rgb(32, 32, 33);
     --nj-charcoal-550: rgb(24, 24, 24);
     --nj-charcoal-600: rgb(21, 21, 21);
     --nj-charcoal-700: rgb(18, 18, 18);
@@ -211,7 +202,7 @@
     --post-color-bg: hsl(36, 20%, 95%);
     --post-color-bg-hover: hsl(30, 20%, 97%);
     --switch-bg: var(--nj-nearmono-300);
-    --switch-circle-bg: #e7c570;
+    --switch-circle-bg: #FFB21E;
     --icon-sun: #835510;
     --icon-moon: #B1B0B5;
     --switch-circle-pos: 0.22rem;
@@ -314,7 +305,9 @@ html {
     display: flex;
     justify-content: center;
     line-height: 1.625;
-    font-family: /*'Oxygen', 'Inter UI', */'Inter', 'Segoe UI', "Antarctican", sans-serif;
+    font-family:
+        /*'Oxygen', 'Inter UI', */
+        'Inter', 'Segoe UI', "Antarctican", sans-serif;
 }
 
 body {
@@ -440,7 +433,7 @@ h4 {
     }
 
     p {
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
@@ -462,7 +455,7 @@ h4 {
     }
 
     p {
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -484,7 +477,7 @@ h4 {
     }
 
     p {
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 
@@ -1084,9 +1077,6 @@ article {
     counter-reset: footnotes;
 }
 
-.page-section-text.wi-60 {
-    width: 60%;
-}
 
 @media (max-width: 768px) {
     .page-section-text {
@@ -1097,6 +1087,26 @@ article {
 .page-section-content .page-section-text {
     grid-column: 1 / -1;
     padding: 8px 0;
+}
+
+@media (min-width: 768px) {
+    .page-section-text.wi-60 {
+        width: 60%;
+    }
+
+    .page-section-text.photo-right {
+        width: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .page-section-text.wi-60 {
+        width: 100%;
+    }
+
+    .page-section-text.photo-right {
+        display: none;
+    }
 }
 
 .page-section-content .page-section-text:first-of-type {
@@ -1199,21 +1209,33 @@ article {
 
 /* footnotes */
 [aria-describedby="footnote-label"] {
-    counter-increment: footnotes; /* 1 */
-    text-decoration: none; /* 2 */
-    color: inherit; /* 2 */
-    cursor: default; /* 2 */
-    outline: none; /* 2 */
+    counter-increment: footnotes;
+    /* 1 */
+    text-decoration: none;
+    /* 2 */
+    color: inherit;
+    /* 2 */
+    cursor: default;
+    /* 2 */
+    outline: none;
+    /* 2 */
 }
 
 [aria-describedby="footnote-label"]::after {
-    content: counter(footnotes); /* 1 */
-    vertical-align: super; /* 2 */
-    font-size: 0.5em; /* 3 */
-    margin-left: 2px; /* 4 */
-    color: var(--nj-green-400); /* 5 */
-    text-decoration: none; /* 5 */
-    cursor: pointer; /* 5 */
+    content: counter(footnotes);
+    /* 1 */
+    vertical-align: super;
+    /* 2 */
+    font-size: 0.5em;
+    /* 3 */
+    margin-left: 2px;
+    /* 4 */
+    color: var(--nj-green-400);
+    /* 5 */
+    text-decoration: none;
+    /* 5 */
+    cursor: pointer;
+    /* 5 */
 }
 
 [aria-describedby="footnote-label"]:focus::after {
@@ -1489,8 +1511,8 @@ h3:has(+ .post-data) {
     flex-direction: row;
     align-content: center;
     padding: 8px 16px 6px 16px;
-	border-top-right-radius: 12px;
-	border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
     background-color: var(--callout-blue-bg);
     color: var(--callout-blue-tx);
     font-size: 12px;
@@ -1513,7 +1535,7 @@ h3:has(+ .post-data) {
     color: var(--tx-muted);
     border: 1px solid var(--callout-blue-bg);
     border-bottom-right-radius: 12px;
-	border-bottom-left-radius: 12px;
+    border-bottom-left-radius: 12px;
 }
 
 /* section break dinkus */
@@ -1974,7 +1996,7 @@ footer .footer-links .mark-left {
 }
 
 .header-photo {
-    height: 24px;
+    height: 32px;
     padding-right: 16px;
 }
 
@@ -1985,6 +2007,7 @@ footer .footer-links .mark-left {
     font-family: var(--font-family-nav);
     font-size: 16px;
     font-weight: 500;
+    letter-spacing: 7%;
     flex-grow: 0;
     flex-shrink: 0;
     backface-visibility: hidden;
