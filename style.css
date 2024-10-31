@@ -1093,6 +1093,7 @@ article {
 
     .page-section-text.photo-right {
         width: 1fr;
+        padding-left: 48px;
     }
 }
 
