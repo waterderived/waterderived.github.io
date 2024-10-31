@@ -1347,6 +1347,8 @@ html[data-theme="dark"] .gridded-img-photo:hover {
 footer {
     display: block;
     z-index: 20;
+    bottom: 0;
+    padding-bottom: 32px;
 }
 
 footer p,
