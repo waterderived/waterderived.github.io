@@ -256,8 +256,8 @@
 :root {
     --hero-h1-color: var(--hd1);
     --hero-h1-font: var(--font-family-title);
-    --hero-h1-size: 56px;
-    --hero-h1-height: 56px;
+    --hero-h1-size: 52px;
+    --hero-h1-height: 52px;
     --hero-h1-weight: 600;
     --hero-h1-style: normal;
     --hero-h2-color: var(--hd1);
@@ -924,7 +924,7 @@ article {
 
 @media (min-width: 768px) {
     .page-hero-content .page-hero-bio {
-        grid-column: 2 / span 10;
+        grid-column: 2 / span 11;
         grid-row: 1;
     }
 }
@@ -2235,7 +2235,7 @@ p:has(.dropdown-surround) {
     color: var(--tx1);
     font-size: 20px;
     font-weight: var(--tx-weight-nl);
-    line-height: 1.6;
+    line-height: 1.8;
     text-wrap: wrap;
     word-wrap: normal;
     overflow-wrap: break-word;
