@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/general-sans');
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
@@ -254,7 +256,7 @@
 :root {
     --hero-h1-color: var(--hd1);
     --hero-h1-font: var(--font-family-title);
-    --hero-h1-size: 48px;
+    --hero-h1-size: 56px;
     --hero-h1-height: 56px;
     --hero-h1-weight: 600;
     --hero-h1-style: normal;
@@ -305,9 +307,7 @@ html {
     display: flex;
     justify-content: center;
     line-height: 1.625;
-    font-family:
-        /*'Oxygen', 'Inter UI', */
-        'Inter', 'Segoe UI', "Antarctican", sans-serif;
+    font-family: /*'Oxygen', 'Inter UI', */'Inter', 'Segoe UI', "Antarctican", sans-serif;
 }
 
 body {
@@ -1077,7 +1077,6 @@ article {
     counter-reset: footnotes;
 }
 
-
 @media (max-width: 768px) {
     .page-section-text {
         grid-column: 1 / -1;
@@ -1119,7 +1118,7 @@ article {
 
 .page-section-content .page-section-text p {
     color: var(--tx1);
-    line-height: 1.6;
+    line-height: 1.75;
     padding-left: 4px;
     padding-right: 4px;
     margin-bottom: 12px;
@@ -1206,36 +1205,23 @@ article {
 
 
 
-
 /* footnotes */
 [aria-describedby="footnote-label"] {
-    counter-increment: footnotes;
-    /* 1 */
-    text-decoration: none;
-    /* 2 */
-    color: inherit;
-    /* 2 */
-    cursor: default;
-    /* 2 */
-    outline: none;
-    /* 2 */
+    counter-increment: footnotes; /* 1 */
+    text-decoration: none; /* 2 */
+    color: inherit; /* 2 */
+    cursor: default; /* 2 */
+    outline: none; /* 2 */
 }
 
 [aria-describedby="footnote-label"]::after {
-    content: counter(footnotes);
-    /* 1 */
-    vertical-align: super;
-    /* 2 */
-    font-size: 0.5em;
-    /* 3 */
-    margin-left: 2px;
-    /* 4 */
-    color: var(--nj-green-400);
-    /* 5 */
-    text-decoration: none;
-    /* 5 */
-    cursor: pointer;
-    /* 5 */
+    content: counter(footnotes); /* 1 */
+    vertical-align: super; /* 2 */
+    font-size: 0.5em; /* 3 */
+    margin-left: 2px; /* 4 */
+    color: var(--nj-green-400); /* 5 */
+    text-decoration: none; /* 5 */
+    cursor: pointer; /* 5 */
 }
 
 [aria-describedby="footnote-label"]:focus::after {
@@ -1511,8 +1497,8 @@ h3:has(+ .post-data) {
     flex-direction: row;
     align-content: center;
     padding: 8px 16px 6px 16px;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
+	  border-top-right-radius: 12px;
+	  border-top-left-radius: 12px;
     background-color: var(--callout-blue-bg);
     color: var(--callout-blue-tx);
     font-size: 12px;
@@ -2070,7 +2056,7 @@ footer .footer-links .mark-left {
 .navbar-item a {
     color: var(--link-color);
     font-family: var(--font-family-nav);
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.02em;
     text-decoration: none;
@@ -2094,6 +2080,17 @@ footer .footer-links .mark-left {
     transition: ease-in-out .3s;
 }
 
+/*.navbar2 .navbar-container .navbar-item {
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    min-width: 64px;
+    margin-left: 4px;
+    padding: 8px 4px;
+    font-size: 12px;
+    font-weight: 400;
+}*/
+
 .navbar2 .navbar-container .navbar-item:has(#theme-switcher) {
     padding: 8px 0 !important;
 }
@@ -2101,6 +2098,11 @@ footer .footer-links .mark-left {
 .navbar2 .navbar-container .navbar-item:has(.sidebar-open-button) {
     padding-right: 0 !important;
 }
+
+/*.navbar2 .navbar-container .navbar-item.selected {
+    font-weight: 500;
+    color: var(--navButton-color-selected-tx);
+}*/
 
 .navbar2 .navbar-container .navbar-item.selected:hover {
     text-decoration: none;
