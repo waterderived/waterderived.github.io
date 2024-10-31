@@ -330,7 +330,7 @@ body {
 }
 
 .img-fill {
-    max-width: fit-content;
+    max-width: 600px;
 }
 
 p {
