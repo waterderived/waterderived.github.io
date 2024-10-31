@@ -433,7 +433,7 @@ h4 {
     }
 
     p {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
@@ -455,7 +455,7 @@ h4 {
     }
 
     p {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 
@@ -477,7 +477,7 @@ h4 {
     }
 
     p {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -1128,7 +1128,7 @@ article {
     display: flex;
     flex-direction: column;
     color: var(--tx1);
-    font-size: 0.875em;
+    font-size: 1em;
     line-height: 1.75em;
     margin: 0 0 4px 0;
 }
