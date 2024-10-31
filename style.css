@@ -1878,6 +1878,10 @@ footer a {
         padding-left: 12px;
         padding-right: 12px;
     }
+
+    footer .footer-links.grid {
+        margin: 0;
+    }
 }
 
 footer .separator .line {
