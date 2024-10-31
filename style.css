@@ -713,7 +713,7 @@ article {
 
 @media (min-width: 1440px) {
     .grid {
-        margin: 0 auto;
+        margin: 0 48px;
         max-width: 1440px;
     }
 }
@@ -2054,7 +2054,7 @@ footer .footer-links .mark-left {
 .navbar-item a {
     color: var(--link-color);
     font-family: var(--font-family-nav);
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400;
     letter-spacing: 0.02em;
     text-decoration: none;
