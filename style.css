@@ -1028,14 +1028,14 @@ article {
 .page-section-content {
     column-gap: 0;
     display: grid;
-    grid-column: 2 / span 13;
+    grid-column: 1 / span 15;
     grid-template-columns: repeat(14, minmax(0, 1fr));
     position: relative;
-    margin: 64px 0;
+    margin: 64px 32px;
 }
 
 .page-section-content:is(.page-section-content:first) {
-    margin: 64px 0;
+    margin: 64px 32px;
 }
 
 
