@@ -1743,7 +1743,7 @@ h3:has(+ .post-data) {
     min-width: 300px;
     background-color: var(--bg3);
     border-radius: var(--spacing-03);
-    gap: var(--spacing-03);
+    gap: var(--spacing-02);
     padding: var(--spacing-03) var(--spacing-03) var(--spacing-04) var(--spacing-03);
     -webkit-box-pack: center;
     -webkit-box-align: center;
