@@ -1174,8 +1174,13 @@ article {
         width: 60%;
     }
 
+    .page-section-text .col2-60 .col-left img {
+        width: 100%;
+        height: auto;
+    }
+
     .page-section-text .col2-60 .col-right {
-        width: 1fr;
+        width: 36%;
     }
 }
 
