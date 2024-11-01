@@ -1097,6 +1097,7 @@ article {
 
     .page-section-text.photo-right {
         width: 1fr;
+        align-content: center;
         padding-left: 48px;
     }
 }
