@@ -1342,6 +1342,10 @@ article {
     color: var(--link-hover);
 }
 
+.card-caption em {
+    color: var(--tx1);
+    font-weight: 400;
+}
 
 .card-title-mono {
     font-family: var(--font-family-mono) !important;
