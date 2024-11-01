@@ -1163,7 +1163,7 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: start;
 }
 
 @media (min-width: 768px) {
@@ -1172,7 +1172,7 @@ article {
         justify-content: start;
         align-items:start;
         gap: 24px;
-        margin-bottom: 32px;
+        padding: 24px 0;
     }
 
     .page-section-text .col2-60 .col-left {
