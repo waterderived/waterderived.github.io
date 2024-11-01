@@ -1061,7 +1061,7 @@ article {
 .page-section-block {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    justify-content: space-between;
     grid-column: 1/-1;
     grid-row: auto;
     height: fit-content;
@@ -1087,7 +1087,6 @@ article {
 
 .page-section-content .page-section-text {
     width: 100%;
-    grid-column: 1 / -1;
     padding: 8px 0;
 }
 
@@ -1102,7 +1101,7 @@ article {
 
     .page-section-text.photo-right {
         align-content: center;
-        padding: 24px 0 0 5vw;
+        padding: 24px 5vw 0 5vw;
     }
 }
 
