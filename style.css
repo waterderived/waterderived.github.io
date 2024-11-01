@@ -1763,7 +1763,7 @@ h3:has(+ .post-data) {
     background-color: var(--bg3);
     border-radius: var(--spacing-03);
     gap: var(--spacing-03);
-    padding: var(--spacing-03) var(--spacing-04);
+    padding: var(--spacing-03) var(--spacing-04) var(--spacing-04) var(--spacing-04);
     -webkit-box-pack: center;
     -webkit-box-align: center;
     transition: all 0.2s ease 0s;
