@@ -1086,6 +1086,7 @@ article {
 }
 
 .page-section-content .page-section-text {
+    width: 100%;
     grid-column: 1 / -1;
     padding: 8px 0;
 }
