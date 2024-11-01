@@ -220,7 +220,7 @@
     --tx2: var(--nj-space-grayLight);
     --tx3: var(--nj-space-white);
     --tx-muted: var(--nj-grey-normal);
-    --tx-italic: var(--nj-green-300);
+    --tx-italic: var(--nj-space-white);
     --tx-weight-nl: 400;
     --footer-p-color: var(--nj-coolgrey);
     --link-color: var(--nj-space-white);
@@ -346,7 +346,6 @@ p {
 
 em {
     color: var(--tx-italic);
-    font-weight: 500;
 }
 
 hr {
@@ -1324,7 +1323,10 @@ article {
     letter-spacing: 0.05em;
     color: var(--tx2);
     margin-top: 0.25rem;
-    padding: 0 12px;
+}
+
+p.card-caption {
+    padding: 0 12px !important;
 }
 
 .card-caption p {
