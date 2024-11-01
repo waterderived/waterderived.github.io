@@ -1091,8 +1091,8 @@ article {
 }
 
 @media (min-width: 768px) {
-    .page-section-text.wi-60 {
-        width: 60%;
+    .page-section-text.wi-70 {
+        width: 70%;
     }
 
     .page-section-text.photo-right {
