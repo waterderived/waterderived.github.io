@@ -1091,7 +1091,7 @@ article {
 }
 
 @media (min-width: 768px) {
-    .page-section-text {
+    .page-section-text.wi-40 {
         width: 40%;
     }
 
