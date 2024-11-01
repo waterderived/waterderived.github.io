@@ -1171,15 +1171,16 @@ article {
         flex-direction: row;
         justify-content: start;
         align-items:start;
-        gap: 32px
+        gap: 24px;
+        margin-bottom: 32px;
     }
 
     .page-section-text .col2-60 .col-left {
-        width: 60%;
+        width: 56%;
     }
 
     .page-section-text .col2-60 .col-right {
-        width: 36%;
+        width: 40%;
     }
     
     .page-section-text .col2-60 .col-left img,
