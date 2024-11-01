@@ -1668,7 +1668,7 @@ h3:has(+ .post-data) {
     width: 100%;
     justify-self: center;
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: auto;
     gap: 8px;
 }
