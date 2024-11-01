@@ -217,7 +217,7 @@
     --bg3: var(--nj-charcoal-550);
     --hd1: var(--nj-offwhitelighter);
     --tx1: var(--nj-offwhitedark);
-    --tx2: var(--nj-green-400);
+    --tx2: var(--nj-space-grayLight);
     --tx3: var(--nj-offwhitelight);
     --tx-muted: var(--nj-grey-normal);
     --tx-italic: var(--nj-green-300);
@@ -1321,10 +1321,10 @@ article {
     font-size: 0.75em;
     font-family: var(--font-family-body);
     font-weight: 400;
-    color: var(--tx1);
+    letter-spacing: 0.05em;
+    color: var(--tx2);
     margin-top: 0.25rem;
     padding: 0 12px;
-    color: var(--tx1);
 }
 
 .card-caption p {
@@ -1332,6 +1332,7 @@ article {
 }
 
 .card-caption a {
+    letter-spacing: 0.05em;
     text-decoration: none;
     color: var(--link-color);
 }
