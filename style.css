@@ -103,7 +103,7 @@
     --h3-size: 24px;
     --h4-size: 20px;
     --nj-space-blue: #2A40FF;
-    --nj-space-blueLight: rgb(58, 78, 255);
+    --nj-space-blueLight: hsl(234, 100%, 68%);
     --nj-space-white: #F7F4E7;
     --nj-space-whiteLight: #fbfaf5;
     --nj-space-grayLight: #e5e5e6;
@@ -1839,7 +1839,7 @@ footer a {
     text-align: left;
     font-family: var(--font-family-body);
     color: var(--footer-p-color);
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 400;
     margin: 24px auto;
 }
