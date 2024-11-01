@@ -1070,6 +1070,10 @@ article {
     z-index: 1;
 }
 
+.page-section-block.flex-column {
+    flex-direction: column !important;
+}
+
 .page-section-text {
     display: flex;
     flex-direction: column;
