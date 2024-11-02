@@ -138,7 +138,7 @@
     --nj-charcoal-500: rgb(32, 32, 33);
     --nj-charcoal-550: rgb(24, 24, 24);
     --nj-charcoal-600: rgb(21, 21, 21);
-    --nj-charcoal-700: rgb(18, 18, 18);
+    --nj-charcoal-700: #121212;
     --nj-charcoal-800: rgb(14, 14, 14);
     --color-red: #dc4747;
     --rounded-sidebar: .375rem;
@@ -179,7 +179,7 @@
     --card-color-bg-hover: hsl(30, 20%, 96%);
     --post-color-bg: hsl(36, 20%, 95%);
     --post-color-bg-hover: hsl(30, 20%, 97%);
-    --switch-bg: var(--nj-nearmono-300);
+    --switch-bg: var(--nj-space-grayLight);
     --switch-circle-bg: #FFB21E;
     --icon-sun: #835510;
     --icon-moon: #B1B0B5;
@@ -220,7 +220,8 @@
     --card-color-bg-hover: var(--nj-charcoal-500);
     --post-color-bg: var(--nj-charcoal-550);
     --post-color-bg-hover: var(--nj-charcoal-500);
-    --switch-bg: var(--nj-nearmono-400);
+    /*--switch-bg: var(--nj-nearmono-400);*/
+    --switch-bg: var(--nj-space-charcoalDark);
     --switch-circle-bg: var(--nj-charcoal-700);
     --icon-sun: #B1B0B5;
     --icon-moon: var(--nj-offwhitelight);
