@@ -104,11 +104,13 @@
     --h4-size: 20px;
     --nj-space-blue: #2A40FF;
     --nj-space-blueLight: hsl(234, 100%, 68%);
+    --nj-space-coolwhite: #fafafb;
     --nj-space-white: #F7F4E7;
     --nj-space-whiteLight: #fbfaf5;
     --nj-space-whiteLighter: rgb(254, 254, 252);
     --nj-space-gray: #c2c2c8;
     --nj-space-grayLight: #e5e5e6;
+    --nj-space-grayLighter: #eeeef0;
     --nj-space-charcoalLight: #434346;
     --nj-space-charcoal: #202020;
     --nj-space-charcoalDark: #111113;
@@ -145,10 +147,10 @@
 }
 
 :root[data-theme="light"] {
-    --bg1: var(--nj-space-whiteLight);
+    --bg1: var(--nj-space-coolwhite);
     --bg1-09: rgba(249, 247, 245, 0.95);
     --bg2: var(--nj-space-whiteLighter);
-    --bg3: var(--nj-space-white);
+    --bg3: var(--nj-space-grayLight);
     --hd1: var(--nj-charcoal-700);
     --tx1: var(--nj-charcoal-700);
     --tx2: var(--nj-space-charcoalLight);
@@ -187,10 +189,12 @@
 }
 
 :root[data-theme="dark"] {
-    --bg1: var(--nj-charcoal-700);
+    /*--bg1: var(--nj-charcoal-700);*/
+    --bg1: var(--nj-space-charcoalDark);
     --bg1-09: rgb(18, 18, 18, 0.95);
     --bg2: var(--nj-charcoal-600);
-    --bg3: var(--nj-charcoal-550);
+    /*--bg3: var(--nj-charcoal-550);*/
+    --bg3: var(--nj-space-charcoal);
     --hd1: var(--nj-offwhitelighter);
     --tx1: var(--nj-space-whiteLight);
     --tx2: var(--nj-space-gray);
@@ -225,7 +229,7 @@
     --switch-circle-bg: var(--nj-charcoal-700);
     --icon-sun: #B1B0B5;
     --icon-moon: var(--nj-offwhitelight);
-    --switch-circle-pos: 1.67rem;
+    --switch-circle-pos: 1.66rem;
     --img-dark-level: 75%;
     --img-dark-level-hover: 100%;
 }
