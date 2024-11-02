@@ -149,7 +149,7 @@
 :root[data-theme="light"] {
     --bg1: var(--nj-space-coolwhite);
     --bg1-09: rgba(249, 247, 245, 0.95);
-    --bg2: var(--nj-space-whiteLighter);
+    --bg2: var(--nj-offwhitelightest);
     --bg3: var(--nj-space-grayLight);
     --hd1: var(--nj-charcoal-700);
     --tx1: var(--nj-charcoal-700);
