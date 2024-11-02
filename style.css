@@ -115,6 +115,13 @@
     --nj-space-charcoal: #202020;
     --nj-space-charcoalDark: #111113;
     --nj-space-charcoalDarker: #040404;
+    --nj-offwhitelightest: rgb(251, 249, 248);
+    --nj-offwhitelighter: rgb(249, 247, 245);
+    --nj-offwhitelight: rgb(247, 245, 241);
+    --nj-offwhite: #f8f4ec;
+    --nj-offwhitedark: #f1f0ec;
+    --nj-coolwhite: #f2f7fa;
+    --nj-coolwhitedarker: #d8dad9;
     --nj-grey-light: #f7f7f7;
     --nj-grey-lighthover: #f2f2f2;
     --nj-grey-lightactive: #e5e5e5;
@@ -125,13 +132,6 @@
     --nj-grey-darkhover: #676767;
     --nj-grey-darkactive: #4d4d4d;
     --nj-grey-darker: #3c3c3c;
-    --nj-offwhitelightest: rgb(251, 249, 248);
-    --nj-offwhitelighter: rgb(249, 247, 245);
-    --nj-offwhitelight: rgb(247, 245, 241);
-    --nj-offwhite: #f8f4ec;
-    --nj-offwhitedark: #f1f0ec;
-    --nj-coolwhite: #f2f7fa;
-    --nj-coolwhitedarker: #d8dad9;
     --nj-warmgrey: #e0dcd3;
     --nj-coolgrey: #b8b8b8;
     --nj-charcoal-200: rgb(100, 100, 100);
