@@ -2344,6 +2344,17 @@ p:has(.dropdown-surround) {
 }
 
 
+/* MODIFIERS */
+
+.m-b-100em {
+    margin-bottom: 1em !important;
+}
+
+.m-b-150em {
+    margin-bottom: 1.5em !important;
+}
+
+
 /*-- light dark toggle --*/
 #theme-switcher {
     background-color: var(--nj-space-grayLight);
