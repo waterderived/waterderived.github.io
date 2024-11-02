@@ -108,9 +108,11 @@
     --nj-space-white: #F7F4E7;
     --nj-space-whiteLight: #fbfaf5;
     --nj-space-whiteLighter: #fdfdfe;
+    --nj-space-grayDark: #afafb1;
     --nj-space-gray: #c6c6c9;
     --nj-space-grayLight: #ebebec;
     --nj-space-grayLighter: #f4f4f6;
+    --nj-space-charcoalLightest: #515153;
     --nj-space-charcoalLighter: #434346;
     --nj-space-charcoalLight: #262627;
     --nj-space-charcoal: #202020;
@@ -160,6 +162,7 @@
     --tx-italic: var(--nj-green-400);
     --tx-weight-nl: 500;
     --footer-p-color: var(--tx-muted);
+    --subtitle-tx-color: var(--nj-space-charcoalLightest);
     --link-color: var(--nj-charcoal-700);
     --link-hover: var(--nj-space-blue);
     --link-color-selected: var(--nj-space-blue);
@@ -204,6 +207,7 @@
     --tx-italic: var(--nj-space-white);
     --tx-weight-nl: 400;
     --footer-p-color: var(--nj-coolgrey);
+    --subtitle-tx-color: var(--nj-space-grayDark);
     --link-color: var(--nj-space-white);
     --link-hover: var(--nj-space-blueLight);
     --link-color-selected: var(--nj-space-blueLight);
@@ -2347,18 +2351,13 @@ p:has(.dropdown-surround) {
 
 /* MODIFIERS */
 
-.m-b-100em {
-    margin-bottom: 1em !important;
-}
-
-.m-b-150em {
-    margin-bottom: 1.5em !important;
-}
-
 .m-b-200em {
     margin-bottom: 2em !important;
 }
 
+.f-color-sub {
+    color: var(--subtitle-tx-color);
+}
 
 /*-- light dark toggle --*/
 #theme-switcher {
