@@ -2356,7 +2356,7 @@ p:has(.dropdown-surround) {
 }
 
 .f-color-sub {
-    color: var(--subtitle-tx-color);
+    color: var(--subtitle-tx-color) !important;
 }
 
 /*-- light dark toggle --*/
