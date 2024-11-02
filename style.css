@@ -107,8 +107,8 @@
     --nj-space-coolwhite: #fafafb;
     --nj-space-white: #F7F4E7;
     --nj-space-whiteLight: #fbfaf5;
-    --nj-space-whiteLighter: rgb(254, 254, 252);
-    --nj-space-gray: #c2c2c8;
+    --nj-space-whiteLighter: #fdfdfe;
+    --nj-space-gray: #c5c5ca;
     --nj-space-grayLight: #ebebec;
     --nj-space-grayLighter: #f4f4f6;
     --nj-space-charcoalLighter: #434346;
@@ -197,9 +197,9 @@
     /*--bg3: var(--nj-charcoal-550);*/
     --bg3: var(--nj-space-charcoal);
     --hd1: var(--nj-offwhitelighter);
-    --tx1: var(--nj-space-whiteLight);
-    --tx2: var(--nj-space-gray);
-    --tx3: var(--nj-space-white);
+    --tx1: var(--nj-offwhitelight);
+    --tx2: var(--nj-space-grayLight);
+    --tx3: var(--nj-space-whiteLighter);
     --tx-muted: var(--nj-grey-normal);
     --tx-italic: var(--nj-space-white);
     --tx-weight-nl: 400;
@@ -1110,7 +1110,7 @@ article {
 
 .page-section-content .page-section-text p {
     color: var(--tx1);
-    line-height: 1.75;
+    line-height: 1.65;
     padding: 0 4px;
     margin-bottom: 0.25em;
     display: block;
@@ -1122,7 +1122,7 @@ article {
     flex-direction: column;
     color: var(--tx1);
     font-size: 1em;
-    line-height: 1.75em;
+    line-height: 1.65em;
     margin: 0 0 4px 0;
 }
 
@@ -1318,7 +1318,7 @@ p.card-caption {
 .card-caption a {
     letter-spacing: 0.05em;
     text-decoration: none;
-    color: var(--link-color);
+    color: var(--tx3);
 }
 
 .card-caption a:hover {
