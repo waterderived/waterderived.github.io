@@ -109,8 +109,8 @@
     --nj-space-whiteLight: #fbfaf5;
     --nj-space-whiteLighter: rgb(254, 254, 252);
     --nj-space-gray: #c2c2c8;
-    --nj-space-grayLight: #e5e5e6;
-    --nj-space-grayLighter: hsl(240, 12%, 96%);
+    --nj-space-grayLight: #ebebec;
+    --nj-space-grayLighter: #f4f4f6;
     --nj-space-charcoalLighter: #434346;
     --nj-space-charcoalLight: #262627;
     --nj-space-charcoal: #202020;
@@ -2345,7 +2345,7 @@ p:has(.dropdown-surround) {
 
 /*-- light dark toggle --*/
 #theme-switcher {
-    background-color: var(--nj-offwhitedark);
+    background-color: var(--nj-space-grayLight);
     border-radius: 24px;
     display: flex;
     flex-direction: row;
