@@ -2355,6 +2355,10 @@ p:has(.dropdown-surround) {
     margin-bottom: 1.5em !important;
 }
 
+.m-b-200em {
+    margin-bottom: 2em !important;
+}
+
 
 /*-- light dark toggle --*/
 #theme-switcher {
