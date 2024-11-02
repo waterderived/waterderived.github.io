@@ -1665,6 +1665,7 @@ h3:has(+ .post-data) {
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: auto;
     gap: 16px;
+    margin-top: 24px;
 }
 
 .grid-container-col {
