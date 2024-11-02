@@ -1310,6 +1310,7 @@ article {
 .page-section-content .page-section-text p.card-caption {
     line-height: 1.6;
     padding: 0 12px !important;
+    margin-bottom: 0.25rem !important;
 }
 
 .card-caption p {
