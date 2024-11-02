@@ -106,12 +106,13 @@
     --nj-space-blueLight: hsl(234, 100%, 68%);
     --nj-space-white: #F7F4E7;
     --nj-space-whiteLight: #fbfaf5;
-    --nj-space-whiteLighter: #fefefc;
+    --nj-space-whiteLighter: rgb(254, 254, 252);
     --nj-space-gray: #c2c2c8;
     --nj-space-grayLight: #e5e5e6;
     --nj-space-charcoalLight: #434346;
     --nj-space-charcoal: #202020;
-    --nj-space-charcoalDark: #181818;
+    --nj-space-charcoalDark: #111113;
+    --nj-space-charcoalDarker: #040404;
     --nj-grey-light: #f7f7f7;
     --nj-grey-lighthover: #f2f2f2;
     --nj-grey-lightactive: #e5e5e5;
@@ -144,10 +145,10 @@
 }
 
 :root[data-theme="light"] {
-    --bg1: var(--nj-offwhitelighter);
+    --bg1: var(--nj-space-whiteLight);
     --bg1-09: rgba(249, 247, 245, 0.95);
-    --bg2: var(--nj-nearmono-100);
-    --bg3: var(--nj-offwhitelightest);
+    --bg2: var(--nj-space-whiteLighter);
+    --bg3: var(--nj-space-white);
     --hd1: var(--nj-charcoal-700);
     --tx1: var(--nj-charcoal-700);
     --tx2: var(--nj-space-charcoalLight);
