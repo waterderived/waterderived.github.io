@@ -111,7 +111,8 @@
     --nj-space-gray: #c2c2c8;
     --nj-space-grayLight: #e5e5e6;
     --nj-space-grayLighter: hsl(240, 12%, 96%);
-    --nj-space-charcoalLight: #434346;
+    --nj-space-charcoalLighter: #434346;
+    --nj-space-charcoalLight: #262627;
     --nj-space-charcoal: #202020;
     --nj-space-charcoalDark: #111113;
     --nj-space-charcoalDarker: #040404;
@@ -151,8 +152,8 @@
     --bg1-09: rgba(249, 247, 245, 0.95);
     --bg2: var(--nj-offwhitelightest);
     --bg3: var(--nj-space-grayLighter);
-    --hd1: var(--nj-charcoal-700);
-    --tx1: var(--nj-charcoal-700);
+    --hd1: var(--nj-space-charcoalDarker);
+    --tx1: var(--nj-space-charcoalDark);
     --tx2: var(--nj-space-charcoalLight);
     --tx3: var(--nj-charcoal-400);
     --tx-muted: var(--nj-charcoal-200);
@@ -1758,14 +1759,12 @@ h3:has(+ .post-data) {
 }
 
 .gridded-img {
-    flex: content;
-    flex-shrink: 1;
+    object-fit: contain;
     max-width: 100%;
     height: auto;
     border-radius: var(--spacing-04);
     padding: 8px;
 }
-
 
 .gridded-img-photo {
     flex: content;
