@@ -1143,6 +1143,7 @@ article {
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 24px;
 }
 
 .page-section-text .col2-60 .col-left,
@@ -1166,6 +1167,7 @@ article {
         justify-content: start;
         align-items:start;
         padding: 24px 0;
+        gap: 0;
     }
 
     .page-section-text .col2-60 .col-left {
