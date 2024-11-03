@@ -113,9 +113,9 @@
     --nj-space-grayLight: #ebebec;
     --nj-space-grayLighter: #f4f4f6;
     --nj-space-charcoalLightest: #515153;
-    --nj-space-charcoalLighter: #434346;
-    --nj-space-charcoalLight: #262627;
-    --nj-space-charcoal: #202020;
+    --nj-space-charcoalLighter: #404044;
+    --nj-space-charcoalLight: #2f2f32;
+    --nj-space-charcoal: #1f1f22;
     --nj-space-charcoalDark: #111113;
     --nj-space-charcoalDarker: #040404;
     --nj-offwhitelightest: rgb(251, 249, 248);
@@ -212,8 +212,8 @@
     --link-hover: var(--nj-space-blueLight);
     --link-color-selected: var(--nj-space-blueLight);
     --link-color-underline: var(--nj-space-blue);
-    --selection-color-tx: var(--nj-space-white);
-    --selection-color-bg: var(--nj-space-charcoal);
+    --selection-color-tx: var(--nj-space-whiteLighter);
+    --selection-color-bg: var(--nj-space-charcoalLight);
     --navButton-color-selected-outline: var(--nj-green-100);
     --navButton-color-selected-tx: var(--nj-space-whiteLight);
     --dropdown-color-tx: var(--nj-space-white);
