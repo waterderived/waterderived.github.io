@@ -213,7 +213,7 @@
     --link-color-selected: var(--nj-space-blueLight);
     --link-color-underline: var(--nj-space-blue);
     --selection-color-tx: var(--nj-space-white);
-    --selection-color-bg: var(--nj-charcoal-500);
+    --selection-color-bg: var(--nj-space-charcoal);
     --navButton-color-selected-outline: var(--nj-green-100);
     --navButton-color-selected-tx: var(--nj-space-whiteLight);
     --dropdown-color-tx: var(--nj-space-white);
