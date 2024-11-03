@@ -1154,6 +1154,12 @@ article {
     align-items: start;
 }
 
+.page-section-text .col2-60 .col-left img,
+.page-section-text .col2-60 .col-right img {
+    width: 100%;
+    height: auto;
+}
+
 @media (min-width: 768px) {
     .page-section-text .col2-60 {
         flex-direction: row;
