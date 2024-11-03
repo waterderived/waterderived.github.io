@@ -1158,10 +1158,11 @@ article {
 .page-section-text .col2-60 .col-left img,
 .page-section-text .col2-60 .col-right img {
     width: 100%;
+    max-width: 600px;
     height: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1330px) {
     .page-section-text .col2-60 {
         flex-direction: row;
         justify-content: start;
