@@ -209,7 +209,7 @@
     --footer-p-color: var(--nj-coolgrey);
     --subtitle-tx-color: var(--nj-space-grayDark);
     --link-color: var(--nj-space-white);
-    --link-hover: var(--nj-space-blueLight);
+    --link-hover: var(--nj-space-blue);
     --link-color-selected: var(--nj-space-blueLight);
     --link-color-underline: var(--nj-space-blue);
     --selection-color-tx: var(--nj-space-whiteLighter);
