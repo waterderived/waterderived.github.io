@@ -242,8 +242,8 @@
 :root {
     --hero-h1-color: var(--hd1);
     --hero-h1-font: var(--font-family-title);
-    --hero-h1-size: 52px;
-    --hero-h1-height: 52px;
+    --hero-h1-size: 48px;
+    --hero-h1-height: 48px;
     --hero-h1-weight: 500;
     --hero-h1-style: normal;
     --hero-h2-color: var(--hd1);
