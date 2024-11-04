@@ -1157,7 +1157,7 @@ article {
 }
 
 .page-section-text .col2-60 .col-left:has(img),
-.page-section-text .col2-60 .colright:has(img) {
+.page-section-text .col2-60 .col-right:has(img) {
     justify-content: center;
 }
 
@@ -1166,7 +1166,6 @@ article {
     width: 100%;
     max-width: 600px;
     height: auto;
-    justify-self: center;
 }
 
 @media (min-width: 1330px) {
