@@ -1897,7 +1897,7 @@ html[data-theme="dark"] .gridded-img-photo:hover {
 footer {
     display: relative;
     z-index: 20;
-    bottom: 0;
+    width: 100%;
 }
 
 footer p,
@@ -1946,6 +1946,10 @@ footer a {
         padding-left: 12px;
         padding-right: 12px;
     }
+}
+
+footer .separator {
+    width: 100%;
 }
 
 footer .separator .line {
