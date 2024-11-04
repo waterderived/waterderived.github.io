@@ -1093,7 +1093,7 @@ article {
     }
 
     .page-section-text.photo-right {
-        align-content: center;
+        justify-content: center;
         padding: 24px 0 0 4vw;
     }
 }
