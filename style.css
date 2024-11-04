@@ -116,7 +116,7 @@
     --nj-space-charcoalLighter: #404044;
     --nj-space-charcoalLight: #2f2f32;
     --nj-space-charcoal: #1f1f20;
-    --nj-space-charcoalDark: #111113;
+    --nj-space-charcoalDark: #111112;
     --nj-space-charcoalDarker: #040404;
     --nj-offwhitelightest: rgb(251, 249, 248);
     --nj-offwhitelighter: rgb(249, 247, 245);
@@ -913,20 +913,19 @@ article {
 }
 
 .page-hero-content .page-hero-bio {
-    grid-column: 2 / -1;
+    grid-column: 1 / -1;
     grid-row: 1;
 }
 
 @media (min-width: 320px) {
     .page-hero-content .page-hero-bio {
-        grid-column: 1 / -1;
         grid-row: 1;
     }
 }
 
 @media (min-width: 768px) {
     .page-hero-content .page-hero-bio {
-        grid-column: 2 / span 11;
+        grid-column: 1 / span 12;
         grid-row: 1;
     }
 }
