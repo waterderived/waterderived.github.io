@@ -864,7 +864,7 @@ article {
 .page-hero-content {
     column-gap: 0;
     display: grid;
-    grid-column: 2/ span 12;
+    grid-column: 1 / -1;
     position: relative;
     margin: 8vh 0 8vh 0;
 }
