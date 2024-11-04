@@ -1128,7 +1128,7 @@ article {
 .page-section-content .page-section-text p {
     color: var(--tx1);
     line-height: 1.65;
-    padding: 0 4px;
+    padding: 0;
     margin-bottom: 0.8em;
     display: block;
 }
