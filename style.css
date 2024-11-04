@@ -1167,6 +1167,7 @@ article {
 .page-section-text .col2-60 .col-left:has(img),
 .page-section-text .col2-60 .col-right:has(img) {
     justify-content: center;
+    align-items: center;
 }
 
 .page-section-text .col2-60 .col-left img,
