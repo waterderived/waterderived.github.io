@@ -1094,7 +1094,8 @@ article {
 
     .page-section-text.photo-right {
         justify-content: center;
-        padding: 24px 0 0 4vw;
+        width: fit-content;
+        padding: 24px 0 0 2vw;
     }
 }
 
