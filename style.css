@@ -1156,17 +1156,17 @@ article {
     align-items: start;
 }
 
+.page-section-text .col2-60 .col-left:has(img),
+.page-section-text .col2-60 .colright:has(img) {
+    justify-content: center;
+}
+
 .page-section-text .col2-60 .col-left img,
 .page-section-text .col2-60 .col-right img {
     width: 100%;
     max-width: 600px;
     height: auto;
     justify-self: center;
-}
-
-.page-section-text .col2-60 .col-left:has(img),
-.page-section-text .col2-60 .colright:has(img) {
-    justify-content: center;
 }
 
 @media (min-width: 1330px) {
