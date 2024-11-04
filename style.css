@@ -1164,6 +1164,11 @@ article {
     justify-self: center;
 }
 
+.page-section-text .col2-60 .col-left:has(img),
+.page-section-text .col2-60 .colright:has(img) {
+    justify-content: center;
+}
+
 @media (min-width: 1330px) {
     .page-section-text .col2-60 {
         flex-direction: row;
