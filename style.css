@@ -115,7 +115,7 @@
     --nj-space-charcoalLightest: #515153;
     --nj-space-charcoalLighter: #404044;
     --nj-space-charcoalLight: #2f2f32;
-    --nj-space-charcoal: #1f1f20;
+    --nj-space-charcoal: #1c1c1d;
     --nj-space-charcoalDark: #111112;
     --nj-space-charcoalDarker: #040404;
     --nj-offwhitelightest: rgb(251, 249, 248);
@@ -2313,6 +2313,7 @@ p:has(.dropdown-surround) {
     font-size: 20px;
     font-weight: var(--tx-weight-nl);
     line-height: 1.8;
+    letter-spacing: 0.02em;
     text-wrap: wrap;
     word-wrap: normal;
     overflow-wrap: break-word;
