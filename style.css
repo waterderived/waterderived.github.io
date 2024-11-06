@@ -2290,6 +2290,20 @@ ul#menu {
 --homepage dropdowns-- 
 ---------------------*/
 
+.dropdown-surround {
+    display: inline-block;
+    color: var(--tx1);
+    font-size: 20px;
+    font-weight: var(--tx-weight-nl);
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    text-wrap: wrap;
+    word-wrap: normal;
+    overflow-wrap: break-word;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
 select {
     appearance: none;
     width: min-content;
@@ -2316,6 +2330,7 @@ select {
 }
 
 .dropdown-btn {
+    display: inline-block;
     appearance: none;
     border: none;
     padding: 4px 8px 4px 8px;
@@ -2332,20 +2347,6 @@ select {
 
 .dropdown-btn:focus {
     border-color: var(--dropdown-color-tx);
-}
-
-.dropdown-surround {
-    display: inline-block;
-    color: var(--tx1);
-    font-size: 20px;
-    font-weight: var(--tx-weight-nl);
-    line-height: 1.8;
-    letter-spacing: 0.02em;
-    text-wrap: wrap;
-    word-wrap: normal;
-    overflow-wrap: break-word;
-    width: 100%;
-    margin-bottom: 16px;
 }
 
 @media (max-width: 640px) {
