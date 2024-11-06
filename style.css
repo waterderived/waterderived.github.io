@@ -296,7 +296,7 @@
 
 html {
     line-height: 1.625;
-    font-family: /*'Oxygen', 'Inter UI', */'Inter', 'Segoe UI', "Antarctican", sans-serif;
+    font-family: 'Inter', 'Segoe UI', "Antarctican", sans-serif;
 }
 
 body {
@@ -528,6 +528,7 @@ div#banner-content p {
     color: var(--tx1);
     font-family: var(--font-family-mono);
     font-size: 12px !important;
+    line-height: 1 !important;
     text-align: center;
 }
 
