@@ -528,7 +528,7 @@ div#banner-content {
 }
 
 div#banner-content p {
-    width: 100%;
+    width: 100% !important;
     color: var(--tx1);
     font-family: var(--font-family-mono);
     font-size: 12px !important;
