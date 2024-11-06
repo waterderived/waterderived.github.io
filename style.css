@@ -1939,7 +1939,7 @@ footer a {
 
 @media (min-width: 320px) {
     footer {
-        margin: 24px 0 12px 0;
+        margin: 24px 0 8px 0;
         padding: 0 4px;
     }
 
@@ -1964,7 +1964,7 @@ footer a {
 
 @media (min-width: 1440px) {
     footer {
-        margin: 24px 0 16px 0;
+        margin: 24px 0 0 0;
         padding: 0 48px;
     }
 
