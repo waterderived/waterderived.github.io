@@ -492,7 +492,7 @@ a:hover {
 }
 
 .page-all-96 {
-    padding-top: 64px; /* to make room for notification banner */
+    padding-top: 48px; /* to make room for notification banner */
     width: 96%;
     max-width: 1500px;
 }
@@ -527,7 +527,7 @@ div#banner-content p {
     width: 100%;
     color: var(--tx1);
     font-family: var(--font-family-mono);
-    font-size: 12px;
+    font-size: 11px !important;
     text-align: center;
 }
 
