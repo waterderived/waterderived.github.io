@@ -2289,6 +2289,18 @@ ul#menu {
 /*-------------------- 
 --homepage dropdowns-- 
 ---------------------*/
+
+select {
+    appearance: none;
+    width: min-content;
+    padding: 0;
+    margin: 0 4px;
+    border: none;
+    border-radius: var(--spacing-01);
+    color: var(--tx1);
+    cursor: pointer;
+}
+
 .dropdown-home {
     min-width: 2px;
     position: relative;
@@ -2320,17 +2332,6 @@ ul#menu {
 
 .dropdown-btn:focus {
     border-color: var(--dropdown-color-tx);
-}
-
-select {
-    appearance: none;
-    width: min-content;
-    padding: 0 8px 0 0;
-    margin: 0 4px;
-    border: none;
-    border-radius: var(--spacing-01);
-    color: var(--tx1);
-    cursor: pointer;
 }
 
 .dropdown-surround {
