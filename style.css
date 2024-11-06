@@ -503,6 +503,7 @@ a:hover {
 
 .page-flex {
     width: 100%;
+    /*height: 96%*/
     min-height: calc(96vh - 96px);
     display: flex;
     flex-direction: column;
@@ -517,10 +518,13 @@ div#banner {
     left: 0;
     background-color: var(--nj-space-blue);
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 div#banner-content {
-    width: 88%;
+    width: fit-content;
     max-width: 1500px;
     margin: 0 auto;
     padding: 8px;
