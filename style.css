@@ -2312,7 +2312,7 @@ ul#menu {
     background-color: var(--dropdown-color-bg);
     color: var(--dropdown-color-tx);
     font-size: 1em;
-    width: auto;
+    width: fit-content;
 }
 
 .dropdown-btn::before,
