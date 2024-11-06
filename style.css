@@ -2317,7 +2317,7 @@ ul#menu {
 
 .dropdown-home {
     min-width: 2px;
-    width: fit-content;
+    width: min-content;
     position: relative;
     display: inline-block;
     justify-content: center;
