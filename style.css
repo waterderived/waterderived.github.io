@@ -2344,7 +2344,7 @@ select {
     text-wrap: wrap;
     word-wrap: normal;
     overflow-wrap: break-word;
-    padding-left: 4px;
+    width: 100%;
     margin-bottom: 16px;
 }
 
