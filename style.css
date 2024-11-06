@@ -2291,10 +2291,8 @@ ul#menu {
 ---------------------*/
 .dropdown-home {
     min-width: 2px;
-    width: min-content;
     position: relative;
     display: inline-block;
-    justify-content: center;
 }
 
 .dropdown-home::before,
