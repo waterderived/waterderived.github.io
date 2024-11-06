@@ -1921,7 +1921,6 @@ html[data-theme="dark"] .gridded-img-photo:hover {
 /* -- FOOTER -- */
 
 footer {
-    display: relative;
     z-index: 20;
     width: 100%;
 }
