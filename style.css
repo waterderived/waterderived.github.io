@@ -504,6 +504,7 @@ a:hover {
 .page-flex {
     width: 100%;
     height: auto;
+    /*min-height: calc(96vh - 96px);*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -531,7 +532,7 @@ div#banner-content {
 
 div#banner-content p {
     width: 100% !important;
-    color: var(--tx1);
+    color: var(--nj-offwhitelight);
     font-family: var(--font-family-mono);
     font-size: 12px !important;
     line-height: 1 !important;
