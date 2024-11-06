@@ -300,8 +300,8 @@ html {
 }
 
 body {
-    /*display: flex;
-    justify-content: center;*/
+    display: flex;
+    justify-content: center;
     background-color: var(--bg1);
     text-align: left;
     margin: 0;
@@ -527,7 +527,7 @@ div#banner-content p {
     width: 100%;
     color: var(--tx1);
     font-family: var(--font-family-mono);
-    font-size: 11px !important;
+    font-size: 12px !important;
     text-align: center;
 }
 
