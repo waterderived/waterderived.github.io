@@ -2289,35 +2289,9 @@ ul#menu {
 /*-------------------- 
 --homepage dropdowns-- 
 ---------------------*/
-
-.dropdown-surround {
-    display: inline-block;
-    color: var(--tx1);
-    font-size: 20px;
-    font-weight: var(--tx-weight-nl);
-    line-height: 1.8;
-    letter-spacing: 0.02em;
-    text-wrap: wrap;
-    word-wrap: normal;
-    overflow-wrap: break-word;
-    padding-left: 4px;
-    margin-bottom: 16px;
-}
-
-@media (max-width: 640px) {
-    .dropdown-surround {
-        font-size: 14px;
-        line-height: 24px;
-    }
-
-    .dropdown-btn {
-        padding: 2px 6px;
-    }
-}
-
 .dropdown-home {
     min-width: 2px;
-    width: min-content;
+    width: fit-content;
     position: relative;
     display: inline-block;
     justify-content: center;
@@ -2353,11 +2327,37 @@ ul#menu {
 select {
     appearance: none;
     width: min-content;
+    padding: 0 8px 0 0;
     margin: 0 4px;
     border: none;
     border-radius: var(--spacing-01);
     color: var(--tx1);
     cursor: pointer;
+}
+
+.dropdown-surround {
+    display: inline-block;
+    color: var(--tx1);
+    font-size: 20px;
+    font-weight: var(--tx-weight-nl);
+    line-height: 1.8;
+    letter-spacing: 0.02em;
+    text-wrap: wrap;
+    word-wrap: normal;
+    overflow-wrap: break-word;
+    padding-left: 4px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 640px) {
+    .dropdown-surround {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .dropdown-btn {
+        padding: 2px 6px;
+    }
 }
 
 /* -- inline footnotes -- */
